@@ -1,0 +1,35 @@
+
+\begin{tikzpicture}
+%\fill [gray](0,0) circle (6cm);
+\draw (.8,.5) node {\includesvg[scale=0.43]{../../images/logo2.svg}};
+\draw [line width=1mm](0,0) circle (4.3cm);
+\draw [line width=1mm](0,0) circle (5.8cm);
+\draw [solid,line width=1mm](0,0) circle(6cm);
+
+\path [postaction={decoration={
+                    text along path, 
+                    text align=center,
+     text={|\fontsize{38}{38}\selectfont\bfseries\sffamily|CERRO EL SOSNEADO}},decorate}] 
+     (-4.6cm,0cm) arc (180:0:4.6cm);
+\path [postaction={decoration={
+                    text along path, 
+                    text align=center,
+     text={|\fontsize{42}{42}\selectfont\bfseries\sffamily|4-239}},decorate}] 
+     (-5.5cm,0) arc (180:360:5.5cm);
+     
+\path [postaction={decoration={
+                    text along path, 
+                    text align= fit to path,
+                    text={ |\fontsize{20}{20}\selectfont\bfseries
+|ESCUELA TÉCNICA AGROPECUARIA} 
+                    }, decorate}](260:3.2cm) arc (260:-80:3.2cm); 
+\foreach \i in {0,5,...,360}{
+    \fill (\i:4) circle (1mm);
+}
+\foreach \i in {240,225,...,190}{
+    \draw (\i:5cm) node[rotate=\i+90]{\pgfornament[scale=0.35]{2}};
+}
+\foreach \i in {-60,-45,...,-5}{
+    \draw (\i:5cm) node[rotate=\i+270]{\pgfornament[scale=0.35,symmetry=h]{2}};
+}
+\end{tikzpicture}

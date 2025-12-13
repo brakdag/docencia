@@ -1,0 +1,172 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Impedancia en corriente alterna.}
+\img{images/12/impedancia}{Impedancia eléctrica circuito RLC serie.}
+
+\info{Impedancia $\vec{Z}$}{
+La impedancia $\vec{Z}$ es una medida de oposición que presenta un circuito a una corriente cuando se aplica una tensión. La impedancia extiende el concepto de resistencia a los circuitos de corriente alterna (CA), y posee tanto magnitud como fase, a diferencia de la resistencia, que solo tiene magnitud. Cuando un circuito es alimentado con corriente continua (CC), su impedancia es igual a la resistencia, lo que puede ser interpretado como la impedancia con ángulo de fase cero.
+Por definición, la impedancia es la relación (cociente) entre el fasor tensión y el fasor intensidad de corriente:
+\begin{equation*}
+\vec{Z}=\frac  {\vec{V}}{\vec{I}}
+\end{equation*}
+}
+\info{Reactancias inductiva $X_L$ y capacitiva $X_C$}{
+Reactancia capacitiva.
+\begin{equation*}
+X_C=\frac  {1}{\omega \times C}
+\end{equation*}
+
+Reactancia inductiva.
+\begin{equation*}
+X_L=\omega \times L
+\end{equation*}
+}
+
+\info{Forma rectangular y polar de impedancia}{
+Forma rectangular.
+\begin{equation*}
+    \vec{Z}= R + j (X_L-X_C)
+\end{equation*}
+
+Forma polar.
+\begin{equation*}
+    \vec{Z}= |Z| \times e^{j \theta} 
+\end{equation*}
+
+}
+
+
+
+
+\actividad{Resolver los siguientes problemas de impedancias:}
+\info{frecuencia}{
+Si no se indica la frecuencia es de $f=50hz$.
+}
+\begin{enumerate}
+    \item Calcular en forma rectangular y polar la impedancia $\vec{Z}$ que tiene el conjunto de una resistencia $R=3\Omega$ y una reactancia inductiva $X_L=4\Omega$ conectadas.
+    \info{Conversión de forma Rectangular a polar}{
+    \begin{equation*}
+    |Z|= \sqrt{R^2 + (X_L-X_C)^2}
+    \end{equation*}
+    
+    \begin{equation*}
+    \theta = arctan\left(\frac{X_L-X_C}{R}\right)
+    \end{equation*}
+}
+ 
+ \item Calcular en forma rectangular y polar la impedancia $\vec{Z}$ que tiene el conjunto de una resistencia $R=3\Omega$ y una reactancia capacitiva $X_C=4\Omega$ conectadas en serie.
+ \item Un capacitor de $C=10\mu F$ se conecta en serie a una resistencia de $R=100\Omega$. Calcular la impedancia equivalente del conjunto, para $a)f=50hz,b)f=100hz,c)f=1khz$.
+ 
+ \item Una bobina de $L=20mH$ se conecta en seria a una resistencia de $R=250\Omega$.Calcular la impedancia equivalente del conjunto para $a)f=50hz,b)f=100hz,c)f=1khz$.
+ 
+ \item Calcular la impedancia entre $a$ y $b$ en los siguientes circuitos si se va a aplicar corriente alterna de $f=50Hz$
+ \begin{enumerate}
+     \item \begin{center}
+            \begin{circuitikz}
+            \draw (-2,0) node[label={above:a}]{} to[inductor=$10mH$,,*-] (0,0); 
+            \draw (0,0) to[capacitor={$10\mu F$}] (2,0); 
+            \draw (2,0) to[inductor=$20mH$,,-*] (4,0) node[label={above:b}]{}; 
+            \end{circuitikz}
+            \end{center}
+            
+    \item \begin{center}
+            \begin{circuitikz}
+            \draw (-2,0) node[label={above:a}]{} to[inductor=$100mH$,,*-] (0,0); 
+            \draw (0,0) to[capacitor={$10\mu F$}] (2,0); 
+            \draw (2,0) to[resistor=$20\Omega$,,-*] (4,0) node[label={above:b}]{}; 
+            \end{circuitikz}
+            \end{center}
+            
+    \item \begin{center}
+            \begin{circuitikz}
+            \draw (-2,0) node[label={above:a}]{} to[inductor=$150mH$,,*-] (0,0); 
+            \draw (0,0) to[resistor={$150\Omega$}] (2,0); 
+            \draw (2,0) to[capacitor=$150\mu F$,,-*] (4,0) node[label={above:b}]{}; 
+            \end{circuitikz}
+            \end{center}
+            
+    \item \begin{center}
+            \begin{circuitikz}
+            \draw (-2,0) node[label={above:a}]{} to[inductor=$50mH$,,*-] (0,0); 
+            \draw (0,0) to[resistor={$150\Omega$}] (2,0); 
+            \draw (2,0) to[capacitor=$300\mu F$,,-*] (4,0) node[label={above:b}]{}; 
+            \end{circuitikz}
+            \end{center}
+    
+    \item \begin{center}
+            \begin{circuitikz}
+            \draw (-2,0) node[label={above:a}]{} to[inductor=$50mH$,,*-] (0,0); 
+            \draw (0,0) to[resistor={$150\Omega$}] (2,0); 
+            \draw (2,0) to[capacitor=$300\mu F$,,-] (4,0);
+            \draw (4,0) to[capacitor=$300\mu F$,,-*] (6,0)
+            node[label={above:b}]{}; 
+            \end{circuitikz}
+            \end{center}
+    \item \begin{center}
+            \begin{circuitikz}
+            \draw (-2,0) node[label={above:a}]{} to[capacitor=$58\mu F$,,*-] (0,0); 
+            \draw (0,0) to[resistor={$155\Omega$}] (2,0); 
+            \draw (2,0) to[capacitor=$300\mu F$,,-] (4,0);
+            \draw (4,0) to[resistor=$30\Omega$,,-*] (6,0)
+            node[label={above:b}]{}; 
+            \end{circuitikz}
+            \end{center}
+            
+    \item \begin{center}
+            \begin{circuitikz}
+            \draw (-2,0) node[label={above:a}]{} to[capacitor=$50 F$,,*-] (0,0); 
+            \draw (0,0) to[inductor={$20mH$}] (2,0); 
+            \draw (2,0) to[capacitor=$50F$,,-] (4,0);
+            \draw (4,0) to[inductor=$20mH$,,-*] (6,0)
+            node[label={above:b}]{}; 
+            \end{circuitikz}
+            \end{center}
+            
+    \item \begin{center}
+            \begin{circuitikz}
+            \draw (-2,0) node[label={above:a}]{} to[capacitor=$25 F$,,*-] (0,0); 
+            \draw (0,0) to[inductor={$40mH$}] (2,0); 
+            \draw (2,0) to[capacitor=$25F$,,-] (4,0);
+            \draw (4,0) to[inductor=$40mH$,,-*] (6,0)
+            node[label={above:b}]{}; 
+            \end{circuitikz}
+            \end{center}
+     
+     \item \begin{center}
+            \begin{circuitikz}
+            \draw (-2,0) node[label={above:a}]{} to[inductor=$10mH$,,*-] (0,0); 
+            \draw (0,0) to[capacitor={$10\mu F$}] (2,0); 
+            \draw (2,0) to[inductor=$20mH$,,-*] (4,0) node[label={above:b}]{}; 
+            \end{circuitikz}
+            \end{center}
+     \item 
+     \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[capacitor=$20\mu F$,*-*](3,0) node[label={above:b}]{} (2,0)--(2,2) to[resistor=$5 \Omega$] (-2,2)--(-2,0);
+         \draw (-2,0)--(-2,-2);
+         \draw (2,0)--(2,-2);
+         \draw (-2,-2) to[resistor=$10\Omega$] (2,-2);
+        \end{circuitikz}
+        \end{center}
+     \item \begin{center}
+        \begin{circuitikz}
+        \draw (-3,0)node[label={above:a}]{} -- (-2,1) to[resistor=$1\Omega$,*-*](0,1)
+        to[capacitor=$2\mu F$,*-*] (2,-1)
+        to[capacitor=$2 \mu F$,*-*] (0,-3)
+        to[inductor=$5 mH$,*-*] (-2,-3)
+        -- (-2.5,-2.5)--(-2,-2)
+        to[capacitor=$5\mu F$,*-*] (-3,-1)--(-3.5,-1.5)--(-4,-1) node[label={above:b}]{};
+        \draw (-2.5,-2.5)--(-3,-3)
+        to[capacitor=$6 \mu F$,*-*] (-4,-2) --(-3.5,-1.5);
+        
+        \end{circuitikz}
+        \end{center}     
+
+ \end{enumerate}
+ 
+ 
+ 
+ 
+\end{enumerate}
+\end{document}

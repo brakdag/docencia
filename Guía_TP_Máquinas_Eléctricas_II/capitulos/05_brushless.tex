@@ -1,0 +1,92 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+\setcounter{chapter}{4}
+\chapter{Motor eléctrico sin escobillas}
+Un motor eléctrico sin escobillas o motor brushless es un motor eléctrico que no emplea escobillas para realizar el cambio de polaridad en el rotor.
+
+Los motores eléctricos solían tener un colector de delgas o un par de anillos rozantes. Estos sistemas, que producen rozamiento, disminuyen el rendimiento, desprenden calor y ruido, requieren mucho mantenimiento y pueden producir partículas de carbón que manchan el motor de un polvo que, además, puede ser conductor.
+
+\img{images/brushless/brushless}{ Coolers de ordenador desmontados.}
+
+Los primeros motores sin escobillas fueron los motores de corriente alterna asíncronos. Hoy en día, gracias a la electrónica, se muestran muy ventajosos, ya que son más baratos de fabricar, pesan menos y requieren menos mantenimiento, pero su control es mucho más complejo. Esta complejidad prácticamente se ha eliminado con los controladores electrónicos de velocidad ESC (Por sus siglas en inglés \emph{Electronic Speed Control}).
+
+Otros motores sin escobillas, que sólo funcionan con corriente continua son los que se usan en pequeños aparatos eléctricos de baja potencia, como lectores de CD-ROM, ventiladores de ordenador, casetes, etc. Su mecanismo se basa en sustituir la conmutación (cambio de polaridad) mecánica por otra electrónica sin contacto. En este caso, la espira sólo es impulsada cuando el polo es el correcto, y cuando no lo es, el sistema electrónico corta el suministro de corriente. Para detectar la posición de la espira del rotor se utiliza la detección de un campo magnético. Este sistema electrónico, además, puede informar de la velocidad de giro, o si está parado, e incluso cortar la corriente si se detiene para que no se queme. Tienen la desventaja de que no giran al revés al cambiarles la polaridad (+ y -). Para hacer el cambio se deberían cruzar dos conductores del sistema electrónico.
+
+Un sistema algo parecido, para evitar este rozamiento en los anillos, se usa en los alternadores. En este caso no se evita el uso de anillos rozantes, sino que se evita usar uno más robusto y que frenaría mucho el motor. Actualmente, los alternadores tienen el campo magnético inductor en el rotor, que induce el campo magnético al estátor, que a la vez es inducido. Como el campo magnético del inductor necesita mucha menos corriente que la que se va generar en el inducido, se necesitan unos anillos con un rozamiento menor. Esta configuración la usan desde pequeños alternadores de coche hasta los generadores de centrales con potencias del orden del megavatio.
+
+
+\subsection{Partes}
+El motor cuenta con tres enrollados de cable de cobre con conexión estrella, y dependiendo de cada tipo de motor, determinado número de polos para sí mismas. Comúnmente los polos de las bobinas se encuentran en el estátor y a su alrededor un número acorde a las bobinas de pequeños imanes que al energizarse cada una de las bobinas, o mejor dicho, cada par de bobinas hace girar al rotor para generar movimiento mecánico.
+
+\subsection{Funcionamiento}
+La manera de operar de estos motores llega a ser un poco diferente a cualquier otro motor de DC y AC. El principio del funcionamiento de los motores brushless consiste en que, al momento de energizar dos polos de las tres bobinas que contiene, induzca un campo magnético en las mismas para así ser repelido por los imanes en el interior.
+
+Al girar el rotor un paso hacia una dirección, es al mismo tiempo repelido por un imán y atraído por otro. Es ahí cuando se induce Potencial eléctrico en otra terminal del embobinado para soltarse de una de las previamente conectadas. Es ligeramente complicado controlar la velocidad de giro de este tipo de motor ya que es imposible hacer los cambios de conexiones entre las terminales de los embobinados a mano, es por ello que se utiliza un ESC (Controlador Electrónico de Velocidad, por sus siglas en inglés) para poder variar las velocidades de giro por medio de Modulación por ancho de pulsos ya sea suministrado por un microcontrolador o por un transmisor de control remoto.
+
+\subsection{ESC (Electronic Speed Controller)}
+Es el dispositivo electrónico capaz de controlar el motor brushless permitiendo hacer el intercambio de conexiones o polaridades en los embobinados. Se controla por medio de pulsos o PWM.
+
+El ESC cuenta con una serie de componentes electrónicos que en conjunto son capaces de hacer los movimientos necesarios para hacer funcionar el motor. Dependiendo del motor y de la potencia del mismo se pueden utilizar distintos tipos de controladores. Los más comunes y comerciales son los de Circuitos integrados que puede hacerlo funcionar con una potencia baja pero con una facilidad de instalación y funcionamiento.
+
+Básicamente están compuestos por Transistores encargados de la etapa de potencia y a su vez sirven como interruptores de dos vías que permiten alternar la polaridad. La otra parte importante es la de los Half-Bridge Drivers que son los que reciben las respuestas de los pulsos para hacer el cambio de polaridad en los transistores. La parte más importante en este tipo de controladores es la del controlador, ya que sin esta parte seria imposible hacer el movimiento del motor, no se puede hacer solamente mecánicamente, necesita una manipulación electrónica.
+
+
+\subsection{Ventajas, desventajas y aplicaciones}
+Los motores tiene la característica de que no emplean escobillas en la conmutación para la transferencia de energía; en este caso, la conmutación se realiza electrónicamente. Esta propiedad elimina el gran problema que poseen los motores eléctricos convencionales con escobillas, los cuales producen rozamiento, disminuyen el rendimiento, desprenden calor, son ruidosos y requieren una sustitución periódica y, por lo tanto, un mayor mantenimiento.
+
+Los motores Brushless tienen muchas ventajas frente a los motores DC con escobillas y frente a los motores de inducción. Algunas de estas son:
+\begin{itemize}
+\item Mayor relación velocidad-par motor.
+
+\item Mayor respuesta dinámica.
+
+\item Mayor eficiencia.
+
+\item Mayor vida útil.
+
+\item Menos ruido.
+
+\item Mayor rango de velocidad.
+
+\end{itemize}
+\img{images/brushless/dron}{Dron impulsado con motores brushless}
+Además, la relación par motor-tamaño es mucho mayor, lo que implica que se pueden emplear en aplicaciones donde se trabaje con un espacio reducido.
+
+
+El principal impedimento en la implementación de este tipo de motor es el coste del mismo ya que tiende a ser más elevado que cualquier otro motor; el otro es el control del mismo, ya que como se mencionó, es imposible controlarlo manualmente por lo que necesita la ayuda electrónica para funcionar.
+
+
+Actualmente, los motores Brushless se emplean en sectores industriales tales como: Automóvil, Aeroespacial, Consumo, Médico, Equipos de automatización e instrumentación.
+
+
+
+\subsection{Nomenclatura}
+
+Cada motor tiene una numeración correspondiente que abarca sus características esenciales, y que define de manera clara su comportamiento y capacidades. Ej: XXXX-XXXXKV.
+
+Las primeras cuatro cifras se leen de dos en dos y corresponden a la longitud del motor y a su altura, respectivamente. Las cuatro siguientes cifras hacen mención al coeficiente KV, que es una medida de la característica física que define la calidad del motor.
+
+El valor expresado en KV se refiere a la constante de revoluciones del motor, en resumen el número de RPM Revolución por minuto que será capaz de ofrecer el motor cuando se le aplique 1V (un voltio) de tensión. No se debe confundir los KV del motor con kV (Prefijo "kilo" que expresa la multiplicación por 1000 por la unidad).
+
+En los motores con KV bajos indica que el número de espiras es mayor, por lo tanto el hilo de cobre es más fino. El total de amperios que circulan por el motor es inferior a otros con KV más alto. Se utilizan en drones que necesitan mucho par y poca velocidad.
+
+En los motores con KV altos indica que el número de espiras es menor, por lo tanto el hilo de cobre es más grueso. El total de amperios que circulan por el motor es superior a otros con KV más bajo. Se utilizan en drones de carreras, aparatos que necesitan poco par y mucha velocidad.
+
+\actividad{Leer,contestar e investigar.}
+\begin{enumerate}
+\item ¿Qué es un motor eléctrico sin escobillas?
+\item ¿Cuáles son las desventajas de los motores eléctricos con escobillas?
+\item ¿Cuál es la función de un controlador electrónico de velocidad (ESC) en un motor brushless?
+\item ¿Cómo se realiza la conmutación en un motor brushless?
+\item ¿Qué ventajas ofrecen los motores brushless en comparación con los motores de corriente continua y los motores de inducción?
+\item ¿Cuál es la ventaja principal de los motores brushless en términos de relación par motor-tamaño?
+\item ¿Cuál es la función del coeficiente KV en la numeración de un motor brushless?
+\item ¿Qué indica el valor de KV en un motor brushless?
+\item ¿Cuáles son las aplicaciones industriales de los motores brushless?
+\item ¿Cuál es la diferencia entre los motores brushless con KV alto y KV bajo en términos de espiras y rendimiento?
+\item ¿Cuales son las principales características de un motor brushless?
+    \item En base al siguiente video explicar el funcionamiento de el motor brushless.
+    \video{https://www.youtube.com/watch?v=NnUiAgUundw}{Funcionamiento del motor sin escobillas}
+\end{enumerate}
+\end{document}s

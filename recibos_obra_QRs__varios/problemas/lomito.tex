@@ -1,0 +1,53 @@
+\documentclass[a4paper]{report}
+\usepackage{tikz,siunitx,amsmath}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=2]
+\coordinate (O) at (0,0);
+\coordinate (A) at (0,5);
+\coordinate (B) at (5,5);
+\coordinate (C) at (5,0);
+\coordinate (D) at (2.5+1.05,2.5-1.05);
+\coordinate (E) at (2.5-1.05,2.5+1.05);
+\draw (O)--(A);
+\draw (A)--(B);
+\draw (B)--(C);
+\draw (O)--(C);
+\draw (O)--(B);
+\draw (D)--(C);
+\draw (D) circle (1.45);
+\draw (E) circle (1.45);
+
+
+\end{tikzpicture}
+
+\end{center}
+\vspace{1cm}
+
+$\alpha=\ang{180}-\ang{50}-\ang{30}=\ang{40}$
+
+$\beta=\ang{180}-\ang{50}-\ang{60}-\ang{20}=\ang{50}$
+
+$\theta= \ang{180}-\ang{20}-\ang{60}-\ang{50}-\ang{30}=\ang{20}$
+
+$\gamma=\ang{180}-\ang{60}-\ang{50}=\ang{70}$
+
+$\omega=\frac{(360-2\gamma)}{2}=\ang{110}$
+
+\begin{cases}
+
+$\ang{180}=x+\gamma +y =0$ \\
+
+$\ang{180}=\ang{30}+\alpha+x +y =0$
+\end{cases}
+
+$y=\ang{180}-\gamma-x=\ang{110}-x$
+
+$\ang{180}-\ang{30}-\ang{40}=x+110-x$
+
+$\ang{110}=x+110-x$
+
+\end{document}
+

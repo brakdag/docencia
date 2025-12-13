@@ -1,0 +1,204 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\setcounter{chapter}{11}
+\section{Pérdidas en Motores.}
+\begin{center}
+\img{images/09/placamotor.jpg}{Placa características de motor}
+\end{center}
+\info{¿Qué son las pérdidas?}{Las pérdidas de los motores eléctricos se producen en las láminas del estator, las láminas del rotor y los devanados, pero también en los imanes permanentes. Cuanto menores sean las pérdidas del motor eléctrico, mayor será su eficiencia, por supuesto.}
+
+\section{Calculo de pérdidas}
+\subsection{Pérdidas en el estator}
+
+\subsubsection{Potencia eléctrica en la entrada del estator.}
+
+\begin{equation}
+    P= m \cdot V \cdot I \cos(\varphi)
+\end{equation}
+
+siendo:
+
+$P:$ Potencia de entrada en el estator (potencia electrica absorvida de la red).
+
+$m:$ número de fases del estator.
+
+$V:$ Tensión por fase del estator.
+
+$I:$ Corriente del estator por fase.
+
+$\cos(\varphi):$ f.d.p del motor ( f.d.p. del estator);
+
+\subsubsection{Pérdidas en el cobre del estator ($P_{Cu}$)}
+
+\begin{equation}
+    P_{Cu}= m \cdot R \cdot I^2
+\end{equation}
+
+\subsubsection{Pérdidas en el estator.}
+
+\begin{equation}
+    P_p= P_{Cu} + P_{Fe}
+\end{equation}
+
+
+\subsection{Pérdidas en el hierro del estator}
+
+\begin{equation}
+    P_{Fe}=m \cdot E \cdot I_{Fe}
+\end{equation}
+
+$I_{Fe}:$ Corriente de pérdidas en el hierro.
+
+\subsection{Potencia que atraviesa el entrehierro}
+
+\begin{equation}
+P_a = P- P_p = P-P_{Cu} - P_{Fe}
+\end{equation}
+ siendo
+
+$P:$ Potencia de entrada al estator.
+
+$P_p:$ Pérdidas en el estator.
+
+\subsection{Pérdidas en el rotor}
+\subsubsection{Pérdidas en el cobre del rotor}
+
+\begin{equation}
+    P_{Cu2}= m \cdot R I^2
+\end{equation}
+
+\subsection{Potencia mecánica interna del motor}
+
+\begin{equation}
+    P_m=P_a-P_{Cu2}
+\end{equation}
+
+\subsection{Expresión de la potencia mecánica interna del motor}
+
+\begin{equation}
+    P_m=m \cdot R_2 (1-s) I_2^2
+\end{equation}
+
+\subsection{Potencia mecánica útil de motor}
+\begin{equation}
+P_u=P_i-P_m    
+\end{equation}
+
+\subsection{Rendimiento del motor}
+\begin{equation}
+    \eta = \dfrac{P_u}{P}=\dfrac{P_u}{P_u+P_m+P_{cu_2}+P_{Fe}+P_{Cu_1}}
+\end{equation}
+
+\actividad{Problemas}
+\begin{enumerate}
+    \item La potencia absorbida por un motor asíncorno trifásico de 4 polos, 50 Hz, es de 476kW cuando gira a 1435 R.P.M. Las pérdidas totales en el estator son de 265W y las de rozamiento y ventilación son de 300W. 
+    Calcular
+    \begin{enumerate}
+        \item el deslizamiento
+        \item las pérdidas en el rotor
+        \item potencia útil en el árbol del motor
+        \item rendimiento.
+    \end{enumerate}
+    \item Un motor de inducción trifásico de 8 polos, 1CV, 380V gira a 72R.P.M a plena carga. Si el rendimiento y el f.d.p. a esta carga esd e 83\% y 0,75 respectivamente. Calcular
+    \begin{enumerate}
+        \item velocidad de sincronismo del campo giratorio.
+        \item deslizamiento a plena carga;
+        \item corriente de línea
+        \par en el árbol de la máquina.
+    \end{enumerate}
+    \item Un motor asincrono trifásico de 4 polos, conectado en estrella se alimenta por una red de 380V, 50Hz. La impedancia del estátor es igual a $z=0,1 +j0,5\Omega$ y la del rotor en reposo reducida al estator vale $z=0,1+j0,3\Omega/fase$ Calcular
+    \begin{enumerate}
+        \item intensidad absorbida en el arranque.
+        \item corrente a plena carga, si el deslizamiento es de 4\%.
+        \item potencia y par nominal si se desprecian las pérdidas mecánicas.
+        \item rendimiento en el caso anterior si las pérdidas en el hierro son iguales a 1200W.
+    \end{enumerate}
+\end{enumerate}
+
+\newpage
+\actividad{Problemas}
+\begin{enumerate}
+\pagestyle{empty}
+\setcounter{enumi}{3} 
+    \item Un motor de inducción trifásico de 6 polos, 60 Hz, absorbe una potencia de 200 kW cuando gira a 1180 R.P.M. Las pérdidas en el estator son de 180 W y las pérdidas por fricción son de 250 W. Calcular:
+    \begin{enumerate}
+        \item el deslizamiento,
+        \item las pérdidas en el rotor,
+        \item la potencia útil en el eje del motor,
+        \item el rendimiento.
+    \end{enumerate}
+    
+    \item Un motor asincrónico de 10 polos, 1.5 CV, 440 V, opera a 58 R.P.M. a plena carga. El rendimiento es del 85\% y el factor de potencia es de 0.78. Calcular:
+    \begin{enumerate}
+        \item la velocidad sincrónica,
+        \item el deslizamiento a plena carga,
+        \item la corriente de línea,
+        \item la potencia entregada en el eje del motor.
+    \end{enumerate}
+
+    \item Un motor de inducción trifásico de 4 polos, 50 Hz, conectado en triángulo a una red de 400 V tiene una impedancia del estator de $z = 0.12 + j0.6 \Omega$. La impedancia del rotor en reposo es $z = 0.15 + j0.35 \Omega$. Calcular:
+    \begin{enumerate}
+        \item la corriente absorbida en el arranque,
+        \item la corriente a plena carga con un deslizamiento del 3\%,
+        \item el par nominal suponiendo despreciables las pérdidas mecánicas,
+        \item el rendimiento si las pérdidas en el hierro son de 1500 W.
+    \end{enumerate}
+    
+    \item Un motor asíncrono de 8 polos, 1 CV, 380 V, tiene un deslizamiento de 2\% cuando gira a plena carga. Las pérdidas totales en el estator y rotor son de 500 W. Calcular:
+    \begin{enumerate}
+        \item la velocidad sincrónica,
+        \item la velocidad del rotor a plena carga,
+        \item la potencia en el eje del motor,
+        \item el rendimiento.
+    \end{enumerate}
+    
+    \item Un motor de inducción de 6 polos, 60 Hz, con una potencia absorbida de 100 kW, gira a 1150 R.P.M. Las pérdidas en el estator son de 300 W y las pérdidas mecánicas son de 350 W. Calcular:
+    \begin{enumerate}
+        \item el deslizamiento,
+        \item las pérdidas en el rotor,
+        \item la potencia útil en el eje del motor,
+        \item el rendimiento.
+    \end{enumerate}
+    
+    \item Un motor asincrónico trifásico de 10 polos, 2 CV, 400 V, conectado en estrella, gira a 68 R.P.M. El rendimiento a plena carga es del 80\% y el factor de potencia es de 0.8. Calcular:
+    \begin{enumerate}
+        \item la velocidad sincrónica,
+        \item el deslizamiento a plena carga,
+        \item la corriente de línea,
+        \item la potencia entregada en el eje del motor.
+    \end{enumerate}
+    
+    \item Un motor de inducción de 4 polos, 380 V, 50 Hz tiene una impedancia del estator de $z = 0.1 + j0.4 \Omega$. La impedancia del rotor en reposo es de $z = 0.12 + j0.3 \Omega$. El deslizamiento a plena carga es del 5\%. Calcular:
+    \begin{enumerate}
+        \item la corriente en el arranque,
+        \item la corriente a plena carga,
+        \item el par nominal si las pérdidas mecánicas son despreciables,
+        \item el rendimiento si las pérdidas en el hierro son de 1000 W.
+    \end{enumerate}
+    
+    \item Un motor asincrónico trifásico de 6 polos, conectado en estrella, con una potencia de 150 kW, gira a 1200 R.P.M. Las pérdidas en el rotor son de 500 W y las pérdidas en el estator son de 400 W. Calcular:
+    \begin{enumerate}
+        \item el deslizamiento,
+        \item la potencia útil en el eje del motor,
+        \item el rendimiento,
+        \item el par desarrollado.
+    \end{enumerate}
+    
+    \item Un motor de inducción trifásico de 4 polos, 440 V, 60 Hz, conectado en triángulo, tiene una impedancia del estator de $z = 0.08 + j0.5 \Omega$. La impedancia del rotor en reposo es de $z = 0.09 + j0.35 \Omega$. Calcular:
+    \begin{enumerate}
+        \item la corriente absorbida en el arranque,
+        \item la corriente a plena carga con un deslizamiento del 2\%,
+        \item la potencia nominal si las pérdidas mecánicas son despreciables,
+        \item el rendimiento si las pérdidas en el hierro son de 1200 W.
+    \end{enumerate}
+    
+    \item Un motor asincrónico trifásico de 8 polos, 2 CV, 380 V, tiene un deslizamiento de 1.5\% a plena carga. Las pérdidas en el estator y el rotor suman 600 W. Calcular:
+    \begin{enumerate}
+        \item la velocidad sincrónica,
+        \item la velocidad del rotor a plena carga,
+        \item la potencia entregada en el eje del motor,
+        \item el rendimiento.
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}

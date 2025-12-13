@@ -1,0 +1,25 @@
+\usepackage{fancyhdr,geometry,tikz,qrcode}
+\renewcommand{\headrule}{}
+\fancypagestyle{plain}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[CE]{}
+\fancyfoot[CO]{
+\begin{tikzpicture}[remember picture, overlay, shift={(-15.55,-4)},font={\fontfamily{lmss}\selectfont}]
+\draw (2.5,2.5) node {\pgfornament[scale=0.35,symmetry=h]{63}};
+\draw (2.5,18.5) node {\pgfornament[scale=0.35]{63}};
+\draw (27.2,18.5) node {\pgfornament[scale=0.35,symmetry=v]{63}};
+\draw (27.2,2.5) node {\pgfornament[scale=0.35,symmetry=h]{64}};
+\draw (15,12.75) node {\pgfornament[scale=.4,symmetry=h]{88}};
+\foreach \i in {0,1,...,5}
+\draw (6+3.5*\i,1.5) node {\pgfornament[scale=.3]{87}};
+\foreach \i in {0,1,...,5}
+\draw (6+3.5*\i,19.6) node {\pgfornament[scale=.3]{87}};
+\foreach \i in {0,1}
+\draw (2,13.7-\i*6.3) node [rotate=90]{\pgfornament[scale=.43,symmetry=h]{71}};
+\foreach \i in {0,1}
+\draw (27.7,13.7-\i*6.3) node [rotate=90]{\pgfornament[scale=.43]{71}};
+\draw (6,4)--++(4,0);
+\draw (20,4)--++(4,0);
+\end{tikzpicture}
+}

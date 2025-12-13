@@ -1,0 +1,42 @@
+\documentclass[../../main]{subfiles}
+\usepackage{}
+\begin{document}
+
+\begin{tikzpicture}
+%\fill [gray](0,0) circle (6cm);
+%\draw (.8,.5) node {\includesvg[scale=0.43]{../../images/logo2.svg}};
+\draw [line width=1mm](0,0) circle (4.3cm);
+
+
+\foreach \i in {0,5,...,360}{
+    \draw [line width=1mm,fill=olive] (\i:6cm) circle (2.5mm);
+    
+}
+\path [postaction={decoration={
+                    text along path, 
+                    text align=center,
+     text={|\fontsize{38}{38}\selectfont\bfseries\sffamily|LUIS FEDERICO LELOIR}},decorate}] 
+     (-4.6cm,-.8cm) arc (190:-10:4.6cm);
+\path [postaction={decoration={
+                    text along path, 
+                    text align=center,
+     text={|\fontsize{42}{42}\selectfont\bfseries\sffamily|4-063}},decorate}] 
+     (-5.5cm,0) arc (180:360:5.5cm);
+     
+\path [postaction={decoration={
+                    text along path, 
+                    text align= fit to path,
+                    text={ |\fontsize{20}{20}\selectfont\bfseries
+|TÉCNICA ELECTRÓNICA INDUSTRIAL} 
+                    }, decorate}](260:3.2cm) arc (260:-80:3.2cm); 
+\foreach \i in {0,10,...,360}{
+    \fill (\i:4.3cm) circle (2mm);
+}
+%\foreach \i in {240,225,...,190}{
+ %   \draw (\i:5cm) node[rotate=\i+90]{\pgfornament[scale=0.35]{2}};
+%}
+%\foreach \i in {-60,-45,...,-5}{
+ %   \draw (\i:5cm) node[rotate=\i+270]{\pgfornament[scale=0.35,symmetry=h]{2}};
+%}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass[./examen.tex]{subfiles}
+\usepackage[first=1, last=20]{lcg}
+\newcommand{\random}{\rand\arabic{rand}}
+\usepackage{verbatim}
+\newcounter{z}
+\newcommand\y[2]{
+  \loop \ifnum\value{z} < #1
+    #2%
+    \stepcounter{z}%
+  \repeat
+}
+
+\begin{document}
+\begin{comment}
+    
+    \question Responder las siguientes preguntas:
+    \begin{parts}
+    \part[1] ¿Cómo define el flujo magnético y cuáles son sus unidades? 
+    \part[1] ¿Qué son las líneas de fuerzas?. Explique y dibuje.
+    \part[1] ¿Qué son los imanes y que tipo hay?
+    \part[1] ¿Qué es un campo magnético y como se dá en una espira?
+    \end{parts}
+       \end{comment}
+
+
+%\info{Evaluación Electrotécnia II}{Campo magnético, Inducción magnética, permeabilidad magnética,imanes, líneas de campo magnético, flujo magnético, unidades magnéticas}
+\y{31}{
+\begin{center}
+
+\makebox[\textwidth]{Nombre y Apellido:\enspace\hrulefill}
+\end{center}
+\begin{questions}
+   
+    \question Resolver los siguientes problemas:
+     \begin{parts}
+     \part Un solenoide de $l=\random0cm$ de largo y radio de $r=0,\random m$ está formado por $N=\random00$ espiras y lo recorre una intensidad de $I=\random A$.
+        \begin{subparts}
+        \subpart[3] Calcular la intensidad de campo magnético $H$ en el interior del solenoide.
+        \subpart[3] Calcular la inducción magnética $B$ siendo un núcleo de aire $\mu_0=4 \pi x 10^{-7} T\cdot m /A$.
+        \end{subparts}
+    \part[4] Calcular el flujo magnético $\Phi$ de un solenoide de superficie $S=\random cm^2$ siendo la inducción magnética de $B=\random000Gs$.
+    \end{parts}
+\end{questions}
+
+}
+\end{document}

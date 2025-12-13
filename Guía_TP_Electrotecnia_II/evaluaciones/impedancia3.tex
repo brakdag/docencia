@@ -1,0 +1,48 @@
+\documentclass[./examen]{subfiles}
+
+\begin{document}
+\begin{center}
+\makebox[\textwidth]{Recuperatorio Integrador Electrotecnia II Esc 4-124 \emph{Reynaldo Merín} | Nombre y Apellido:\enspace\hrulefill}
+\end{center}
+En los siguientes circuitos, calcular la impedancia equivalente $z_{eq}$ entre $a$ y $b$ si $f=50hz$. (2.5p c/u)
+\begin{center}
+\begin{tabular}{c c}
+ \begin{center}
+        \begin{circuitikz}[scale=0.75]
+           \draw (0,0) node[label={left:a}]{} to[capacitor=$80\mu F$,*-*] (2,0)
+           to[resistor=$20\Omega$,*-*] (4,0) 
+           to[inductor=$16 mH$,*-*] (6,0)node[label={right:b}]{};
+        \end{circuitikz}
+\end{center}    
+&
+\begin{center}
+        \begin{circuitikz}[scale=0.75]
+           \draw (0,0) node[label={left:a}]{} to[capacitor=$80\mu F$,*-*] (3,0)
+           to[resistor=$10\Omega$,*-*] (6,0) --(6,-2) node[label={right:b}]{} 
+           to[inductor=$16mH$,*-*] (3,-2)
+           to[resistor=$10\Omega$,*.*] (0,-2) --(0,0);        
+        \end{circuitikz}
+\end{center}    
+\\
+\begin{center}
+        \begin{circuitikz}[scale=0.75]
+           \draw (0,0) node[label={left:a}]{} to[inductor=$64 mH$,*-*] (3,0)
+           to[resistor=$20\Omega$,*-*] (6,0)  --(6,0)
+           to[capacitor=$159\mu F$,*-*] (3,-2)
+           to[resistor=$20\Omega$,*-*] (0,-4) --(0,0) --(0,-4)
+           to[resistor=$20\Omega$,*-*](6,-4)--(6,0) node[label={above:b}]{} ;
+        \end{circuitikz}
+\end{center}    
+ &
+ \begin{center}
+        \begin{circuitikz}[scale=0.75]
+           \draw (0,0)  to[capacitor=$100\mu F$,*-*] (2,1.5)
+           to[resistor=$10\Omega$,*-*] (4,3) node[label={left:a}]{}
+           to[resistor=$10\Omega$,*-*] (6,4.5)node[label={right:b}]{};
+           \draw (0,0) --(6,0)--(6,4.5);
+        \end{circuitikz}
+\end{center}   
+ \\
+\end{tabular}
+\end{center}
+\end{document}

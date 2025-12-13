@@ -1,0 +1,115 @@
+\documentclass[../main]{subfiles}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,decorations.markings,calc,patterns}
+\begin{document}
+
+\chapter{Uso de Arduino con Servos y Motores Paso a Paso}
+
+\section{Control de Servos y Motores Paso a Paso con Arduino y el Shield DK Electronics V1.0}
+
+\subsection{Introducción a Arduino y el Shield DK Electronics V1.0}
+
+Arduino es una plataforma de prototipado electrónico de código abierto que permite crear proyectos interactivos. El shield DK Electronics V1.0 de Adafruit\footnote{Adafruit: Empresa especializada en la creación de hardware y software de código abierto para proyectos de electrónica y computación física.} es un accesorio que facilita la conexión y control de servos y motores paso a paso.
+
+\info{Descripción del Shield DK Electronics V1.0}{
+El shield DK Electronics V1.0 está diseñado para ser montado directamente sobre un Arduino y permite controlar hasta dos motores paso a paso\footnote{Motor paso a paso: Motor que se mueve en pasos discretos, permitiendo un control preciso de su posición.} o cuatro servos\footnote{Servo: Dispositivo que utiliza un motor para posicionar su eje en un ángulo específico basado en una señal de control.}. Este shield incluye un controlador de motores L293D que maneja la potencia de los motores.
+}
+
+\subsection{Control de un Servo}
+
+Para controlar un servo con Arduino, se utiliza la biblioteca `Servo.h`, que permite enviar señales PWM\footnote{PWM (Pulse Width Modulation): Técnica de modulación de ancho de pulso utilizada para controlar dispositivos electrónicos.} al servo para posicionarlo en el ángulo deseado.
+
+\begin{equation}
+\theta = \dfrac{\text{duty cycle} \times 180}{100}
+\end{equation}
+
+Siendo:
+\begin{itemize}
+    \item $\theta$: Ángulo del servo en grados.
+    \item \text{duty cycle}: Ciclo de trabajo de la señal PWM en \%.
+\end{itemize}
+
+\ejemplo{Ejemplo: Control de un Servo}{Supongamos que queremos posicionar un servo a 90 grados. Utilizaremos la función `write` de la biblioteca `Servo`:
+
+\begin{verbatim}
+#include <Servo.h>
+
+Servo miServo;
+
+void setup() {
+  miServo.attach(9); // Conecta el servo al pin 9
+}
+
+void loop() {
+  miServo.write(90); // Posiciona el servo a 90 grados
+  delay(1000); // Espera 1 segundo
+}
+\end{verbatim}
+}
+
+\subsection{Control de un Motor Paso a Paso}
+
+Para controlar un motor paso a paso con el shield DK Electronics V1.0, se utiliza la biblioteca `Stepper.h`. Este shield permite controlar los motores de manera precisa, especificando el número de pasos a moverse.
+
+\begin{equation}
+N = \dfrac{\text{Grados a mover} \times \text{Pasos por revolución}}{360}
+\end{equation}
+
+Siendo:
+\begin{itemize}
+    \item $N$: Número de pasos.
+    \item \text{Pasos por revolución}: Número de pasos que el motor necesita para completar una revolución completa.
+\end{itemize}
+
+\ejemplo{Ejemplo: Control de un Motor Paso a Paso}{Supongamos que queremos mover un motor paso a paso 90 grados, y que el motor tiene 200 pasos por revolución:
+
+\begin{verbatim}
+#include <Stepper.h>
+
+const int pasosPorRevolucion = 200;
+Stepper miMotor(pasosPorRevolucion, 8, 9, 10, 11);
+
+void setup() {
+  miMotor.setSpeed(60); // Establece la velocidad a 60 RPM
+}
+
+void loop() {
+  miMotor.step(50); // Mueve el motor 50 pasos (90 grados)
+  delay(1000); // Espera 1 segundo
+}
+\end{verbatim}
+}
+
+\section{Cuestionario}
+
+\actividad{Responder el siguiente cuestionario}
+\begin{enumerate}
+    \item ¿Qué es Arduino y para qué se utiliza?
+    \item ¿Qué es un shield en el contexto de Arduino?
+    \item Explica el funcionamiento de un servo.
+    \item ¿Cómo se controla un servo con Arduino?
+    \item Define qué es un motor paso a paso y sus aplicaciones.
+    \item ¿Qué ventajas ofrece el uso del shield DK Electronics V1.0?
+    \item ¿Qué es una señal PWM y cómo se utiliza en el control de servos?
+    \item ¿Cómo se calcula el número de pasos para mover un motor paso a paso?
+    \item ¿Qué es el ciclo de trabajo en una señal PWM?
+    \item ¿Qué función tiene el controlador de motores L293D en el shield DK Electronics?
+\end{enumerate}
+
+\section{Problemas}
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+    \item Calcular el número de pasos necesarios para mover un motor paso a paso 45 grados, si el motor tiene 200 pasos por revolución.
+    \item Determinar el ciclo de trabajo necesario para posicionar un servo a 135 grados.
+    \item Si un motor paso a paso tiene 400 pasos por revolución, ¿cuántos pasos se necesitan para moverlo 180 grados?
+    \item Controlar un servo a 60 grados utilizando la biblioteca `Servo.h`. ¿Cuál es el código necesario?
+    \item Si el ciclo de trabajo de una señal PWM es 50\%, ¿a qué ángulo se posicionará el servo?
+    \item Calcular el número de pasos para mover un motor paso a paso 270 grados, con 200 pasos por revolución.
+    \item ¿Cuál es la velocidad en RPM necesaria para mover un motor paso a paso 100 pasos en 2 segundos?
+    \item Determinar el número de pasos para mover un motor paso a paso 360 grados, con 400 pasos por revolución.
+    \item Si un servo se posiciona a 90 grados con un ciclo de trabajo del 50\%, ¿qué ciclo de trabajo se necesita para 45 grados?
+    \item Escribe un programa en Arduino para mover un motor paso a paso 180 grados a una velocidad de 30 RPM.
+\end{enumerate}
+
+\end{document}

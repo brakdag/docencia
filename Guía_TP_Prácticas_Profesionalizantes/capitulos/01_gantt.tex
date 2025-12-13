@@ -1,0 +1,133 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Diagrama de Gantt}
+\img{images/gantt.jpg}{El diagrama de Gantt es una herramienta gráfica cuyo objetivo es exponer el tiempo de dedicación previsto para diferentes tareas o actividades a lo largo de un tiempo total determinado. }
+
+\info{
+Contenido}{
+Diagrama de Gantt
+}
+
+
+\section{Diagrama de Gantt}
+Un diagrama de Gantt es una herramienta útil para planificar proyectos. Al proporcionarte una vista general de las tareas programadas, todas las partes implicadas sabrán qué tareas tienen que completarse y en qué fecha.
+
+Un diagrama de Gantt te muestra:
+\begin{enumerate}
+    \item La fecha de inicio y finalización de un proyecto
+\item Qué tareas hay dentro del proyecto
+\item Quién está trabajando en cada tarea
+\item La fecha programada de inicio y finalización de las tareas
+\item Una estimación de cuánto llevará cada tarea
+\item Cómo se superponen las tareas y/o si hay una relación entre ellas
+\end{enumerate}
+\section{Componentes de un diagrama de Gantt}
+
+Normalmente, un diagrama de Gantt contiene los siguientes elementos:
+\begin{enumerate}
+    \item Fechas: las fechas de inicio y finalización permiten que los gestores de proyecto tengan una visión de cuándo empezará y terminará la totalidad del proyecto.
+\item Tareas: los proyectos consisten en una serie de subtareas. Con un diagrama de Gantt, podrás hacer un seguimiento de estas subtareas para que ninguna sufra retrasos o se quede olvidada.
+\item Plazos de tiempo previstos: el diagrama muestra cuándo debe llevarse a cabo cada tarea. Te ayudará a garantizar que cada subtarea se completará según el programa y que todo el proyecto se terminará a tiempo.
+\item Tareas interdependientes: algunas tareas se pueden llevar a cabo en cualquier momento, mientras que otras se deben completar antes o después de que empiece o termine otra tarea. Estas tareas que dependen de otras se pueden indicar en un diagrama de Gantt.
+\item Progreso: el diagrama te muestra exactamente cómo se está desarrollando tu proyecto ya que te ofrece una representación de las tareas que ya se han completado. Al indicar la fecha actual, obtendrás una vista general de cuánto queda por hacer y verás si todo procede como estaba planeado para completar el proyecto a tiempo.
+\end{enumerate}
+
+
+\actividad{Contestar las siguientes preguntas}
+\begin{enumerate}
+\item ¿Qué es un diagrama de Gantt?
+\item ¿Qué es un diagrama de PERT?
+\item Un proyecto industrial presenta las siguientes actividades:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|} \hline
+         Actividad & Duración & Precedente  \\ \hline \hline 
+         A & 2 & -\\
+         B & 3 & -\\
+         C & 5 & A\\
+     D & 2 & B\\
+     E & 1 & C,D\\
+     F & 3 & E\\
+     G & 2 & F\\
+     H & 1 & F\\
+     I & 4 & G\\
+     J & 2 & H,I\\ \hline
+    \end{tabular}
+    \caption{Tabla de precedencia de tareas}
+    \label{tab:my_label}
+\end{table}
+\begin{enumerate}
+    \item Realiza el gráfico PERT del proyecto.
+    \item Calcula los tiempos early y last y el camino crítico.
+    \item Representa la gráfica Gantt. 
+\end{enumerate}
+
+\item La empresa \emph{Clima Cuyo S.R.L.} se dedica a la climatización de edificios. En la actualidad, tiene un contrato para
+climatizar un local de oficinas mediante el sistema de bomba de calor. Cada aparato consta de un motor que se instala en el
+exterior del edificio y de una o más consolas en las dependencias, y que deben ir conectados a la red eléctrica. Esta tarea
+supone llevar a cabo las actividades siguientes:
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|} \hline
+Actividad & Descripción & Duración(horas) \\ \hline \hline
+A & Estudio, determinación de la potencia, localización….& 4\\
+B &Instalación de nuevas conducciones de cable en tubos de PVC& 8\\
+C &Instalación de cables eléctricos nuevos& 5\\
+D &Instalación de interruptores y enchufes& 4\\
+E &Instalación de consolas interiores& 9\\
+F &Obras para fijar soportes de motores exteriores &7\\
+G &Instalación de motores exteriores &5\\
+H &Conexión de motores y consolas & 0,5\\
+I &Pruebas y verificación del sistema & 1,5\\ \hline
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
+
+La actividad A es previa a todas las demás. Las actividades B, C y D son correlativas.
+
+
+Las actividades F y G también son correlativas.
+
+La actividad H se hará después de A, B, C , D, F y G. La actividad es la última.
+\begin{enumerate}
+   \item Elabora el gráfico de GANTT
+\item Elabora el gráfico del PERT.\item Indica las actividades del camino crítico y el tiempo mínimo y máximo para cada nudo. 
+
+\end{enumerate}
+
+    \item Industrias SKIP desarrolla un proyecto para lanzar al mercado su suavizante SUAVE. Para llevarlo a la
+práctica debe instalar una nueva maquinaria y efectuar una serie de actividades, que se muestran en la tabla, así como sus
+prioridades. 
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|l|c|} \hline  
+Actividad & Descripción &Duración(horas) \\ \hline \hline
+A & Derribo de tabiques &12\\
+B &Construcción de nuevas divisorias &20\\
+C &Nueva instalación eléctrica máquina 1& 10\\
+D &Instalación máquina 1 & 24\\
+E &Nueva instalación eléctrica máquina 2& 15\\
+F &Fijación soportes especiales máquina 2& 6\\
+G &Instalación máquina 2& 36\\
+H &Pintura de los nuevos tabiques& 8\\
+I &Actividades de prueba del sistema& 5\\ \hline
+ \end{tabular}
+\end{table}
+
+A es lan primera que debe efectuarse, seguida de B.
+A continuación se realizarán:
+
+- C y D, que han de ser correlativas.
+
+- E, F y G respetando esta secuencia.
+
+Cuando estén todas finalizadas se emprenderá H, seguida de I, última actividad del proceso.
+Realiza el gráfico PERT e indica sus elementos más importantes. 
+
+\end{enumerate}
+
+
+
+
+\end{document}

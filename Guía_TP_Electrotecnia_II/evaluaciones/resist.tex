@@ -1,0 +1,17 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{subfiles,clipboard,dashrule}
+\usepackage[margin=1cm]{geometry}
+\newclipboard{eval}
+
+\begin{document}
+
+\Copy{eval}{Electrotecnia II / Nombre Apellido:
+\hdashrule{10cm}{0.5pt}{2mm}
+\noindent\makebox[\linewidth]{}
+\subfile{./evaluacion2.tex}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.1pt}}
+}
+
+\Paste{eval}
+
+\end{document}

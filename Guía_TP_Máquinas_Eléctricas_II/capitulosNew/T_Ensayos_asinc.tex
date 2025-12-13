@@ -1,0 +1,110 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Ensayos Eléctricos en Motores Asincrónicos}
+
+\section{Introducción a los Motores Asincrónicos}
+
+Los motores asincrónicos, también conocidos como motores de inducción, son ampliamente utilizados en aplicaciones industriales debido a su robustez y simplicidad constructiva. Funcionan basados en el principio de inducción electromagnética, donde el campo magnético giratorio generado en el estator induce una corriente en el rotor, produciendo así el par motor.
+
+\section{Ensayos Eléctricos Característicos}
+
+Para comprender el funcionamiento y la eficiencia de un motor asincrónico, se realizan varios ensayos eléctricos. Estos ensayos permiten analizar distintos fenómenos energéticos que ocurren durante el funcionamiento del motor. A continuación, se describen algunos ensayos importantes.
+
+\subsection{Ensayo de Vacío}
+
+El ensayo de vacío se realiza con el motor desconectado de cualquier carga mecánica y a su tensión nominal. Este ensayo permite determinar las pérdidas en el núcleo y las pérdidas por fricción y ventilación. La potencia absorbida en este ensayo se utiliza para calcular el rendimiento del motor.
+
+\info{Fórmula de Potencia de Entrada en Ensayo de Vacío}{
+La potencia de entrada \( P_0 \) en el ensayo de vacío se calcula como:
+\begin{equation}
+P_0 = V \cdot I_0 \cdot \cos(\phi_0)
+\end{equation}
+Donde:
+\begin{itemize}
+    \item $V$: Voltaje aplicado [V]
+    \item $I_0$: Corriente de vacío [A]
+    \item $\cos(\phi_0)$: Factor de potencia en vacío
+\end{itemize}
+}
+
+\subsection{Ensayo de Carga}
+
+El ensayo de carga se realiza conectando el motor a una carga mecánica conocida. Este ensayo permite evaluar el comportamiento del motor bajo condiciones de operación normales y determinar el par motor y la eficiencia a diferentes niveles de carga.
+
+\info{Fórmula del Par Motor}{
+El par motor \( T \) se calcula utilizando la siguiente fórmula:
+\begin{equation}
+T = \frac{P_{out}}{\omega}
+\end{equation}
+Donde:
+\begin{itemize}
+    \item $P_{out}$: Potencia de salida [W]
+    \item $\omega$: Velocidad angular [rad/s]
+\end{itemize}
+}
+
+\subsection{Ensayo de Rotor Bloqueado}
+
+En el ensayo de rotor bloqueado, el rotor se inmoviliza y se aplica un voltaje reducido. Este ensayo permite determinar las pérdidas en el rotor y el circuito equivalente del motor. Es útil para calcular la resistencia y reactancia del rotor.
+
+\info{Fórmula de la Resistencia del Rotor}{
+La resistencia del rotor \( R_r \) se determina mediante:
+\begin{equation}
+R_r = \frac{V_{bl}}{I_{bl}}
+\end{equation}
+Donde:
+\begin{itemize}
+    \item $V_{bl}$: Voltaje aplicado en rotor bloqueado [V]
+    \item $I_{bl}$: Corriente en rotor bloqueado [A]
+\end{itemize}
+}
+
+\section{Ejemplo de Cálculo}
+
+\ejemplo{Ejemplo de Ensayo de Vacío}{
+Calcular la potencia de entrada en un ensayo de vacío donde se aplica un voltaje de 230V, la corriente de vacío es 2A y el factor de potencia en vacío es 0.1.
+
+Datos:
+\begin{itemize}
+    \item $V = 230 \, V$
+    \item $I_0 = 2 \, A$
+    \item $\cos(\phi_0) = 0.1$
+\end{itemize}
+
+\begin{equation}
+P_0 = 230 \, V \cdot 2 \, A \cdot 0.1 = 46 \, W
+\end{equation}
+}
+
+\actividad{Responder el siguiente cuestionario}
+\begin{enumerate}
+    \item ¿Qué es un motor asincrónico y en qué principio se basa su funcionamiento?
+    \item ¿Qué tipo de pérdidas se determinan en el ensayo de vacío?
+    \item ¿Cómo se calcula la potencia de entrada en el ensayo de vacío?
+    \item ¿Cuál es el propósito del ensayo de carga en un motor asincrónico?
+    \item ¿Qué información proporciona el ensayo de rotor bloqueado?
+    \item ¿Qué significa el factor de potencia en el contexto de motores eléctricos?
+    \item ¿Por qué es importante conocer la resistencia del rotor?
+    \item ¿Qué parámetros se miden en el ensayo de vacío?
+    \item ¿Cómo se relaciona la velocidad angular con el par motor?
+    \item ¿Qué factores influyen en la eficiencia de un motor asincrónico?
+\end{enumerate}
+
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+    \item Calcular la potencia de entrada en un ensayo de vacío para un motor al que se le aplica un voltaje de 220V, la corriente de vacío es de 1.5A y el factor de potencia es 0.12.
+    \item Determinar el par motor generado si la potencia de salida es de 500W y la velocidad angular es de 157 rad/s.
+    \item Hallar la resistencia del rotor si en un ensayo de rotor bloqueado se aplica un voltaje de 50V y la corriente medida es de 10A.
+    \item Calcular la corriente de vacío si se sabe que la potencia de entrada es de 100W, el voltaje aplicado es 230V y el factor de potencia es 0.1.
+    \item Determinar la velocidad angular de un motor si se sabe que el par motor es de 20Nm y la potencia de salida es de 1000W.
+    \item Calcular la corriente en rotor bloqueado si la resistencia del rotor es 5Ω y el voltaje aplicado es de 25V.
+    \item Hallar el voltaje aplicado en un ensayo de vacío si la potencia de entrada es de 92W, la corriente de vacío es de 1A y el factor de potencia es 0.4.
+    \item Determinar el factor de potencia en vacío si la potencia de entrada es de 36W, el voltaje aplicado es 120V y la corriente de vacío es de 1.5A.
+    \item Calcular la potencia de salida si el par motor es de 30Nm y la velocidad angular es de 314 rad/s.
+    \item Hallar la resistencia del rotor si se sabe que la corriente en rotor bloqueado es de 8A y el voltaje aplicado es de 40V.
+\end{enumerate}
+
+\end{document}
+

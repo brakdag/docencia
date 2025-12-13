@@ -1,0 +1,107 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{eso-pic}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\sisetup{locale=ES, per-mode=symbol, exponent-product=\cdot}
+
+\geometry{top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Esc. 4-124 Reynaldo Merín}
+\lhead{Electrotecnia II}
+\cfoot{\thepage}
+
+\AddToShipoutPicture*{
+    \put(150,550){\rotatebox{45}{\textcolor[gray]{0.95}{EXAMEN ORIGINAL NO DIGITALIZAR}}}
+}
+
+\begin{document}
+
+\begin{center}
+    \Large \textbf{Evaluación A – Electrotecnia II (Capacitores)} \\
+    \normalsize Duración: 60 minutos \\
+    Alumno/a: \underline{\hspace{6cm}} \hspace{0.5cm} Fecha: \underline{\hspace{2cm}}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{Constantes y fórmulas útiles:} \(\varepsilon_0 = 8{,}85\times 10^{-12}\,\si{F/m}\), \quad
+\(C=\dfrac{\varepsilon S}{d}\), \quad \(Q=CV\), \quad \(U=\dfrac{1}{2}\dfrac{Q^2}{C}=\dfrac{1}{2}CV^2\).
+
+\vspace{0.2cm}
+
+\begin{multicols}{2}
+
+\section*{Problemas}
+
+\begin{enumerate}
+\item Calcular las \textbf{permitividades absolutas} \(\varepsilon\) para:
+\begin{itemize}\item Nafta \((\varepsilon_r=2{,}35)\),
+\item Aceite \((\varepsilon_r=2{,}8)\),
+\item Agua \((\varepsilon_r=80{,}5)\).
+\end{itemize}
+Indique los resultados en \(\si{F/m}\).
+
+\item Repetir el ejercicio anterior para: \textit{vidrio} \((\varepsilon_r=4{,}7)\), \textit{mica} \((\varepsilon_r=5{,}6)\) y \textit{glicerina} \((\varepsilon_r=45)\).
+
+\item Un capacitor plano tiene placas de \(\,S=1{,}0\,\si{m^2}\) separadas \(\,d=0{,}01\,\si{mm}\). El dieléctrico es \textit{mica}. Calcular \(C\).
+
+\item Un capacitor de placas de \(10\,\si{cm}\times 10\,\si{cm}\) en \textit{vacío} y separación \(d=0{,}10\,\si{mm}\). Hallar \(C\).
+
+\item Un capacitor con \(S=0{,}10\,\si{m^2}\) y \(d=0{,}001\,\si{mm}\). 
+\begin{enumerate}
+\item Calcular \(C\) en \textit{vacío}.
+\item ¿En cuánto se modifica \(C\) si el dieléctrico es \textit{vidrio}?
+\end{enumerate}
+
+\item Calcular la \textbf{energía almacenada} por un capacitor de \(C=10\,\si{\micro F}\) cargado con \(Q=2\,\si{C}\).
+
+\item Un capacitor se carga con \(Q=1{,}8\,\si{C}\); posee \(S=1{,}0\,\si{m^2}\), \(d=0{,}001\,\si{mm}\) y dieléctrico \textit{glicerina}. 
+\begin{enumerate}
+\item Calcular \(C\).
+\item Calcular la energía \(U\).
+\end{enumerate}
+
+\item Dos placas de \(S=2{,}0\,\si{m^2}\) separadas \(d=0{,}5\,\si{mm}\) con \(\varepsilon=8{,}85\times 10^{-12}\,\si{F/m}\). Hallar \(C\).
+
+\item Un capacitor plano tiene \(C=100\,\si{pF}\) y \(d=0{,}10\,\si{mm}\). Si \(\varepsilon=5{,}0\times 10^{-11}\,\si{F/m}\), determinar el área \(S\).
+
+\item Un estudiante mide \(S=0{,}010\,\si{m^2}\), \(d=0{,}20\,\si{mm}\) y \(C=4{,}425\,\si{pF}\). Hallar \(\varepsilon\) del dieléctrico.
+
+\item Dos placas de \(500\,\si{cm^2}\) separadas \(0{,}05\,\si{mm}\) con \(\varepsilon=7{,}0\times 10^{-12}\,\si{F/m}\). Calcular \(C\).
+
+\item Placas cuadradas de lado \(0{,}030\,\si{m}\) separadas \(0{,}01\,\si{cm}\). Si \(C=25\,\si{pF}\), hallar \(\varepsilon\).
+
+\item Un capacitor tiene \(C=500\,\si{pF}\), \(S=0{,}040\,\si{m^2}\), \(d=0{,}20\,\si{mm}\). Determinar \(\varepsilon\).
+
+\item Placas de \(S=0{,}50\,\si{m^2}\) separadas \(d=1{,}0\,\si{mm}\) y \(C=22{,}125\,\si{pF}\). Calcular \(\varepsilon\).
+
+\item \textbf{Carga y tensión:} Responder de forma numérica.
+\begin{enumerate}
+\item \(C=200\,\si{pF}\), \(V=100\,\si{V}\) \(\rightarrow\) hallar \(Q\).
+\item \(C=2\,\si{\micro F}\), \(V=220\,\si{V}\) \(\rightarrow\) hallar \(Q\).
+\item \(Q=0{,}25\,\si{C}\), \(V=25\,\si{V}\) \(\rightarrow\) hallar \(C\).
+\item \(C=100\,\si{nF}\), \(V=10\,\si{V}\) \(\rightarrow\) hallar \(Q\).
+\item \(Q=0{,}20\,\si{C}\), \(V=400\,\si{V}\) \(\rightarrow\) hallar \(C\).
+\end{enumerate}
+
+\item \textbf{Relación entre permitividades:}
+\begin{enumerate}
+\item Dado \(\varepsilon_r=5\) y \(\varepsilon_0\) conocido, calcular \(\varepsilon\).
+\item Dada \(\varepsilon=2{,}655\times 10^{-11}\,\si{F/m}\), hallar \(\varepsilon_r\).
+\end{enumerate}
+
+\end{enumerate}
+
+\end{multicols}
+
+\end{document}

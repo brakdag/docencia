@@ -1,0 +1,72 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\setcounter{chapter}{5}
+\chapter{Motor Brushless}
+\img{images/motor_brushless.jpg}{Motor Brushless}
+\section{Introducción al Motor Brushless}
+
+\subsection{Teoría y funcionamiento de los Motores Brushless}
+
+Los motores brushless, o sin escobillas, son un tipo de motor eléctrico que se ha vuelto muy popular en diversas aplicaciones debido a su eficiencia, durabilidad y bajo mantenimiento. A diferencia de los motores con escobillas, los brushless no tienen contacto físico entre el rotor y el estator para la conmutación, lo que reduce significativamente el desgaste y aumenta la vida útil del motor.
+
+
+En un motor brushless, el rotor es un imán permanente y el estator está compuesto por bobinas que se activan en secuencia mediante un controlador electrónico. Este controlador envía corrientes a las bobinas de manera que crean un campo magnético giratorio que interactúa con el campo magnético del rotor, haciendo que este gire.
+\info{Principio de funcionamiento}{
+La relación básica entre el voltaje $V$, la resistencia $R$, la inductancia $L$, la corriente $I$ y la velocidad angular $\omega$ en un motor brushless puede describirse con las siguientes fórmulas:
+\begin{equation}
+V = I \cdot R + L \cdot \frac{dI}{dt} + k_e \cdot \omega
+\end{equation}
+\begin{equation}
+T = k_t \cdot I
+\end{equation}
+\begin{equation}
+P = T \cdot \omega
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $V$: Voltaje aplicado [V]
+    \item $I$: Corriente eléctrica [A]
+    \item $R$: Resistencia del bobinado [\Omega]
+    \item $L$: Inductancia del bobinado [H]
+    \item $\frac{dI}{dt}$: Derivada de la corriente con respecto al tiempo [A/s]
+    \item $k_e$: Constante de fuerza contra-electromotriz [V/rad/s]
+    \item $\omega$: Velocidad angular [rad/s]
+    \item $T$: Par motor [Nm]
+    \item $k_t$: Constante de par motor [Nm/A]
+    \item $P$: Potencia mecánica [W]
+\end{itemize}
+}
+
+Los motores brushless son esenciales en aplicaciones que requieren alta precisión y control de velocidad, como drones, vehículos eléctricos y equipos industriales.
+
+\actividad{Responder el siguiente cuestionario}
+\begin{enumerate}
+\item ¿Qué es un motor brushless y en qué se diferencia de un motor con escobillas?
+\item ¿Cuál es la función principal del controlador en un motor brushless?
+\item Explica cómo se produce el movimiento en un motor brushless.
+\item ¿Qué ventajas tienen los motores brushless sobre los motores con escobillas?
+\item ¿Qué es la constante de fuerza contra-electromotriz ($k_e$) y cómo se relaciona con el voltaje y la velocidad angular?
+\item Describe la relación entre el par motor ($T$) y la corriente ($I$) en un motor brushless.
+\item ¿Cómo afecta la inductancia ($L$) del bobinado al funcionamiento de un motor brushless?
+\item ¿Qué aplicaciones prácticas se benefician del uso de motores brushless?
+\item ¿Cómo se puede medir la eficiencia de un motor brushless?
+\item ¿Qué tipo de mantenimiento requieren los motores brushless en comparación con los motores con escobillas?
+
+\end{enumerate}
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+\item Calcular la corriente $I$ que circula por un motor brushless con una resistencia de bobinado $R = 0.5\ \Omega$, si se aplica un voltaje $V = 12\ V$ y la velocidad angular $\omega = 1000\ \text{rad/s}$, asumiendo que $k_e = 0.01\ \text{V/rad/s}$ y $L$ es despreciable.
+\item Determinar el par motor $T$ de un motor brushless con una constante de par $k_t = 0.05\ \text{Nm/A}$ y una corriente $I = 10\ A$.
+\item Un motor brushless entrega una potencia $P = 200\ W$ a una velocidad angular $\omega = 2000\ \text{rad/s}$. ¿Cuál es el par motor $T$ generado?
+\item Si un motor brushless tiene una inductancia $L = 0.1\ H$ y la corriente aumenta a una tasa de $5\ \text{A/s}$, ¿qué voltaje adicional se induce debido a la inductancia?
+\item Calcular el voltaje $V$ necesario para mantener una corriente $I = 8\ A$ en un motor brushless con $R = 0.2\ \Omega$, $L$ despreciable, $k_e = 0.02\ \text{V/rad/s}$ y $\omega = 1500\ \text{rad/s}$.
+\item Un motor brushless tiene una resistencia $R = 1\ \Omega$ y se le aplica un voltaje de $24\ V$. Si la velocidad angular es $500\ \text{rad/s}$ y $k_e = 0.02\ \text{V/rad/s}$, ¿cuál es la corriente que circula por el motor?
+\item Si un motor brushless con $k_t = 0.1\ \text{Nm/A}$ debe generar un par de $5\ Nm$, ¿qué corriente es necesaria?
+\item Determinar la potencia mecánica $P$ de un motor brushless con par $T = 3\ Nm$ y velocidad angular $\omega = 2500\ \text{rad/s}$.
+\item Calcular la velocidad angular $\omega$ de un motor brushless si se aplica un voltaje $V = 18\ V$, la corriente es $I = 6\ A$, $R = 0.3\ \Omega$, y $k_e = 0.015\ \text{V/rad/s}$.
+\item Un motor brushless con una inductancia $L = 0.05\ H$ tiene una corriente que varía a una tasa de $10\ \text{A/s}$. ¿Qué voltaje se induce debido a esta variación de corriente?
+\end{enumerate}
+
+\end{document}

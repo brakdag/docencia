@@ -1,0 +1,255 @@
+%https://matematicasn.blogspot.com/2016/03/capacitores-ejercicios-resueltos-de.html
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Capacidad Equivalente}
+\img{images/09/capacitores}{Capacitores electrolíticos conectados en serie.}
+\info{
+Capacidad Equivalente}{
+\subsubsection{Serie} 
+\emph{La capacitancia equivalente es la capacidad de almacenamiento de energía total presente en los capacitores de un circuito, el valor total de los capacitores en serie es igual al recíproco de la suma de los recíprocos de las capacitancias.}
+
+\begin{equation*}
+C_T= \frac{1}{\frac{1}{C_1}+\frac{1}{C_2}} \Rightarrow
+C_T= \frac{1}{\frac{1}{C_1}+\frac{1}{C_2}+\dots+\frac{1}{C_n}}
+\end{equation*}
+
+
+\subsubsection{Paralelo}
+
+\emph{La capacidad equivalente de capacitores conectados en paralelo es igual a la suma de las capacidades individuales.}
+
+\begin{equation*}
+C_T= C_1+C_2 \Rightarrow C_T= C_1+C_2+\dots+C_n
+\end{equation*}
+
+Equivalencias: La unidad para capacidad es el Faradio $F$.
+
+$1F = 1x10^6 \mu F$ (microfaradio)
+
+$1F = 1x10^9 nF$ (nanofaradio)
+
+$1F = 1x10^{12} pF$ (picofaradio)
+
+
+}
+\actividad{Calcular la capacidad equivalente de los siguientes circuitos entre $a$ y $b$.}
+
+$C_1=3\mu F$
+
+$C_2=4\mu F$
+
+$C_3=5 \mu F$
+
+$C_4= 10 \mu F$
+
+$C_5 = 6 \mu F$
+
+$C_6 = 11 \mu F$
+
+$C_7=C_1$
+
+%\includegraphics[scale=0.3]{images/09/pizarron.jpg}
+\begin{enumerate}
+    \item .
+    \begin{center}
+        \begin{circuitikz}
+         \draw (-2,0) node[label={above:a}]{} to[capacitor=$C_1$,,*-] (0,0); 
+         \draw (0,0) to[capacitor={$C_2$}] (2,0); 
+         \draw (2,0) to[capacitor=$C_3$,,-*] (4,0) node[label={above:b}]{}; 
+         
+         \end{circuitikz}
+        \end{center}
+    
+    \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[capacitor=$C_2$,*-*](3,0) node[label={above:b}]{} (2,0)--(2,2) to[capacitor=$C_1$] (-2,2)--(-2,0);
+         \draw (-2,0)--(-2,-2);
+         \draw (2,0)--(2,-2);
+         \draw (-2,-2) to[capacitor=$C_3$] (2,-2);
+        \end{circuitikz}
+        \end{center}
+    
+    \item .
+    
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[capacitor=$C_1$,*-](0,0) to[capacitor=$C_2$,-*] (3,0) node[label={above:b}]{} (2,0)--(2,-2) to[capacitor=$C_3$] (-2,-2)--(-2,0);
+   
+        \end{circuitikz}
+        \end{center}
+    \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[capacitor=$C_1$,*-*](0,3) to[capacitor=$C_2$,-*] (3,0) node[label={above:b}]{}  to[capacitor=$C_3$] (-3,0);
+        \end{circuitikz}
+        \end{center}
+    \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[capacitor=$C_1$,*-*](0,3) to[capacitor=$C_4$,-*] (3,0) node[label={above:b}]{}  to[capacitor=$C_5$] (-3,0);
+        \end{circuitikz}
+        \end{center}
+
+      \item .
+    
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0)  to[capacitor=$C_1$,*-*](0,0) node[label={above:a}]{} to[capacitor=$C_2$,-*] (3,0) node[label={above:b}]{} (2,0)--(2,-2) to[capacitor=$C_3$] (-2,-2)--(-2,0);
+   
+        \end{circuitikz}
+        \end{center}
+    
+    \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[capacitor=$C_2$,*-*](2,0)  (2,0)--(2,2) to[capacitor=$C_1$] (-2,2)--(-2,0);
+         \draw (-2,0)--(-2,-2);
+         \draw (2,0)--(2,-2);
+         \draw (-2,-2) to[capacitor=$C_3$] (2,-2);
+         \draw (2,0) to[capacitor=$C_4$] (4,0);
+         \draw (4,0) to[capacitor=$C_5$,-*] (6,0) node[label={above:b}]{};
+        \end{circuitikz}
+        \end{center}
+    
+    \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[capacitor=$C_1$,*-](3,0) to[capacitor=$C_2$,-*] (3,-3) node[label={right:b}]{};
+        \draw (-3,0)  to[capacitor=$C_3$,*-](-3,-3) to[capacitor=$C_4$,-*] (3,-3);
+        \end{circuitikz}
+        \end{center}
+    
+    \item .
+    
+      \begin{center}
+        \begin{circuitikz}
+        \draw (-3,0)node[label={above:a}]{} -- (-2,1) to[capacitor=$C_1$,*-*](0,1)
+        to[capacitor=$C_2$,*-*] (2,-1)
+        to[capacitor=$C_3$,*-*] (0,-3)
+        to[capacitor=$C_4$,*-*] (-2,-3)
+        -- (-2.5,-2.5)--(-2,-2)
+        to[capacitor=$C_5$,*-*] (-3,-1)--(-3.5,-1.5)--(-4,-1) node[label={above:b}]{};
+        \draw (-2.5,-2.5)--(-3,-3)
+        to[capacitor=$C_6$,*-*] (-4,-2) --(-3.5,-1.5);
+        
+        \end{circuitikz}
+        \end{center}
+
+\item .
+      \begin{center}
+        \begin{circuitikz}
+           \draw (-3,0) node[label={above:a}]{} to[capacitor=$C_1$,*-](3,0) to[capacitor=$C_4$,-*] (3,-3) node[label={right:b}]{};
+        \draw (-3,0)  to[capacitor=$C_2$,*-](-3,-3) to[capacitor=$C_5$,-*] (3,-3);
+        \draw (-3,0) to[capacitor=$C_3$,-*] (3,-3);
+        
+        \end{circuitikz}
+        \end{center}
+\item .
+      \begin{center}
+        \begin{circuitikz}
+           \draw (0,2) node[label={above:a}]{} to[capacitor=$C_1$,*-*](2,4)
+           to[capacitor=$C_2$,-*] (4,4)
+            to[capacitor=$C_3$,-*] (6,2)
+            to[capacitor=$C_4$,-] (0,2)
+            to[capacitor=$C_5$,-*] (2,0)
+            to[capacitor=$C_6$,-*] (4,0)
+            to[capacitor=$C_7$,-] (6,2) node[label={above:b}]{};
+        
+        \end{circuitikz}
+        \end{center}    
+        
+\item .
+      \begin{center}
+        \begin{circuitikz}
+           \draw (0,1)--(1,0) 
+           to[capacitor=$C_5$,*-*] (4,0) node[label={right:b}]{}
+           to[capacitor=$C_3$,*-*] (4,3)node[label={right:a}]{} --(3,4)
+           to[capacitor=$C_2$,*-*] (0,4)
+           to[capacitor=$C_4$,-*] (0,1);
+           \draw (0,4) to[capacitor=$C_1$,*-*] (4,0); 
+           
+        \end{circuitikz}
+        \end{center}    
+\item .
+              \begin{center}
+        \begin{circuitikz}
+           \draw (0,0) node[label={left:a}]{} to[capacitor=$C_3$,*-*] (4,0) 
+           to[capacitor=$C_6$,*-*] (7,2)--(7,5)node[label={right:b}]{} 
+           to[capacitor=$C_5$,*-*] (3,5)--(3,2)
+           to[capacitor=$C_2$,*-*] (1.5,1)--(0,0);
+           \draw (0,0) to[capacitor=$C_1$,*-*] (0,4)
+           to[capacitor=$C_4$,*-*] (4,4)--(4,0);
+           ; 
+        \end{circuitikz}
+        \end{center}    
+\item .
+              \begin{center}
+        \begin{circuitikz}
+           \draw (0,0) node[label={left:a}]{} to[capacitor=$C_1$,*-*] (2,0);
+           \draw (0,2) to[capacitor=$C_2$,*-*] (2,2);
+           \draw (2,0) to[capacitor=$C_3$,*-*] (4,0);
+           \draw (0,0) -- (0,2);
+           \draw (2,0) -- (2,2);
+           \draw (4,0) to[capacitor=$C_4$,*-*] (4,-2);
+           \draw (4,-2) to[capacitor=$C_5$,*-*] (4,-4);
+           \draw (4,0)--(10,0);
+           \draw (6,-2)--(10,-2);
+           \draw (6,0) to[capacitor=$C_6$,*-*] (6,-2);
+           \draw (8,0) to[capacitor=$C_7$,*-*] (8,-2);
+           \draw (10,0) to[capacitor=$C_1$,*-*] (10,-2);
+           \draw (8,-2) to[capacitor=$C_1$,*-*] (8,-4);
+           \draw  (4,-4) node[label={left:b}]{} -- (8,-4);
+            
+        \end{circuitikz}
+        \end{center}    
+\item .
+              \begin{center}
+        \begin{circuitikz}
+           \draw (0,0)node[label={left:a}]{}  to[capacitor=$C_6$,*-*] (2,0);
+            
+            \draw (2,1) -- (2,-1);
+            \draw (4,1) -- (4,-1);
+            
+           \draw (2,1)  to[capacitor=$C_1$,*-*] (4,1);
+           \draw (2,-1) to[capacitor=$C_2$,*-*] (4,-1);
+           
+           \draw (4,0) to[capacitor=$C_3$,*-*] (6,0);
+           \draw (6,0) to[capacitor=$C_4$,*-*] (8,0);
+
+            \draw (8,0) -- (8,-1);
+           \draw (8,-1) to[capacitor=$C_5$,-*] (8,-3);
+           \draw (6,0)--(6,-2);
+           \draw (5,-2)--(7,-2);
+           \draw (5,-2) to[capacitor=$C_6$,-*] (5,-4);
+           \draw (7,-2) to[capacitor=$C_7$,-*] (7,-4);
+           \draw (8,-3)--(7,-4);
+           \draw (7,-4)--(4,-4);
+           \draw (4,-4) to[capacitor=$C_2$,-*] (0,-4)node[label={left:b}]{};
+           
+        \end{circuitikz}
+        \end{center}  
+\item .
+              \begin{center}
+        \begin{circuitikz}
+            \draw   (0,4) node[label={left:a}]{} --(4,4)[*-];
+           \draw (0,0) node[label={left:b}]{} to[capacitor=$C_1$,*-*] (4,0);
+           \draw (4,4)  to[capacitor=$C_2$,*-*] (4,0);
+           \draw (4,4)  to[capacitor=$C_3$,*-*] (8,4);
+           \draw (8,4)  to[capacitor=$C_4$,*-*] (8,0);
+           \draw (4,0)  to[capacitor=$C_5$,*-*] (8,0);
+           \draw (8,0)  to[capacitor=$C_3$,*-*] (12,0);
+           \draw (12,0)  to[capacitor=$C_2$,*-*] (12,4);
+           \draw (12,4)  to[capacitor=$C_7$,*-*] (8,4);
+            \draw (12,0)  to[capacitor=$C_6$,*-*] (8,4);
+           \draw (4,0)  to[capacitor=$C_6$,*-*] (8,4);
+        
+
+           
+        \end{circuitikz}
+        \end{center}    
+
+        
+\end{enumerate}
+
+\end{document}

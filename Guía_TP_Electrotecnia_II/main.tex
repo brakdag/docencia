@@ -1,0 +1,49 @@
+\documentclass[12pt]{book}
+\input{config}
+\input{formato}
+%\input{images/logo/4124}
+
+\makeglossaries
+\usetikzlibrary{shapes,arrows,decorations.text}
+\tikzstyle{line}=[draw] % here
+\setlist[itemize]{leftmargin=*}
+
+\begin{document}
+\newglossaryentry{formula}
+{
+    name=formula,
+    description={A mathematical expression}
+}
+
+
+\frontmatter
+    \tableofcontents
+\mainmatter
+    \setcounter{chapter}{10}
+
+    \subfile{capitulos/08_capacitores}
+
+    \subfile{capitulos/08_condensadores}
+    \subfile{capitulos/09_transitorio_capacitivo}
+    \subfile{capitulos/10_maquina_rotativa}
+    \subfile{capitulos/11_corriente_alterna}
+    \subfile{capitulos/10_onda_sinusoidal}
+    \subfile{capitulos/12_impedancia}
+    \subfile{capitulos/13_impedancia_equivalente}
+    \subfile{capitulos/19_anexo_13}
+    \subfile{capitulos/14_resonancia}
+    %\subfile{capitulos/15_ejercicios_resueltos}
+    
+
+\backmatter
+\subfile{capitulos/18_simulacion}
+
+%\subfile{capitulos/teoria/01_imanes}
+%\subfile{capitulos/17_planificacion}
+%\subfile{capitulos/16_anexos}
+
+
+   
+
+%\printglossary[title=Special Terms, toctitle=List of terms]
+\end{document}

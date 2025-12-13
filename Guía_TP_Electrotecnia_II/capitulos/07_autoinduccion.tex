@@ -1,0 +1,137 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Autoinducción}
+
+\img{images/07/autoinduccion}{Autoinducción}
+
+\info{Autoinducción}{
+La autoinducción es un fenómeno electromagnético que se presenta en determinados sistemas físicos, como por ejemplo circuitos eléctricos con una corriente eléctrica variable en el tiempo.
+
+En esos sistemas, la variación de la intensidad de la corriente produce un flujo magnético variable, que da lugar a una fuerza electromotriz (voltaje inducido) y una corriente eléctrica que se opone al flujo de la corriente inicial inductora, es decir, tiene sentido contrario. En resumen, la autoinducción es una influencia que ejerce un sistema físico sobre sí mismo a través de campos electromagnéticos variables.
+}
+
+\info{Coeficiente de autoinducción}{
+\begin{equation*}
+    L= \frac{\mu N^2 \pi r^2}{l} 
+\end{equation*}
+
+\begin{equation*}
+    L= \frac{N\times \Phi}{I} 
+\end{equation*}
+}
+\section{Coeficiente de autoinducción en una bobina}
+Suponiendo una bobina de $N$ espiras con longitud $l$ por la que circula una corriente $I$ tenemos que el que produce un campo magnético definido por:
+\begin{equation}
+    H=\frac{N \times I}{l}
+\end{equation}
+A su vez dependiendo del material tendremos una inducción $B$ que está definida por 
+\begin{equation}
+    B=\mu \times H
+\end{equation}
+Reemplazando $H$ de la formula anterior nos queda:
+\begin{equation}
+    B=\mu \times \frac{N \times I}{l}
+\end{equation}
+Si la bobina tiene una superficie $S$ podremos calcular el flujo magnético $\Phi$
+\begin{equation}
+    \Phi = B \times S
+\end{equation}
+Reemplazando la formula anterior $B$ nos queda:
+\begin{equation}
+    \Phi=\mu \times \frac{N \times I}{l} \times S 
+\end{equation}
+
+Recordamos la ley de Faraday-Lenz.
+\begin{equation}
+    E=-N \times \dfrac{\Delta \Phi}{\Delta t}= -L \times \dfrac{\Delta I}{\Delta t}
+\end{equation}
+Podremos despejar L de la ecuación anterior.
+\begin{equation}
+    L=\dfrac{N \times \Delta \Phi \times \cancel{\Delta t}}{\cancel{\Delta t} \times \Delta I }
+\end{equation}
+Si suponemos que las variaciones de flujo y corriente se producen entre y el valor y cero $\Delta \Phi = \Phi$ y $\Delta I = I$ además $\Delta t$ puede simplificarse.
+
+\begin{equation}
+    L=\dfrac{N \times  \Phi }{ I }
+\end{equation}
+
+Reordenando la ecuación nos queda $LI=N\Phi$ que parece la palabra LINO. Reemplazamos el flujo en la formula $\Phi$, vemos que la corriente puede simplificarse y agrupar $N^2$.
+\begin{equation}
+    L=\dfrac{N \times   \mu \times \frac{N \times I}{l} \times S  }{ I }=\dfrac{N \times   \mu \times N \times \cancel{I} \times S  }{ \cancel{I} \times l }=\dfrac{   \mu \times N^2  \times S  }{  l}
+\end{equation}
+Para el caso de que la sección de la bobina sea circular tenemos que $S=\pi \times r^2$ reemplazamos en la formula.
+\begin{equation}
+    L=\dfrac{   \mu \times N^2  \times \pi \times r^2  }{  l} 
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+\actividad{Resolver los siguientes problemas:}
+
+\begin{enumerate}
+    \item Una bobina de $N=400$ espiras es recorrida por una corriente $I=20A$ que da lugar a un flujo magnético de $\Phi=0,001Wb$. Calcular el \textbf{coeficiente de autoinducción $L$} de la bobina.
+    \item Un solenoide de $N=200$ espiras, longitud $l=40cm$ y diámetro $\varnothing=2cm$, tiene un núcleo de aire. Calcular el \textbf{coeficiente de autoinducción} $L$.  
+    \info{Permeabilidad del aire o vacío}{
+    \begin{equation*}
+        \mu_0=4\pi x 10^{-7} T m/A
+    \end{equation*}
+    }
+    \item Calcular el \textbf{coeficiente de autoinducción $L$} de una espira $N=1$, si al circular por ella una corriente de $I=1A$ da lugar a un flujo en la sección transversal de la misma de $\Phi=200000Mx$.
+    \info{Equivalencia Unidad Maxwell a Weber}{
+    Fue establecida por el IEC en 1930. . En un campo magnético de un gauss de medida, un maxwell es el total del flujo alrededor de la superficie en un área de un centímetro cuadrado perpendicular al campo. Su equivalente en el Sistema Internacional es el weber.
+    \begin{equation*}
+    1Mx=1Gs\times cm^2=10^{-8}Wb
+    \end{equation*}}
+    \item Calcular el \textbf{flujo $\Phi$} que produce una bobina de $N=3000$ espiras por la que circulan $I=2A$  si el coeficiente de autoinducción es igual a $L=0,006H$.
+    \item Un solenoide de $N=4000$ espiras y coeficiente de autoinducción igual a $L=0,01H$ debe producir por efecto de autoinducción un flujo de $\Phi=1000Mx$. Calcular la \textbf{corriente I}. 
+
+    \item Calcular la \textbf{fuerza electromotríz} inducida en una bobina de \( L = 0.005 \, \text{H} \) cuando la corriente que circula por ella varía a razón de \( \frac{\Delta I}{\Delta t} = 0.1\, \text{A/s} \).
+    
+    \item Una bobina de autoinducción \( L = 0.01 \, \text{H} \) tiene una corriente que varía a una tasa de \( \frac{di}{dt} = -0.5 \, \text{A/s} \). ¿Cuál es la \textbf{fuerza electromotriz} inducida?
+    
+    \item Calcular la \textbf{F.E.M.} inducida en una bobina de \( L = 0.002 \, \text{H} \) cuando la corriente cambia a razón de \( \frac{di}{dt} = 2 \, \text{A/s} \).
+    
+    \item Una bobina de autoinducción \( L = 0.008 \, \text{H} \) experimenta un cambio en la corriente de \( \frac{di}{dt} = -0.3 \, \text{A/s} \). ¿Cuál es la fuerza electromotriz inducida?
+    
+    \item Determinar la \textbf{voltaje inducido} en una bobina de \( L = 0.006 \, \text{H} \) cuando la corriente que la atraviesa cambia a una tasa de \( \frac{di}{dt} = 1.5 \, \text{A/s} \).
+    
+    \item Si una bobina de autoinducción tiene un coeficiente de \( L = 0.004 \, \text{H} \) y la corriente que la atraviesa cambia a una tasa de \( \frac{di}{dt} = -0.2 \, \text{A/s} \), ¿cuál es la fuerza \textbf{tensión V} inducida?
+    
+    \item Calcular la fem inducida en una bobina de \( L = 0.007 \, \text{H} \) cuando la corriente cambia a razón de \( \frac{di}{dt} = 0.8 \, \text{A/s} \).
+    
+    \item Una bobina de autoinducción \( L = 0.003 \, \text{H} \) experimenta un cambio en la corriente de \( \frac{di}{dt} = -1 \, \text{A/s} \). ¿Cuál es la \textbf{diferencia de potencial E} inducida?
+    
+    \item Determinar \textbf{la diferencia de potencial} inducida en una bobina de \( L = 0.009 \, \text{H} \) cuando la corriente que la atraviesa cambia a una tasa de \( \frac{di}{dt} = 0.s6 \, \text{A/s} \).
+    
+    \item Si una bobina de autoinducción tiene un coeficiente de \( L = 0.0025 \, \text{H} \) y la corriente que la atraviesa cambia a una tasa de \( \frac{di}{dt} = -0.4 \, \text{A/s} \), ¿cuál es la \textbf{fuerza electromotriz inducida}?
+
+% calculo de autoinducción físico.
+    \item Se tiene una bobina con un coeficiente de autoinducción $L$ de $2$ H. Si el número de vueltas $N$ es de $1000$, el radio $r$ es de $0.05$ m y la longitud $l$ es de $0.1$ m, ¿cuál es la permeabilidad magnética $\mu$ del núcleo de la bobina?
+    
+    \item Una bobina tiene una longitud $l$ de $0.15$ m y un coeficiente de autoinducción $L$ de $4$ H. Si la permeabilidad magnética $\mu$ del núcleo es $4\pi \times 10^{-7}$ T m/A, ¿Cuántas \textbf{vueltas $N$} debe tener la bobina si su radio $r$ es de $0.1$ m?
+    
+    \item Si una bobina tiene un radio $r$ de $0.08$ m y una longitud $l$ de $0.2$ m, y su coeficiente de autoinducción $L$ es de $5$ H, ¿cuál es el número de vueltas $N$ si la permeabilidad magnética $\mu$ es $2\pi \times 10^{-7}$ T m/A?
+    
+    \item Una bobina tiene un coeficiente de autoinducción $L$ de $3$ H y $1000$ vueltas. Si su radio $r$ es de $0.06$ m y la permeabilidad magnética $\mu$ es $3\pi \times 10^{-7}$ T m/A, ¿cuál es la longitud $l$ de la bobina?
+    
+    \item Si se tiene una bobina con un número de vueltas $N$ de $800$ y una longitud $l$ de $0.1$ m, y su coeficiente de autoinducción $L$ es de $2$ H, ¿cuál es el radio $r$ de la bobina si la permeabilidad magnética $\mu$ es $4\pi \times 10^{-7}$ T m/A?
+    
+    \item Determina el coeficiente de autoinducción $L$ de una bobina con un radio $r$ de $0.12$ m, una longitud $l$ de $0.25$ m y $2000$ vueltas, si la permeabilidad magnética $\mu$ es $2\pi \times 10^{-7}$ T m/A.
+    
+    \item Si se tiene una bobina con una longitud $l$ de $0.2$ m, $1500$ vueltas y un coeficiente de autoinducción $L$ de $3$ H, ¿cuál es la permeabilidad magnética $\mu$ si su radio $r$ es de $0.1$ m?
+    
+    \item Se necesita una bobina con un coeficiente de autoinducción $L$ de $6$ H. Si se utiliza un núcleo con una permeabilidad magnética $\mu$ de $4\pi \times 10^{-7}$ T m/A, un radio $r$ de $0.08$ m y una longitud $l$ de $0.3$ m, ¿cuántas vueltas $N$ se requieren?
+    
+    \item Si se tiene una bobina con $2000$ vueltas, un radio $r$ de $0.1$ m y una permeabilidad magnética $\mu$ de $3\pi \times 10^{-7}$ T m/A, ¿cuál es su coeficiente de autoinducción $L$ si su longitud $l$ es de $0.25$ m?
+    
+    \item Determina el radio $r$ de una bobina con un coeficiente de autoinducción $L$ de $4$ H, $1200$ vueltas y una longitud $l$ de $0.15$ m, si la permeabilidad magnética $\mu$ es $2\pi \times 10^{-7}$ T m/A.
+\end{enumerate}
+
+\end{document}

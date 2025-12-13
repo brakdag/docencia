@@ -1,0 +1,91 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{toolsgf}[2021/06/10 Gustavo Ferreyra]
+
+\RequirePackage{graphicx,listofitems,toolsgf}
+\RequirePackage[labelfont=bf]{caption}
+
+\ProcessOptions\relax
+
+\newcommand{\imgfr}[2]{
+\begin{frame}{#2}
+\imgfull{#1}{#2}
+\end{frame}
+}
+
+\newcommand{\itfr}[3]{
+\begin{frame}
+\frametitle{#1}
+\begin{columns}
+\begin{column}{0.5\textwidth} 
+\imgfull{#2}{#1}
+\end{column}
+\begin{column}{0.5\textwidth}
+   #3
+\end{column}
+\end{columns}
+\end{frame}
+}
+
+
+\newcommand{\itemfr}[2]{
+\setsepchar{;}
+\begin{frame}{#1}
+\readlist*\Z{#2}
+\begin{itemize}
+   \foreachitem\word\in\Z{\item  \word\par}
+\end{itemize}
+\end{frame}
+}
+
+\newcommand{\portadaenet}[2]{
+\title{#1}
+\author{Esc N$^o$:4-117 "Ejército de los Andes"}
+\institute{Ferreyra Gustavo}
+\date{#2}
+\titlegraphic{\includegraphics[width=2cm]{images/dge.png}\hspace*{4.75cm}~%
+   \includegraphics[width=2cm]{images/4117.jpg}
+}
+\begin{frame}
+\titlepage
+\end{frame}
+}
+
+\newcommand{\portadamerin}[2]{
+\title{#1}
+\author{Esc N$^o$:4-124 "Reynaldo Merín"}
+\institute{Ferreyra Gustavo}
+\date{#2}
+\titlegraphic{\includegraphics[width=2cm]{images/dge.png}\hspace*{4.75cm}~%
+   \includegraphics[width=2cm]{images/merin.png}
+}
+\begin{frame}
+\titlepage
+\end{frame}
+}
+
+
+\newcommand{\portadasosneado}[2]{
+\title{#1}
+\author{Esc N$^o$:4-239 "Cerro Sosenado"}
+\institute{Ferreyra Gustavo}
+\date{#2}
+\titlegraphic{\includegraphics[width=2cm]{images/dge.png}\hspace*{4.75cm}~%
+   \includesvg[width=2cm]{images/logo.svg}
+}
+\begin{frame}
+\titlepage
+\end{frame}
+}
+
+\newcommand{\textfr}[2]{
+\setsepchar{;}
+\begin{frame}{#1}
+#2
+\end{frame}
+}
+
+
+
+
+
+\endinput

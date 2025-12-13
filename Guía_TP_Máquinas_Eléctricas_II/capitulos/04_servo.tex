@@ -1,0 +1,61 @@
+\documentclass[../main]{subfiles}
+\setcounter{chapter}{5}
+\begin{document}
+\chapter{Servomotor}
+\img{images/servo/partservo}{Partes del servomotor}
+Un servomotor es un dispositivo actuador que tiene la capacidad de ubicarse en cualquier posición dentro de su rango de operación, y de mantenerse estable en dicha posición. Está formado por un motor de corriente continua, una caja reductora y un circuito de control, y su margen de funcionamiento suele ser de menos de una vuelta completa.
+\img{images/servo/servomotor}{Servomotor de modelismo.}
+
+Los servos de modelismo se utilizan frecuentemente en sistemas de radiocontrol y en robótica, pero su uso no está limitado a estos.
+
+El componente principal de un servo es un motor de corriente continua, que realiza la función de actuador en el dispositivo: al aplicarse un voltaje entre sus dos terminales, el motor gira en un sentido a alta velocidad, pero produciendo un bajo par. Para aumentar el par del dispositivo, se emplea una caja reductora, que transforma gran parte de la velocidad de giro en torsión.
+
+\video{https://www.youtube.com/watch?v=mk9UkQCeENc}{Funcionamiento de Servomotor.}
+
+\subsection{Control de posición}
+
+\img{images/servo/servo}{
+Diagrama del circuito de control implementado en un servo. La línea punteada indica un acople mecánico, mientras que las líneas continuas indican conexión eléctrica.}
+
+El dispositivo utiliza un circuito de control para realizar la ubicación del motor en un punto, consistente en un controlador proporcional.
+
+El punto de referencia o \emph{setpoint}: que es el valor de posición deseada para el motor, se indica mediante una señal de control cuadrada. El ancho de pulso de la señal indica el ángulo de posición: una señal con pulsos más anchos (es decir, de mayor duración) ubicará al motor en un ángulo mayor, y viceversa.(PWM)
+
+
+Inicialmente, un amplificador de error calcula el valor del error de posición, que es la diferencia entre la referencia y la posición en que se encuentra el motor. Un error de posición mayor significa que hay una diferencia mayor entre el valor deseado y el existente, de modo que el motor deberá rotar más rápido para alcanzarlo; uno menor, significa que la posición del motor está cerca de la deseada por el usuario, así que el motor tendrá que rotar más lentamente. Si el servo se encuentra en la posición deseada, el error será cero, y no habrá movimiento.
+
+\img{images/servo/pwm}{Ejemplos de señales de control utilizadas, y sus respectivos resultados de posición del servo (no están a escala). La posición del servo tiene una proporción lineal con el ancho del pulso utilizado.}
+
+Para que el amplificador de error pueda calcular el error de posición, debe restar dos valores de voltaje analógicos. La señal de control PWM se convierte entonces en un valor analógico de voltaje, mediante un convertidor de ancho de pulso a voltaje. El valor de la posición del motor se obtiene usando un potenciómetro de realimentación acoplado mecánicamente a la caja reductora del eje del motor: cuando el motor rote, el potenciómetro también lo hará, variando el voltaje que se introduce al amplificador de error.
+
+Una vez que se ha obtenido el error de posición, este se amplifica con una ganancia, y posteriormente se aplica a los terminales del motor.
+
+\subsection{Utilización}
+Dependiendo del modelo del servo, la tensión de alimentación puede estar comprendida entre los 4 y 8 voltios. El control de un servo se reduce a indicar su posición mediante una señal cuadrada de voltaje: el ángulo de ubicación del motor depende de la duración del nivel alto de la señal.
+
+Dependiendo de la marca y modelo utilizado, cada servo tiene sus propios márgenes de operación. Por ejemplo, para algunos servos los valores de tiempo de la señal en alto están entre 1 y 2 ms, que posicionan al motor en ambos extremos de giro ($0^o y 180^o$, respectivamente). Los valores de tiempo de alto para ubicar el motor en otras posiciones se hallan mediante una relación completamente lineal: el valor 1,5 ms indica la posición central, y otros valores de duración del pulso dejarían al motor en la posición proporcional a dicha duración.
+
+Es sencillo notar que, para el caso del motor anteriormente mencionado, la duración del pulso alto para conseguir un ángulo de posición $\phi$ estará dado por la fórmula:
+\begin{equation}
+  t=1+{\frac {\phi }{180}}  
+\end{equation}
+
+donde $t$ está dado en milisegundos y  $\phi$  en grados. Sin embargo, debe tenerse en cuenta que ningún valor de ángulo o de duración de pulso puede estar fuera del rango de operación del dispositivo: en efecto, el servo tiene un límite de giro de modo que no puede girar más de cierto ángulo en un mismo sentido debido a la limitación física que impone el potenciómetro del control de posición.
+
+Para bloquear el servomotor en una posición, es necesario enviarle continuamente la señal con la posición deseada. De esta forma, el sistema de control seguirá operando, y el servo conservará su posición y se resistirá a fuerzas externas que intenten cambiarlo de posición. Si los pulsos no se envían, el servomotor quedará liberado, y cualquier fuerza externa puede cambiarlo de posición fácilmente.
+
+\actividad{Contestar: en base al texto}
+
+\begin{enumerate}
+\item ¿Qué es un servomotor?
+\item ¿Cuáles son los componentes principales de un servomotor?
+\item ¿Cuál es la función del motor de corriente continua en un servomotor?
+\item ¿Qué es una caja reductora y qué papel desempeña en un servomotor?
+\item ¿Cómo se controla la posición de un servomotor?
+\item ¿Qué indica el ancho de pulso de la señal de control en un servomotor?
+\item ¿Cómo se calcula el error de posición en un servomotor?
+\item ¿Cómo se convierte la señal de control PWM en un valor analógico de voltaje?
+\item ¿Cómo se utiliza un potenciómetro en un servomotor?
+\item ¿Qué sucede si no se envían pulsos de control a un servomotor?
+\end{enumerate}
+\end{document}

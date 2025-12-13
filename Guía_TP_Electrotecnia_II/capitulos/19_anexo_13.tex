@@ -1,0 +1,171 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\section{Anexo Combinaciones de Impedancias}
+\img{../images/19/capacitores}{Banco de capacitores (combinaciones de impedancias)}
+
+\info{Impedancias}{
+Considérense las N impedancias conectadas en serie que aparecen en 
+través de ellas fluye la misma corriente I. 
+
+$V=V_1+V_2+V_3+\dots+V_N=I(Z_1+Z_2+\dots+Z_N)$
+
+$Z_{eq}=\dfrac{V}{I}=Z_1+Z_2+\dots+Z_N$
+}
+
+
+\begin{enumerate}
+
+\item Halle la corriente I en el circuito de la figura
+
+\begin{center}
+        \begin{circuitikz}
+            \draw (0,4) to[sV=$10\phase{20^\circ}V$]--(0,0);
+            \draw (0,0) -- (4,0); 
+            \draw (0,4) to[resistor=$1\Omega$,-*] (2,4);
+          \draw (2,4) to[resistor=$1\Omega$,*-*] (4,4);
+          \draw (4,4) to[resistor=$1\Omega$,*-*] (6,4);
+          \draw (4,0) to[resistor=$1\Omega$,*-*](4,4);
+          \draw (6,2) to[resistor=$1\Omega$,-] (6,4);
+          \draw (6,2) to[resistor=$1\Omega$,-] (6,0);
+          \draw (6,0) -- ( 4,0);
+          \draw (6,0) to[resistor=$1\Omega$,*-] (8,0);
+          \draw (8,0) to[resistor=$1\Omega$,*-*] (8,2);
+          \draw (8,2) to[resistor=$1\Omega$,*-*] (8,4);
+          \draw (6,4) to[resistor=$1\Omega$,*-*] (8,4);
+          
+        \end{circuitikz}
+\end{center} 
+
+
+\item Encontrar la corriente que circula por el circuito si se le aplica una tensión  $V_{ab}=12\phase{0^\circ}V$
+
+\begin{center} 
+        \begin{circuitikz}
+         \draw (0,4) to[sV=$12\phase{0^\circ}V$]--(0,0);
+         \draw (0,0) node[label={left:b}]{} -- (4,0); 
+          \draw (0,4) node[label={left:a}]{} to[capacitor=$2mF$,o-*] (4,4);
+          \draw (4,0) to[capacitor=$10mF$,*-](4,2) to[resistor=$3\Omega$,-*] (4,4);
+          \draw (4,4) to[inductor=$0.2H$] (6,4);
+          \draw (6,4) to[resistor=$8\Omega$] (6,0);
+          \draw (6,0) -- ( 4,0);
+        \end{circuitikz}
+\end{center}    
+
+
+\item Encontrar la corriente que circula por el circuito si se le aplica una tensión  $V_{ab}=220\phase{10^\circ}V$
+
+\begin{center}
+        \begin{circuitikz}
+         \draw (0,4) to[sV=$220\phase{10^\circ}V$]--(0,0);
+         \draw (0,0) node[label={left:b}]{} -- (4,0); 
+          \draw (0,4) node[label={left:a}]{} to[capacitor=$1mF$,o-] (2,4);
+          \draw (2,4) to[resistor=$100\Omega$,-*] (4,4);
+          \draw (4,0) to[capacitor=$1mF$,*-*](4,4) ;
+          \draw (4,4) to[inductor=$8H$] (6,4);
+          \draw (6,4) to[resistor=$200\Omega$] (6,0);
+          \draw (6,0) -- ( 4,0);
+        \end{circuitikz}
+\end{center} 
+
+
+\item Halle la corriente I en el circuito de la figura
+
+\begin{center}
+        \begin{circuitikz}
+            \draw (0,4) to[sV=$100\phase{45^\circ}V$]--(0,0);
+            \draw (0,0) -- (4,0); 
+            \draw (0,4) to[resistor=$1\Omega$,-*] (2,4);
+          \draw (2,4) to[capacitor=$-j4\Omega$,*-*] (4,4);
+          \draw (4,4) to[resistor=$7\Omega$,*-*] (6,4);
+          \draw (4,0) to[inductor=$3j\Omega$,*-*](4,4);
+          \draw (6,2) to[inductor=$j6\Omega$,-] (6,4);
+          \draw (6,2) to[resistor=$8\Omega$,-] (6,0);
+          \draw (6,0) -- ( 4,0);
+        \end{circuitikz}
+\end{center} 
+
+
+\item Halle la corriente I en el circuito de la figura
+
+\begin{center}
+        \begin{circuitikz}
+            \draw (0,4) to[sV=$50\phase{0^\circ}V$]--(0,0);
+            \draw (0,0) -- (4,0); 
+            \draw (0,4) to[resistor=$12\Omega$,-*] (2,4);
+          \draw (2,4) to[inductor=$j4\Omega$,*-*] (4,4);
+          \draw (4,4) to[resistor=$8\Omega$,*-*] (6,4);
+          \draw (4,0) to[capacitor=$-3j\Omega$,*-*](4,4);
+          \draw (6,2) to[inductor=$j6\Omega$,-] (6,4);
+          \draw (6,2) to[resistor=$8\Omega$,-] (6,0);
+          \draw (2,4)--(2,6);
+          \draw (2,6) to[resistor=$2\Omega$] (4,6);
+          \draw (4,6) to[capacitor=$-4j\Omega$] (6,6)--(6,4);
+          \draw (6,0) -- ( 4,0);
+       
+        \end{circuitikz}
+\end{center} 
+
+
+\item Halle la corriente I en el circuito de la figura
+
+\begin{center}
+        \begin{circuitikz}
+            \draw (0,4) to[sV=$380\phase{120^\circ}V$]--(0,0);
+            \draw (0,0) -- (4,0); 
+            \draw (0,4) to[resistor=$1\Omega$,-*] (2,4);
+          \draw (2,4) to[inductor=$j4\Omega$,*-*] (4,4);
+          \draw (4,4) to[resistor=$7\Omega$,*-*] (6,4);
+          \draw (4,0) to[capacitor=$-3j\Omega$,*-*](4,2);
+          \draw (4,2)--(4,4);
+          \draw (6,2) to[inductor=$j6\Omega$,-] (6,4);
+          \draw (6,2) to[resistor=$8\Omega$,-] (6,0);
+          \draw (6,0) -- ( 4,0);
+          \draw (6,0) to[resistor=$1\Omega$,*-] (8,0);
+          \draw (8,0) to[resistor=$1\Omega$,*-*] (8,2);
+          \draw (8,2) to[capacitor=$-1j\Omega$,*-*] (8,4);
+          \draw (6,4) to[inductor=$1j\Omega$,*-*] (8,4);
+        \end{circuitikz}
+\end{center} 
+
+
+\item Halle la corriente I en el circuito de la figura
+
+\begin{center}
+        \begin{circuitikz}
+            \draw (0,4) to[sV=$380\phase{120^\circ}V$]--(0,0);
+            \draw (0,0) -- (4,0); 
+            \draw (0,4) to[resistor=$1\Omega$,-*] (2,4);
+          \draw (2,4) to[inductor=$j4\Omega$,*-*] (4,4);
+          \draw (4,4) to[resistor=$7\Omega$,*-*] (6,4);
+          \draw (4,0) to[capacitor=$-3j\Omega$,*-*](4,2);
+          \draw (4,2)--(4,4);
+          \draw (6,2) to[inductor=$j6\Omega$,-] (6,4);
+          \draw (6,2) to[resistor=$8\Omega$,-] (6,0);
+          \draw (6,0) -- ( 4,0);
+          \draw (6,0) to[resistor=$1\Omega$,*-] (8,0);
+          \draw (8,0) to[resistor=$1\Omega$,*-*] (8,2);
+          \draw (8,2) to[capacitor=$-1j\Omega$,*-*] (8,4);
+          \draw (6,4) to[inductor=$1j\Omega$,*-*] (8,4);
+        
+          \draw (8,0) to[resistor=$1\Omega$,*-] (10,0);
+          \draw (10,0) to[capacitor=$-1j\Omega$,*-*] (10,2);
+          \draw (10,2) to[capacitor=$-1j\Omega$,*-*] (10,4);
+          \draw (8,4) to[inductor=$1j\Omega$,*-*] (10,4);
+        
+
+          \draw (10,0) to[resistor=$1\Omega$,*-] (12,0);
+          \draw (12,0) to[resistor=$1\Omega$,*-*] (12,2);
+          \draw (12,2) to[capacitor=$-1j\Omega$,*-*] (12,4);
+          \draw (10,4) to[capacitor=$-1j\Omega$,*-*] (12,4);
+     
+        \end{circuitikz}
+\end{center} 
+
+
+
+\end{enumerate}
+
+
+
+\end{document}

@@ -1,0 +1,124 @@
+\documentclass[../main]{subfiles}
+\usetikzlibrary{arrows.meta,decorations.markings,calc,patterns}
+
+\begin{document}
+\setcounter{chapter}{7}
+\pagestyle{empty}
+
+\chapter{Sistema trifásico desbalanceado: cálculo de corrientes de fase y de neutro}
+
+\section{Sistema trifásico desbalanceado}
+
+\subsection{Introducción}
+
+En un sistema trifásico \emph{estrella con neutro} desbalanceado, cada fase puede tener una impedancia distinta. Si se conocen las \emph{tensiones de fase} (línea–neutro) como fasores y las impedancias de carga por fase, las corrientes se obtienen con números complejos y la corriente de neutro resulta de la suma vectorial de las corrientes de fase.
+
+\info{Idea clave}{Trabajamos con fasores complejos:
+
+$$
+\underline{I}_k=\frac{\underline{V}_{kN}}{\underline{Z}_k},\qquad k\in\{A,B,C\},\qquad 
+\underline{I}_N=\underline{I}_A+\underline{I}_B+\underline{I}_C,\qquad
+I_N=\left|\underline{I}_N\right|.
+]
+}
+
+\subsection{Fórmulas fundamentales}
+
+\begin{equation}
+\underline{I}_A=\frac{\underline{V}_{AN}}{\underline{Z}_A},\qquad
+\underline{I}_B=\frac{\underline{V}_{BN}}{\underline{Z}_B},\qquad
+\underline{I}_C=\frac{\underline{V}_{CN}}{\underline{Z}_C}
+\end{equation}
+
+\begin{equation}
+\underline{I}_N=\underline{I}_A+\underline{I}_B+\underline{I}_C,\qquad
+I_N=\left|\underline{I}_N\right|
+\end{equation}
+
+\noindent
+\textit{Nota:} \(\underline{V}=\!V\angle\varphi\) indica magnitud \(V\) y ángulo \(\varphi\) en grados. Las divisiones y sumas se realizan en forma compleja (rectangular o polar).
+
+\subsection{Ejemplo}
+
+\ejemplo{Ejemplo}{Dados
+\[
+\underline{V}_{AN}=220\angle 0^\circ\ \text{V},\quad 
+\underline{V}_{BN}=215\angle -120^\circ\ \text{V},\quad
+\underline{V}_{CN}=225\angle 120^\circ\ \text{V},
+$$
+
+$$
+\underline{Z}_A=20+j10\ \Omega,\quad
+\underline{Z}_B=18+j6\ \Omega,\quad
+\underline{Z}_C=22+j11\ \Omega.
+$$
+
+Calcular $\underline{I}_A,\ \underline{I}_B,\ \underline{I}_C$ e $I_N$.
+
+\textbf{Solución (esquema):}
+
+$$
+\underline{I}_A=\frac{220\angle 0^\circ}{\sqrt{20^2+10^2}\angle \arctan\!\left(\tfrac{10}{20}\right)}=
+\frac{220\angle 0^\circ}{22.36\angle 26.565^\circ}=9.84\angle -26.565^\circ\ \text{A}.
+$$
+
+$$
+\underline{I}_B=\frac{215\angle -120^\circ}{\sqrt{18^2+6^2}\angle \arctan\!\left(\tfrac{6}{18}\right)}=
+\frac{215\angle -120^\circ}{18.97\angle 18.435^\circ}=11.33\angle (-138.435^\circ)\ \text{A}.
+$$
+
+$$
+\underline{I}_C=\frac{225\angle 120^\circ}{\sqrt{22^2+11^2}\angle \arctan\!\left(\tfrac{11}{22}\right)}=
+\frac{225\angle 120^\circ}{24.64\angle 26.565^\circ}=9.13\angle 93.435^\circ\ \text{A}.
+$$
+
+Sumar fasores: $\underline{I}_N=\underline{I}_A+\underline{I}_B+\underline{I}_C$ y finalmente $I_N=\lvert \underline{I}_N\rvert$.
+}
+
+\section{Representación gráfica}
+
+\begin{center}
+\begin{tikzpicture}
+\draw\[-stealth] (0,0) -- (3,0) node\[right] {Fase A};
+\draw\[-stealth] (0,0) -- (1.5,2.6) node\[above right] {Fase B};
+\draw\[-stealth] (0,0) -- (-1.5,2.6) node\[above left] {Fase C};
+\draw\[dashed,->] (0,0) -- (0,3) node\[above] {Neutro};
+\node\[below] at (0,0) {Centro};
+\end{tikzpicture}
+\end{center}
+
+\newpage
+
+\actividad{Responder brevemente}
+\begin{enumerate}
+\item ¿Cómo se calculan $\underline{I}_A,\underline{I}_B,\underline{I}_C$ a partir de $\underline{V}_{kN}$ y $\underline{Z}_k$?
+\item ¿Por qué $\underline{I}_N$ se obtiene por suma fasorial y no escalar?
+\item ¿Qué efecto produce un desbalance de $\underline{Z}_k$ en $I_N$?
+\item ¿Conviene operar en forma polar o rectangular? Justifique brevemente.
+\end{enumerate}
+
+\actividad{Resolver (usar números complejos)}
+\textit{Tome secuencia $ABC$ y ángulos en grados. Indique $\underline{I}_A,\ \underline{I}_B,\ \underline{I}_C$ y $I_N$.}
+\begin{enumerate}
+\item $\underline{V}_{AN}=220\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=228\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=232\angle 120^\circ\ \text{V};\ \underline{Z}_A=18+j9\ \Omega,\ \underline{Z}_B=22+j8\ \Omega,\ \underline{Z}_C=20+j12\ \Omega.$
+
+\item $\underline{V}_{AN}=230\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=225\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=220\angle 120^\circ\ \text{V};\ \underline{Z}_A=16+j12\ \Omega,\ \underline{Z}_B=24+j6\ \Omega,\ \underline{Z}_C=18+j9\ \Omega.$
+
+\item $\underline{V}_{AN}=215\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=215\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=240\angle 120^\circ\ \text{V};\ \underline{Z}_A=25+j5\ \Omega,\ \underline{Z}_B=20+j10\ \Omega,\ \underline{Z}_C=15+j12\ \Omega.$
+
+\item $\underline{V}_{AN}=225\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=235\angle -118^\circ\ \text{V},\ \underline{V}_{CN}=230\angle 122^\circ\ \text{V};\ \underline{Z}_A=12+j8\ \Omega,\ \underline{Z}_B=28+j7\ \Omega,\ \underline{Z}_C=21+j9\ \Omega.$
+
+\item $\underline{V}_{AN}=218\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=222\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=226\angle 120^\circ\ \text{V};\ \underline{Z}_A=30+j10\ \Omega,\ \underline{Z}_B=18+j12\ \Omega,\ \underline{Z}_C=26+j6\ \Omega.$
+
+\item $\underline{V}_{AN}=240\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=230\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=235\angle 120^\circ\ \text{V};\ \underline{Z}_A=22+j11\ \Omega,\ \underline{Z}_B=16+j8\ \Omega,\ \underline{Z}_C=32+j10\ \Omega.$
+
+\item $\underline{V}_{AN}=225\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=225\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=225\angle 120^\circ\ \text{V};\ \underline{Z}_A=18+j6\ \Omega,\ \underline{Z}_B=18+j9\ \Omega,\ \underline{Z}_C=18+j12\ \Omega.$
+
+\item $\underline{V}_{AN}=210\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=235\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=220\angle 120^\circ\ \text{V};\ \underline{Z}_A=20+j4\ \Omega,\ \underline{Z}_B=25+j15\ \Omega,\ \underline{Z}_C=14+j7\ \Omega.$
+
+\item $\underline{V}_{AN}=232\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=228\angle -121^\circ\ \text{V},\ \underline{V}_{CN}=224\angle 119^\circ\ \text{V};\ \underline{Z}_A=27+j9\ \Omega,\ \underline{Z}_B=19+j5\ \Omega,\ \underline{Z}_C=23+j11\ \Omega.$
+
+\item $\underline{V}_{AN}=220\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=220\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=235\angle 120^\circ\ \text{V};\ \underline{Z}_A=15+j5\ \Omega,\ \underline{Z}_B=15+j10\ \Omega,\ \underline{Z}_C=40+j8\ \Omega.$
+\end{enumerate}
+
+\end{document}

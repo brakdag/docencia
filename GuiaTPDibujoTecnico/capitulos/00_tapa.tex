@@ -1,0 +1,28 @@
+\documentclass[../main]{subfiles}
+\usetikzlibrary{shapes,arrows,decorations.text}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}
+\draw (1,.5) node {\includesvg[scale=0.5]{../images/logo2.svg}};
+\draw [line width=1mm](0,0) circle (4cm);
+\draw [line width=1mm](0,0) circle (6cm);
+\path [postaction={decoration={
+                    text along path, 
+                    text align=fit to path,
+     text={|\fontsize{33}{33}\selectfont\bfseries|CERRO EL SOSNEADO}},decorate}] 
+     (-4.5cm,0) arc (180:0:4.5cm);
+\path [postaction={decoration={
+                    text along path, 
+                    text align= center,
+                    text={ |\fontsize{32}{32}\selectfont\bfseries\sffamily|ESCUELA TÉCNICA 4-239} 
+                    }, decorate}](-5.3cm,0) arc (180:360:5.3cm); 
+
+\draw [loosely dotted,line width=1mm](0,0) circle(5.8);
+\draw [dashed,line width=1mm](0,0) circle(6.1);
+\draw [solid,line width=0.5mm](0,0) circle(6.15);
+\foreach \i in {0,5,...,360}{
+    \fill (\i:3.7) circle (1mm);
+}
+\end{tikzpicture}
+\end{center}
+\end{document}

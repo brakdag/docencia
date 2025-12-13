@@ -1,0 +1,36 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{pgfornament}
+\usepackage{tikz}
+\usetikzlibrary{patterns,patterns.meta}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{ClearSans}
+%210 x 297 
+%52.5x74
+\newcommand{\recibon}{00001}
+\newcommand{\persona}{Ferreyra Gustavo David}
+\newcommand{\pesos}{Mil quinientos setenta y siente}
+\newcommand{\pesosn}{1577}
+\newcommand {\concepto}{REBOQUE FINO}
+
+\begin{document}
+
+\begin{tikzpicture}[overlay,shift={(-5,-2.5)}]
+\draw [dashed](0,0) rectangle (21,7.4);
+\draw  (3,6) node [right]{\Large N$^\circ$: \recibon};
+\draw (20,6) node [left]{\Large San Rafael Mendoza, \today  };
+\draw (3,5) node [right] {\Large Recibí de \persona.};
+\draw (3,4) node [right] {\Large La cantidad de pesos: \pesos.-};
+\draw (3,3) node [right] {\Large En concepto de: \concepto.-};
+\draw (3,2) node [right] {\Large Son: \$\pesosn.-};
+\draw [rounded corners=0.5cm](11,1) rectangle+(9,1.5);
+\draw [rounded corners,pattern={Dots[angle=45,distance={3pt}]}](4.2,1.5) rectangle (8,2.5);
+\draw [rounded corners,pattern={Dots[angle=45,distance={3pt}]}](8,3.5) rectangle +(12,1);
+\draw [line width=1mm,rounded corners=1cm](.5,.5)rectangle(20.5,7);
+\draw (15.5,1.2) node {Firma};
+\draw (2,5.5) node {\pgfornament[color=gray,scale=0.5,symmetry=v]{26}};
+\draw (2,4) node {\pgfornament[color=gray,scale=0.5]{25}};
+\draw (2,2.3) node {\pgfornament[color=gray,scale=0.5,symmetry=h]{26}};
+
+\end{tikzpicture}
+\end{document}

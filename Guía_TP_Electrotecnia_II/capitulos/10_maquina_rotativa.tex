@@ -1,0 +1,138 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Máquina Rotativa (MCU)}
+\img{images/10/motor1.png}{Máquina Rotativa}
+\info{
+Movimiento Circular Uniforme}{El movimiento circular uniforme (M.C.U.) es el que describe un cuerpo que se mueve alrededor de un eje de giro con un radio y una velocidad angular $\omega$ constantes, trazando una circunferencia y con una aceleración centrípeta $a_c$. En este movimiento la dirección varia en cada instante, un ejemplo de este movimiento es un motor eléctrico o un alternador que gira a una $\omega$ constante.}
+
+\info{Frecuencia mecánica}{
+La frecuencia (f), es el número de revoluciones en la unidad de tiempo. 
+\begin{equation}
+f=\dfrac{vueltas}{t}
+\end{equation}
+
+siendo:
+
+$f:$Frecuencia $[1/s][Hz] (Hertz)$
+
+$t:$ Tiempo en segundos $[s]$
+}
+\info{Período}{
+El Período $T$, de un cuerpo en movimiento circular uniforme es el tiempo empleado en efectuar una vuelta completa o revolución.
+\begin{equation}
+ T=\dfrac{1}{f}   
+\end{equation}
+
+siendo:
+
+$f$: Frecuencia $[Hz]$
+
+$T$: Período $[s]$
+}
+\info{RPM}{ \textbf{R}evoluciones \textbf{P}or \textbf{M}inuto, son las vueltas que se realizan en un minuto, su unidad es RPM.
+\begin{equation}
+ n= 60 f   
+\end{equation}
+
+siendo:
+
+$n:$ revoluciones por minuto $[RPM]$
+
+$f:$ frecuencia.
+
+}
+\info{Velocidad o rapidez Angular}{
+\emph{Rapidez angular}
+
+$\omega=2\pi f=\dfrac{2\pi}{T}=\dfrac{\Delta \vartheta}{\Delta t} =\dfrac{\vartheta_f-\vartheta_i}{ t_f - t_i}=\dfrac{2 \times \pi \times n}{60}$
+
+}
+
+
+
+
+
+
+
+\actividad{Resolver los siguientes problemas.}
+
+\begin{enumerate}
+    \item Un motor se mueve con velocidad $n=3000 RPM$, calcular su frecuencia $f$ en Hertz.
+    \item Calcular el período $T$ y la velocidad angular $\omega$ del problema anterior.
+    \item Un motor gira con movimiento circular uniforme, girando con $\omega=7\pi \dfrac{rad}{s}$. Calcular el ángulo que barre el radio de giro en $\Delta t=2s$. 
+        \item Una bobina realiza un movimiento circular uniforme, da 3 vueltas en 1 minuto alrededor de su centro de giro. Calcular su rapidez angular (en rad/s).
+
+    \item El motor de la imagen realiza un M.C.U. con
+una rapidez angular de $\omega=2\pi \dfrac{rad}{s}$ .Determine el
+tiempo que emplea para ir desde A hasta B. 
+    \begin{center}
+    \begin{tikzpicture}
+    \draw [dashed](0,0)circle (2);
+    \draw (0,0)--(-30:2) node [right]{$B$};
+    \draw (0,0)--(90:2) node [above]{$A$};
+    \draw (1,0.5) node {$\dfrac{2\pi}{3}$};
+    \end{tikzpicture}
+    \end{center}
+\item Los cables A y B giran con MCU, con velocidad angulares de $\omega_A=3rad/s$ y $\omega_B=5rad/s$ respectivamente. Calcular el tiempo que tarde el cable B en alcanzar al cable A, tomando en cuenta el gráfico. 
+    \begin{center}
+    \begin{tikzpicture}
+    \draw [dashed](0,0)circle (2);
+    \draw (0,0)--(-90:2) node [below]{$B$};
+    \draw (0,0)--(90:2) node [above]{$A$};
+    \draw (1,0) node {$\pi$};
+    \end{tikzpicture}
+    \end{center}
+\info{Velocidad o rapidez tangencial}{
+
+\begin{equation}
+v_t=\omega \times r
+\end{equation}
+
+Siendo:
+
+$v_t$: Velocidad tangencial $[m/s]$.
+
+$\omega:$ Velocidad angular $[rad/s]$
+
+$r:$ Radio. [m]
+}
+
+
+    
+    \info{Aceleración centrípeta}{
+\begin{equation}
+a_c=\omega^2 \times r = \dfrac{v_t^2}{r}
+\end{equation}
+
+Siendo:
+
+$a_c$: Aceleración centrípeta $[m/s^2]$.
+
+$v_t$: Velocidad tangencial $[m/s]$.
+
+$\omega:$ Velocidad angular $[rad/s]$
+
+$r:$ Radio. [m]
+}
+
+
+    
+    \item La rapidez tangencial de una bobina que gira con MCU es de $v_t=12 m/s$. Calcular su aceleración centrípeta, si su radio mide $r=120 cm$.
+
+    \item La frecuencia de una bobina que gira con M.C.U. es de $f=0,5Hz$. Hallar la rapidez tangencial en la periferia del bobinado, si tiene un diámetro de $d=40cm$.
+    
+
+    
+\item Los puntos periféricos de un rotor jaula de ardilla con M.C.U se mueven a razón de $v_t=0,8 m/s$. Los puntos que están a 4cm de la periferia se
+mueven a razón de $v_t=0,6 m/s$. Hallar el radio rotor. 
+
+\item Un motor gira con MCU. Si los puntos
+periféricos tienen el triple de rapidez tangencial
+que aquellos puntos que se encuentran 5 cm
+más cerca del centro motor, calcular el radio
+del rotor. 
+
+\end{enumerate}
+\newpage
+\end{document}

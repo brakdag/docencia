@@ -1,0 +1,60 @@
+%---Tools Script GDF-----
+% Lista de comandos
+% \sum{<numero>,<numero>}
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{calcgdf}[2022/03/23 Gustavo Ferreyra]
+
+\RequirePackage{fp}
+\ProcessOptions\relax
+
+\newcommand{\angulo}[1]{
+\phase{#1 ^\circ }
+}
+
+\newcommand{\eval}[1]{
+    \FPeval\result{clip(#1)}
+    \FPprint{\result}
+}
+
+\newcommand{\evalr}[1]{
+    \FPeval\result{round(#1,2)}
+    \FPprint{\result}
+}
+
+
+\newcommand{\rectpol}[2]{
+    \FPset\complex{#1}
+    \FPifneg\complex
+    \FPset\ang{180}
+    \else
+    \FPset\ang{0}
+    \fi
+  \sqrt{(#1)^2+(#2)^2}\phase{\arctg{\left(\frac{#2}{#1}\right)}}=\fbox{\evalr{pow(0.5,(#1)*(#1)+(#2)*(#2))} \phase{\evalr{(arctan((#2)/(#1))*180/pi)+\ang}^o}}
+}
+
+\newcommand{\rectpolnr}[2]{
+    \FPset\complx{#1}
+    \FPifneg\complx
+    \FPset\ang{180}
+    \else
+    \FPset\ang{0}
+    \fi
+    \sqrt{(#1)^2+(#2)^2}\phase{\arctg{\left(\frac{#2}{#1}\right)}}=\evalr{pow(0.5,(#1)*(#1)+(#2)*(#2))} \phase{\evalr{(arctan((#2)/(#1))*180/pi)+\ang}^o}
+}
+
+\newcommand{\polrect}[2]{
+#1(\cos{(#2^o)}+j \sen{(#2^o)})= \boxed{\evalr{(#1)*cos(#2*pi/180)}+ (\evalr{(#1)*sin(#2*pi/180)})j
+}}
+
+\newcommand{\polrectnr}[2]{
+#1(\cos{(#2^o)}+j \sen{(#2^o)})= \evalr{(#1)*cos(#2*pi/180)}+ (\evalr{(#1)*sin(#2*pi/180)})j
+}
+
+
+
+\newcommand{\polrectf}[2]{
+#1(\cos{(#2^o)}+j \sen{(#2^o)})= \fbox{\eval{(#1)*cos(#2*pi/180)}+ (\eval{(#1)*sin(#2*pi/180)})j
+}}
+
+\endinput

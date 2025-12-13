@@ -1,0 +1,33 @@
+\usepackage{fancyhdr,geometry,tikz,qrcode}
+\renewcommand{\headrule}{}
+\fancypagestyle{plain}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[CE]{}
+
+\fancyfoot[CO]{
+
+\begin{tikzpicture}[remember picture, overlay, shift={(-15.55,-4)},font={\fontfamily{lmss}\selectfont}]
+\draw (2.5,2.5) node {\pgfornamenthan[scale=0.35,symmetry=h]{12}};
+\draw (2.5,18.5) node {\pgfornamenthan[scale=0.35]{12}};
+\draw (27.2,18.5) node {\pgfornamenthan[scale=0.35,symmetry=v]{12}};
+\draw (27.2,2.5) node {\pgfornamenthan[scale=0.35,symmetry=v,symmetry=h]{12}};
+%separador del medio
+
+\draw (15,12.75) node {\pgfornament[scale=.4,symmetry=h]{88}};
+% línea inferior
+\foreach \i in {0,1,...,9}
+\draw (4+2.4*\i,1.515) node {\pgfornamenthan[scale=.35,symmetry=h]{32}};
+%linea superior
+\foreach \i in {0,1,...,9}
+\draw (4+2.4*\i,19.48) node {\pgfornamenthan[scale=.35,symmetry=h]{32}};
+% linea vertical izquierda
+\foreach \i in {0,1,...,5}
+\draw (1.51,16.7-\i*2.49) node [symmetry=h,rotate=90]{\pgfornamenthan[scale=.35,symmetry=h]{32}};
+%linea vertical derecha
+\foreach \i in {0,1,...,5}
+\draw (28.185,16.7-\i*2.49) node [rotate=90]{\pgfornamenthan[scale=.35]{32}};
+\draw (6,4)--++(4,0);
+\draw (20,4)--++(4,0);
+\end{tikzpicture}
+}

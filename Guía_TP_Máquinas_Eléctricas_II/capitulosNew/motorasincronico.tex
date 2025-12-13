@@ -1,0 +1,104 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section*{Motor Asincrónico}
+
+Los motores asincrónicos, también conocidos como motores de inducción, son uno de los tipos más comunes de motores eléctricos utilizados en aplicaciones industriales y domésticas debido a su simplicidad, robustez y bajo costo. En este trabajo, exploraremos los principios básicos de funcionamiento de los motores asincrónicos, sus características principales y su aplicación en diversas industrias.
+
+\subsection*{Fundamentos Teóricos}
+
+Un motor asincrónico funciona mediante la inducción de corriente en el rotor a partir del campo magnético rotativo creado por el estator. Este tipo de motor consta de dos partes principales: el estator y el rotor. El estator contiene los devanados de cobre alimentados por corriente alterna (AC), mientras que el rotor puede ser de dos tipos: rotor de jaula de ardilla o rotor bobinado.
+
+La velocidad de un motor asincrónico está determinada principalmente por la frecuencia de la corriente suministrada y el número de pares de polos del motor. La velocidad de sincronismo ($n_s$) se define como la velocidad teórica a la que giraría el campo magnético del estator si no hubiera deslizamiento en el rotor. Se calcula utilizando la siguiente fórmula:
+
+\info{Fórmula de la Velocidad de Sincronismo}{
+La velocidad de sincronismo de un motor asincrónico se puede calcular mediante la siguiente fórmula:
+\begin{equation}
+n_s = \frac{120 \times f}{P}
+\end{equation}
+donde:
+\begin{itemize}
+    \item $n_s$ es la velocidad de sincronismo (en revoluciones por minuto, rpm).
+    \item $f$ es la frecuencia de la corriente suministrada al motor (en hertzios, Hz).
+    \item $P$ es el número de pares de polos del motor.
+\end{itemize}
+}
+
+El deslizamiento ($s$) en un motor asincrónico se define como la diferencia entre la velocidad de sincronismo y la velocidad real del rotor, expresada como un porcentaje. Se calcula utilizando la siguiente fórmula:
+
+\info{Fórmula del Deslizamiento}{
+El deslizamiento de un motor asincrónico se puede calcular mediante la siguiente fórmula:
+\begin{equation}
+s = \frac{n_s - n}{n_s} \times 100\%
+\end{equation}
+donde:
+\begin{itemize}
+    \item $s$ es el deslizamiento (en porcentaje).
+    \item $n_s$ es la velocidad de sincronismo (en revoluciones por minuto, rpm).
+    \item $n$ es la velocidad real del rotor (en revoluciones por minuto, rpm).
+\end{itemize}
+}
+
+La potencia absorbida por un motor asincrónico se calcula mediante la siguiente fórmula:
+
+\info{Fórmula de la Potencia Absorbida}{
+La potencia absorbida por un motor asincrónico se puede calcular mediante la siguiente fórmula:
+\begin{equation}
+P = \sqrt{3} \times V \times I \times \cos(\phi)
+\end{equation}
+donde:
+\begin{itemize}
+    \item $P$ es la potencia absorbida por el motor (en vatios, W).
+    \item $V$ es el voltaje de fase (en voltios, V).
+    \item $I$ es la corriente de fase (en amperios, A).
+    \item $\phi$ es el ángulo de desfasaje entre la tensión y la corriente (en radianes).
+\end{itemize}
+}
+
+\subsection*{Características y Aplicaciones}
+
+Los motores asincrónicos son ampliamente utilizados en diversas aplicaciones industriales y domésticas debido a su bajo costo, simplicidad y fiabilidad. Algunas de sus características principales incluyen:
+
+\begin{itemize}
+    \item \textbf{Robustez}: Los motores asincrónicos tienen una construcción robusta y requieren poco mantenimiento.
+    \item \textbf{Bajo Costo}: Son más económicos que otros tipos de motores, lo que los hace ideales para aplicaciones donde se requieren grandes cantidades de motores.
+    \item \textbf{Amplia Disponibilidad}: Son fácilmente disponibles en una variedad de tamaños y potencias para adaptarse a diferentes aplicaciones.
+    \item \textbf{Arranque Suave}: Pueden proporcionar un arranque suave y controlado, lo que los hace ideales para aplicaciones donde se requiere un control preciso de la velocidad.
+\end{itemize}
+
+Las aplicaciones típicas de los motores asincrónicos incluyen bombas, ventiladores, compresores, transportadores y sistemas de climatización.
+
+\subsection*{Preguntas para Investigar}
+
+\begin{enumerate}
+    \item ¿Qué es un motor asincrónico y cómo funciona?
+    \item ¿Cuáles son las partes principales de un motor asincrónico y cuál es su función?
+    \item ¿Qué es la velocidad de sincronismo y cómo se calcula?
+    \item ¿Qué es el deslizamiento en un motor asincrónico y por qué es importante?
+    \item ¿Cómo se calcula la potencia absorbida por un motor asincrónico?
+    \item ¿Cuáles son las ventajas y desventajas de los motores asincrónicos?
+    \item ¿Cuáles son algunas aplicaciones típicas de los motores asincrónicos en la industria?
+    \item ¿Qué es el factor de potencia en un motor asincrónico y por qué es importante?
+    \item ¿Cómo se puede controlar la velocidad de un motor asincrónico?
+    \item ¿Cuáles son los principales métodos de arranque de un motor asincrónico y en qué se diferencian?
+\end{enumerate}
+
+\subsection*{Problemas Prácticos}
+
+\begin{enumerate}
+    \item Una máquina utiliza un motor asincrónico con una velocidad de sincronismo de 1800 rpm y un deslizamiento del 5\%. ¿Cuál es la velocidad real del rotor?
+    \item Si un motor asincrónico tiene una velocidad de sincronismo de 1500 rpm y una velocidad real de 1425 rpm, ¿cuál es su deslizamiento?
+    \item Calcular la potencia absorbida por un motor asincrónico con un voltaje de fase de 220 V, una corriente de fase de 10 A y un factor de potencia de 0.85.
+    \item Si un motor asincrónico tiene un deslizamiento del 8\% y una velocidad de sincronismo de 1200 rpm, ¿cuál es su velocidad real?
+    \item Un motor asincrónico tiene una potencia absorbida de 5 kW, un voltaje de fase de 380 V y un factor de potencia de 0.9. ¿Cuál es la corriente de fase?
+    \item Si un motor asincrónico tiene un factor de potencia de 0.8, una potencia absorbida de 8 kW y un voltaje de fase de 440 V, ¿cuál es la corriente de fase?
+    \item ¿Cuál es la potencia absorbida por un motor asincrónico si tiene un voltaje de fase de 200 V, una corriente de fase de 5 A y un factor de potencia de 0.9?
+    \item Si un motor asincrónico tiene una potencia absorbida de 10 kW, un voltaje de fase de 400 V y una corriente de fase de 20 A, ¿cuál es su factor de potencia?
+    \item Un motor asincrónico tiene una velocidad de sincronismo de 1800 rpm y un deslizamiento del 4\%. Si la velocidad real del rotor es de 1728 rpm, ¿cuántos pares de polos tiene el motor?
+    \item Si un motor asincrónico tiene 8 pares de polos y una frecuencia de 60 Hz, ¿cuál es su velocidad de sincronismo?
+\end{enumerate}
+
+Esto concluye el trabajo práctico sobre motores asincrónicos. Recuerda que puedes consultar cualquier duda que tengas.
+\end{document}
+

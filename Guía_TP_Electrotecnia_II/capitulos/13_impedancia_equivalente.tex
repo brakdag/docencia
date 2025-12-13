@@ -1,0 +1,187 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Impedancia Equivalente}
+\img{images/13/impedancia}{Inductancia toroidal, resistencia variable y capacitor en un circuito impreso.}
+\info{
+Impedancia Equivalente}{
+\subsubsection{Paralelo} 
+\emph{La impedancia equivalente es la resultante las impedancias individuales, el valor total de los impedancia en paralelo es igual al recíproco de la suma de los recíprocos de las impedancias individuales.}
+
+\begin{equation*}
+Z_T= \frac{1}{\frac{1}{Z_1}+\frac{1}{Z_2}} \Rightarrow
+Z_T= \frac{1}{\frac{1}{Z_1}+\frac{1}{Z_2}+\dots+\frac{1}{Z_n}}
+\end{equation*}
+
+\begin{equation*}
+    Z_T=\dfrac{1}{\sum_{i=1}^{n}{\frac{1}{Z_i}}}
+\end{equation*}
+
+
+\subsubsection{Serie}
+\emph{La impedancia equivalente de impedancias conectadas en serie es igual a la suma de las impedancias individuales.}
+
+\begin{equation*}
+Z_T= Z_1+Z_2 \Rightarrow Z_T= Z_1+Z_2+\dots+Z_n
+\end{equation*}
+
+\begin{equation*}
+Z_T= \sum_{i=1}^n Z_i
+\end{equation*}
+
+Equivalencias: La unidad para impedancia es el Ohm $\Omega$.
+
+}
+\actividad{Calcular la impedancia equivalente de los siguientes circuitos entre $a$ y $b$.}
+
+$L_1=2 mH$
+
+$R_2=4 \Omega$
+
+$C_3=6 \mu F$
+
+$L_4= 5 mH$
+
+$R_5 = 6 \Omega$
+
+$C_6 = 3 \mu F$
+
+$L_7= 7 mH$
+
+%\includegraphics[scale=0.3]{images/09/pizarron.jpg}
+\begin{enumerate}
+    \item .
+    \begin{center}
+        \begin{circuitikz}
+         \draw (-2,0) node[label={above:a}]{} to[inductor=$L_1$,,*-] (0,0); 
+         \draw (0,0) to[resistor={$R_2$}] (2,0); 
+         \draw (2,0) to[capacitor=$C_3$,,-*] (4,0) node[label={above:b}]{}; 
+         
+         \end{circuitikz}
+        \end{center}
+    
+    \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[resistor=$R_2$,*-*](3,0) node[label={above:b}]{} (2,0)--(2,2) to[inductor=$L_1$] (-2,2)--(-2,0);
+         \draw (-2,0)--(-2,-2);
+         \draw (2,0)--(2,-2);
+         \draw (-2,-2) to[capacitor=$C_3$] (2,-2);
+        \end{circuitikz}
+        \end{center}
+    
+    \item .
+    
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[inductor=$L_1$,*-](0,0) to[resistor=$R_2$,-*] (3,0) node[label={above:b}]{} (2,0)--(2,-2) to[capacitor=$C_3$] (-2,-2)--(-2,0);
+   
+        \end{circuitikz}
+        \end{center}
+    \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[inductor=$L_1$,*-*](0,3) to[resistor=$R_2$,-*] (3,0) node[label={above:b}]{}  to[capacitor=$C_3$] (-3,0);
+        \end{circuitikz}
+        \end{center}
+    \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[inductor=$L_1$,*-*](0,3) to[inductor=$L_4$,-*] (3,0) node[label={above:b}]{}  to[resistor=$R_5$] (-3,0);
+        \end{circuitikz}
+        \end{center}
+
+      \item .
+    
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0)  to[inductor=$L_1$,*-*](0,0) node[label={above:a}]{} to[resistor=$R_2$,-*] (3,0) node[label={above:b}]{} (2,0)--(2,-2) to[capacitor=$C_3$] (-2,-2)--(-2,0);
+        \end{circuitikz}
+        \end{center}
+    
+    \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[resistor=$R_2$,*-*](2,0)  (2,0)--(2,2) to[inductor=$L_1$] (-2,2)--(-2,0);
+         \draw (-2,0)--(-2,-2);
+         \draw (2,0)--(2,-2);
+         \draw (-2,-2) to[capacitor=$C_3$] (2,-2);
+         \draw (2,0) to[inductor=$L_4$] (4,0);
+         \draw (4,0) to[resistor=$R_5$,-*] (6,0) node[label={above:b}]{};
+        \end{circuitikz}
+        \end{center}
+    
+    \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[inductor=$L_1$,*-](3,0) to[resistor=$R_2$,-*] (3,-3) node[label={right:b}]{};
+        \draw (-3,0)  to[capacitor=$C_3$,*-](-3,-3) to[inductor=$L_4$,-*] (3,-3);
+        \end{circuitikz}
+        \end{center}
+    
+    \item .
+    
+      \begin{center}
+        \begin{circuitikz}
+        \draw (-3,0)node[label={above:a}]{} -- (-2,1) to[inductor=$L_1$,*-*](0,1)
+        to[resistor=$R_2$,*-*] (2,-1)
+        to[capacitor=$C_3$,*-*] (0,-3)
+        to[inductor=$L_4$,*-*] (-2,-3)
+        -- (-2.5,-2.5)--(-2,-2)
+        to[resistor=$R_5$,*-*] (-3,-1)--(-3.5,-1.5)--(-4,-1) node[label={above:b}]{};
+        \draw (-2.5,-2.5)--(-3,-3)
+        to[capacitor=$C_6$,*-*] (-4,-2) --(-3.5,-1.5);
+        
+        \end{circuitikz}
+        \end{center}
+
+\item .
+      \begin{center}
+        \begin{circuitikz}
+           \draw (-3,0) node[label={above:a}]{} to[inductor=$L_1$,*-](3,0) to[resistor=$R_2$,-*] (3,-3) node[label={right:b}]{};
+        \draw (-3,0)  to[resistor=$R_2$,*-](-3,-3) to[inductor=$L_4$,-*] (3,-3);
+        \draw (-3,0) to[resistor=$R_2$,-*] (3,-3);
+        
+        \end{circuitikz}
+        \end{center}
+\item .
+      \begin{center}
+        \begin{circuitikz}
+           \draw (0,2) node[label={above:a}]{} to[inductor=$L_1$,*-*](2,4)
+           to[resistor=$R_2$,-*] (4,4)
+            to[capacitor=$C_3$,-*] (6,2)
+            to[resistor=$R_2$,-] (0,2)
+            to[resistor=$R_5$,-*] (2,0)
+            to[inductor=$L_1$,-*] (4,0)
+            to[inductor=$L_4$,-] (6,2) node[label={above:b}]{};
+        
+        \end{circuitikz}
+        \end{center}    
+        
+\item .
+      \begin{center}
+        \begin{circuitikz}
+           \draw (0,1)--(1,0) 
+           to[resistor=$R_5$,*-*] (4,0) node[label={right:b}]{}
+           to[capacitor=$C_3$,*-*] (4,3)node[label={right:a}]{} --(3,4)
+           to[resistor=$R_2$,*-*] (0,4)
+           to[inductor=$L_4$,-*] (0,1);
+           \draw (0,4) to[resistor=$R_2$,*-*] (4,0); 
+           
+        \end{circuitikz}
+        \end{center}    
+\item .
+              \begin{center}
+        \begin{circuitikz}
+           \draw (0,0) node[label={left:a}]{} to[capacitor=$C_3$,*-*] (4,0) 
+           to[resistor=$R_2$,*-*] (7,2)--(7,5)node[label={right:b}]{} 
+           to[resistor=$R_5$,*-*] (3,5)--(3,2)
+           to[capacitor=$C_6$,*-*] (1.5,1)--(0,0);
+           \draw (0,0) to[inductor=$L_1$,*-*] (0,4)
+           to[inductor=$L_4$,*-*] (4,4)--(4,0);
+           ; 
+        \end{circuitikz}
+        \end{center}    
+\end{enumerate}
+\newpage
+\end{document}

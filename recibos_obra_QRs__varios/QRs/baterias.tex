@@ -1,0 +1,67 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=1cm]{geometry}
+\usepackage{tikz}
+\usepackage{qrcode}
+\pagestyle{empty}
+
+\begin{document}
+
+\centering
+
+\begin{tikzpicture}[font=\sffamily\bfseries]
+
+% Tamaño de etiqueta
+\def\W{3.2cm}
+\def\H{1.8cm}
+
+% Espaciado
+\def\DX{0.4cm}
+\def\DY{0.4cm}
+
+% URL base del formulario (formResponse es necesario para prellenar)
+\def\BaseURL{https://docs.google.com/forms/d/e/1FAIpQLSf1f0J6UOiHoS8au_S2gky6ikrtrqqoRahSmmyohLMM-AI/formResponse?}
+
+% Campo de ID en tu formulario
+\def\EntryID{entry.1439117632}
+
+% Generar 40 etiquetas
+\foreach \row in {0,...,9} {
+  \foreach \col in {0,...,3} {
+
+    \pgfmathtruncatemacro{\n}{\row*4 + \col + 1}
+
+    % ID con ceros
+    \ifnum\n<10
+      \def\CellID{C-00\n}
+    \else
+      \ifnum\n<100
+        \def\CellID{C-0\n}
+      \else
+        \def\CellID{C-\n}
+      \fi
+    \fi
+
+    % URL completa con ID incrustado
+    \edef\FullURL{\BaseURL \EntryID=\CellID}
+
+    % Posición
+    \pgfmathsetmacro{\X}{\col*(\W+\DX)}
+    \pgfmathsetmacro{\Y}{-\row*(\H+\DY)}
+
+    % Etiqueta
+    \begin{scope}[shift={(\X,\Y)}]
+      \draw[black] (0,0) rectangle (\W,\H);
+
+      % QR
+      \node at (0.9cm,0.9cm) {\qrcode[height=1.5cm]{\FullURL}};
+
+      % Texto ID
+      \node at (2.4cm,0.9cm) {\CellID};
+    \end{scope}
+
+  }
+}
+
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,25 @@
+\usepackage{fancyhdr,geometry,tikz,qrcode}
+\geometry{
+    left=30mm,
+    top=10mm,
+    right=10mm,
+    bottom=20mm
+}
+
+\renewcommand{\headrule}{}
+\pagestyle{fancy}
+\fancypagestyle{plain}{}
+\fancyhf{}
+\fancyfoot[CE,CO]{%
+\begin{tikzpicture}[remember picture, overlay, font=\small\sffamily]
+    \draw[line width=1mm] (-1,0) rectangle (17,28.6);
+    \draw[line width=1mm] (-1,1) -- (17,1);
+    \draw[line width=0.5mm] (0,0.5) -- (17,0.5);
+    \draw[line width=0.5mm] (0,0) -- (0,1);
+    \draw (0,0.75) node[right] {Trabajo Práctico N$^\circ$ \thechapter - Guía de Trabajos Prácticos de \materia};
+    \draw (4,0.25) node[right] {Escuela N$^\circ$ 4-124 "Reynaldo Merín"};
+    \draw (16.8,0.75) node[left] {CURSO:$4^{to}1^{ra}$};
+    \draw (16.8,0.25) node[left] {HOJA N$^\circ$\thepage};
+    \draw (14,0)--(14,1);
+\end{tikzpicture}%
+}

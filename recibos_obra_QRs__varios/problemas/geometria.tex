@@ -1,0 +1,75 @@
+\documentclass[a4paper]{report}
+\usepackage{tikz,siunitx,amsmath}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[]
+\node (0,0)[scale=1]{\includegraphics[]{problemas/problema.png}};
+\draw (-1,-.7) node[]{$\alpha$};
+\draw (-1.7,.7) node []{$\beta$};
+\draw (-2.5,0.1) node [] {$\gamma$};
+\draw (-1.5,0.1) node [] {$\gamma$};
+\draw (-2,1) node []{$\omega$};
+\draw (3,0) node []{$\theta$};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.5]
+\coordinate (O) at (0,0);
+\coordinate (A) at (0,8);
+\coordinate (B) at (40:10.3);
+\coordinate (C) at (10:23);
+\coordinate (D) at ($ (A) + (330:12) $); 
+\coordinate (E) at ($ (A) + (-30:12.3) $);
+\coordinate (F) at ($(A) + (-10:25) $);
+\coordinate (X) at (40:7.4);
+\draw (O)--(A);
+\draw (O)--(B);
+\draw (O)--(C);
+\draw (A)--(C);
+\draw (A)--(E);
+\draw (A)--(D);
+\draw (B)--(E);
+
+\draw (E) node [left=5mm] {$\alpha$};
+\draw (E) node [above=5mm,left=4mm] {$x$};
+\draw (B) node [below=2mm]{$y$};
+\draw (B) node [below=2mm,left=5mm]{$\beta$};
+\draw [dashed](B)+--+(-30:10);
+\draw (X) node [left=5mm] {$\gamma$};
+\draw (X) node [right=5mm] {$\gamma$};
+\draw (X) node [above=5mm]{$\omega$};
+\draw (X) node [below=5mm]{$\omega$};
+\draw (A) node [right=5mm,below=3mm]{$\ang{60}$};
+\draw (A) node [right=15mm,below=2mm]{$\ang{20}$};
+\draw (O) node [right=5mm,above=5mm]{$\ang{50}$};
+\draw (O) node [right=15mm,above=2mm]{$\ang{30}$};
+\end{tikzpicture}
+
+\end{center}
+\vspace{1cm}
+
+$\alpha=\ang{180}-\ang{50}-\ang{30}=\ang{40}$
+
+$\beta=\ang{180}-\ang{50}-\ang{60}-\ang{20}=\ang{50}$
+
+$\theta= \ang{180}-\ang{20}-\ang{60}-\ang{50}-\ang{30}=\ang{20}$
+
+$\gamma=\ang{180}-\ang{60}-\ang{50}=\ang{70}$
+
+$\omega=\frac{(360-2\gamma)}{2}=\ang{110}$
+
+\begin{cases}
+
+$\ang{180}=x+\gamma +y =0$ \\
+
+$\ang{180}=\ang{30}+\alpha+x +y =0$
+\end{cases}
+
+$y=\ang{180}-\gamma-x=\ang{110}-x$
+
+$\ang{180}-\ang{30}-\ang{40}=x+110-x$
+
+$\ang{110}=x+110-x$
+
+\end{document}
+

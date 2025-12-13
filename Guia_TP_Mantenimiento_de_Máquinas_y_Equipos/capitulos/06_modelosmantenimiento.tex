@@ -1,0 +1,177 @@
+\section{Modelos de Mantenimiento}
+
+MODELOS DE MANTENIMIENTO POSIBLES
+
+Cada uno de los modelos que se exponen a continuación incluyen varios
+de los tipos anteriores de mantenimiento, en la proporción que se indica.
+Además, todos ellos incluyen dos actividades: inspecciones visuales y lubricación. Esto es así porque está demostrado que la realización de estas dos
+tareas en cualquier equipo es rentable. Incluso en el modelo más sencillo
+(Modelo Correctivo), en el que prácticamente abandonamos el equipo a su
+suerte y no nos ocupamos de él hasta que nos se produce una avería, es conveniente observarlo al menos una vez al mes, y lubricarlo con productos
+adecuados a sus características. Las inspecciones visuales prácticamente
+no cuestan dinero (estas inspecciones estarán incluidas en unas gamas en las
+que tendremos que observar otros equipos cercanos, por lo que no significará que tengamos que destinar recursos expresamente para esa función).
+\begin{figure}[h]
+    \centering
+    \cutpic{0.5cm}{.5\textwidth}{images/lubricacion-mecanizado.jpg}
+    \caption{Lubricación de ruedas dentadas helicoidales.}
+  
+\end{figure}
+
+Esta inspección nos permitirá detectar averías de manera precoz, y su resolución generalmente será más barata cuanto antes detectemos el problema.
+La lubricación siempre es rentable. Aunque sí representa un costo (lubricante y la mano de obra de aplicarlo), en general es tan bajo que está sobradamente justificado, ya que una avería por una falta de lubricación implicará siempre un gasto mayor que la aplicación del lubricante
+correspondiente.
+Hecha esta puntualización, podemos definir ya los diversos modelos de
+mantenimiento posibles.
+
+\paragraph{Modelo correctivo}
+Este modelo es el más básico, e incluye, además de las inspecciones visuales y la lubricación mencionadas anteriormente, la reparación de averías
+que surjan. Es aplicable, como veremos, a equipos con el más bajo nivel de
+criticidad, cuyas averías no suponen ningún problema, ni económico ni técnico. En este tipo de equipos no es rentable dedicar mayores recursos ni esfuerzos.
+
+
+\begin{tcolorbox}
+MODELO CORRECTIVO
+\tcblower
+\begin{itemize}
+ \item Inspecciones visuales.
+ \item Lubricación.
+ \item Reparación de averías
+\end{itemize}
+ \end{tcolorbox}
+
+\paragraph{Modelo Condicional}
+Incluye las actividades del modelo anterior, y además, la realización de
+una serie de pruebas o ensayos que condicionarán una actuación posterior. Si
+tras las pruebas descubrimos una anomalía, programaremos una intervención;
+si por el contrario, todo es correcto, no actuaremos sobre el equipo.
+Este modelo de mantenimiento es válido en aquellos equipos de poco uso,
+o equipos que a pesar de ser importantes en el sistema productivo su probabilidad de fallo es baja.
+
+\begin{tcolorbox}
+MODELO CONDICIONAL
+\tcblower
+\begin{itemize}
+\item Inspecciones visuales.
+\item Lubricación.
+\item Mantenimiento Condicional.
+\item Reparación de averías.
+\end{itemize}
+
+\end{tcolorbox}
+
+\paragraph{Modelo Sistemático}
+Este modelo incluye un conjunto de tareas que realizaremos sin importarnos cuál es la condición del equipo; realizaremos, además, algunas mediciones y pruebas para decidir si realizamos otras tareas de mayor envergadura; y, por ultimo, resolveremos las averías que surjan. Es un modelo de
+gran aplicación en equipos de disponibilidad media, de cierta importancia en
+el sistema productivo y cuyas averías causan algunos trastornos. Es importante señalar que un equipo sujeto a un modelo de mantenimiento sistemático no tiene por qué tener todas sus tareas con una periodicidad fija. Simplemente, un equipo con este modelo de mantenimiento puede tener tareas sistemáticas, que se realicen sin importar el tiempo que lleva funcionando o el estado de los elementos sobre los que se trabaja. Es la principal diferencia con los dos modelos anteriores, en los que para realizar una tarea debe presentarse algún síntoma de fallo.
+
+Un ejemplo de equipo sujeto a este modelo de mantenimiento es un reactor discontinuo, en el que las materias que deben reaccionar se introducen
+de una sola vez, tiene lugar la reacción, y posteriormente se extrae el producto
+de la reacción, antes de realizar una nueva carga. Independientemente de que
+este reactor esté duplicado o no, cuando está en operación debe ser fiable, por
+lo que se justifica realizar una serie de tareas con independencia de que se hayan presentado algún síntoma de fallo.
+
+Otros ejemplos:
+\begin{itemize}
+    \item El tren de aterrizaje de un avión
+    \item El motor de un avión
+\end{itemize}
+
+\begin{tcolorbox}
+MODELO SISTEMATICO
+\tcblower
+\begin{itemize}
+\item Inspecciones visuales.
+\item Lubricación.
+\item Mantenimiento Preventivo Sistemático.
+\item Mantenimiento Condicional.
+\item Reparación de averías.
+\end{itemize}
+\end{tcolorbox}
+
+\paragraph{Modelo de Alta Disponibilidad}
+
+Es el modelo más exigente y exhaustivo de todos. Se aplica en aquellos
+equipos que bajo ningún concepto pueden sufrir una avería o un mal funcionamiento. Son equipos a los que se exige, además, unos niveles de disponibilidad altísimos, por encima del 90\%. La razón de un nivel tan alto de
+disponibilidad es, en general, el alto coste en producción que tiene una avería. Con una exigencia tan alta no hay tiempo para el mantenimiento que requiera parada del equipo (correctivo, preventivo sistemático).
+
+\img{images/victoria-webber-silverstone-1278867300-01}{Cambio de ruedas en boxes GP Inglaterra.}
+
+Para mantener
+estos equipos es necesario emplear técnicas de mantenimiento predictivo,
+que nos permitan conocer el estado del equipo con él en marcha, y a paradas
+programadas, que supondrán una revisión general completa, con una frecuencia generalmente anual o superior. En esta revisión se sustituyen, en general, todas aquellas piezas sometidas a desgaste o con probabilidad de fallo
+a lo largo del año (piezas con una vida inferior a dos años). Estas revisiones
+se preparan con gran antelación, y no tiene por qué ser exactamente iguales
+año tras año.
+\begin{tcolorbox}
+MODELO ALTA DISPONIBILIDAD
+\tcblower
+\begin{itemize}
+\item Inspecciones visuales.
+\item Lubricación.
+\item Mantenimiento Preventivo Sistemático.
+\item Mantenimiento Condicional.
+\item Reparación de averías.
+\item Puesta a cero periódica, en fecha determinada (Parada)
+\end{itemize}
+\end{tcolorbox}
+Como quiera que en este modelo no se incluye el mantenimiento correctivo, es decir, el objetivo que se busca en este equipo es cero averías, en
+general no hay tiempo para subsanar convenientemente las incidencias que
+ocurren, siendo conveniente en muchos casos realizar reparaciones rápidas
+provisionales que permitan mantener el equipo en marcha hasta la próxima
+revisión general. Por tanto, la puesta a cero anual debe incluir la resolución
+de todas aquellas reparaciones provisionales que hayan tenido que efectuarse
+a lo largo del año.
+
+Algunos ejemplos de este modelo de mantenimiento pueden ser los siguientes:
+
+\img{images/turbina.jpg}{Mantenimiento en turbina pelton.}
+
+\begin{itemize}
+    \item Turbinas de producción de energía eléctrica. 
+    \item Hornos de elevada temperatura, en los que una intervención supone
+enfriar y volver a calentar el horno, con el consiguiente gasto energético y con las pérdidas de producción que trae asociado.
+    \item Equipos rotativos que trabajan de forma continua.
+    \item Depósitos reactores o tanques de reacción no duplicados, que sean la
+base de la producción y que deban mantenerse en funcionamiento el
+máximo número de horas posible.
+\end{itemize}
+\paragraph{ Otras consideraciones}
+En el diseño del Plan de Mantenimiento, deben tenerse en cuenta dos consideraciones muy importantes que afectan a algunos equipos en particular. En
+primer lugar, algunos equipos están sometidos a normativas legales que regulan su mantenimiento, obligando a que se realicen en ellos determinadas
+actividades con una periodicidad establecida.
+En segundo lugar, algunas de las actividades de mantenimiento no podemos realizarlas con el equipo habitual de mantenimiento (sea propio o
+contratado) pues se requieren de conocimientos y/o medios específicos que
+solo están en manos del fabricante, distribuidor o de un especialista en el
+equipo.
+Estos dos aspectos deben ser valorados cuando tratamos de determinar el
+modelo de mantenimiento que debemos aplicar a un equipo.
+
+\actividad{Responder}
+\begin{enumerate}
+    \item ¿Porqué se realizan en los modelos de mantenimiento las tareas de lubricación e inspección?
+    \item Explicar las características del modelo correctivo, y a que equipos es aplicable.
+    \item ¿En qué consiste el modelo condicional y a que equipos se aplica?
+    \item ¿A que equipos es aplicable el modelo sistemático?
+    \item Dar ejemplos de aplicación del modelo de puesta a cero o de alta disponibilidad.
+    \item A su criterio que modelo sería aplicable al mantenimiento de un torno.
+\end{enumerate}
+
+\actividad{Investigar}
+\begin{enumerate}
+    \item ¿Qué lubricante se utiliza engranajes y ruedas dentadas?¿Qué características posee?
+    \item ¿Para que se utilizan los aditivos en los lubricantes?
+    \item Buscar ejemplos lubricantes comerciales: Sólidos, líquidos y gaseosos.
+
+\web{https://www.youtube.com/watch?v=89o_dQ4OSc4}{Multimedia: Historia del WD40}
+
+\item ¿Cuáles son las funciones básicas del lubricante WD40?
+
+\item ¿Cuándo y donde fue descubierto el WD40?
+
+\item ¿Cómo se puede aplicar el WD40?
+
+\end{enumerate}
+
+

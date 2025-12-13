@@ -1,0 +1,34 @@
+\documentclass[a4paper,12pt]{exam}
+\usepackage[margin=0.7cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,graphicx}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage[first=1, last=20]{lcg}
+\usepackage{forloop}
+\newcommand{\random}{\rand\arabic{rand}}
+
+\usepackage[p,osf]{scholax}
+\usepackage{amsmath,amsthm}% must be loaded 
+\usepackage[scaled=0.8,ncf,vvarbb]{newtxmath}% 
+
+\setstretch{0.005} 
+\pointpoints{punto}{puntos}
+
+\begin{document}
+
+
+\newcounter{loopcounter}
+\setcounter{loopcounter}{1}
+\loop
+    \subfile{induccion3}
+    \stepcounter{loopcounter}
+    \ifnum\value{loopcounter}<20
+\repeat
+
+
+
+\end{document}

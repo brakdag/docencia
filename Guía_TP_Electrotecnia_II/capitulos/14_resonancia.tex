@@ -1,0 +1,44 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Resonancia}
+\img{images/14/resonancia}{Resonancia electromagnética también conocida como tomografía}
+
+\info{¿Qué es la resonancia?}{
+
+}
+
+
+\info{Resonancia en corriente alterna}{
+La resonancia de un circuito RLC serie, ocurre cuando las reactancias inductiva y capacitiva son iguales en magnitud, pero se cancelan entre ellas porque están desfasadas 180 grados. Esta reducción al mínimo que se produce en el valor de la impedancia, es útil en aplicaciones de sintonización.
+}
+
+\info{Circuito RLC}{Un circuito RLC está compuesto por resistencia R Inductancia L y capacitor con capacidad C}
+
+\subsection{Frecuencia de Resonancia}
+\begin{equation}
+    X_L=X_C
+\end{equation}
+
+Cualquier circuito RLC serie, tiene una frecuencia de resonancia, que puede determinase de forma analítica o práctica.
+
+\begin{equation}
+    \omega \cdot L = \dfrac{1}{\omega \cdot C}
+\end{equation}
+
+\begin{equation}
+    2 \pi f L = \dfrac{1}{2 \pi f C}
+\end{equation}
+
+\begin{equation}
+    f=\sqrt{\dfrac{1}{4\cdot \pi^2L \cdot C}} =\dfrac{1}{2 \cdot \pi \cdot \sqrt{L \cdot C}}  
+\end{equation}
+
+\actividad{ Resolver los siguientes problemas}
+\begin{enumerate}
+    \item Encontrar la frecuencia de resonancia para un circuito RLC que pose una resistencia de $1\Omega$ un capacitor de $C_1=1 \mu F$ y una impedancia de $L_1=10mH$. 
+    \item Se desea saber que capacitor conectar a una resistencia de $R=10\Omega$ y a una bobina de $l=10mH$ para que tenga una frecuencia de resonancia de 50hz.
+    \item Una bobina de $L=10mH$ se conecta con una resistencia de $R=3\Omega$ y un capacitor de placas paralelas de $S=2m^2$ separadas por $d=0,1mm$ por un dieléctrico con permitividad relativa $\epsilon_r=30$. Calcular la frecuencia de resonancia del circuito.
+\end{enumerate}
+
+
+\end{document}

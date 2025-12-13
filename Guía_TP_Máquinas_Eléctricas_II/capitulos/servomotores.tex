@@ -1,0 +1,129 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\setcounter{chapter}{4}
+\pagestyle{empty}
+\chapter{Servomotores, PWM y Encoders}
+
+\subsection*{Motores de corriente pulsante}
+\img{images/04/gearbox.jpg}{Servomotor internamente.}
+
+\subsubsection*{Servomotores}
+Los servomotores son dispositivos electromecánicos utilizados para controlar la posición angular de un eje con alta precisión. Estos motores son esenciales en aplicaciones de robótica, sistemas de automatización industrial y dispositivos de radio control. Un servomotor típico consiste en un motor DC o AC, una caja de engranajes, un sensor de posición y un circuito de control.
+
+El principio de funcionamiento de un servomotor se basa en un sistema de retroalimentación. La señal de control, generalmente una señal PWM (Pulse Width Modulation), indica la posición deseada del motor. El sensor de posición mide la posición actual del eje y el circuito de control ajusta la corriente del motor para minimizar la diferencia entre la posición actual y la deseada.
+\info{Constante electromotriz}{
+\[
+\theta = \frac{V_{in} \cdot \Delta t}{K_e}
+\]
+
+Donde:
+
+- \(\theta\) es la posición angular del eje.
+
+- \(V_{in}\) es el voltaje de entrada.
+
+- \(\Delta t\) es el tiempo durante el 
+cual se aplica el voltaje.
+
+- \(K_e\) es la constante electromotriz del motor.
+}
+% ACÁ BUSCAR O AGREGAR IMAGEN QUE DEBE SEGUIR LOS SIGUIENTES CRITERIOS DE BUSQUEDA DE "diagram of a DC servo motor with gearbox and position sensor"
+
+
+\subsubsection*{PWM (Pulse Width Modulation)}
+El PWM es una técnica de modulación utilizada para controlar la cantidad de energía suministrada a una carga eléctrica. En el contexto de los servomotores, el PWM se utiliza para controlar la posición del motor. Una señal PWM es una señal digital que alterna entre encendido (ON) y apagado (OFF) a una frecuencia constante, pero con una relación de tiempo variable entre los estados ON y OFF, conocida como ciclo de trabajo (duty cycle).
+\info{duty cycle}{
+\[
+D = \frac{t_{ON}}{t_{ON} + t_{OFF}} \times 100\%
+\]
+
+Donde:
+
+- \(D\) es el ciclo de trabajo en porcentaje.
+
+- \(t_{ON}\) es el tiempo durante el cual la señal está en estado ON.
+
+- \(t_{OFF}\) es el tiempo durante el cual la señal está en estado OFF.
+}
+
+Un ciclo de trabajo del 50\% significa que la señal está en ON la mitad del tiempo y en OFF la otra mitad. Variando el ciclo de trabajo, se puede controlar la posición del servomotor.
+\info{Posición en función del ciclo}{
+\[
+\theta = \theta_{max} \cdot \left(\frac{D}{100}\right)
+\]
+
+Donde:
+
+- \(\theta\) es la posición angular del eje.
+
+- \(\theta_{max}\) es la posición máxima del eje.
+}
+
+\subsubsection*{Encoders}
+
+%// ACÁ BUSCAR O AGREGAR IMAGEN QUE DEBE SEGUIR LOS SIGUIENTES CRITERIOS DE BUSQUEDA DE "incremental encoder signal diagram" y "absolute encoder diagram"
+\img{images/04/encoder.jpg}{Encoder incremental}
+
+Los encoders son dispositivos que 
+convierten el movimiento mecánico en señales eléctricas digitales o analógicas, proporcionando información sobre la posición, velocidad y dirección de un eje rotatorio. Existen dos tipos principales de encoders: incrementales y absolutos.
+
+- \textbf{Encoders Incrementales}: Generan pulsos cuando el eje gira, y la posición se determina contando estos pulsos desde un punto de referencia. No proporcionan información sobre la posición absoluta sin un punto de referencia inicial.
+  \info{Encoder Incremental}{
+\[
+\theta = \frac{N_{pulsos}}{N_{total}} \cdot 360^\circ
+\]
+
+Donde:
+
+- \(\theta\) es la posición angular.
+
+- \(N_{pulsos}\) es el número de pulsos contados.
+
+- \(N_{total}\) es el número total de pulsos por revolución.
+}
+- \textbf{Encoders Absolutos:} Proporcionan una posición única para cada ángulo del eje, independientemente del punto de referencia. Son esenciales en aplicaciones donde se necesita conocer la posición exacta en todo momento.
+\info{Enconder Absoluto}{
+
+\[
+\theta = \frac{V_{out}}{V_{max}} \cdot 360^\circ
+\]
+
+Donde:
+
+- \(V_{out}\) es el voltaje de salida del encoder.
+
+- \(V_{max}\) es el voltaje máximo del encoder.
+
+}
+
+\actividad{Cuestionario de Investigación}
+
+\begin{enumerate}
+    \item ¿Qué es un servomotor y cuáles son sus principales componentes?
+    \item ¿Cómo funciona el sistema de retroalimentación en un servomotor?
+    \item ¿Qué es una señal PWM y cómo se utiliza para controlar un servomotor?
+    \item Explica la diferencia entre un encoder incremental y un encoder absoluto.
+    \item ¿Qué es el ciclo de trabajo en una señal PWM y cómo afecta a la posición de un servomotor?
+    \item ¿Cuáles son las aplicaciones comunes de los servomotores en la industria?
+    \item ¿Cómo se determina la posición de un eje utilizando un encoder incremental?
+    \item ¿Qué ventajas tiene un encoder absoluto sobre un encoder incremental?
+    \item ¿Cómo se relaciona el voltaje de entrada de un servomotor con su posición angular?
+    \item Describe una aplicación práctica donde se utilice un servomotor con un encoder.
+\end{enumerate}
+
+\actividad{Problemas para Resolver}
+
+\begin{enumerate}
+    \item Un servomotor recibe una señal PWM con un ciclo de trabajo del 25\%. Si la posición máxima del eje es 180 grados, ¿cuál es la posición angular del eje?
+    \item Un sistema utiliza un encoder incremental que genera 1000 pulsos por revolución. Si se detectan 250 pulsos, ¿cuál es el ángulo girado?
+    \item Un servomotor está configurado para girar 90 grados con un ciclo de trabajo del 50\%. ¿Cuál sería el ciclo de trabajo necesario para una posición de 45 grados?
+    \item Un encoder absoluto tiene un voltaje de salida de 2.5V y un voltaje máximo de 5V. ¿Cuál es la posición angular del eje en grados?
+    \item Si un servomotor tiene una constante electromotriz \(K_e\) de 10 V/s y se aplica un voltaje de 5V durante 2 segundos, ¿cuál es la posición angular del eje?
+    \item Un encoder incremental con 500 pulsos por revolución se usa para medir la velocidad de un motor. Si se detectan 1000 pulsos en un segundo, ¿cuál es la velocidad del motor en RPM?
+    \item Un servomotor recibe una señal PWM con un ciclo de trabajo del 75\%. Si la posición máxima del eje es 120 grados, ¿cuál es la posición angular del eje?
+    \item Un sistema utiliza un encoder incremental que genera 2000 pulsos por revolución. Si se detectan 500 pulsos, ¿cuál es el ángulo girado en grados?
+    \item Un encoder absoluto tiene un voltaje de salida de 1V y un voltaje máximo de 4V. ¿Cuál es la posición angular del eje en grados?
+    \item Si un servomotor tiene una constante electromotriz \(K_e\) de 20 V/s y se aplica un voltaje de 10V durante 1 segundo, ¿cuál es la posición angular del eje?
+\end{enumerate}
+
+\end{document}

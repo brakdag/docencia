@@ -1,0 +1,105 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Motor Asincrónico Trifásico}
+
+\section{Introducción al Motor Asincrónico Trifásico}
+
+\subsection{Conceptos Básicos}
+
+Un motor asincrónico trifásico, también conocido como motor de inducción trifásico, es un tipo de motor eléctrico ampliamente utilizado en aplicaciones industriales debido a su robustez, bajo costo y facilidad de mantenimiento. Este motor funciona basado en el principio de inducción electromagnética, donde la corriente en el rotor es inducida por el campo magnético generado por las corrientes trifásicas en el estator.
+
+\info{Funcionamiento Básico}{
+El estator del motor asincrónico trifásico está compuesto por un conjunto de bobinas distribuidas uniformemente en su periferia, conectadas a una fuente de alimentación trifásica. Cuando se aplica una corriente trifásica al estator, se crea un campo magnético giratorio. Este campo magnético induce una corriente en el rotor, que a su vez produce un segundo campo magnético que interactúa con el campo del estator, generando un torque que hace girar el rotor.
+
+\begin{equation}
+n_s = \frac{120 \cdot f}{p}
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $n_s$: Velocidad sincrónica (RPM)
+    \item $f$: Frecuencia de la corriente de alimentación (Hz)
+    \item $p$: Número de pares de polos del motor
+\end{itemize}
+}
+
+\subsection{Potencia en Motores Asincrónicos}
+
+La potencia en un motor asincrónico puede dividirse en varias componentes: potencia de entrada, potencia útil (o de salida) y pérdidas. La eficiencia del motor se determina comparando la potencia útil con la potencia de entrada.
+
+\info{Potencia de Entrada y de Salida}{
+La potencia de entrada ($P_{in}$) de un motor se calcula mediante la siguiente fórmula:
+
+\begin{equation}
+P_{in} = \sqrt{3} \cdot V \cdot I \cdot \cos(\phi)
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $V$: Tensión de línea (V)
+    \item $I$: Corriente de línea (A)
+    \item $\cos(\phi)$: Factor de potencia (adimensional)
+\end{itemize}
+
+La potencia de salida ($P_{out}$) es la potencia mecánica útil entregada por el motor y se relaciona con el torque ($T$) y la velocidad angular ($\omega$) del motor:
+
+\begin{equation}
+P_{out} = T \cdot \omega
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $T$: Torque (Nm)
+    \item $\omega$: Velocidad angular (rad/s)
+\end{itemize}
+}
+
+\subsection{Deslizamiento}
+
+El deslizamiento es un parámetro crítico en los motores asincrónicos, ya que indica la diferencia entre la velocidad sincrónica y la velocidad real del rotor. Se define como:
+
+\info{Fórmula del Deslizamiento}{
+\begin{equation}
+s = \frac{n_s - n_r}{n_s}
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $s$: Deslizamiento (adimensional)
+    \item $n_s$: Velocidad sincrónica (RPM)
+    \item $n_r$: Velocidad del rotor (RPM)
+\end{itemize}
+}
+
+El deslizamiento es esencial para la generación de torque en el motor. En un motor ideal sin pérdidas, el deslizamiento sería cero, pero en la práctica, siempre hay un pequeño deslizamiento que permite la transferencia de energía del campo magnético al rotor.
+
+\actividad{Responder el siguiente cuestionario}
+\begin{enumerate}
+    \item ¿Qué es un motor asincrónico trifásico y cuál es su principio de funcionamiento?
+    \item ¿Cómo se calcula la velocidad sincrónica de un motor asincrónico trifásico?
+    \item ¿Qué relación existe entre la frecuencia de la corriente y la velocidad sincrónica?
+    \item ¿Qué es la potencia de entrada en un motor y cómo se calcula?
+    \item ¿Qué es la potencia de salida y cómo se relaciona con el torque y la velocidad angular?
+    \item ¿Cómo se define el deslizamiento en un motor asincrónico?
+    \item ¿Qué importancia tiene el deslizamiento en el funcionamiento de un motor asincrónico?
+    \item ¿Qué factores afectan la eficiencia de un motor asincrónico trifásico?
+    \item ¿Por qué los motores asincrónicos trifásicos son preferidos en aplicaciones industriales?
+    \item ¿Qué papel juega el factor de potencia en la operación de un motor asincrónico trifásico?
+\end{enumerate}
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+    \item Un motor asincrónico trifásico tiene un número de polos de 4 y está conectado a una fuente de 50 Hz. ¿Cuál es su velocidad sincrónica?
+    \item Si un motor tiene una velocidad sincrónica de 1500 RPM y una velocidad del rotor de 1450 RPM, ¿cuál es el deslizamiento?
+    \item Calcular la potencia de entrada de un motor si la tensión de línea es de 400 V, la corriente de línea es de 10 A y el factor de potencia es 0.8.
+    \item Un motor desarrolla un torque de 50 Nm a una velocidad angular de 150 rad/s. ¿Cuál es la potencia de salida del motor?
+    \item Si un motor tiene un deslizamiento de 0.05 y una velocidad sincrónica de 1800 RPM, ¿cuál es la velocidad del rotor?
+    \item Un motor trifásico tiene una potencia de entrada de 15 kW, una eficiencia del 90\% y un factor de potencia de 0.85. ¿Cuál es su potencia de salida?
+    \item Calcular el torque desarrollado por un motor que tiene una potencia de salida de 7.5 kW y una velocidad angular de 100 rad/s.
+    \item Si un motor de 6 polos está operando con una fuente de 60 Hz, ¿cuál es su velocidad sincrónica?
+    \item Un motor tiene una velocidad sincrónica de 1200 RPM y un deslizamiento de 0.04. ¿Cuál es la velocidad del rotor?
+    \item Calcular la corriente de línea de un motor que tiene una potencia de entrada de 20 kW, una tensión de línea de 380 V y un factor de potencia de 0.9.
+\end{enumerate}
+
+\end{document}

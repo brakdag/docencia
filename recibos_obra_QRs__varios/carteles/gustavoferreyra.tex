@@ -1,0 +1,14 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz,readarray}
+\usepackage[a4paper]{geometry}
+\usepackage[]{qrcode}
+\geometry{a4paper,left=30mm,top=20mm,right=10mm,bottom=10mm}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[remember picture, overlay,shift={(-6,-26)}]
+\foreach {\x } in {1,...,3}
+  \foreach {\y } in {1,...,13}
+\draw (0+\x*6.2,\y*2) node [] {\fbox{\large Ferreyra Gustavo David\qrcode[height=0.5in]{tel:2604546620} }};
+\end{tikzpicture}
+\end{document}

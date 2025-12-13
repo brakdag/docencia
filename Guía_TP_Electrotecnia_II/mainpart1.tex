@@ -1,0 +1,56 @@
+\documentclass[12pt]{book}
+\input{config}
+\input{formato}
+%\input{images/logo/4124}
+
+\makeglossaries
+\usetikzlibrary{shapes,arrows,decorations.text}
+\tikzstyle{line}=[draw] % here
+\setlist[itemize]{leftmargin=*}
+
+\begin{document}
+\newglossaryentry{formula}
+{
+    name=formula,
+    description={A mathematical expression}
+}
+
+
+\frontmatter
+   % \includepdf[pages=-]{intro.pdf}
+    %\tableofcontents
+\mainmatter
+    %\subfile{capitulos/01_1_resistencia}
+    %\subfile{capitulos/01_02_resistenciaequivalente}
+    %\subfile{capitulos/01_induccion_magnetica}
+    %\subfile{capitulos/02_intensidad_de_campo}
+    %\subfile{capitulos/03_electroimanes}
+    \subfile{capitulos/04_electromagnetismo_1}
+    %\subfile{capitulos/05_electromagnetismo_2}
+   % \subfile{capitulos/06_fem_inducida}
+    %\subfile{capitulos/10_inductancia_equivalente}
+    \subfile{capitulos/07_autoinduccion}
+    %\subfile{capitulos/09_capacidad_equivalente}
+   % \subfile{capitulos/08_capacitores}  
+    %\subfile{capitulos/08_condensadores}
+    %\subfile{capitulos/09_transitorio_capacitivo}
+    %\subfile{capitulos/10_maquina_rotativa}
+    %\subfile{capitulos/11_corriente_alterna}
+    %\subfile{capitulos/10_onda_sinusoidal}
+    %\subfile{capitulos/12_impedancia}
+    %\subfile{capitulos/13_impedancia_equivalente}
+    %\subfile{capitulos/14_resonancia}
+    %\subfile{capitulos/15_ejercicios_resueltos}
+    
+
+\backmatter
+%\subfile{capitulos/teoria/01_imanes}
+%\subfile{capitulos/17_planificacion}
+%\subfile{capitulos/16_anexos}
+%\subfile{capitulos/18_simulacion}
+%\subfile{capitulos/19_anexo_13}
+
+   
+
+%\printglossary[title=Special Terms, toctitle=List of terms]
+\end{document}

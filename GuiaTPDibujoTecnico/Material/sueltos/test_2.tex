@@ -1,0 +1,42 @@
+\documentclass[a4paper,oneside]{article}
+\usepackage{tikz,geometry,subfiles,svg}
+\usepackage{calligra,pgfornament-han,yfonts}
+\usepackage{fontspec}
+\setmainfont{QTPalatine}
+\usepackage{csvsimple}
+\usetikzlibrary{shapes,arrows,decorations.text}
+\geometry{
+ landscape,
+ a4paper,
+ left=30mm,
+ top=15mm,
+ right=15mm,
+ bottom=55mm
+ }
+\include{Material/sueltos/formato2.tex}
+\newcommand{\textoA}{Cursó sus estudios secundarios del Plan de Estudios de Técnico en Producción Agropecuaria,en Producción Pecuaria en este establecimiento Educacional. RES 2339-DGE-15}
+\newcommand{\textoB}{ Ha participado como alumno responsable del proyecto, generando alianzas entre la institución educativa, la comunidad y diversas entidades para generar impactos sociales con una duración de 200 hs reloj.}
+\newcommand{\textoC}{ Ha participado como docente a cargo del proyecto, generando alianzas entre la institución educativa, la comunidad y diversas entidades para generar impactos sociales con una duración de 200 hs reloj.}
+\newcommand{\textoD}{ Ha participado como docente concurso “BUSCANDO EL ÁRBOL MÁS ANTIGUO DE SAN RAFAEL”}
+\newcommand{\textoE}{Ha demostrado para sus pares valores humanos quienes lo han reconocido como mejor compañero.}
+\begin{document}
+\csvreader[head to column names]{./alumnos2.csv}{}{
+\begin{tikzpicture}[remember picture, overlay, shift={(-3.55,-19.15)}]
+%\draw [line width=1mm](0+1,0+1) rectangle (29.7-1,21-1);
+\draw (15+2,17) node {\includegraphics[scale=0.4]{images/escudo.png}};
+\draw (10.5+2,17) node {\includegraphics[scale=0.07]{images/escudom.jpg}};
+\draw (15,14) node {\fontsize{35}{35}\selectfont \Motivo};
+\draw (20+2,17) node {\includegraphics[scale=0.5]{images/dge.png}};
+\draw (6+2,17) node {\scalebox{0.25}{
+\input{Material/sueltos/00_tapa2}
+}};
+
+\draw (15,11.5) node {\fontsize{18}{18}\selectfont\ \sffamily Se hace constar que:};
+\draw (15,10) node {\scalebox{3}{\fontsize{12}{12}\selectfont\calligra \Nombre }};
+\draw (15,9) node {\LARGE D.N.I: \Dni};
+\draw (26.5,8.5) node [below left,text width=22cm,font=\Large]
+{\selectfont\sffamily \textoA \\ El Sosneado, San Rafael, Mendoza, Diciembre de 2022};
+\end{tikzpicture}
+\newpage
+}
+\end{document}

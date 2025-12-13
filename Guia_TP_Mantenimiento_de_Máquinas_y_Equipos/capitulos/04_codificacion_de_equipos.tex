@@ -1,0 +1,195 @@
+\section{Codificación de equipos}
+
+Una vez elaborada la lista de equipos es muy importante identificar cada
+uno de los equipos con un código único. Esto facilita su localización, su referencia en órdenes de trabajo, en planos, permite la elaboración de registros históricos de fallos e intervenciones, permite el cálculo de indicadores referidos
+a áreas, equipos, sistemas, elementos, etc., y permite el control de costes.
+Básicamente, existen dos posibilidades a la hora de codificar:
+\begin{enumerate}
+\item Sistemas de codificación no significativos: son sistemas que asignan un número o un código correlativo a cada equipo, pero el número o código no aporta ninguna información adicional.
+    \item  Sistemas de codificación significativos o inteligentes, en el que el código asignado aporta información.
+\end{enumerate}
+
+La ventaja del empleo de un sistema de codificación no significativo, de
+tipo correlativo, es la simplicidad y la brevedad del código. Con apenas 4 dígitos es posible codificar la mayoría de las plantas industriales. La desventaja es la dificultad para ubicar una máquina a partir de su código: es necesario
+tener siempre a mano una lista para poder relacionar cada equipo con su código. Eso, o tener una memoria prodigiosa.
+Un sistema de codificación significativo aporta valiosa información sobre
+el equipo al que nos referimos: tipo de equipo, área en el que está ubicada, familia a la que pertenece, y toda aquella información adicional que queramos
+incorporar al código. El problema es que al añadir más información el código
+aumenta de tamaño.
+Como quiera el empleo de sistemas correlativos es muy sencillo, estudiaremos los sistemas de codificación significativos.
+Información útil que debe contener el código de un ítem
+La información que debería contener el código de un equipo debería ser
+el siguiente:
+\begin{itemize}
+\item Planta a la que pertenece.
+\item Area al que pertenece dentro de la planta.
+\item Tipo de equipo.
+Los elementos que forman parte de un equipo deben contener información adicional:
+\item Tipo de elemento.
+\item Equipo al que pertenecen.
+\item Dentro de ese equipo, sistema en el que están incluidos.
+\item  Familia a la que pertenece el elemento. La clasificación en familias es
+muy útil, ya que nos permite hacer listados de elementos. Se puede encontrar una lista de familias en que pueden clasificarse los elementos más adelante.
+\end{itemize}
+Una vez elaborada la lista de equipos, y teniendo en cuenta todas las consideraciones anteriores, es posible abordar la tarea de la codificación, fijando
+los criterios que la regirán. Un ejemplo de codificación se incluye en el punto siguiente.
+\ejemplo{ Una forma de codificar los activos de una planta}{
+Para este ejemplo, se ha utilizado la planta de producción de Compact
+Disc que se detallaba en el apartado dedicado a la elaboración de listas de
+equipos. Se han codificado tanto los equipos como los elementos que los
+componen.}
+Para definir el código en este ejemplo, se ha definido la siguiente estructura:
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/04/codificacionimage.png}
+    \caption{Códigos para equipos}
+\end{figure}
+
+Como se indica en la Figura, el Área de la Planta en que está ubicado
+el equipo estaría definido por dos caracteres alfanuméricos, el tipo de
+equipo por dos caracteres alfabéticos, y el número correlativo por dos caracteres numéricos.
+
+En la siguiente Tabla figuran algunos ejemplos:
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|l|c|l|}\hline
+Código & Tipo de equipo & Código & Tipo de equipo\\\hline
+BS & Caldera de vapor & C0 &Red de Aire comprimido \\
+BF & Caldera de Fluido Térmico & R0 & Red de Agua de refrigeración \\
+CR & Compresor rotativo &F0 &Red contraincendios\\
+CC & Compresor Centrífugo & E0 & Red eléctrica general\\
+CT & Compresor de tornillo & V0 & Red de Vacío\\
+SC &Secador de aire por sistema frig. & S0 & Red de Vapor \\
+SG &Secador de aire por silica gel &H0& Red de agua sobrecalentada \\
+TS &Tanque de alm. a presión &W0& Red de agua industrial
+atm.\\ \hline
+
+
+    \end{tabular}
+    \caption{Ejemplos de códigos que pueden
+utilizarse para identificar el tipo de equipo}
+    
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|l|c|l|}\hline
+Código & Tipo de equipo & Código & Tipo de equipo\\\hline
+TP &Tanque de alm. a presión &G0& Red de gas
+superior a la atm.\\
+OE& Horno eléctrico &FC& Equipo frig. por compresión\\
+OG& Horno de gas &FA& Equipo frig. por absorción\\
+TR& Reactor &CL& Climatizador\\
+ET& Intercambiador de haces tubulares &EP& Intercambiador de placas\\
+AR& Aerorefrigerador &IN& Inyectora\\
+RI& Torre Refrig. tiro inducido &RN& T. Refrig. tiro natural\\
+RF& Torre Refrig. tiro natural &TG& Turbina de gas\\
+TV& Turbina de Vapor &PS& Impresora por serigrafía\\
+PM& Envasadora & & \\ \hline
+    \end{tabular}
+    \caption{Ejemplos de códigos que pueden
+utilizarse para identificar el tipo de equipo (continuación)}
+   
+\end{table}
+
+Utilizando esta Tabla de tipos de equipo, y teniendo en cuenta la lista
+de equipos que contenía la planta del apartado anterior, la codificación resultante sería la de el la tabla.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|l|}\hline
+C&ó&d&i&g&o&Descripción\\\hline
+1&1&F&1& & &Equipo contraincendios \\
+1&1&F&0& & &Red de agua contraincendios\\
+1&1&C&T&0&1&Compresor 1\\
+1&1&C&T&0&2&Compresor 2\\
+1&1&S&C&0&1&Secador de aire\\
+1&1&C&0& & &Red de aire comprimido\\
+1&1&V&C&0&1&Bomba de Vacío\\
+1&1&V&0& & &Red de Vacío\\
+1&2&L&P&0&1&Laboratorio de Premastering\\
+1&2&L&M&0&1&Laboratorio de Mastering\\
+1&2&L&T&0&1&Laboratorio de Matrices\\
+1&3&I&N&0&1&Inyectora 1\\
+1&3&I&N&0&2&Inyectora 2\\
+1&3&I&N&0&3&Inyectora 3\\
+1&4&P&S&0&1&Impresora 1\\
+1&4&P&S&0&2&Impresora 2\\
+1&4&L&S&0&1&Laboratorio de serigrafía\\
+1&5&P&M&0&1&Envasadora 1\\
+1&5&P&M&0&2&Envasadora 2\\
+\hline
+    \end{tabular}
+    \caption{Codificación resultante.}
+
+\end{table}
+
+\clearpage
+\newpage
+
+\subsubsection*{Códigos para elementos}
+El código de un elemento que forma parte de un equipo estaría formado en este ejemplo por un total de 17 caracteres, con la siguiente estructura:
+\begin{itemize}
+\item Los 6 primeros identificarían el equipo, tal y como se ha detallado anteriormente.
+\item Un carácter más alfabético identificaría la familia a la que pertenece el elemento.
+\item Los tres caracteres siguientes identificarían el sistema.
+\item Los caracteres siguientes, hasta 7 (longitud variable), serían caracteres alfanuméricos, que identificarían las características del
+elemento y aportarían un número correlativo.
+\item  Un ultimo carácter, de aplicación exclusiva para el caso de redundancia (elementos duplicados, triplicados, etc.).
+En la siguiente Figura puede verse la estructura del código de un elemento:
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/04/codificacionelementos.png}
+    \caption{Código de elementos}
+\end{figure}
+
+\end{itemize}
+
+
+Las familias a las que puede pertenecer un elemento pueden ser las siguientes:
+
+\begin{table}[h]
+    
+    \centering 
+    
+    \begin{tabular}{|c|l|}\hline
+Código&Familia\\\hline
+B&Bomba\\
+M&Motor\\
+V&Válvula\\
+I&Instrumento\\
+C&Componente de cuadro eléctrico\\
+E&Elemento eléctrico\\
+P&Pieza mecánica\\
+T&Tubería\\
+F&Filtro\\
+N&Cilindros y actuadores neumáticos (no válvulas)\\
+H&Cilindros y actuadores hidráulicos\\
+O&Brida\\\hline
+    \end{tabular}
+    \caption{Familias de elementos}
+\end{table}
+
+
+Indicar la familia a la que pertenece el elemento tiene una ventaja, nos
+permite hacer listados de válvulas, motores, bombas, instrumentos, etc. Estas listas pueden ser interesantes en muchos casos; por ejemplo, si quisiéramos saber cuántos y qué motores tenemos en la planta, para estudiar su
+posible estandarización. O saber cuántos instrumentos de medida hay instalados, para hacer un Plan de Calibración.
+
+\actividad{Contestar, investigar y responder.}
+\begin{enumerate}
+    \item ¿Cuál es la diferencia entre un sistema de codificación significativo y no significativo?
+    \item ¿Cuáles son las ventajas y desventajas para el sistema de codificación significativo y no significativo.?
+    \item Un sistema de codificación no significativo es el código QR y código de Barras. Investigar y explicar como es el funcionamiento de ambos sistemas.
+    \begin{enumerate}
+        \item ¿Para qué está la norma de código de barras EAN13?
+        \item ¿Qué es un código bidimensional?
+    \end{enumerate}
+    
+    \item Elaborar el diseño de un \emph{código significativo} de equipo para una máquina del taller de la escuela. 
+    
+\end{enumerate}
+
+
+

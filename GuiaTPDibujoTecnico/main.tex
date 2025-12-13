@@ -1,0 +1,36 @@
+\documentclass[12pt,oneside]{book}
+\usepackage{subfiles,svg}
+\usepackage{pgfornament}
+\includeonly{capitulos/11_presupuesto}
+\usetikzlibrary{shapes,arrows,decorations.text}
+\newcommand{\materia}{DIBUJO TÉCNICO}
+\newcommand{\TP}{}
+\newcommand{\logo}{images/logososneado2.jpg}
+\newcommand{\email}{gustavoferreyra@outlook.com}
+\newcommand{\classroomcode}{}
+\newcommand{\urlqr}{https://es.scribd.com/document/452756540/}
+
+\title{\centering \includesvg[width=.5\textwidth]{images/logo2.svg} \\Guía de Cartillas y Trabajos Prácticos \\ \materia}
+\author{Ferreyra G.}
+\date{Esc 4-239 | Cerro el Sosneado |Año:2025}
+\usepackage{dibujot}
+\input{rotulo} 
+\begin{document}
+\frontmatter
+\pagestyle{empty}
+\subfile{capitulos/00_portada}
+\mainmatter
+\subfile{capitulos/01_introduccion}
+\subfile{capitulos/02_escalas}
+\subfile{capitulos/03_lineas}
+\subfile{capitulos/04_figuras}
+\subfile{capitulos/05_caligrafia}
+\subfile{capitulos/06_repaso}
+\subfile{capitulos/07_isoe}
+\subfile{capitulos/08_cotas}
+\subfile{capitulos/09_corte}
+\subfile{capitulos/10_dibujo_tecnico_asistido.tex}
+
+%\subfile{capitulos1011_presupuesto10
+\end{document}
+

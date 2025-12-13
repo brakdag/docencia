@@ -1,0 +1,32 @@
+\documentclass[a4paper]{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,decorations.text}
+\usepackage{fontspec}
+\setmainfont{QTCoronation}
+\begin{document}
+\begin{tikzpicture}
+\fill[gray] (0,0) circle (5cm);
+\fill[white] (0,0) circle (4cm);
+
+
+\path [postaction={decoration={
+                    text along path, 
+                    text align=center,
+     text={|\fontsize{82}{82}\selectfont|Cabañas}},decorate}] 
+     (-4cm,0) arc (180:0:4cm);
+
+\path [postaction={decoration={
+                    text along path, 
+                    text align=center,
+     text={|\fontsize{82}{82}\selectfont|Los Cedros}},decorate}] 
+     (-5cm,0) arc (180:360:5cm);
+     
+%\path [postaction={decoration={
+%                    text along path, 
+%                    text align=center,
+%     text={|\fontsize{42}{42}\selectfont\ssfamily|Rama Caída - San Rafael - Mendoza -Argentina}},decorate}] 
+%     (-3cm,0) arc (270:360:5.5cm);
+
+
+\end{tikzpicture}
+\end{document}

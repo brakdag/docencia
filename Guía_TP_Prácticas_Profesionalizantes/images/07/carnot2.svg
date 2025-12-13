@@ -1,0 +1,2466 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="es" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Ciclo de Carnot - Wikipedia, la enciclopedia libre</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"wgRequestId":"d67d9287-3e7a-4e5e-99a6-16417e5ec01d","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Ciclo_de_Carnot","wgTitle":"Ciclo de Carnot","wgCurRevisionId":136240407,"wgRevisionId":136240407,"wgArticleId":76783,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia:Artículos con identificadores GND","Wikipedia:Páginas con enlaces mágicos de ISBN","Ciclos termodinámicos","Epónimos relacionados con la física","Ciencia y tecnología de Francia del siglo XIX","Ciencia de 1826","Francia en 1826"],"wgPageContentLanguage":"es",
+"wgPageContentModel":"wikitext","wgRelevantPageName":"Ciclo_de_Carnot","wgRelevantArticleId":76783,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVisualEditor":{"pageLanguageCode":"es","pageLanguageDir":"ltr","pageVariantFallbacks":"es"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgNoticeProject":"wikipedia","wgVector2022PreviewPages":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"español","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q188910","GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":true,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false};RLSTATE={"ext.gadget.imagenesinfobox":"ready",
+"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.a-commons-directo","ext.gadget.ReferenceTooltips","ext.gadget.refToolbar","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks",
+"ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=es&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=es&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=es&amp;modules=ext.gadget.imagenesinfobox&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=es&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<noscript><link rel="stylesheet" href="/w/load.php?lang=es&amp;modules=noscript&amp;only=styles&amp;skin=vector"/></noscript>
+<meta name="generator" content="MediaWiki 1.39.0-wmf.25"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Carnot_engine_scheme.svg/1200px-Carnot_engine_scheme.svg.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="1200"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Carnot_engine_scheme.svg/800px-Carnot_engine_scheme.svg.png"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="800"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Carnot_engine_scheme.svg/640px-Carnot_engine_scheme.svg.png"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="640"/>
+<meta name="viewport" content="width=1000, initial-scale=1.0"/>
+<meta property="og:title" content="Ciclo de Carnot - Wikipedia, la enciclopedia libre"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//es.m.wikipedia.org/wiki/Ciclo_de_Carnot"/>
+<link rel="alternate" type="application/x-wiki" title="Editar" href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (es)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//es.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://es.wikipedia.org/wiki/Ciclo_de_Carnot"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Ciclo_de_Carnot rootpage-Ciclo_de_Carnot skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">Ciclo de Carnot</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">De Wikipedia, la enciclopedia libre</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Ir a la navegación</a>
+		<a class="mw-jump-link" href="#searchInput">Ir a la búsqueda</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="es" dir="ltr"><div class="mw-parser-output"><div class="rellink noprint hatnote"> Para otros usos de este término, véase <a href="/wiki/Carnot" class="mw-disambig" title="Carnot">Carnot</a>.</div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/wiki/Archivo:Carnot_engine_scheme.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Carnot_engine_scheme.svg/200px-Carnot_engine_scheme.svg.png" decoding="async" width="200" height="200" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Carnot_engine_scheme.svg/300px-Carnot_engine_scheme.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Carnot_engine_scheme.svg/400px-Carnot_engine_scheme.svg.png 2x" data-file-width="460" data-file-height="460" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Archivo:Carnot_engine_scheme.svg" class="internal" title="Aumentar"></a></div>Esquema de una máquina de Carnot. La máquina absorbe calor desde la fuente caliente T<sub>1</sub> y cede calor a la fría T<sub>2</sub>, produciendo trabajo.</div></div></div>
+<p>El <b>ciclo de Carnot</b> es un <a href="/wiki/Ciclo_termodin%C3%A1mico" title="Ciclo termodinámico">ciclo termodinámico</a> que se produce en un equipo o máquina cuando trabaja absorbiendo una cantidad de <a href="/wiki/Calor" title="Calor">calor</a> <i>Q<sub>1</sub></i> de una fuente de mayor temperatura y cediendo un calor <i>Q<sub>2</sub></i> a la de menor temperatura produciendo un <a href="/wiki/Trabajo_(f%C3%ADsica)" title="Trabajo (física)">trabajo</a> sobre el exterior.
+</p><p>El <a href="/wiki/Rendimiento_(f%C3%ADsica)" title="Rendimiento (física)">rendimiento</a> de este ciclo viene definido por
+</p>
+<dl><dd><div class="mwe-math-element"><div class="mwe-math-mathml-display mwe-math-mathml-a11y" style="display: none;"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \eta =1-{\frac {T_{2}}{T_{1}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B7;<!-- η --></mi>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta =1-{\frac {T_{2}}{T_{1}}}}</annotation>
+  </semantics>
+</math></div><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76f6d137ce44a1ad2fbc09e1407e25809dbd71bf" class="mwe-math-fallback-image-display" aria-hidden="true" style="vertical-align: -2.171ex; width:11.519ex; height:5.509ex;" alt="{\displaystyle \eta =1-{\frac {T_{2}}{T_{1}}}}"/></div></dd></dl>
+<p>y, como se verá adelante, es mayor que el producido por cualquier máquina que funcione cíclicamente entre las mismas fuentes de temperatura. Una <a href="/wiki/M%C3%A1quina_t%C3%A9rmica" title="Máquina térmica">máquina térmica</a> que realiza este ciclo se denomina <a href="/wiki/M%C3%A1quina_de_Carnot" title="Máquina de Carnot">máquina de Carnot</a>.
+</p><p>Como todos los procesos que tienen lugar en el ciclo ideal son reversibles, el ciclo puede invertirse y la máquina absorbería calor de la fuente fría y cedería calor a la fuente caliente, teniendo que suministrar trabajo a la máquina. Si el objetivo de esta máquina es extraer calor de la fuente fría (para mantenerla fría) se denomina <a href="/wiki/M%C3%A1quina_frigor%C3%ADfica" title="Máquina frigorífica">máquina frigorífica</a>, y si es ceder calor a la fuente caliente, <a href="/wiki/Bomba_de_calor" title="Bomba de calor">bomba de calor</a>.
+</p><p>Fue publicado por <a href="/wiki/Sadi_Carnot" class="mw-redirect" title="Sadi Carnot">Sadi Carnot</a>  en 1824 en su único libro <i>Réflexions sur la puissance motrice du feu et sur les machines propres à développer cette puissance</i><sup id="cite_ref-1" class="reference separada"><a href="#cite_note-1"><span class="corchete-llamada">[</span>1<span class="corchete-llamada">]</span></a></sup>&#8203; (Reflexiones sobre la potencia motriz del fuego y sobre las máquinas propias a desarrollar esta potencia) y permitió abrir el camino para la formulación de la <a href="/wiki/Segunda_ley_de_la_termodin%C3%A1mica" class="mw-redirect" title="Segunda ley de la termodinámica">segunda ley de la termodinámica</a>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="es" dir="ltr"><h2 id="mw-toc-heading">Índice</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#El_ciclo_de_Carnot"><span class="tocnumber">1</span> <span class="toctext">El ciclo de Carnot</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Trabajo_del_ciclo"><span class="tocnumber">1.1</span> <span class="toctext">Trabajo del ciclo</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Teoremas_de_Carnot"><span class="tocnumber">2</span> <span class="toctext">Teoremas de Carnot</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Rendimiento"><span class="tocnumber">3</span> <span class="toctext">Rendimiento</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Ciclo_real"><span class="tocnumber">4</span> <span class="toctext">Ciclo real</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Véase_también"><span class="tocnumber">5</span> <span class="toctext">Véase también</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Referencias"><span class="tocnumber">6</span> <span class="toctext">Referencias</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Bibliografía"><span class="tocnumber">7</span> <span class="toctext">Bibliografía</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Enlaces_externos"><span class="tocnumber">8</span> <span class="toctext">Enlaces externos</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="El_ciclo_de_Carnot">El ciclo de Carnot</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit&amp;section=1" title="Editar sección: El ciclo de Carnot">editar</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:252px;"><a href="/wiki/Archivo:PV_Ciclo_de_Carnot.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d1/PV_Ciclo_de_Carnot.svg/250px-PV_Ciclo_de_Carnot.svg.png" decoding="async" width="250" height="195" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d1/PV_Ciclo_de_Carnot.svg/375px-PV_Ciclo_de_Carnot.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d1/PV_Ciclo_de_Carnot.svg/500px-PV_Ciclo_de_Carnot.svg.png 2x" data-file-width="281" data-file-height="219" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Archivo:PV_Ciclo_de_Carnot.svg" class="internal" title="Aumentar"></a></div>Ciclo de Carnot en el <a href="/w/index.php?title=Diagrama_de_Clapeyron&amp;action=edit&amp;redlink=1" class="new" title="Diagrama de Clapeyron (aún no redactado)">diagrama de Clapeyron</a> (<a href="/wiki/Presi%C3%B3n" title="Presión">P</a> y <a href="/wiki/Unidades_de_volumen" class="mw-redirect" title="Unidades de volumen">V</a>)<br />- AB: expansión isoterma;<br />- BC: expansión adiabática;<br />- CD: compresión isoterma;<br />- DA: compresión adiabática.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:252px;"><a href="/wiki/Archivo:Carnot_Two-Phase_Cycle_PV_Diagramm.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Carnot_Two-Phase_Cycle_PV_Diagramm.svg/250px-Carnot_Two-Phase_Cycle_PV_Diagramm.svg.png" decoding="async" width="250" height="177" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Carnot_Two-Phase_Cycle_PV_Diagramm.svg/375px-Carnot_Two-Phase_Cycle_PV_Diagramm.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Carnot_Two-Phase_Cycle_PV_Diagramm.svg/500px-Carnot_Two-Phase_Cycle_PV_Diagramm.svg.png 2x" data-file-width="1052" data-file-height="744" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Archivo:Carnot_Two-Phase_Cycle_PV_Diagramm.svg" class="internal" title="Aumentar"></a></div>Ciclo de Carnot para un cuerpo difuso en el diagrama de Clapeyron:<br />- AB&#160;: evaporización completa;<br />- BC: expansión adiabática;<br />- CD: licuefacción parcial;<br />- DA: compresión adiabática y licuefacción del vapor presente en D.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:252px;"><a href="/wiki/Archivo:Carnot-cycle-T-S-diagram.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/82/Carnot-cycle-T-S-diagram.svg/250px-Carnot-cycle-T-S-diagram.svg.png" decoding="async" width="250" height="177" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/82/Carnot-cycle-T-S-diagram.svg/375px-Carnot-cycle-T-S-diagram.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/82/Carnot-cycle-T-S-diagram.svg/500px-Carnot-cycle-T-S-diagram.svg.png 2x" data-file-width="524" data-file-height="372" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Archivo:Carnot-cycle-T-S-diagram.svg" class="internal" title="Aumentar"></a></div>Ciclo de Carnot en un diagrama <a href="/wiki/Temperatura" title="Temperatura">temperatura</a>-<a href="/wiki/Entrop%C3%ADa" title="Entropía">entropía</a>.<br />- AB: expansión isoterma;<br />- BC: expansión adiabática;<br />- CD: compresión isoterma;<br />- DA: compresión adiabática.</div></div></div>
+<p>El ciclo de Carnot consta de cuatro etapas: dos procesos isotermos (a <a href="/wiki/Temperatura" title="Temperatura">temperatura</a> constante) y dos adiabáticos (aislados térmicamente). Las aplicaciones del <a href="/wiki/Primer_principio_de_la_termodin%C3%A1mica" title="Primer principio de la termodinámica">Primer principio de la termodinámica</a> están escritos acorde con el <a href="/wiki/Criterio_de_signos_termodin%C3%A1mico" title="Criterio de signos termodinámico">Criterio de signos termodinámico</a>.
+</p><p><b>Expansión <a href="/wiki/Proceso_isot%C3%A9rmico" title="Proceso isotérmico">isoterma</a></b> (proceso A → B en el diagrama): Se parte de una situación en que el gas se encuentra al mínimo volumen del ciclo y a temperatura T<sub>1</sub> de la fuente caliente. En este estado se transfiere calor al cilindro desde la fuente de temperatura T<sub>1</sub>, haciendo que el gas se expanda. Al expandirse, el gas tiende a enfriarse, pero absorbe calor de T<sub>1</sub> y mantiene su temperatura constante. Al tratarse de un <a href="/wiki/Gas_ideal" title="Gas ideal">gas ideal</a>, al no cambiar la temperatura tampoco lo hace su <a href="/wiki/Energ%C3%ADa_interna" title="Energía interna">energía interna</a>, y despreciando los cambios en la <a href="/wiki/Energ%C3%ADa_potencial" title="Energía potencial">energía potencial</a> y la <a href="/wiki/Energ%C3%ADa_cin%C3%A9tica" title="Energía cinética">cinética</a>, a partir de la <a href="/wiki/Conservaci%C3%B3n_de_la_energ%C3%ADa" title="Conservación de la energía">1.ª ley de la termodinámica</a> se observa que todo el calor transferido es convertido en trabajo:
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{12}&gt;0\ ;\ U_{12}=0\ \Longrightarrow \ 0=U_{12}=Q_{12}-W_{12}\ \Longrightarrow \ W_{12}=Q_{12}\ \Longrightarrow \ W_{12}&gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+        <mtext>&#xA0;</mtext>
+        <mo>;</mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mtext>&#xA0;</mtext>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <mn>0</mn>
+        <mo>=</mo>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mtext>&#xA0;</mtext>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mtext>&#xA0;</mtext>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{12}&gt;0\ ;\ U_{12}=0\ \Longrightarrow \ 0=U_{12}=Q_{12}-W_{12}\ \Longrightarrow \ W_{12}=Q_{12}\ \Longrightarrow \ W_{12}&gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/94e25409e448d4ea76f2196b90cb722fbf4fc055" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:77.329ex; height:2.509ex;" alt="{\displaystyle Q_{12}&gt;0\ ;\ U_{12}=0\ \Longrightarrow \ 0=U_{12}=Q_{12}-W_{12}\ \Longrightarrow \ W_{12}=Q_{12}\ \Longrightarrow \ W_{12}&gt;0}"/></span>
+</p>
+</blockquote>
+<p>Desde el punto de vista de la <a href="/wiki/Entrop%C3%ADa" title="Entropía">entropía</a>, ésta aumenta en este proceso: por definición, una variación de entropía viene dada por el cociente entre el calor transferido y la temperatura de la fuente en un proceso reversible: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle dS={\frac {\delta Q}{T}}{\bigg |}_{rev}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mi>S</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03B4;<!-- δ --></mi>
+              <mi>Q</mi>
+            </mrow>
+            <mi>T</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.047em" minsize="2.047em">|</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+            <mi>e</mi>
+            <mi>v</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle dS={\frac {\delta Q}{T}}{\bigg |}_{rev}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74f4513b5eb76a755ebc5e6567510a5dfd24dcc9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:12.721ex; height:5.676ex;" alt="{\displaystyle dS={\frac {\delta Q}{T}}{\bigg |}_{rev}}"/></span>. Como el proceso es efectivamente reversible, la entropía aumentará, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{12}={\frac {Q_{12}}{T_{1}}}&gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>12</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{12}={\frac {Q_{12}}{T_{1}}}&gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/28833fb27fef90ecfa98e95febcc6002f49e7a81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:15.211ex; height:5.676ex;" alt="{\displaystyle S_{12}={\frac {Q_{12}}{T_{1}}}&gt;0}"/></span>.
+</p><p><b>Expansión <a href="/wiki/Proceso_adiab%C3%A1tico" title="Proceso adiabático">adiabática</a></b> (B → C): La expansión isoterma termina en un punto tal que el resto de la expansión pueda realizarse sin intercambio de calor. A partir de aquí el sistema se aísla térmicamente, con lo que no hay transferencia de calor con el exterior. Esta expansión adiabática hace que el gas se enfríe hasta alcanzar exactamente la temperatura T<sub>2</sub> en el momento en que el gas alcanza su volumen máximo. Al enfriarse disminuye su energía interna, con lo que utilizando un razonamiento análogo al anterior proceso:
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{23}=0\ ;\ U_{23}&lt;0\ \Longrightarrow \ U_{23}=-W_{23}\Longrightarrow \ W_{23}&gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>23</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mtext>&#xA0;</mtext>
+        <mo>;</mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>23</mn>
+          </mrow>
+        </msub>
+        <mo>&lt;</mo>
+        <mn>0</mn>
+        <mtext>&#xA0;</mtext>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>23</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>23</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>23</mn>
+          </mrow>
+        </msub>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{23}=0\ ;\ U_{23}&lt;0\ \Longrightarrow \ U_{23}=-W_{23}\Longrightarrow \ W_{23}&gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aeb80c4bf14eb2afff324c3f196f5d8804b95613" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:50.6ex; height:2.509ex;" alt="{\displaystyle Q_{23}=0\ ;\ U_{23}&lt;0\ \Longrightarrow \ U_{23}=-W_{23}\Longrightarrow \ W_{23}&gt;0}"/></span>
+</p>
+</blockquote>
+<p>Esta vez, al no haber transferencia de calor, la entropía se mantiene constante: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{23}=0\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>23</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{23}=0\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3817639bee1c64c084ea7f8b8e7ca70d843ee26b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.949ex; height:2.509ex;" alt="{\displaystyle S_{23}=0\,}"/></span>
+</p><p><b>Compresión <a href="/wiki/Proceso_isot%C3%A9rmico" title="Proceso isotérmico">isoterma</a></b> (C → D): Se pone en contacto con el sistema la fuente de calor de temperatura T<sub>2</sub> y el gas comienza a comprimirse, pero no aumenta su temperatura porque va cediendo calor a la fuente fría. Al no cambiar la temperatura tampoco lo hace la energía interna, y la cesión de calor implica que hay que hacer un trabajo sobre el sistema
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{34}&lt;0\ ;\ U_{34}=0\ \Longrightarrow \ 0=U_{34}=Q_{34}-W_{34}\ \Longrightarrow \ W_{34}=Q_{34}\ \Longrightarrow \ W_{34}&lt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mo>&lt;</mo>
+        <mn>0</mn>
+        <mtext>&#xA0;</mtext>
+        <mo>;</mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mtext>&#xA0;</mtext>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <mn>0</mn>
+        <mo>=</mo>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mtext>&#xA0;</mtext>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mtext>&#xA0;</mtext>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mo>&lt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{34}&lt;0\ ;\ U_{34}=0\ \Longrightarrow \ 0=U_{34}=Q_{34}-W_{34}\ \Longrightarrow \ W_{34}=Q_{34}\ \Longrightarrow \ W_{34}&lt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13196353054efeda0e9b58d987bea91dd74012d1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:77.329ex; height:2.509ex;" alt="{\displaystyle Q_{34}&lt;0\ ;\ U_{34}=0\ \Longrightarrow \ 0=U_{34}=Q_{34}-W_{34}\ \Longrightarrow \ W_{34}=Q_{34}\ \Longrightarrow \ W_{34}&lt;0}"/></span>
+</p>
+</blockquote>
+<p>Al ser el calor negativo, la entropía disminuye: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{34}={\frac {Q_{34}}{T_{2}}}&lt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>34</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>&lt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{34}={\frac {Q_{34}}{T_{2}}}&lt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a0e95a13482ec25ef01dc7caf84ad02800f0a000" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:15.211ex; height:5.676ex;" alt="{\displaystyle S_{34}={\frac {Q_{34}}{T_{2}}}&lt;0}"/></span>
+</p><p><b>Compresión <a href="/wiki/Proceso_adiab%C3%A1tico" title="Proceso adiabático">adiabática</a></b> (D → A): Aislado térmicamente, el sistema evoluciona comprimiéndose y aumentando su temperatura hasta el estado inicial. La energía interna aumenta y el calor es nulo, habiendo que comunicar un trabajo al sistema:
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{41}=0\ ;\ U_{41}&gt;0\ \Longrightarrow \ U_{41}=-W_{41}\Longrightarrow \ W_{41}&lt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>41</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mtext>&#xA0;</mtext>
+        <mo>;</mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>41</mn>
+          </mrow>
+        </msub>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+        <mtext>&#xA0;</mtext>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>41</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>41</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>41</mn>
+          </mrow>
+        </msub>
+        <mo>&lt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{41}=0\ ;\ U_{41}&gt;0\ \Longrightarrow \ U_{41}=-W_{41}\Longrightarrow \ W_{41}&lt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67e30b9f719413d2da0156a9cdddbc79705f4e77" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:50.6ex; height:2.509ex;" alt="{\displaystyle Q_{41}=0\ ;\ U_{41}&gt;0\ \Longrightarrow \ U_{41}=-W_{41}\Longrightarrow \ W_{41}&lt;0}"/></span>
+</p>
+</blockquote>
+<p>Al ser un proceso adiabático, no hay transferencia de calor, por lo tanto la entropía no varía: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle S_{41}=0\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>41</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{41}=0\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bfc90510518286f7f72e71bfc867e79ca02e21b5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.949ex; height:2.509ex;" alt="{\displaystyle S_{41}=0\,}"/></span>
+</p>
+<h3><span class="mw-headline" id="Trabajo_del_ciclo">Trabajo del ciclo</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit&amp;section=2" title="Editar sección: Trabajo del ciclo">editar</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Por convención de signos, un signo negativo significa lo contrario. Es decir, un trabajo negativo significa que el trabajo es realizado sobre el sistema.
+</p><p>Con este convenio de signos el trabajo obtenido deberá ser, por lo tanto, negativo. Tal como está definido, y despreciando los cambios en <a href="/wiki/Energ%C3%ADa_mec%C3%A1nica" title="Energía mecánica">energía mecánica</a>, a partir de la primera ley:
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle dU=\delta Q-\delta W\quad \Longrightarrow \quad \delta W=\delta Q-dU\quad \Longrightarrow \quad W=\oint \delta Q-dU}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mi>U</mi>
+        <mo>=</mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mi>Q</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mi>W</mi>
+        <mspace width="1em" />
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mspace width="1em" />
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mi>W</mi>
+        <mo>=</mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mi>Q</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>d</mi>
+        <mi>U</mi>
+        <mspace width="1em" />
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mspace width="1em" />
+        <mi>W</mi>
+        <mo>=</mo>
+        <mo>&#x222E;<!-- ∮ --></mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mi>Q</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>d</mi>
+        <mi>U</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle dU=\delta Q-\delta W\quad \Longrightarrow \quad \delta W=\delta Q-dU\quad \Longrightarrow \quad W=\oint \delta Q-dU}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/003e2b3f9bc64be218609c74767820856b791d55" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:66.939ex; height:5.676ex;" alt="{\displaystyle dU=\delta Q-\delta W\quad \Longrightarrow \quad \delta W=\delta Q-dU\quad \Longrightarrow \quad W=\oint \delta Q-dU}"/></span>
+</p>
+</blockquote>
+<p>Como dU (diferencial de la <a href="/wiki/Energ%C3%ADa_interna" title="Energía interna">energía interna</a>) es una diferencial exacta, el valor de U es el mismo al inicio y al final del ciclo, y es independiente del camino, por lo tanto la integral de dU vale cero, con lo que queda
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W=\oint \delta Q=\int _{1}^{2}T_{1}dS+\int _{3}^{4}T_{2}dS=T_{1}(S_{B}-S_{A})+T_{2}(S_{A}-S_{B})=(T_{1}-T_{2})(S_{B}-S_{A})&gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>W</mi>
+        <mo>=</mo>
+        <mo>&#x222E;<!-- ∮ --></mo>
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mi>Q</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msubsup>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mi>d</mi>
+        <mi>S</mi>
+        <mo>+</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msubsup>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mi>d</mi>
+        <mi>S</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>A</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>A</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>A</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W=\oint \delta Q=\int _{1}^{2}T_{1}dS+\int _{3}^{4}T_{2}dS=T_{1}(S_{B}-S_{A})+T_{2}(S_{A}-S_{B})=(T_{1}-T_{2})(S_{B}-S_{A})&gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bcee8798b54b1f9f100da8e363e79da2dee8854b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:93.932ex; height:6.176ex;" alt="{\displaystyle W=\oint \delta Q=\int _{1}^{2}T_{1}dS+\int _{3}^{4}T_{2}dS=T_{1}(S_{B}-S_{A})+T_{2}(S_{A}-S_{B})=(T_{1}-T_{2})(S_{B}-S_{A})&gt;0}"/></span>.
+</p>
+</blockquote>
+<p>Por lo tanto, en el ciclo el sistema ha realizado un trabajo sobre el exterior.
+</p>
+<h2><span class="mw-headline" id="Teoremas_de_Carnot">Teoremas de Carnot</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit&amp;section=3" title="Editar sección: Teoremas de Carnot">editar</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b>1.</b> <i>No puede existir una máquina térmica que funcionando entre dos fuentes térmicas dadas tenga mayor rendimiento que una de Carnot que funcione entre esas mismas fuentes térmicas.</i>
+</p>
+<dl><dd>Para demostrarlo se supondrá que no se cumple el teorema, y se verá que el no cumplimiento transgrede el <a href="/wiki/Segundo_principio_de_la_termodin%C3%A1mica" title="Segundo principio de la termodinámica">segundo principio de la termodinámica</a>. Se tienen pues dos máquinas, una llamada X y otra, de Carnot, R, operando entre las mismas fuentes térmicas y absorbiendo el mismo calor de la caliente. Como se supone que <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \eta _{X}&gt;\eta _{R}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B7;<!-- η --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>X</mi>
+          </mrow>
+        </msub>
+        <mo>&gt;</mo>
+        <msub>
+          <mi>&#x03B7;<!-- η --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>R</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta _{X}&gt;\eta _{R}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/307d0aaf4dc0a56c7c1fb2c67d4161fb36d08e83" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.908ex; height:2.343ex;" alt="{\displaystyle \eta _{X}&gt;\eta _{R}\,}"/></span>, y por definición</dd></dl>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \eta _{X}={\frac {W_{X}}{Q_{1}}}\ ;\ \eta _{R}={\frac {W_{R}}{Q_{1}}}\ \Longrightarrow \ W_{X}&gt;W_{R}\ ,\ Q_{2X}&lt;Q_{2R}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B7;<!-- η --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>X</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>W</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>X</mi>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mtext>&#xA0;</mtext>
+        <mo>;</mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>&#x03B7;<!-- η --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>R</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>W</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>R</mi>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mtext>&#xA0;</mtext>
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>X</mi>
+          </mrow>
+        </msub>
+        <mo>&gt;</mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>R</mi>
+          </mrow>
+        </msub>
+        <mtext>&#xA0;</mtext>
+        <mo>,</mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>X</mi>
+          </mrow>
+        </msub>
+        <mo>&lt;</mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>R</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta _{X}={\frac {W_{X}}{Q_{1}}}\ ;\ \eta _{R}={\frac {W_{R}}{Q_{1}}}\ \Longrightarrow \ W_{X}&gt;W_{R}\ ,\ Q_{2X}&lt;Q_{2R}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bd7151eab5002fcfcf5545158cf3b7a0a19bdc89" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:53.568ex; height:5.843ex;" alt="{\displaystyle \eta _{X}={\frac {W_{X}}{Q_{1}}}\ ;\ \eta _{R}={\frac {W_{R}}{Q_{1}}}\ \Longrightarrow \ W_{X}&gt;W_{R}\ ,\ Q_{2X}&lt;Q_{2R}}"/></span>,
+</p>
+</blockquote>
+<dl><dd>donde <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>W</mi>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d4ccedd54e0882bfffb73e8084f476e91e01aad" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.822ex; height:2.176ex;" alt="{\displaystyle W\,}"/></span> y <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{2}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{2}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/52520ae86e573addd1b1c055cdfd202e01505a31" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.28ex; height:2.509ex;" alt="{\displaystyle Q_{2}\,}"/></span> denotan el trabajo producido y el calor cedido a la fuente fría respectivamente, y los subíndices la máquina a la que se refieren.</dd>
+<dd>Como R es reversible, se le puede hacer funcionar como <a href="/wiki/M%C3%A1quina_frigor%C3%ADfica" title="Máquina frigorífica">máquina frigorífica</a>. Como <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{X}&gt;W_{R}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>X</mi>
+          </mrow>
+        </msub>
+        <mo>&gt;</mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>R</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{X}&gt;W_{R}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a46345e407b11cc6b13881fb192b42aa7c55d81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.985ex; height:2.509ex;" alt="{\displaystyle W_{X}&gt;W_{R}\,}"/></span>, la máquina X puede suministrar a R el trabajo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{R}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>R</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{R}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b146f1f738a7eecc720b9709c9b4dd1976c9e24" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.06ex; height:2.509ex;" alt="{\displaystyle W_{R}\,}"/></span> que necesita para funcionar como máquina frigorífica, y X producirá un trabajo neto <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{X}-W_{R}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>X</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>R</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{X}-W_{R}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40e23617d6117bb3783528adafa1fe355adba44c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.727ex; height:2.509ex;" alt="{\displaystyle W_{X}-W_{R}\,}"/></span>. Al funcionar en sentido inverso, R está absorbiendo calor <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{2R}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>R</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{2R}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9bd231d47dd4b24c5bb7c73f60535fd6cd3322f0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.527ex; height:2.509ex;" alt="{\displaystyle Q_{2R}\,}"/></span> de la fuente fría y está cediendo calor <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{1}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{1}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1c32385e854f82b9b8e8db1f2b8e830b569839d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.28ex; height:2.509ex;" alt="{\displaystyle Q_{1}\,}"/></span> a la caliente.</dd>
+<dd>El sistema formado por las dos máquinas funciona cíclicamente realizando un trabajo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{X}-W_{R}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>X</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>R</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{X}-W_{R}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40e23617d6117bb3783528adafa1fe355adba44c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.727ex; height:2.509ex;" alt="{\displaystyle W_{X}-W_{R}\,}"/></span> e intercambiando un calor <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{2X}-Q_{2R}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>X</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>R</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{2X}-Q_{2R}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1bec9082f7bf10ee9ece74c2c38d974ab9ce315" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.66ex; height:2.509ex;" alt="{\displaystyle Q_{2X}-Q_{2R}\,}"/></span> con una única fuente térmica, lo cual va en contra del segundo principio de la termodinámica. Por lo tanto:</dd></dl>
+<table align="center" border="2" style="border=: 1px #aaa solid; border-collapse: collapse">
+<tbody><tr>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \eta _{X}\ \leq \ \eta _{R}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B7;<!-- η --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>X</mi>
+          </mrow>
+        </msub>
+        <mtext>&#xA0;</mtext>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>&#x03B7;<!-- η --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>R</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta _{X}\ \leq \ \eta _{R}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d04c643af1a3ca38093d8e6f346d8dd35e1bc16" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.683ex; height:2.509ex;" alt="{\displaystyle \eta _{X}\ \leq \ \eta _{R}}"/></span>
+</td></tr></tbody></table>
+<p><b>2.</b> <i>Dos máquinas reversibles operando entre las mismas fuentes térmicas tienen el mismo rendimiento.</i>
+</p>
+<dl><dd>Igual que antes, se supone que no se cumple el teorema y se verá que se violará el segundo principio. Sean R<sub>1</sub> y R<sub>2</sub> dos máquinas reversibles, operando entre las mismas fuentes térmicas y absorbiendo el mismo calor de la caliente, con distintos rendimientos. Si es R<sub>1</sub> la de menor rendimiento, entonces <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{R_{1}}&lt;W_{R_{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo>&lt;</mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{R_{1}}&lt;W_{R_{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ca3cad9a483637d870333285669ae94896d24cb8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:12.108ex; height:2.843ex;" alt="{\displaystyle W_{R_{1}}&lt;W_{R_{2}}}"/></span>.</dd>
+<dd>Invirtiendo R<sub>1</sub>, la máquina R<sub>2</sub> puede suministrarle el trabajo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{R_{1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{R_{1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5700f346e2a2cb8cb824925768f11ed56ef26e03" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:4.505ex; height:2.843ex;" alt="{\displaystyle W_{R_{1}}}"/></span> para que trabaje como máquina frigorífica, y R<sub>2</sub> producirá un trabajo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{R_{2}}-W_{R_{1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{R_{2}}-W_{R_{1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1a7c6a6c90ac25ae08e8f72ae216d41a49e3553e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.85ex; height:2.843ex;" alt="{\displaystyle W_{R_{2}}-W_{R_{1}}}"/></span>.</dd>
+<dd>El sistema formado por las dos máquinas funciona cíclicamente realizando un trabajo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{R_{2}}-W_{R_{1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{R_{2}}-W_{R_{1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1a7c6a6c90ac25ae08e8f72ae216d41a49e3553e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.85ex; height:2.843ex;" alt="{\displaystyle W_{R_{2}}-W_{R_{1}}}"/></span> e intercambiando un calor <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{2R_{2}}-Q_{2R_{1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{2R_{2}}-Q_{2R_{1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67e89407b36b03599b67ae079ddae7080a489f47" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:12.783ex; height:2.843ex;" alt="{\displaystyle Q_{2R_{2}}-Q_{2R_{1}}}"/></span> con una única fuente térmica, lo cual va en contra de la segunda ley. Por lo tanto:</dd></dl>
+<table align="center" border="2" style="border=: 1px #aaa solid; border-collapse: collapse">
+<tbody><tr>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \eta _{R_{1}}\ =\ \eta _{R_{2}}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B7;<!-- η --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mtext>&#xA0;</mtext>
+        <mo>=</mo>
+        <mtext>&#xA0;</mtext>
+        <msub>
+          <mi>&#x03B7;<!-- η --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta _{R_{1}}\ =\ \eta _{R_{2}}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/da3dea1af740ba6c4fce168590276d68e7d77867" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.58ex; height:2.343ex;" alt="{\displaystyle \eta _{R_{1}}\ =\ \eta _{R_{2}}\,}"/></span>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Rendimiento">Rendimiento</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit&amp;section=4" title="Editar sección: Rendimiento">editar</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A partir del segundo teorema de Carnot se puede decir que, como dos máquinas reversibles tienen el mismo rendimiento, éste será independiente de la sustancia de trabajo de las máquinas, las propiedades o la forma en la que se realice el ciclo. Tan solo dependerá de las temperaturas de las fuentes entre las que trabaje. Si se tiene una máquina que trabaja entre fuentes a temperatura T<sub>1</sub> y T<sub>2</sub>, el rendimiento será una función de las dos como variables:
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \eta =1-{\frac {Q_{2}}{Q_{1}}}=\phi (T_{1},T_{2})\quad \Longrightarrow \quad {\frac {Q_{1}}{Q_{2}}}={\frac {1}{1-\phi (T_{1},T_{2})}}=f(T_{1},T_{2})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B7;<!-- η --></mi>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>&#x03D5;<!-- ϕ --></mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mspace width="1em" />
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mspace width="1em" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>&#x03D5;<!-- ϕ --></mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta =1-{\frac {Q_{2}}{Q_{1}}}=\phi (T_{1},T_{2})\quad \Longrightarrow \quad {\frac {Q_{1}}{Q_{2}}}={\frac {1}{1-\phi (T_{1},T_{2})}}=f(T_{1},T_{2})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b8202e3ba6718880ca1d92b98950ced7e4b99687" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:66.653ex; height:6.176ex;" alt="{\displaystyle \eta =1-{\frac {Q_{2}}{Q_{1}}}=\phi (T_{1},T_{2})\quad \Longrightarrow \quad {\frac {Q_{1}}{Q_{2}}}={\frac {1}{1-\phi (T_{1},T_{2})}}=f(T_{1},T_{2})}"/></span>.
+</p>
+</blockquote>
+<p>Por lo tanto, el cociente entre los calores transferidos es función de las temperaturas de las fuentes. Nótese que como, por la <a href="/wiki/Segunda_ley_de_la_termodin%C3%A1mica" class="mw-redirect" title="Segunda ley de la termodinámica">segunda ley de la termodinámica</a>, el rendimiento nunca puede ser igual a la unidad, la función f está siempre definida.
+</p><p>Considérense ahora tres máquinas que trabajan entre fuentes a temperaturas tales que <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle T_{1}&gt;T_{3}&gt;T_{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&gt;</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>&gt;</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle T_{1}&gt;T_{3}&gt;T_{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/afddcc711762e7a48073177a421a42c8eb49f555" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.432ex; height:2.509ex;" alt="{\displaystyle T_{1}&gt;T_{3}&gt;T_{2}}"/></span>. La primera máquina trabaja entre las fuentes 1 y 2, la segunda entre 1 y 3, y la tercera entre 3 y 2, de modo que desde cada fuente se intercambia el mismo calor con las máquinas que actúan sobre ella. Es decir, tanto la primera máquina como la segunda absorben un calor Q<sub>1</sub>, la segunda y la tercera ceden y absorben Q<sub>2</sub> respectivamente y la primera y la tercera ceden Q<sub>3</sub>. De la ecuación anterior se puede oner, aplicada a cada máquina:
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {Q_{1}}{Q_{2}}}=f(T_{1},T_{2})\ ;\ {\frac {Q_{1}}{Q_{3}}}=f(T_{1},T_{3})\ ;\ {\frac {Q_{3}}{Q_{2}}}=f(T_{3},T_{2})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mtext>&#xA0;</mtext>
+        <mo>;</mo>
+        <mtext>&#xA0;</mtext>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mtext>&#xA0;</mtext>
+        <mo>;</mo>
+        <mtext>&#xA0;</mtext>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {Q_{1}}{Q_{2}}}=f(T_{1},T_{2})\ ;\ {\frac {Q_{1}}{Q_{3}}}=f(T_{1},T_{3})\ ;\ {\frac {Q_{3}}{Q_{2}}}=f(T_{3},T_{2})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/797a6bd113aa188dc4ad1edfce143b2520abc9df" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:51.708ex; height:5.843ex;" alt="{\displaystyle {\frac {Q_{1}}{Q_{2}}}=f(T_{1},T_{2})\ ;\ {\frac {Q_{1}}{Q_{3}}}=f(T_{1},T_{3})\ ;\ {\frac {Q_{3}}{Q_{2}}}=f(T_{3},T_{2})}"/></span>
+</p>
+</blockquote>
+<p>Aplicando relaciones matemáticas:
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {Q_{1}}{Q_{2}}}={\frac {Q_{1}}{Q_{3}}}{\frac {Q_{3}}{Q_{2}}}\quad \Longrightarrow \quad f(T_{1},T_{2})=f(T_{1},T_{3})f(T_{3},T_{2})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mspace width="1em" />
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mspace width="1em" />
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {Q_{1}}{Q_{2}}}={\frac {Q_{1}}{Q_{3}}}{\frac {Q_{3}}{Q_{2}}}\quad \Longrightarrow \quad f(T_{1},T_{2})=f(T_{1},T_{3})f(T_{3},T_{2})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0926e3404bc36c1ff6c5f22eafd32e2d20e856c1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:53.96ex; height:5.843ex;" alt="{\displaystyle {\frac {Q_{1}}{Q_{2}}}={\frac {Q_{1}}{Q_{3}}}{\frac {Q_{3}}{Q_{2}}}\quad \Longrightarrow \quad f(T_{1},T_{2})=f(T_{1},T_{3})f(T_{3},T_{2})}"/></span>
+</p>
+</blockquote>
+<p>Como el primer miembro es función solamente de T<sub>1</sub> y T<sub>2</sub>, también lo será el segundo miembro, independientemente de T<sub>3</sub>. Para que eso se cumpla f debe ser de la forma
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle f(T_{i},T_{j})={\frac {\Phi (T_{i})}{\Phi (T_{j})}}\quad \Longrightarrow \quad {\frac {Q_{1}}{Q_{2}}}={\frac {\Phi (T_{1})}{\Phi (T_{2})}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x03A6;<!-- Φ --></mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x03A6;<!-- Φ --></mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="1em" />
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mspace width="1em" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x03A6;<!-- Φ --></mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x03A6;<!-- Φ --></mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(T_{i},T_{j})={\frac {\Phi (T_{i})}{\Phi (T_{j})}}\quad \Longrightarrow \quad {\frac {Q_{1}}{Q_{2}}}={\frac {\Phi (T_{1})}{\Phi (T_{2})}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7d88b310da880455b13d0018c27fe4c86e4cf1fd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:41.539ex; height:6.509ex;" alt="{\displaystyle f(T_{i},T_{j})={\frac {\Phi (T_{i})}{\Phi (T_{j})}}\quad \Longrightarrow \quad {\frac {Q_{1}}{Q_{2}}}={\frac {\Phi (T_{1})}{\Phi (T_{2})}}}"/></span>
+</p>
+</blockquote>
+<p>De las distintas funciones que satisfacen esa condición, la más sencilla es la propuesta por <a href="/wiki/William_Thomson" title="William Thomson">Kelvin</a>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Phi (T)=T}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x03A6;<!-- Φ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>T</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>T</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Phi (T)=T}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b2e3dacd8d802fa725c86262313a2e6dac4e359" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.858ex; height:2.843ex;" alt="{\displaystyle \Phi (T)=T}"/></span>, con lo que el cociente entre calores queda
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {Q_{1}}{Q_{2}}}={\frac {T_{1}}{T_{2}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {Q_{1}}{Q_{2}}}={\frac {T_{1}}{T_{2}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/18530ef25b3c2b2f49d1153c3afaafa99ed072cb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:10.075ex; height:5.843ex;" alt="{\displaystyle {\frac {Q_{1}}{Q_{2}}}={\frac {T_{1}}{T_{2}}}}"/></span>
+</p>
+</blockquote>
+<p>y trasladando este cociente a la definición de rendimiento:
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \eta =1-{\frac {T_{2}}{T_{1}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B7;<!-- η --></mi>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta =1-{\frac {T_{2}}{T_{1}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76f6d137ce44a1ad2fbc09e1407e25809dbd71bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:11.519ex; height:5.509ex;" alt="{\displaystyle \eta =1-{\frac {T_{2}}{T_{1}}}}"/></span>
+</p>
+</blockquote>
+<p>Otra forma de llegar a este resultado es por medio de la <a href="/wiki/Entrop%C3%ADa" title="Entropía">entropía</a>, definida como <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle dS={\frac {\delta Q}{T}}{\bigg |}_{rev}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mi>S</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03B4;<!-- δ --></mi>
+              <mi>Q</mi>
+            </mrow>
+            <mi>T</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.047em" minsize="2.047em">|</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+            <mi>e</mi>
+            <mi>v</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle dS={\frac {\delta Q}{T}}{\bigg |}_{rev}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74f4513b5eb76a755ebc5e6567510a5dfd24dcc9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:12.721ex; height:5.676ex;" alt="{\displaystyle dS={\frac {\delta Q}{T}}{\bigg |}_{rev}}"/></span>. De ahí se puede sacar los calores transferidos en los procesos 1 → 2 y 3 → 4:
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \delta Q=TdS\quad \Longrightarrow \quad Q=\int TdS}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B4;<!-- δ --></mi>
+        <mi>Q</mi>
+        <mo>=</mo>
+        <mi>T</mi>
+        <mi>d</mi>
+        <mi>S</mi>
+        <mspace width="1em" />
+        <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+        <mspace width="1em" />
+        <mi>Q</mi>
+        <mo>=</mo>
+        <mo>&#x222B;<!-- ∫ --></mo>
+        <mi>T</mi>
+        <mi>d</mi>
+        <mi>S</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta Q=TdS\quad \Longrightarrow \quad Q=\int TdS}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1ce53d1dd069d1598ff4a4ec9aa575fa0710d110" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:31.947ex; height:5.676ex;" alt="{\displaystyle \delta Q=TdS\quad \Longrightarrow \quad Q=\int TdS}"/></span>
+</p>
+</blockquote>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{1}=\int _{1}^{2}T_{1}dS=T_{1}(S_{B}-S_{A})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msubsup>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mi>d</mi>
+        <mi>S</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>A</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{1}=\int _{1}^{2}T_{1}dS=T_{1}(S_{B}-S_{A})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3147298acce9ac8e0610a9645d5be62ee8434722" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:30.978ex; height:6.176ex;" alt="{\displaystyle Q_{1}=\int _{1}^{2}T_{1}dS=T_{1}(S_{B}-S_{A})}"/></span>
+</p>
+</blockquote>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q_{2}=\int _{3}^{4}T_{2}dS=T_{2}(S_{A}-S_{B})=-T_{2}(S_{B}-S_{A})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msubsup>
+          <mo>&#x222B;<!-- ∫ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msubsup>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mi>d</mi>
+        <mi>S</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>A</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>A</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{2}=\int _{3}^{4}T_{2}dS=T_{2}(S_{A}-S_{B})=-T_{2}(S_{B}-S_{A})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/126fbb3409fd2f6386877ba951e2c4f34fb6ce9d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:48.74ex; height:6.176ex;" alt="{\displaystyle Q_{2}=\int _{3}^{4}T_{2}dS=T_{2}(S_{A}-S_{B})=-T_{2}(S_{B}-S_{A})}"/></span>
+</p>
+</blockquote>
+<p>Como puede observarse, el calor transferido con la primera fuente es positivo y con la segunda negativo, por el convenio de signos adoptado.
+</p><p>Teniendo en cuenta que para calcular el rendimiento de un ciclo se utilizan los <a href="/wiki/Valor_absoluto" title="Valor absoluto">valores absolutos</a> de los trabajos y calores,
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {Q_{2}}{Q_{1}}}={\frac {T_{2}(S_{B}-S_{A})}{T_{1}(S_{B}-S_{A})}}={\frac {T_{2}}{T_{1}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>Q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>S</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>B</mi>
+                </mrow>
+              </msub>
+              <mo>&#x2212;<!-- − --></mo>
+              <msub>
+                <mi>S</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>A</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>T</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>S</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>B</mi>
+                </mrow>
+              </msub>
+              <mo>&#x2212;<!-- − --></mo>
+              <msub>
+                <mi>S</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>A</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {Q_{2}}{Q_{1}}}={\frac {T_{2}(S_{B}-S_{A})}{T_{1}(S_{B}-S_{A})}}={\frac {T_{2}}{T_{1}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d49bc22d4ede4617afca3bed700de4847f42b06" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:26.865ex; height:6.509ex;" alt="{\displaystyle {\frac {Q_{2}}{Q_{1}}}={\frac {T_{2}(S_{B}-S_{A})}{T_{1}(S_{B}-S_{A})}}={\frac {T_{2}}{T_{1}}}}"/></span>
+</p>
+</blockquote>
+<p>se tiene finalmente el resultado deseado:
+</p>
+<blockquote style="padding: 5px 10px; background-color: white; color: black; text-align: left; margin-left:30px; margin-bottom: 0.4em; margin-top:0.2em; min-width:50%;">
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \eta =1-{\frac {T_{2}}{T_{1}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B7;<!-- η --></mi>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>T</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta =1-{\frac {T_{2}}{T_{1}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76f6d137ce44a1ad2fbc09e1407e25809dbd71bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:11.519ex; height:5.509ex;" alt="{\displaystyle \eta =1-{\frac {T_{2}}{T_{1}}}}"/></span>.
+</p>
+</blockquote>
+<h2><span class="mw-headline" id="Ciclo_real">Ciclo real</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit&amp;section=5" title="Editar sección: Ciclo real">editar</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Todos los <a href="/wiki/Proceso_termodin%C3%A1mico" title="Proceso termodinámico">procesos</a> reales tienen alguna irreversibilidad, ya sea mecánica por rozamiento, térmica o de otro tipo. Sin embargo, las irreversibilidades se pueden reducir, pudiéndose considerar reversible un <a href="/wiki/Proceso_cuasiest%C3%A1tico" title="Proceso cuasiestático">proceso cuasiestático</a> y sin efectos disipativos. Los efectos disipativos se reducen minimizando el rozamiento entre las distintas partes del sistema y los gradientes de temperatura; el proceso es cuasiestático si la desviación del <a href="/wiki/Equilibrio_termodin%C3%A1mico" title="Equilibrio termodinámico">equilibrio termodinámico</a> es a lo sumo infinitesimal, esto es, si el <a href="/w/index.php?title=Tiempo_caracter%C3%ADstico&amp;action=edit&amp;redlink=1" class="new" title="Tiempo característico (aún no redactado)">tiempo característico</a> del proceso es mucho mayor que el tiempo de relajación (el tiempo que transcurre entre que se altera el equilibrio hasta que se recupera). Por ejemplo, si la velocidad con la que se desplaza un émbolo es pequeña comparada con la del sonido del gas, se puede considerar que las propiedades son uniformes espacialmente, ya que el tiempo de relajación mecánico es del orden de <i>V<sup>1/3</sup>/a</i> (donde <i>V</i> es el volumen del cilindro y <i>a</i> la <a href="/wiki/Velocidad_del_sonido" title="Velocidad del sonido">velocidad del sonido</a>), tiempo de propagación de las <a href="/wiki/Onda_de_presi%C3%B3n" title="Onda de presión">ondas de presión</a>, mucho más pequeño que el tiempo característico del proceso, <i>V<sup>1/3</sup>/w</i> (donde <i>w</i> es la velocidad del émbolo), y se pueden despreciar las irreversibilidades.
+</p><p>Si se hace que los procesos adiabáticos del ciclo sean lentos para minimizar las irreversibilidades se hace imposible frenar la transferencia de calor. Como las paredes reales del sistema no pueden ser completamente adiabáticas, el aislamiento térmico es imposible, sobre todo si el tiempo característico del proceso es largo. Además, en los procesos isotermos del ciclo existen irreversibilidades inherentes a la transferencia de calor. Por lo tanto, es imposible conseguir un ciclo real libre por el primer teorema de Carnot la eficiencia será menor que un ciclo ideal.
+</p>
+<h2><span id="V.C3.A9ase_tambi.C3.A9n"></span><span class="mw-headline" id="Véase_también">Véase también</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit&amp;section=6" title="Editar sección: Véase también">editar</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Ciclo_termodin%C3%A1mico" title="Ciclo termodinámico">Ciclo termodinámico</a></li>
+<li><a href="/wiki/Criterio_de_signos_termodin%C3%A1mico" title="Criterio de signos termodinámico">Criterio de signos termodinámico</a></li>
+<li><a href="/wiki/M%C3%A1quina_t%C3%A9rmica" title="Máquina térmica">Máquina térmica</a></li></ul>
+<h2><span class="mw-headline" id="Referencias">Referencias</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit&amp;section=7" title="Editar sección: Referencias">editar</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="listaref" style="list-style-type: decimal;"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><i>Réflexions sur la puissance motrice du feu et sur les machines propres à développer cette puissance</i>, Sadi Carnot, Gauthier-Villars, 1824 <a rel="nofollow" class="external text" href="http://books.google.fr/books/about/R%C3%A9flexions_sur_la_puissance_motrice_du.html?id=YcY9AAAAMAAJ&amp;redir_esc=y">lire en ligne</a></span>
+</li>
+</ol></div>
+<h2><span id="Bibliograf.C3.ADa"></span><span class="mw-headline" id="Bibliografía">Bibliografía</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit&amp;section=8" title="Editar sección: Bibliografía">editar</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Jesús Biel Gayé: <i>Formalismos y Métodos de la Termodinámica, Vol. 1</i>. Editorial Reverté. <a href="/wiki/Especial:FuentesDeLibros/8429143432" class="internal mw-magiclink-isbn">ISBN 84-291-4343-2</a></li></ul>
+<h2><span class="mw-headline" id="Enlaces_externos">Enlaces externos</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit&amp;section=9" title="Editar sección: Enlaces externos">editar</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/15px-Commons-logo.svg.png" decoding="async" width="15" height="20" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/23px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /> <a href="/wiki/Wikimedia_Commons" title="Wikimedia Commons">Wikimedia Commons</a> alberga una galería multimedia sobre <b><a href="https://commons.wikimedia.org/wiki/Carnot_cycle" class="extiw" title="commons:Carnot cycle">Ciclo de Carnot</a></b>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.sc.ehu.es/sbweb/fisica/estadistica/carnot/carnot.htm">Ciclo de Carnot con applet Java</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20061121104808/http://personales.ya.com/casanchi/fis/ciclo001.pdf">El ciclo de Carnot y el Teorema de Clausius (pdf)</a></li></ul>
+<style data-mw-deduplicate="TemplateStyles:r144106945">.mw-parser-output .mw-authority-control{margin-top:1.5em}.mw-parser-output .mw-authority-control .navbox hr:last-child{display:none}.mw-parser-output .mw-authority-control .navbox+.mw-mf-linked-projects{display:none}.mw-parser-output .mw-authority-control .mw-mf-linked-projects{display:flex;padding:0.5em;border:1px solid #c8ccd1;background-color:#eaecf0;color:#222222}.mw-parser-output .mw-authority-control .mw-mf-linked-projects ul li{margin-bottom:0}</style><div class="mw-authority-control"><div role="navigation" class="navbox" aria-label="Navbox" style="width: inherit;padding:3px"><table class="hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="row" class="navbox-group" style="width: 12%; text-align:center;"><a href="/wiki/Control_de_autoridades" title="Control de autoridades">Control de autoridades</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><b>Proyectos Wikimedia</b></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Wikidata" title="Wikidata"><img alt="Wd" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/20px-Wikidata-logo.svg.png" decoding="async" width="20" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/30px-Wikidata-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/40px-Wikidata-logo.svg.png 2x" data-file-width="1050" data-file-height="590" /></a> Datos:</span> <span class="uid"><a href="https://www.wikidata.org/wiki/Q188910" class="extiw" title="wikidata:Q188910">Q188910</a></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Wikimedia_Commons" title="Commonscat"><img alt="Commonscat" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/15px-Commons-logo.svg.png" decoding="async" width="15" height="20" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/23px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></a> Multimedia:</span> <span class="uid"><span class="plainlinks"><a class="external text" href="https://commons.wikimedia.org/wiki/Category:Carnot_cycle">Carnot cycle</a></span></span></li></ul>
+<hr />
+<ul><li><b>Identificadores</b></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Gemeinsame_Normdatei" title="Gemeinsame Normdatei">GND</a>:</span> <span class="uid"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/4215217-3">4215217-3</a></span></li>
+<li><b>Diccionarios y enciclopedias</b></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Enciclopedia_Brit%C3%A1nica" title="Enciclopedia Británica">Britannica</a>:</span> <span class="uid"><a rel="nofollow" class="external text" href="https://www.britannica.com/science/Carnot-cycle">url</a></span></li></ul>
+</div></td></tr></tbody></table></div><div class="mw-mf-linked-projects hlist">
+<ul><li><span style="white-space:nowrap;"><a href="/wiki/Wikidata" title="Wikidata"><img alt="Wd" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/20px-Wikidata-logo.svg.png" decoding="async" width="20" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/30px-Wikidata-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/40px-Wikidata-logo.svg.png 2x" data-file-width="1050" data-file-height="590" /></a> Datos:</span> <span class="uid"><a href="https://www.wikidata.org/wiki/Q188910" class="extiw" title="wikidata:Q188910">Q188910</a></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Wikimedia_Commons" title="Commonscat"><img alt="Commonscat" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/15px-Commons-logo.svg.png" decoding="async" width="15" height="20" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/23px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></a> Multimedia:</span> <span class="uid"><span class="plainlinks"><a class="external text" href="https://commons.wikimedia.org/wiki/Category:Carnot_cycle">Carnot cycle</a></span></span></li></ul>
+</div></div>
+<!-- 
+NewPP limit report
+Parsed by mw1371
+Cached time: 20220819184029
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.355 seconds
+Real time usage: 0.445 seconds
+Preprocessor visited node count: 851/1000000
+Post‐expand include size: 9498/2097152 bytes
+Template argument size: 1242/2097152 bytes
+Highest expansion depth: 7/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 2867/5000000 bytes
+Lua time usage: 0.120/10.000 seconds
+Lua memory usage: 2508273/52428800 bytes
+Number of Wikibase entities loaded: 4/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  245.289      1 -total
+ 57.36%  140.686      1 Plantilla:Control_de_autoridades
+ 20.73%   50.840      1 Plantilla:Commons
+ 13.77%   33.785      1 Plantilla:Otros_usos
+ 12.35%   30.293      1 Plantilla:Texto_de_la_coletilla_del_título
+ 10.60%   26.005      1 Plantilla:Propiedad
+  4.45%   10.926     18 Plantilla:Ecuación
+  2.09%    5.120      1 Plantilla:Título_sin_coletilla
+  1.64%    4.012     18 Plantilla:Trim
+  1.23%    3.015      1 Plantilla:Listaref
+-->
+
+<!-- Saved in parser cache with key eswiki:pcache:idhash:76783-0!canonical and timestamp 20220819184028 and revision id 136240407.
+ -->
+</div><noscript><img src="//es.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Obtenido de «<a dir="ltr" href="https://es.wikipedia.org/w/index.php?title=Ciclo_de_Carnot&amp;oldid=136240407">https://es.wikipedia.org/w/index.php?title=Ciclo_de_Carnot&amp;oldid=136240407</a>»</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Especial:Categor%C3%ADas" title="Especial:Categorías">Categorías</a>: <ul><li><a href="/wiki/Categor%C3%ADa:Ciclos_termodin%C3%A1micos" title="Categoría:Ciclos termodinámicos">Ciclos termodinámicos</a></li><li><a href="/wiki/Categor%C3%ADa:Ep%C3%B3nimos_relacionados_con_la_f%C3%ADsica" title="Categoría:Epónimos relacionados con la física">Epónimos relacionados con la física</a></li><li><a href="/wiki/Categor%C3%ADa:Ciencia_y_tecnolog%C3%ADa_de_Francia_del_siglo_XIX" title="Categoría:Ciencia y tecnología de Francia del siglo XIX">Ciencia y tecnología de Francia del siglo XIX</a></li><li><a href="/wiki/Categor%C3%ADa:Ciencia_de_1826" title="Categoría:Ciencia de 1826">Ciencia de 1826</a></li><li><a href="/wiki/Categor%C3%ADa:Francia_en_1826" title="Categoría:Francia en 1826">Francia en 1826</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Categorías ocultas: <ul><li><a href="/wiki/Categor%C3%ADa:Wikipedia:Art%C3%ADculos_con_identificadores_GND" title="Categoría:Wikipedia:Artículos con identificadores GND">Wikipedia:Artículos con identificadores GND</a></li><li><a href="/wiki/Categor%C3%ADa:Wikipedia:P%C3%A1ginas_con_enlaces_m%C3%A1gicos_de_ISBN" title="Categoría:Wikipedia:Páginas con enlaces mágicos de ISBN">Wikipedia:Páginas con enlaces mágicos de ISBN</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Menú de navegación</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Herramientas personales</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span title="La página de usuario de la IP desde la que editas">No has accedido</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Especial:MiDiscusi%C3%B3n" title="Discusión sobre ediciones hechas desde esta dirección IP [n]" accesskey="n"><span>Discusión</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Especial:MisContribuciones" title="Una lista de modificaciones hechas desde esta dirección IP [y]" accesskey="y"><span>Contribuciones</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Especial:Crear_una_cuenta&amp;returnto=Ciclo+de+Carnot" title="Te recomendamos crear una cuenta e iniciar sesión; sin embargo, no es obligatorio"><span>Crear una cuenta</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Especial:Entrar&amp;returnto=Ciclo+de+Carnot" title="Te recomendamos iniciar sesión, aunque no es obligatorio [o]" accesskey="o"><span>Acceder</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Espacios de nombres</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Ciclo_de_Carnot" title="Ver la página de contenido [c]" accesskey="c"><span>Artículo</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Discusi%C3%B3n:Ciclo_de_Carnot" rel="discussion" title="Discusión acerca de la página [t]" accesskey="t"><span>Discusión</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Cambiar variante de idioma"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">español</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Vistas</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Ciclo_de_Carnot"><span>Leer</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=edit" title="Editar esta página [e]" accesskey="e"><span>Editar</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=history" title="Versiones anteriores de esta página [h]" accesskey="h"><span>Ver historial</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="Más opciones" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Más</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Buscar</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Buscar en Wikipedia" aria-label="Buscar en Wikipedia" autocapitalize="sentences" title="Buscar en este wiki [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Especial:Buscar">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Busca páginas con este texto." value="Buscar">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Ir a la página con este nombre exacto si existe" value="Ir">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Wikipedia:Portada"
+			title="Visitar la página principal"></a>
+	</div>
+	
+
+<nav id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation"  >
+	<h3
+		id="p-navigation-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Navegación</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Wikipedia:Portada" title="Visitar la página principal [z]" accesskey="z"><span>Portada</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Portal:Comunidad" title="Acerca del proyecto, lo que puedes hacer, dónde encontrar información"><span>Portal de la comunidad</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Actualidad" title="Encuentra información de contexto sobre acontecimientos actuales"><span>Actualidad</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Especial:CambiosRecientes" title="Lista de cambios recientes en la wiki [r]" accesskey="r"><span>Cambios recientes</span></a></li><li id="n-newpages" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1ginasNuevas"><span>Páginas nuevas</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Especial:Aleatoria" title="Cargar una página al azar [x]" accesskey="x"><span>Página aleatoria</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Ayuda:Contenidos" title="El lugar para aprender"><span>Ayuda</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_es.wikipedia.org&amp;uselang=es" title="Apóyanos"><span>Donaciones</span></a></li><li id="n-bug_in_article" class="mw-list-item"><a href="/wiki/Wikipedia:Informes_de_error"><span>Notificar un error</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Herramientas</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Especial:LoQueEnlazaAqu%C3%AD/Ciclo_de_Carnot" title="Lista de todas las páginas de la wiki que enlazan aquí [j]" accesskey="j"><span>Lo que enlaza aquí</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Especial:CambiosEnEnlazadas/Ciclo_de_Carnot" rel="nofollow" title="Cambios recientes en las páginas que enlazan con esta [k]" accesskey="k"><span>Cambios en enlazadas</span></a></li><li id="t-upload" class="mw-list-item"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=es" title="Subir archivos [u]" accesskey="u"><span>Subir archivo</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1ginasEspeciales" title="Lista de todas las páginas especiales [q]" accesskey="q"><span>Páginas especiales</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Ciclo_de_Carnot&amp;oldid=136240407" title="Enlace permanente a esta versión de la página"><span>Enlace permanente</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Ciclo_de_Carnot&amp;action=info" title="Más información sobre esta página"><span>Información de la página</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Especial:Citar&amp;page=Ciclo_de_Carnot&amp;id=136240407&amp;wpFormIdentifier=titleform" title="Información sobre cómo citar esta página"><span>Citar esta página</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q188910" title="Enlace al elemento conectado del repositorio de datos [g]" accesskey="g"><span>Elemento de Wikidata</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation"  >
+	<h3
+		id="p-coll-print_export-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Imprimir/exportar</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-create_a_book" class="mw-list-item"><a href="/w/index.php?title=Especial:Libro&amp;bookcmd=book_creator&amp;referer=Ciclo+de+Carnot"><span>Crear un libro</span></a></li><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Especial:DownloadAsPdf&amp;page=Ciclo_de_Carnot&amp;action=show-download-screen"><span>Descargar como PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Ciclo_de_Carnot&amp;printable=yes" title="Versión imprimible de esta página [p]" accesskey="p"><span>Versión para imprimir</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects vector-menu-portal portal" aria-labelledby="p-wikibase-otherprojects-label" role="navigation"  >
+	<h3
+		id="p-wikibase-otherprojects-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">En otros proyectos</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Carnot_cycle" hreflang="en"><span>Wikimedia Commons</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-lang" class="vector-menu mw-portlet mw-portlet-lang vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation"  >
+	<h3
+		id="p-lang-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">En otros idiomas</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%AF%D9%88%D8%B1%D8%A9_%D9%83%D8%A7%D8%B1%D9%86%D9%88" title="دورة كارنو (árabe)" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-be mw-list-item"><a href="https://be.wikipedia.org/wiki/%D0%A6%D1%8B%D0%BA%D0%BB_%D0%9A%D0%B0%D1%80%D0%BD%D0%BE" title="Цыкл Карно (bielorruso)" lang="be" hreflang="be" class="interlanguage-link-target"><span>Беларуская</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%A6%D0%B8%D0%BA%D1%8A%D0%BB_%D0%BD%D0%B0_%D0%9A%D0%B0%D1%80%D0%BD%D0%BE" title="Цикъл на Карно (búlgaro)" lang="bg" hreflang="bg" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-bn mw-list-item"><a href="https://bn.wikipedia.org/wiki/%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A8%E0%A7%8B_%E0%A6%9A%E0%A6%95%E0%A7%8D%E0%A6%B0" title="কার্নো চক্র (bengalí)" lang="bn" hreflang="bn" class="interlanguage-link-target"><span>বাংলা</span></a></li><li class="interlanguage-link interwiki-bs mw-list-item"><a href="https://bs.wikipedia.org/wiki/Carnotov_ciklus" title="Carnotov ciklus (bosnio)" lang="bs" hreflang="bs" class="interlanguage-link-target"><span>Bosanski</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Cicle_de_Carnot" title="Cicle de Carnot (catalán)" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-ckb mw-list-item"><a href="https://ckb.wikipedia.org/wiki/%D8%B3%D9%88%D9%88%DA%95%DB%8C_%DA%A9%D8%A7%D8%B1%D9%86%DB%86%D8%AA" title="سووڕی کارنۆت (kurdo sorani)" lang="ckb" hreflang="ckb" class="interlanguage-link-target"><span>کوردی</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Carnot%C5%AFv_cyklus" title="Carnotův cyklus (checo)" lang="cs" hreflang="cs" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a href="https://da.wikipedia.org/wiki/Carnot-kredsproces" title="Carnot-kredsproces (danés)" lang="da" hreflang="da" class="interlanguage-link-target"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Carnot-Prozess" title="Carnot-Prozess (alemán)" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%9A%CF%8D%CE%BA%CE%BB%CE%BF%CF%82_%CE%9A%CE%B1%CF%81%CE%BD%CF%8C" title="Κύκλος Καρνό (griego)" lang="el" hreflang="el" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a href="https://en.wikipedia.org/wiki/Carnot_cycle" title="Carnot cycle (inglés)" lang="en" hreflang="en" class="interlanguage-link-target"><span>English</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a href="https://eo.wikipedia.org/wiki/Ciklo_de_Carnot" title="Ciklo de Carnot (esperanto)" lang="eo" hreflang="eo" class="interlanguage-link-target"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wikipedia.org/wiki/Carnot%27_ts%C3%BCkkel" title="Carnot&#039; tsükkel (estonio)" lang="et" hreflang="et" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a href="https://eu.wikipedia.org/wiki/Carnoten_zikloa" title="Carnoten zikloa (euskera)" lang="eu" hreflang="eu" class="interlanguage-link-target"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%DA%86%D8%B1%D8%AE%D9%87_%DA%A9%D8%A7%D8%B1%D9%86%D9%88" title="چرخه کارنو (persa)" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Carnot%E2%80%99n_kierto" title="Carnot’n kierto (finés)" lang="fi" hreflang="fi" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Cycle_de_Carnot" title="Cycle de Carnot (francés)" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ga mw-list-item"><a href="https://ga.wikipedia.org/wiki/Timthriall_Carnot" title="Timthriall Carnot (irlandés)" lang="ga" hreflang="ga" class="interlanguage-link-target"><span>Gaeilge</span></a></li><li class="interlanguage-link interwiki-gl mw-list-item"><a href="https://gl.wikipedia.org/wiki/Ciclo_de_Carnot" title="Ciclo de Carnot (gallego)" lang="gl" hreflang="gl" class="interlanguage-link-target"><span>Galego</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%95%D7%A2_%D7%A7%D7%A8%D7%A0%D7%95" title="מנוע קרנו (hebreo)" lang="he" hreflang="he" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hi mw-list-item"><a href="https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A5%8B_%E0%A4%9A%E0%A4%95%E0%A5%8D%E0%A4%B0" title="कार्नो चक्र (hindi)" lang="hi" hreflang="hi" class="interlanguage-link-target"><span>हिन्दी</span></a></li><li class="interlanguage-link interwiki-hr mw-list-item"><a href="https://hr.wikipedia.org/wiki/Carnotov_ciklus" title="Carnotov ciklus (croata)" lang="hr" hreflang="hr" class="interlanguage-link-target"><span>Hrvatski</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Carnot-ciklus" title="Carnot-ciklus (húngaro)" lang="hu" hreflang="hu" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-hy mw-list-item"><a href="https://hy.wikipedia.org/wiki/%D4%BF%D5%A1%D5%BC%D5%B6%D5%B8%D5%B5%D5%AB_%D6%81%D5%AB%D5%AF%D5%AC" title="Կառնոյի ցիկլ (armenio)" lang="hy" hreflang="hy" class="interlanguage-link-target"><span>Հայերեն</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Siklus_Carnot" title="Siklus Carnot (indonesio)" lang="id" hreflang="id" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Ciclo_di_Carnot" title="Ciclo di Carnot (italiano)" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AB%E3%83%8E%E3%83%BC%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB" title="カルノーサイクル (japonés)" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-kk mw-list-item"><a href="https://kk.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BD%D0%BE_%D1%86%D0%B8%D0%BA%D0%BB%D1%8B" title="Карно циклы (kazajo)" lang="kk" hreflang="kk" class="interlanguage-link-target"><span>Қазақша</span></a></li><li class="interlanguage-link interwiki-lt mw-list-item"><a href="https://lt.wikipedia.org/wiki/Karno_ciklas" title="Karno ciklas (lituano)" lang="lt" hreflang="lt" class="interlanguage-link-target"><span>Lietuvių</span></a></li><li class="interlanguage-link interwiki-ml mw-list-item"><a href="https://ml.wikipedia.org/wiki/%E0%B4%95%E0%B4%BE%E0%B5%BC%E0%B4%A3%E0%B5%8B_%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%B0%E0%B4%82" title="കാർണോ ചക്രം (malayalam)" lang="ml" hreflang="ml" class="interlanguage-link-target"><span>മലയാളം</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Carnotproces" title="Carnotproces (neerlandés)" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-nn mw-list-item"><a href="https://nn.wikipedia.org/wiki/Carnot-syklus" title="Carnot-syklus (noruego nynorsk)" lang="nn" hreflang="nn" class="interlanguage-link-target"><span>Norsk nynorsk</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Carnotprosess" title="Carnotprosess (noruego bokmal)" lang="nb" hreflang="nb" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Cykl_Carnota" title="Cykl Carnota (polaco)" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Ciclo_de_Carnot" title="Ciclo de Carnot (portugués)" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a href="https://ro.wikipedia.org/wiki/Ciclul_Carnot" title="Ciclul Carnot (rumano)" lang="ro" hreflang="ro" class="interlanguage-link-target"><span>Română</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%A6%D0%B8%D0%BA%D0%BB_%D0%9A%D0%B0%D1%80%D0%BD%D0%BE" title="Цикл Карно (ruso)" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sh mw-list-item"><a href="https://sh.wikipedia.org/wiki/Carnotov_ciklus" title="Carnotov ciklus (serbocroata)" lang="sh" hreflang="sh" class="interlanguage-link-target"><span>Srpskohrvatski / српскохрватски</span></a></li><li class="interlanguage-link interwiki-si mw-list-item"><a href="https://si.wikipedia.org/wiki/%E0%B6%9A%E0%B7%8F%E0%B6%B1%E0%B7%9D_%E0%B6%A0%E0%B6%9A%E0%B7%8A%E2%80%8D%E0%B6%BB%E0%B6%BA" title="කානෝ චක්‍රය (cingalés)" lang="si" hreflang="si" class="interlanguage-link-target"><span>සිංහල</span></a></li><li class="interlanguage-link interwiki-sk mw-list-item"><a href="https://sk.wikipedia.org/wiki/Carnotov_cyklus" title="Carnotov cyklus (eslovaco)" lang="sk" hreflang="sk" class="interlanguage-link-target"><span>Slovenčina</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Carnotova_kro%C5%BEna_sprememba" title="Carnotova krožna sprememba (esloveno)" lang="sl" hreflang="sl" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BD%D0%BE%D0%BE%D0%B2_%D1%86%D0%B8%D0%BA%D0%BB%D1%83%D1%81" title="Карноов циклус (serbio)" lang="sr" hreflang="sr" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Carnot_%C3%A7evrimi" title="Carnot çevrimi (turco)" lang="tr" hreflang="tr" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%A6%D0%B8%D0%BA%D0%BB_%D0%9A%D0%B0%D1%80%D0%BD%D0%BE" title="Цикл Карно (ucraniano)" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-uz mw-list-item"><a href="https://uz.wikipedia.org/wiki/Carnot_sikli" title="Carnot sikli (uzbeko)" lang="uz" hreflang="uz" class="interlanguage-link-target"><span>Oʻzbekcha/ўзбекча</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Chu_tr%C3%ACnh_Carnot" title="Chu trình Carnot (vietnamita)" lang="vi" hreflang="vi" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%8D%A1%E8%AF%BA%E5%BE%AA%E7%8E%AF" title="卡诺循环 (chino)" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q188910#sitelinks-wikipedia" title="Editar enlaces interlingüísticos" class="wbc-editpage">Editar enlaces</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> Esta página se editó por última vez el 10 jun 2021 a las 21:20.</li>
+	<li id="footer-info-copyright">El texto está disponible bajo la <a rel="license" href="//es.wikipedia.org/wiki/Wikipedia:Texto_de_la_Licencia_Creative_Commons_Atribuci%C3%B3n-CompartirIgual_3.0_Unported">Licencia Creative Commons Atribución Compartir Igual 3.0</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+pueden aplicarse cláusulas adicionales. Al usar este sitio, usted acepta nuestros <a href="//wikimediafoundation.org/wiki/Terms_of_Use">términos de uso</a> y nuestra <a href="//wikimediafoundation.org/wiki/Privacy_policy">política de privacidad</a>. <br/>Wikipedia&reg; es una marca registrada de la <a href="//www.wikimediafoundation.org/">Fundación Wikimedia, Inc.</a>, una organización sin ánimo de lucro.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://meta.wikimedia.org/wiki/Privacy_policy/es">Política de privacidad</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:Acerca_de">Acerca de Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:Limitaci%C3%B3n_general_de_responsabilidad">Limitación de responsabilidad</a></li>
+	<li id="footer-places-mobileview"><a href="//es.m.wikipedia.org/w/index.php?title=Ciclo_de_Carnot&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Versión para móviles</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Desarrolladores</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/es.wikipedia.org">Estadísticas</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement/es">Declaración de cookies</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.355","walltime":"0.445","ppvisitednodes":{"value":851,"limit":1000000},"postexpandincludesize":{"value":9498,"limit":2097152},"templateargumentsize":{"value":1242,"limit":2097152},"expansiondepth":{"value":7,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":2867,"limit":5000000},"entityaccesscount":{"value":4,"limit":400},"timingprofile":["100.00%  245.289      1 -total"," 57.36%  140.686      1 Plantilla:Control_de_autoridades"," 20.73%   50.840      1 Plantilla:Commons"," 13.77%   33.785      1 Plantilla:Otros_usos"," 12.35%   30.293      1 Plantilla:Texto_de_la_coletilla_del_título"," 10.60%   26.005      1 Plantilla:Propiedad","  4.45%   10.926     18 Plantilla:Ecuación","  2.09%    5.120      1 Plantilla:Título_sin_coletilla","  1.64%    4.012     18 Plantilla:Trim","  1.23%    3.015      1 Plantilla:Listaref"]},"scribunto":{"limitreport-timeusage":{"value":"0.120","limit":"10.000"},"limitreport-memusage":{"value":2508273,"limit":52428800}},"cachereport":{"origin":"mw1371","timestamp":"20220819184029","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Ciclo de Carnot","url":"https:\/\/es.wikipedia.org\/wiki\/Ciclo_de_Carnot","sameAs":"http:\/\/www.wikidata.org\/entity\/Q188910","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q188910","author":{"@type":"Organization","name":"Colaboradores de los proyectos Wikimedia"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-10-21T13:27:58Z","dateModified":"2021-06-10T21:20:21Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/cf\/Carnot_engine_scheme.svg","headline":"ciclo termodin\u00e1mico ideal propuesto por Carnot en 1824"}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Ciclo de Carnot","url":"https:\/\/es.wikipedia.org\/wiki\/Ciclo_de_Carnot","sameAs":"http:\/\/www.wikidata.org\/entity\/Q188910","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q188910","author":{"@type":"Organization","name":"Colaboradores de los proyectos Wikimedia"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-10-21T13:27:58Z","dateModified":"2021-06-10T21:20:21Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/cf\/Carnot_engine_scheme.svg","headline":"ciclo termodin\u00e1mico ideal propuesto por Carnot en 1824"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":145,"wgHostname":"mw1417"});});</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tikz,geometry}
+\usetikzlibrary{patterns,patterns.meta}
+\geometry{
+ a4paper,
+ left=15mm,
+ top=0mm,
+ right=0mm,
+ bottom=0mm
+ }
+\renewcommand{\year}{2023}
+ 
+\begin{document}
+\thispagestyle{empty}
+\pgfdeclarepatterninherentlycolored{green stars}
+{\pgfpointorigin}{\pgfpoint{1cm}{1cm}}
+{\pgfpoint{1cm}{1cm}}
+{
+\pgfsetlinewidth{2\pgflinewidth} 
+\pgftransformshift{\pgfpoint{.5cm}{.5cm}}
+\pgfpathmoveto{\pgfpointpolar{0}{4mm}}
+\pgfpathlineto{\pgfpointpolar{144}{4mm}}
+\pgfpathlineto{\pgfpointpolar{288}{4mm}}
+\pgfpathlineto{\pgfpointpolar{72}{4mm}}
+\pgfpathlineto{\pgfpointpolar{216}{4mm}}
+\pgfpathclose%
+\pgfusepath{stroke}
+}
+%\filldraw[pattern=green stars] (0,0) rectangle (3,2);
+
+\begin{tikzpicture}[overlay,shift={(-.15,-29.3)}]
+\draw [dashed](0,0) rectangle (19,10);
+\draw [dashed] (3.5,0) -- (3.5,10);
+\draw [line width=1mm,rounded corners=5mm,gray,pattern={Dots[angle=45,distance={8pt/sqrt(2)}], pattern color=gray}](3.5+.7,0.7) rectangle (3.5+.7+14,10-.7);
+\draw (5.5,8) node [above right]{N$^\circ$\underline{\hspace{3cm}}};
+\draw (9.5,7) node [above right]{\underline{\hspace{6.5cm}} de \year};
+\draw (6,6.1) node [above right]{Recibí de \underline{\hspace{9cm}}};
+\draw (4.6,5.3) node [above right ]{\underline{\hspace{10.8cm}} la cantidad};
+\draw (4.6,4.4) node [above right] {de pesos};
+\fill [pattern=crosshatch dots](6.5,4.45) rectangle (17.8,5.05);
+\fill [pattern=crosshatch dots](4.6,3.6) rectangle (17.8,4.3);
+\draw (4.4,2.9) node [above right]{\underline{\hspace{13.2cm}}};
+\draw (4.4,2.2) node [above right]{\underline{\hspace{13.2cm}}};
+\draw (5.6,1) node [above right]{Son \$};
+\fill [pattern=crosshatch dots](7,1) rectangle (11,1.6);
+% parte pequeña
+
+\draw(1.2,0.5) node [rotate=90,right]{N$^\circ$\underline{\hspace{3.6cm}} Fecha\underline{\hspace{0.8cm}} / \underline{\hspace{0.8cm}} / \year};
+\draw(2,0.5) node [rotate=90,right]{Concepto\underline{\hspace{7.1cm}}};
+\draw(2.8,0.5) node [rotate=90,right]{\underline{\hspace{4cm}}Son \$\underline{\hspace{3.5cm}}};
+\end{tikzpicture}
+%arriba
+\begin{tikzpicture}[overlay,shift={(-.3,-9.3)}]
+\draw [dashed](0,0) rectangle (19,10);
+\draw [dashed] (3.5,0) -- (3.5,10);
+\draw [line width=1mm,rounded corners=5mm,gray,pattern={Dots[angle=45,distance={8pt/sqrt(2)}]}](3.5+.7,0.7) rectangle (3.5+.7+14,10-.7);
+\draw (5.5,8) node [above right]{N$^\circ$\underline{\hspace{3cm}}};
+\draw (9.5,7) node [above right]{\underline{\hspace{6.5cm}} de \year};
+\draw (6,6.1) node [above right]{Recibí de \underline{\hspace{9cm}}};
+\draw (4.6,5.3) node [above right ]{\underline{\hspace{10.8cm}} la cantidad};
+\draw (4.6,4.4) node [above right] {de pesos};
+\fill [pattern=crosshatch dots](6.5,4.45) rectangle (17.8,5.05);
+\fill [pattern=crosshatch dots](4.6,3.6) rectangle (17.8,4.3);
+\draw (4.4,2.9) node [above right]{\underline{\hspace{13.2cm}}};
+\draw (4.4,2.2) node [above right]{\underline{\hspace{13.2cm}}};
+\draw (5.6,1) node [above right]{Son \$};
+\fill [pattern=crosshatch dots](7,1) rectangle (11,1.6);
+% parte pequeña
+
+\draw(1.2,0.5) node [rotate=90,right]{N$^\circ$\underline{\hspace{3.6cm}} Fecha\underline{\hspace{0.8cm}} / \underline{\hspace{0.8cm}} / \year};
+\draw(2,0.5) node [rotate=90,right]{Concepto\underline{\hspace{7.1cm}}};
+\draw(2.8,0.5) node [rotate=90,right]{\underline{\hspace{4cm}}Son \$\underline{\hspace{3.5cm}}};
+\end{tikzpicture}
+%medio
+\begin{tikzpicture}[overlay,shift={(-.4,-19.3)}]
+\draw [dashed](0,0) rectangle (19,10);
+\draw [dashed] (3.5,0) -- (3.5,10);
+\draw [line width=1mm,rounded corners=5mm,gray,pattern={Dots[angle=45,distance={8pt/sqrt(2)}]}](3.5+.7,0.7) rectangle (3.5+.7+14,10-.7);
+\draw (5.5,8) node [above right]{N$^\circ$\underline{\hspace{3cm}}};
+\draw (9.5,7) node [above right]{\underline{\hspace{6.5cm}} de \year};
+\draw (6,6.1) node [above right]{Recibí de \underline{\hspace{9cm}}};
+\draw (4.6,5.3) node [above right ]{\underline{\hspace{10.8cm}} la cantidad};
+\draw (4.6,4.4) node [above right] {de pesos};
+\fill [pattern=crosshatch dots](6.5,4.45) rectangle (17.8,5.05);
+\fill [pattern=crosshatch dots](4.6,3.6) rectangle (17.8,4.3);
+\draw (4.4,2.9) node [above right]{\underline{\hspace{13.2cm}}};
+\draw (4.4,2.2) node [above right]{\underline{\hspace{13.2cm}}};
+\draw (5.6,1) node [above right]{Son \$};
+\fill [pattern=crosshatch dots](7,1) rectangle (11,1.6);
+% parte pequeña
+
+\draw(1.2,0.5) node [rotate=90,right]{N$^\circ$\underline{\hspace{3.6cm}} Fecha\underline{\hspace{0.8cm}} / \underline{\hspace{0.8cm}} / \year};
+\draw(2,0.5) node [rotate=90,right]{Concepto\underline{\hspace{7.1cm}}};
+\draw(2.8,0.5) node [rotate=90,right]{\underline{\hspace{4cm}}Son \$\underline{\hspace{3.5cm}}};
+\end{tikzpicture}
+
+
+
+
+
+\end{document}

@@ -1,0 +1,108 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\chapter{Transitorio Capacitivo Resistivo}
+\img{images/09/transitorio}{Transitorio capacitivo resistivo.}
+\info{Transitorio Capacitivo-Resistivo}{ \emph{Cuando se produce un cambio en las magnitudes de un circuito, tensión o corriente, decimos que el circuito está en régimen transitorio. Al cambiar las condiciones de un elemento de un circuito se pierde el régimen permanente, y tras
+sucederse los cambios de tensión y corriente se vuelve de nuevo al
+equilibrio en otro régimen permanente. Al intervalo entre los dos regimenes permanentes se le denomina régimen transitorio.}}
+
+\info{Constante de tiempo}{\begin{equation*}
+    \tau = RC
+\end{equation*} $\tau$ se llama constante de tiempo del circuito. Es un indicador de la velocidad de reacción del circuito ante una perturbación (debido a un escalón de tensión). Cuanto mayor sea este valor, el valor final del estado de equilibrio se alcanzará más rápidamente.}
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+    \draw (0,0)--(0,4)node [left]{$I$} [-stealth];
+    \draw (0,0)--(6,0)node [below]{$t$} [-stealth];
+    \draw[scale=1, domain=0:5, smooth, variable=\x, gray] plot ({\x}, {2.71828*2.71828^(-\x)});
+    \draw [dashed](1,0)node [below]{$\tau$}--(1,1)[-stealth];
+    \draw [dashed](0,1)node [left]{$37\%I_0$}--(1,1);
+    \draw (0,2.7) node [left]{$I_0$};
+    \end{tikzpicture}
+    \caption{Curva de descarga de un capacitor}
+    \label{fig:my_label}
+\end{figure}
+
+\actividad{Resolver los siguientes ejercicios de transitorio eléctrico}
+
+\begin{enumerate}
+    \item Encontrar la constante de tiempo $\tau$ para un circuito formado por un capacitor de $C=10\mu F$ conectado con una resistencia de $R=10k\Omega$.
+    \item Si la constante de tiempo es $\tau=1s$ y se dispone de una resistencia de $R=100k\Omega$, encontrar la capacidad del capacitor $C$ en Faradios.
+    \item Encontrar cuanto tiempo llevará que se cargue un capacitor de $200\mu F$ al 63\% si se conecta a una resistencia de $R=100\Omega$. 
+    \item Encontrar cuanto tiempo llevará que se cargue un capacitor de $200\mu F$ al 63\% si conecta a 220V y la corriente inicial es de 2A. 
+    \item cuanto tiempo demorará en descargarse al 37\% Un capacitor de $C=1F$ que fue cargado con una corriente inicial $I_0=10A$ y $V=24V$
+    
+    \info{Carga completa de capacitor 99\%}{
+    Un capacitor se carga al 99\% después de 
+    $t=5\tau$}
+    
+    \item  Encontrar el tiempo $t$ que demorará en cargarse al 99\% un capacitor de $C=10\mu F$ conectado a una resistencia $R=1k\Omega$. 
+    
+    \item Encontrar la constante de tiempo $\tau$ de los siguientes circuitos entre $a$ y $b$: 
+    \begin{enumerate}
+        \item . 
+            \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[resistor=$3k\Omega$,*-*](2,0)  (2,0)--(2,2) to[resistor=$1\Omega$] (-2,2)--(-2,0);
+         \draw (-2,0)--(-2,-2);
+         \draw (2,0)--(2,-2);
+         \draw (-2,-2) to[resistor=$2k\Omega$] (2,-2);
+         \draw (2,0) to[capacitor=$100\mu F$] (4,0);
+         \draw (4,0) to[resistor=$100\Omega$,-*] (6,0) node[label={above:b}]{};
+        \end{circuitikz}
+        \end{center}
+    \item .
+            \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[capacitor=$3\mu F$,*-*](2,0)  (2,0)--(2,2) to[capacitor=$1\mu F$] (-2,2)--(-2,0);
+         \draw (-2,0)--(-2,-2);
+         \draw (2,0)--(2,-2);
+         \draw (-2,-2) to[capacitor=$2\mu F$] (2,-2);
+         \draw (2,0) to[capacitor=$5\mu F$] (4,0);
+         \draw (4,0) to[resistor=$10\Omega$,-*] (6,0) node[label={above:b}]{};
+        \end{circuitikz}
+        \end{center}
+    
+       \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[resistor=$10\Omega$,*-](3,0) to[capacitor=$200\mu F$,-*] (3,-3) node[label={right:b}]{};
+        \draw (-3,0)  to[resistor=$200\Omega$,*-](-3,-3) to[resistor=$1\Omega$,-*] (3,0);
+        \end{circuitikz}
+        \end{center}
+        
+               \item .
+        \begin{center}
+        \begin{circuitikz}
+         \draw (-3,0) node[label={above:a}]{} to[capacitor=$10\mu F$,*-](3,0) to[resistor=$200\Omega$,-*] (3,-3) node[label={right:b}]{};
+        \draw (-3,0)  to[capacitor=$200 \mu F$,*-](-3,-3) to[capacitor=$1\mu F$,-*] (3,0);
+        \end{circuitikz}
+        \end{center}
+        
+        \item .
+              \begin{center}
+        \begin{circuitikz}
+           \draw (0,0) node[label={left:a}]{} to[capacitor=$1\mu F$,*-*] (4,0) 
+           to[resistor=$6\Omega$,*-*] (7,2)--(7,5)node[label={right:b}]{} 
+           to[resistor=$2\Omega$,*-*] (3,5)--(3,2)
+           to[resistor=$1\Omega$,*-*] (1.5,1)--(0,0);
+           \draw (0,0) to[capacitor=$6\mu F$,*-*] (0,4)
+           to[capacitor=$3\mu F$,*-*] (4,4)--(4,0);
+           ; 
+        \end{circuitikz}
+        \end{center}    
+    \end{enumerate}
+    
+    
+    
+    
+    
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

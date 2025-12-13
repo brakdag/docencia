@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz,readarray}
+\usepackage[a4paper]{geometry}
+\geometry{a4paper,landscape,left=30mm,top=20mm,right=10mm,bottom=10mm}
+\begin{document}
+\pagestyle{empty}
+\readarraysepchar{\\}%
+\readdef{2025-4117-5-3.csv}\mydata%
+\ignoreemptyitems
+\setsepchar{\\/,}
+\readlist\mylist{\mydata}%
+
+
+
+
+\begin{tikzpicture}[remember picture, overlay,shift={(-2.5,-18)}]
+\foreach \c in {0,...,0}
+\foreachitem\x\in\mylist{%
+  \draw (0,17.7-\xcnt*0.5+1.5-\c*6.5) node [right]{\x};
+};
+%\draw [dashed](2,19) --(27,19); 
+%\draw [dashed](2,19.5) --(27,19.5); 
+\foreach \z in {0,...,47}
+     \draw (3+\z*0.5,18)--(3.5+\z*0.5,18.5);
+
+\draw (0,18.25) node [right] {Apellido y Nombre};
+
+\draw [step=0.5,thin,xstep=5.5] (0,0) grid (2.5,18.5);
+\draw [step=0.5,thin] (2.5,0) grid (27,18.5);
+\draw [thin] (0,0) rectangle (27,18.5);
+\draw [ultra thick](0,18)--(27,18);
+
+\end{tikzpicture}
+
+% Paginas con notas manuscritas
+\newpage
+\begin{tikzpicture}[remember picture, overlay,shift={(-2.5,-18)}]
+\draw (3,19) node []{\huge Notas};
+\draw(0,0) rectangle (27.5,18);
+\foreach \y in {-0,...,36}
+        \draw (0,\y/2) --(27.5,\y/2);
+
+\end{tikzpicture}
+
+    
+    
+\end{document}

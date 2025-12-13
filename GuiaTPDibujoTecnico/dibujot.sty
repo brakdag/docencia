@@ -1,0 +1,70 @@
+%---Tools Script GDF-----
+% Lista de comandos
+% \actividad{<texto del título de la actividad>}
+% \caja{ titulo}{contenido}
+% \info {titulo}{contenido}
+% \ejemplo{titulo}{contenido}
+% \web{url}{titulo}
+% \video{url}{titulo}
+% \img{direccion}{titulo}
+% \news{title}{noticia}
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{dibujot}[2020/04/24 Gustavo Ferreyra]
+
+\RequirePackage{tcolorbox,qrcode,hyperref,graphics,tikz,geometry,sectsty,multicol,fontawesome}
+\RequirePackage[labelfont=bf]{caption}
+
+\newbool{@formato}
+
+\DeclareOption{formato}{%
+    % switch the bool-flag if this option is set
+    \setbool{@formato}{true}%
+}
+
+\ProcessOptions\relax
+
+
+\newcommand{\caja}[2]{
+\begin{tcolorbox}
+\textbf{#1}
+\tcblower
+#2
+\end{tcolorbox}}
+
+\newcommand{\info}[2]{\caja{\faInfoCircle \hspace{1pt} #1:}{#2}}
+
+\newcommand{\qr}[2]{\caja{\qrcode[height=2cm]{#1} \hspace{1pt} #2:}{\url{#1}}}
+
+\newcommand{\qrc}[1]{
+\vspace{1cm}
+% never g g y u
+\quad
+\qrcode[height=2cm,padding=1cm]{#1}
+\qquad
+\vspace{1cm}
+}
+
+\newcommand{\img}[2]{
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{#1}
+    \caption{#2}
+\end{figure}
+}
+
+\newcommand{\imgfull}[2]{
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{#1}
+    \caption{#2}
+\end{figure}
+}
+
+
+\newcommand{\actividad}[1]{
+\hspace{0.5cm} \faEdit \hspace{0.15cm}\underline{\bf{Actividad:}} #1.
+}
+
+
+

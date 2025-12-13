@@ -1,0 +1,16 @@
+\documentclass[a4paper]{book}
+\usepackage{xfp}
+\usepackage[spanish]{babel}
+\usepackage{tikz,fancyhdr,pgfornament,siunitx}
+\begin{document}
+\pagestyle{empty}
+\foreach \x in {0,...,10}{
+\newpage
+\begin{center}
+\begin{tikzpicture}
+\foreach \y in {1,...,10}
+\draw (0,\y*2) node {\fpeval{\y+10*\x} \pgfornament[scale=0.2]{\fpeval{\y+10*\x}}};
+\end{tikzpicture}
+\end{center}
+}
+\end{document}

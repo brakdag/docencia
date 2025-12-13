@@ -1,0 +1,145 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\setcounter{chapter}{6}
+\chapter{Máquinas Sincrónicas}
+
+\section{Funcionamiento y Partes Constitutivas de una Máquina Sincrónica}
+
+Las máquinas sincrónicas son dispositivos electromecánicos fundamentales en la generación y conversión de energía eléctrica. Su nombre deriva del hecho de que operan a una velocidad constante sincronizada con la frecuencia de la red eléctrica a la que están conectadas. Estas máquinas pueden funcionar tanto como generadores (produciendo energía eléctrica) o como motores (convirtiendo energía eléctrica en mecánica).
+
+\subsection{Principios básicos de funcionamiento}
+
+El principio de funcionamiento de una máquina sincrónica se basa en la interacción entre dos campos magnéticos: uno producido por el rotor (parte giratoria) y otro por el estator (parte fija). En una máquina sincrónica típica, el campo magnético del rotor se genera mediante una fuente de corriente continua, mientras que el campo del estator se produce por corrientes alternas trifásicas.
+
+\info{Velocidad sincrónica}{
+La velocidad de rotación de una máquina sincrónica está directamente relacionada con la frecuencia de la red eléctrica y el número de polos magnéticos de la máquina. Esta relación se expresa mediante la siguiente fórmula:
+
+\begin{equation}
+n_s = \frac{120 \times f}{p}
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $n_s$: Velocidad sincrónica [rpm]
+    \item $f$: Frecuencia de la red [Hz]
+    \item $p$: Número de polos de la máquina
+\end{itemize}
+}
+
+\subsection{Partes constitutivas principales}
+
+Las máquinas sincrónicas están compuestas por varias partes esenciales, cada una con una función específica:
+
+\begin{enumerate}
+    \item \textbf{Estator}: Es la parte fija de la máquina. Contiene los devanados\footnote{Conjuntos de espiras de conductores eléctricos} trifásicos que interactúan con el campo magnético del rotor. El estator está construido con láminas de acero al silicio para reducir las pérdidas por corrientes parásitas\footnote{Corrientes eléctricas inducidas en conductores cuando estos atraviesan un campo magnético variable}.
+    
+    \item \textbf{Rotor}: Es la parte giratoria de la máquina. Puede ser de dos tipos:
+    \begin{itemize}
+        \item Rotor de polos salientes: Utilizado principalmente en máquinas de baja velocidad.
+        \item Rotor de polos lisos: Empleado en máquinas de alta velocidad.
+    \end{itemize}
+    
+    \item \textbf{Sistema de excitación}: Proporciona la corriente continua necesaria para generar el campo magnético en el rotor. Puede ser un sistema de excitación sin escobillas o con escobillas y anillos rozantes.
+    
+    \item \textbf{Sistema de refrigeración}: Encargado de disipar el calor generado durante el funcionamiento de la máquina. Puede ser por aire, hidrógeno o agua, dependiendo de la potencia de la máquina.
+    
+    \item \textbf{Carcasa}: Estructura que aloja y protege los componentes internos de la máquina.
+\end{enumerate}
+
+\subsection{Principio de generación de tensión}
+
+En una máquina sincrónica funcionando como generador, la tensión inducida en los devanados del estator se produce por la variación del flujo magnético creado por el rotor. Esta tensión inducida se describe mediante la ley de Faraday-Lenz:
+
+\begin{equation}
+e = -N \frac{d\Phi}{dt}
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $e$: Fuerza electromotriz inducida [V]
+    \item $N$: Número de espiras del devanado
+    \item $\frac{d\Phi}{dt}$: Variación del flujo magnético respecto al tiempo [Wb/s]
+\end{itemize}
+
+La magnitud de la tensión generada depende de varios factores, incluyendo la velocidad de rotación, la intensidad del campo magnético del rotor y la configuración de los devanados del estator.
+
+\subsection{Potencia y par en máquinas sincrónicas}
+
+La potencia eléctrica generada (o consumida en el caso de un motor) por una máquina sincrónica trifásica se puede calcular mediante la siguiente fórmula:
+
+\begin{equation}
+P = \sqrt{3} \times V_L \times I_L \times \cos\phi
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $P$: Potencia eléctrica [W]
+    \item $V_L$: Tensión de línea [V]
+    \item $I_L$: Corriente de línea [A]
+    \item $\cos\phi$: Factor de potencia
+\end{itemize}
+
+El par electromagnético desarrollado por la máquina está relacionado con la potencia y la velocidad angular según la siguiente expresión:
+
+\begin{equation}
+T = \frac{P}{\omega}
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $T$: Par electromagnético [N·m]
+    \item $P$: Potencia [W]
+    \item $\omega$: Velocidad angular [rad/s]
+\end{itemize}
+
+\ejemplo{Cálculo de la velocidad sincrónica}{
+Calcular la velocidad sincrónica de una máquina con 4 polos conectada a una red de 50 Hz.
+
+Datos:
+\begin{itemize}
+    \item $f = 50$ Hz
+    \item $p = 4$ polos
+\end{itemize}
+
+Aplicando la fórmula de velocidad sincrónica:
+
+\begin{equation}
+n_s = \frac{120 \times f}{p} = \frac{120 \times 50}{4} = 1500 \text{ rpm}
+\end{equation}
+
+Por lo tanto, la velocidad sincrónica de la máquina es de 1500 rpm.
+}
+
+Las máquinas sincrónicas tienen diversas aplicaciones en la industria y la generación de energía. Como generadores, se utilizan ampliamente en centrales eléctricas (hidroeléctricas, térmicas, nucleares) para la producción de energía eléctrica a gran escala. Como motores, se emplean en aplicaciones que requieren velocidad constante y alta eficiencia, como compresores industriales, bombas de gran capacidad y propulsión de buques.
+
+La comprensión del funcionamiento y las partes constitutivas de las máquinas sincrónicas es fundamental para los estudiantes de electrotecnia, ya que estos dispositivos son pilares en la generación y utilización de la energía eléctrica en la sociedad moderna.
+
+\actividad{Responder el siguiente cuestionario}
+\begin{enumerate}
+    \item ¿Qué característica define a una máquina sincrónica y la diferencia de otros tipos de máquinas eléctricas?
+    \item ¿Cuáles son las dos funciones principales que puede desempeñar una máquina sincrónica?
+    \item ¿Qué relación existe entre la frecuencia de la red eléctrica y la velocidad de rotación de una máquina sincrónica?
+    \item ¿Cuál es la diferencia principal entre un rotor de polos salientes y uno de polos lisos?
+    \item ¿Qué función cumple el sistema de excitación en una máquina sincrónica?
+    \item ¿Por qué es importante el sistema de refrigeración en una máquina sincrónica?
+    \item ¿Qué ley física fundamental explica la generación de tensión en una máquina sincrónica?
+    \item ¿Cómo afecta el número de polos de una máquina sincrónica a su velocidad de rotación?
+    \item ¿Qué factores influyen en la magnitud de la tensión generada por una máquina sincrónica?
+    \item ¿Qué representa el factor de potencia en la fórmula de potencia eléctrica de una máquina sincrónica trifásica?
+\end{enumerate}
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+    \item Calcular la velocidad sincrónica de una máquina con 6 polos conectada a una red de 60 Hz.
+    \item Una máquina sincrónica de 4 polos gira a 1800 rpm. ¿Cuál es la frecuencia de la red eléctrica a la que está conectada?
+    \item Un generador sincrónico trifásico produce una tensión de línea de 400 V y una corriente de línea de 50 A. Si el factor de potencia es 0,8, ¿cuál es la potencia eléctrica generada?
+    \item Una máquina sincrónica de 2 polos está conectada a una red de 50 Hz. ¿Cuál será su velocidad de rotación en rad/s?
+    \item Un motor sincrónico desarrolla una potencia mecánica de 100 kW girando a 1500 rpm. Calcular el par electromagnético.
+    \item Si la frecuencia de la red eléctrica es de 60 Hz, ¿cuántos polos debe tener una máquina sincrónica para girar a 900 rpm?
+    \item Un generador sincrónico tiene una potencia nominal de 5 MVA y un factor de potencia de 0,85. Si la tensión de línea es de 11 kV, ¿cuál es la corriente de línea nominal?
+    \item Calcular la velocidad sincrónica en rad/s de una máquina de 8 polos conectada a una red de 50 Hz.
+    \item Una máquina sincrónica genera una tensión eficaz de 220 V por fase cuando gira a 3000 rpm. Si se reduce su velocidad a 1500 rpm, ¿cuál será la nueva tensión generada?
+    \item Un motor sincrónico trifásico de 6 polos está conectado a una red de 60 Hz y consume una potencia de 50 kW con un factor de potencia de 0,9. Si la eficiencia del motor es del 95\%, ¿cuál es el par mecánico desarrollado en el eje?
+\end{enumerate}
+
+\end{document}

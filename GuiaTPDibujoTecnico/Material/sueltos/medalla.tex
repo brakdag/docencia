@@ -1,0 +1,48 @@
+\documentclass[../../main]{subfiles}
+\begin{document}
+\begin{tikzpicture}
+
+\draw (.3,.5) node {\includesvg[scale=0.23]{../../images/puestero.svg}};
+%\fill [rounded corners,gray,opacity=0.5](-2cm,5.6cm) rectangle (2cm,7cm);
+%\draw [rounded corners,line width=2mm](-2cm,5.8cm) rectangle (2cm,7cm);
+%\draw [line width=2mm,white] (-1.5cm,6.5cm) -- (1.5cm,6.5cm);
+%\draw [line width=2mm,black] (-1.5cm,6.7cm) -- (1.5cm,6.7cm);
+%\draw [line width=2mm,black] (-1.5cm,6.3cm) -- (1.5cm,6.3cm);
+
+\draw [line width=1mm](0,0) circle (4.3cm);
+\draw [line width=1mm](0,0) circle (5.8cm);
+\draw [solid,line width=2mm](0,0) circle(6cm);
+%\fill [gray,opacity=0.5](0,0) circle(6cm);
+
+\path [postaction={decoration={
+                    text along path, 
+                    text align=center,
+     text={|\fontsize{38}{38}\selectfont\bfseries\sffamily|EL SOSNEADO}},decorate}] 
+     (-4.6cm,0cm) arc (180:0:4.6cm);
+\path [postaction={decoration={
+                    text along path, 
+                    text align=center,
+     text={|\fontsize{42}{42}\selectfont\bfseries\sffamily|2023}},decorate}] 
+     (-5.5cm,0) arc (180:360:5.5cm);
+     
+\path [postaction={decoration={
+                    text along path, 
+                    text align= fit to path,
+                    text={ |\fontsize{20}{20}\selectfont\bfseries
+|PRIMERA MARATÓN PUESTERA} 
+                    }, decorate}](260:3.2cm) arc (260:-80:3.2cm); 
+\foreach \i in {0,5,...,360}{
+    \fill (\i:4) circle (1mm);
+}
+\foreach \i in {240,225,...,165}{
+    \draw (\i:5cm) node[rotate=\i+90]{\pgfornament[scale=0.35]{2}};
+}
+\foreach \i in {-60,-45,...,15}{
+    \draw (\i:5cm) node[rotate=\i+270]{\pgfornament[scale=0.35,symmetry=h]{2}};
+}
+
+
+
+
+\end{tikzpicture}
+\end{document}

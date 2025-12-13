@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+
+\begin{document}
+
+% Configuración de las coordenadas 3D
+\tdplotsetmaincoords{60}{120}
+
+\begin{tikzpicture}[tdplot_main_coords]
+
+    % Dibujo de la primera esfera
+    \shade[ball color=blue] (0,0,0) circle (2cm);
+    \draw[dashed] (0,0,0) circle (2cm);
+    \draw[dashed] (0,0,0) circle [x radius=2cm, y radius=0.6cm];
+
+    % Dibujo de la segunda esfera
+    \shade[ball color=red] (4,0,0) circle (2cm);
+    \draw[dashed] (4,0,0) circle (2cm);
+    \draw[dashed] (4,0,0) circle [x radius=2cm, y radius=0.6cm];
+
+\end{tikzpicture}
+
+\end{document}
