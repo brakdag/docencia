@@ -1,0 +1,20 @@
+\documentclass[12pt]{book}
+\input{config}
+\input{formato}
+%\input{images/logo/4124}
+
+\makeglossaries
+\usetikzlibrary{shapes,arrows,decorations.text}
+\tikzstyle{line}=[draw] % here
+\setlist[itemize]{leftmargin=*}
+
+\begin{document}
+\newglossaryentry{formula}
+{
+    name=formula,
+    description={A mathematical expression}
+}
+\mainmatter
+    \subfile{capitulos/01_1_resistencia}
+
+\end{document}

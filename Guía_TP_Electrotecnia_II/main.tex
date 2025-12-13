@@ -15,14 +15,21 @@
     description={A mathematical expression}
 }
 
-
 \frontmatter
+    \includepdf[pages=-]{intro.pdf}
     \tableofcontents
 \mainmatter
-    \setcounter{chapter}{10}
-
+    \subfile{capitulos/01_1_resistencia}
+    \subfile{capitulos/01_02_resistenciaequivalente}
+    \subfile{capitulos/01_induccion_magnetica}
+    \subfile{capitulos/02_intensidad_de_campo}
+    \subfile{capitulos/03_electroimanes}
+    \subfile{capitulos/04_electromagnetismo_1}
+    \subfile{capitulos/05_electromagnetismo_2}
+    \subfile{capitulos/06_fem_inducida}
+    \subfile{capitulos/10_inductancia_equivalente}
+    \subfile{capitulos/07_autoinduccion}
     \subfile{capitulos/08_capacitores}
-
     \subfile{capitulos/08_condensadores}
     \subfile{capitulos/09_transitorio_capacitivo}
     \subfile{capitulos/10_maquina_rotativa}
@@ -33,8 +40,6 @@
     \subfile{capitulos/19_anexo_13}
     \subfile{capitulos/14_resonancia}
     %\subfile{capitulos/15_ejercicios_resueltos}
-    
-
 \backmatter
 \subfile{capitulos/18_simulacion}
 
