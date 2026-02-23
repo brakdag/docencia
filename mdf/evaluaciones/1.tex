@@ -1,0 +1,41 @@
+\documentclass[./examen.tex]{subfiles}
+\usepackage[first=1, last=20]{lcg}
+\newcommand{\random}{\rand\arabic{rand}}
+\usepackage{verbatim}
+\newcounter{z}
+\newcommand\y[2]{
+  \loop \ifnum\value{z} < #1
+    #2%
+    \stepcounter{z}%
+  \repeat
+}
+
+\begin{document}
+\begin{comment}
+    
+    \question Responder las siguientes problemas:
+    
+       \end{comment}
+
+
+%\info{Evaluación Electrotécnia II}{Campo magnético, Inducción magnética, permeabilidad magnética,imanes, líneas de campo magnético, flujo magnético, unidades magnéticas}
+\y{15}{
+\begin{center}
+
+\makebox[\textwidth]{Nombre y Apellido:\enspace\hrulefill}
+\end{center}
+\begin{questions}
+   
+    \question Resolver los siguientes problemas:
+     \begin{parts}
+     \part[4] Calcular la fuerza obtenida $F_1$ en el émbolo mayor de una prensa hidráulica si en el menor se hacen $F_2=5N$ y los émbolos circulares tienen triple radio uno del otro $r_1=3 r_2$.
+    \part[2]  El área de un pistón en una bomba de fuerza es de $A_1=10cm^2$.¿Qué fuerza $F_2$ se requiere para elevar agua con el pistón hasta una altura de $h=10m$?
+    \part[2]  ¿Qué profundidad de agua sería necesaria para alcanzar la presión relativa de $p=\random kg/cm^2$?
+    \part[4] Sobre el plato menor de la prensa se coloca una masa de $m_2=\random kg$, calcula qué masa se podría levantar colocada en el plato mayor. 
+    \part[2] ¿A qué presión se encuentra el Titanic $h=3843m$?
+    
+    \end{parts}
+\end{questions}
+
+}
+\end{document}

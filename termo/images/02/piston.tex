@@ -1,0 +1,27 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\begin{tikzpicture}
+\draw[opacity=0.5] (0,0) node {\includegraphics[scale=0.2]{images/02/piston.jpg}};    
+
+%piston
+\fill[pattern=north east lines] (-4.6,-1.4) rectangle (0.4,-0.7);
+\draw[very thick] (-4.6,-1.4) rectangle (0.4,-0.7);
+%flechas
+\draw[very thick,stealth-] (-4.1,-0.7)--(-4.1,0); 
+\draw[very thick,stealth-] (-3.5,-0.7)--(-3.5,0); 
+\draw[very thick,stealth-] (-3,-0.7)--(-3,0); 
+\draw[very thick,stealth-] (-0.1,-0.7)--(-0.1,0); 
+\draw[very thick,stealth-] (-0.55,-0.7)--(-0.55,0); 
+\draw[very thick,stealth-] (-1.1,-0.7)--(-1.1,0); 
+%mango
+\draw (-2.4,-0.7) rectangle (-1.55,2.6);
+
+\fill (0,1)--(0.1,2) -- cycle;
+
+
+% Camara de gas.
+\draw[dashed,thick] (-4.3,-5.5) rectangle (0.2,-1.7);
+\draw (-2,-3.5) node {\LARGE GAS};
+\end{tikzpicture}
+
+\end{document}

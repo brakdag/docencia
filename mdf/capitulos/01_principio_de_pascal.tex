@@ -1,0 +1,81 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Principio de Pascal}
+\img{images/01/titanic.jpg}{Restos del Titanic a $3843m$ de profundidad.}
+\info{
+Contenido}{
+Teorema fundamental de la hidrostática, Principio de Pascal, funcionamiento de la prensa hidráulica.
+}
+\section{Teorema fundamental de la hidrostática} \label{sec:tp1}
+
+   
+La diferencia de presión entre dos puntos de un líquido en equilibrio es igual al peso específico de ese líquido por la altura entre ambos puntos.
+\begin{equation}
+    p_2-p_1=\gamma (h_2-h_1)
+\end{equation}
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+\draw[pattern=north west lines, pattern color=gray] (0,-1) rectangle (5,5); 
+\draw (5,5)--(5,6);
+\draw (0,5)--(0,6);
+\draw [dashed,Circle-](3,0)node [above]{$p_1$}--(6,0);
+\draw [dashed,Circle-](3,3) node [above]{$p_2$}--(6,3);
+\draw [-Stealth](6,0)node [right]{$h_1$}--(6,3)node [right]{$h_2$};
+\draw (2,2) node {$\gamma$};
+\end{tikzpicture}
+\end{center}
+
+\info{Principio de Pascal}{La presión ejercida sobre un fluido incompresible y en equilibrio dentro de un recipiente de paredes indeformables se transmite con igual intensidad en todas las direcciones y en todos los puntos del fluido}
+
+\section{Cálculo de prensa hidráulica}
+La prensa hidráulica permite amplificar las fuerzas, se usa en elevadores, frenos y constituye la aplicación del principio de Pascal, consta de dos cilindros de diferente sección comunicados entre sí, y cuyo interior está completamente lleno de un líquido incompresible. Dos émbolos de secciones diferentes se ajustan, respectivamente, en cada uno de los dos cilindros, de modo que estén en contacto con el líquido. Cuando sobre el émbolo de menor sección $A_1$ se ejerce una fuerza $F_1$ la presión $p_1$ que se origina en el líquido en contacto con él se transmite íntegramente y de forma casi instantánea a todo el resto del líquido. Por el principio de Pascal esta presión será exactamente igual a la presión $p_2$ que ejerce el fluido en la sección $A_2$, es decir:
+\begin{equation}
+p_{1}=p_{2}
+\end{equation}
+con lo que las fuerzas serán:
+\begin{equation}
+F_{1}=p_{1}A_{1}<p_{1}A_{2}=p_{2}A_{2}=F_{2}
+\end{equation}
+con $A_1 < A_2$. Por tanto, la relación entre la fuerza resultante en el émbolo grande cuando se aplica una fuerza menor en el émbolo pequeño será tanto mayor cuanto mayor sea la relación entre las secciones:
+\begin{equation}
+ F_{1}=F_{2}\left({\frac {A_{1}}{A_{2}}}\right)
+\end{equation}
+
+\actividad{Resolver los siguientes problemas.}
+%problemas stevenassi
+\begin{enumerate}
+\item ¿Cuál es la presión en una piscina a la profundidad de $h=7.6m$?¿A qué presión se encuentra el Titanic $h=3843m$?
+\item ¿Qué profundidad de agua sería necesaria para alcanzar la presión absoluta $p=2.06645kg/cm^2$?
+\item Calcular la presión absoluta que el agua tiene en el punto A, de la cañería indicada en la figura, cuando la altura manométrica vale $h_{mmHg}=33mm$ y $h_1$ es despreciable.
+\begin{center}
+%problemas stevenassi
+    \includegraphics[]{images/01/stevenassi_9.png}
+\end{center}
+
+\item Calcular la diferencia de presión del aceite por las cañerías indicadas en la figura en base a los siguientes datos:
+$h_1=0,1m;h_2=0,2m;h_3=32cm;\gamma_{ac}=\gamma_1=\gamma_2=800\dfrac{kg}{m^3}$
+\begin{center}
+    \includegraphics[]{images/01/stevenassi10-2.png}
+\end{center}
+%internet
+\item En la imagen tenemos un coche de 1000 kg encima de un disco con un radio de 2 metros y por otro lado tenemos otro disco de 0.5 metros y luego el depósito lleno de agua.Determinar la fuerza que tenemos que ejercer en el disco pequeño será la necesaria para poder elevar el coche de 1000 kg.
+\begin{center}
+\includegraphics[scale=0.5]{./images/01/prensa-hidraulica-pascal.jpg}
+\end{center}
+\item Se desea elevar un cuerpo de 1000 kg utilizando una elevadora hidráulica de plato grande circular de $r_1=50 cm$ de radio y plato pequeño circular de $r_2 =8 cm$ de radio. Calcula cuánta fuerza hay que hacer en el émbolo pequeño.
+\item Conociendo el área  $A_1 = 10cm^2$, el área  $A_2 = 100 cm^2$ de una prensa hidráulica y la Fuerza  $F_2=100N$ sobre el émbolo 2. Calcular $F_1$.
+\item Si el área de $A_1=0,001m^2$ y el área de $A_2 = 0.1 m^2$ , la fuerza de entrada externa $F_1 = 100 N$, entonces. ¿Cuál será la fuerza de salida externa $F_2$ de una prensa hidráulica ?
+\item Si el Peso del automóvil de la figura es de $P=16000N$.Cuál es la fuerza de entrada externa $F$?
+\begin{center}
+\includegraphics[scale=0.5]{./images/01/ejercicio-del-principio-de-pascal.jpg}
+\end{center}
+%\subfile{./images/01/tp1ej9}
+
+\item Calcular la fuerza obtenida en el émbolo mayor de una prensa hidráulica si en el menor se hacen $F_2=5N$ y los émbolos circulares tienen triple radio uno del otro $r_1=3 r_2$.
+\item Sobre el plato menor de la prensa del problema anterior se coloca una masa de $m_2=6kg$, calcula qué masa se podría levantar colocada en el plato mayor.
+\item Sobre el plato menor de una prensa se coloca una masa de $m_2=16kg$. Calcula qué masa se podría levantar colocada en el plato mayor, cuyo radio es el doble del radio del plato menor $r_1=2r_2$.
+
+\item El área de un pistón es de $A=10cm^2$.¿Qué fuerza $F$ se requiere para elevar agua con el pistón hasta una altura de $h=10m$?
+\end{enumerate}
+\end{document}

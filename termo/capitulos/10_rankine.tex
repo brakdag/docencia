@@ -1,0 +1,32 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Ciclo de Rankine}
+
+\img{images/10/rankine.jpg}{Ciclo de rankine}
+
+\section{Rankine}
+
+
+El ciclo de Rankine es un ciclo termodinámico que tiene como objetivo la conversión de calor en trabajo, constituyendo lo que se denomina un ciclo de potencia. Como cualquier otro ciclo de potencia, su eficiencia está acotada por la eficiencia termodinámica de un ciclo de Carnot que operase entre los mismos focos térmicos (límite máximo que impone el Segundo Principio de la Termodinámica). Debe su nombre a su desarrollador, el ingeniero y físico escocés William John Macquorn Rankine.
+
+El ciclo surge como una mejora del Ciclo de Carnot al buscar tener una mejor relación de trabajo (trabajo útil respecto del trabajo total).
+
+\subsection{Proceso}
+El ciclo Rankine es un ciclo de potencia representativo del proceso termodinámico que tiene lugar en una central térmica de vapor. Utiliza un fluido de trabajo que alternativamente evapora y condensa, típicamente agua (existen otros tipos de sustancias que pueden ser utilizados, como en los ciclos Rankine orgánicos). Mediante la quema de un combustible, el vapor de agua es producido en una caldera a alta presión para luego ser llevado a una turbina donde se expande para generar trabajo mecánico en su eje (este eje, solidariamente unido al de un generador eléctrico, es el que generará la electricidad en la central térmica). El vapor de baja presión que sale de la turbina se introduce en un condensador, equipo donde el vapor condensa y cambia al estado líquido (habitualmente el calor es evacuado mediante una corriente de refrigeración procedente del mar, de un río o de un lago). Posteriormente, una bomba se encarga de aumentar la presión del fluido en fase líquida para volver a introducirlo nuevamente en la caldera, cerrando de esta manera el ciclo.
+
+Existen algunas mejoras al ciclo descrito que permiten mejorar su eficiencia, como por ejemplo sobrecalentamiento del vapor a la entrada de la turbina, recalentamiento entre etapas de turbina o regeneración del agua de alimentación a caldera.
+
+Existen también centrales alimentadas mediante energía solar térmica (centrales termosolares), en cuyo caso la caldera es sustituida por un campo de colectores cilindro-parabólicos o un sistema de helióstatos y torre. Además este tipo de centrales poseen un sistema de almacenamiento térmico, habitualmente de sales fundidas. El resto del ciclo, así como de los equipos que lo implementan, serían los mismos que se utilizan en una central térmica de vapor convencional.
+
+\subsection{Diagrama T-s del ciclo}
+
+El diagrama T-S de un ciclo de Rankine con vapor de alta presión sobrecalentado.
+El diagrama T-s (temperatura y entropía) de un ciclo Rankine ideal está formado por cuatro procesos: dos isoentrópicos y dos isobáricos. La bomba y la turbina son los equipos que operan según procesos isoentrópicos (adiabáticos e internamente reversibles). La caldera y el condensador operan sin pérdidas de carga y por tanto sin caídas de presión. Los estados principales del ciclo quedan definidos por los números del 1 al 4 en el diagrama T-s (1: vapor sobrecalentado; 2: mezcla bifásica de título elevado o vapor húmedo; 3: líquido saturado; 4: líquido subenfriado). Los procesos que tenemos son los siguientes para el ciclo ideal (procesos internamente reversibles):
+
+Proceso 1-2: Expansión isoentrópica del fluido de trabajo en la turbina desde la presión de la caldera hasta la presión del condensador. Se realiza en una turbina de vapor y se genera potencia en el eje de la misma.
+Proceso 2-3: Transmisión de calor a presión constante desde el fluido de trabajo hacia el circuito de refrigeración, de forma que el fluido de trabajo alcanza el estado de líquido saturado. Se realiza en un condensador (intercambiador de calor), idealmente sin pérdidas de carga.
+Proceso 3-4: Compresión isoentrópica del fluido de trabajo en fase líquida mediante una bomba, lo cual implica un consumo de potencia. Se aumenta la presión del fluido de trabajo hasta el valor de presión en caldera.
+Proceso 4-1: Transmisión de calor hacia el fluido de trabajo a presión constante en la caldera. En un primer tramo del proceso el fluido de trabajo se calienta hasta la temperatura de saturación, luego tiene lugar el cambio de fase líquido-vapor y finalmente se obtiene vapor sobrecalentado. Este vapor sobrecalentado de alta presión es el utilizado por la turbina para generar la potencia del ciclo (la potencia neta del ciclo se obtiene realmente descontando la consumida por la bomba, pero esta suele ser muy pequeña en comparación y suele despreciarse).
+
+
+\end{document}

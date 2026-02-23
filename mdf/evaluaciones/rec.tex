@@ -1,0 +1,40 @@
+\documentclass[./examen.tex]{subfiles}
+\usepackage[first=1, last=20]{lcg}
+\newcommand{\random}{\rand\arabic{rand}}
+\usepackage{verbatim}
+\newcounter{z}
+\newcommand\y[2]{
+  \loop \ifnum\value{z} < #1
+    #2%
+    \stepcounter{z}%
+  \repeat
+}
+
+\begin{document}
+\begin{comment}
+    
+    \question Responder las siguientes problemas:
+    
+       \end{comment}
+
+
+%\info{Evaluación Electrotécnia II}{Campo magnético, Inducción magnética, permeabilidad magnética,imanes, líneas de campo magnético, flujo magnético, unidades magnéticas}
+\y{11}{
+\begin{center}
+
+\makebox[\textwidth]{Nombre y Apellido:\enspace\hrulefill}
+\end{center}
+\begin{questions}
+   
+    \question Resolver los siguientes problemas:
+     \begin{parts}
+     \part[4] Calcular la fuerza obtenida $F_1$ en el émbolo mayor de una prensa hidráulica si en el menor se hacen $F_2=\random N$ y los émbolos circulares tienen triple radio uno del otro $r_1=3 r_2$.
+    \part[2]  El área de un pistón en una bomba de fuerza es de $A_1=10cm^2$.¿Qué fuerza $F_2$ se requiere para elevar agua con el pistón hasta una altura de $h=\random m$?
+    \part[2]  ¿Qué profundidad de agua sería necesaria para alcanzar la presión absoluta $p=\random kg/cm^2$?s
+    \part[2] ¿A qué presión se encuentra un barco Romano del siglo IV en el mar Mediterraneo si está a la profundidad de $h=98m$?
+    
+    \end{parts}
+\end{questions}
+
+}
+\end{document}

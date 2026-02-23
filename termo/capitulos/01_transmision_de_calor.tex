@@ -1,0 +1,117 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Transmisión de calor}
+\img{images/01/tcalor.jpg}{Las llamas de color azul,son las que se presentan temperaturas más elevadas,superior a los $1300^\circ C$.}
+
+\info{
+Contenido}{
+Transferencia de calor, escala de temperaturas, Calorimetría
+}
+
+\actividad{Contestar las siguientes preguntas}
+\begin{enumerate}
+\item Defina cuerpo, materia, energía, trabajo. Propiedades de la materia, estados de la materia, defina calor y temperatura, cambios de estado.
+\item Explique las escalas de temperatura y de la definición de calorimetría.
+\item ¿Qué es transferencia de calor? Tipos de transferencias de calor. Dibujar.
+\item Explicar ejemplos de cada uno de los casos de transferencia de calor y dibujar.
+\item Defina calor específico, capacidad calorífica, equivalente mecánico del calor, coefeciente total y revestimientos.
+\end{enumerate}
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+    \item Conversión de temperatura :
+    \begin{enumerate} \item Expresar en grados Fahrenheit la temperatura de $t=40^\circ C$
+    \item Expresar en Celcius la temperatura de $t=122^\circ F$.
+    \item Expresa en $^\circ K$ la temperatura del ejercicio anterior.
+    \item Expresa en $^\circ F$ la temperatura de $t=746^\circ K$.
+    \end{enumerate}
+
+   % \info{Calorimetría}{Se refiere a la medición de la cantidad de calor, sus unidades son el calor normal, la caloría o gramo caloría, 
+    
+   % $kcal$ : la kilocaloría  o simplemente caloría.
+    
+    %$BTU:$ unidad que se utiliza para lelevar la temperatura de $1^\circ F$ en una libra de agua.
+    
+    
+    
+    %}
+    
+    \item Determinar cuantas calorías representan $45 BTU$
+    \item Determinar cuantos $Chu$ representan $458 BTU$
+    
+    \item Calcular la cantidad de calor que suministra un bloque de mármol de 5T cuya temperatura desciende de 50C a 10C.
+
+    \info{Calor especifico}{
+    \begin{equation}
+        \Delta Q= c_m G \Delta t
+    \end{equation}
+    
+    Siendo
+    
+    $\Delta Q$: Calor transmitido. [Kcal]
+    
+    $c_m$: Calor específico medio $\left[\dfrac{Kcal}{Kg ^\circ C }\right]$
+
+    $G$: masa o peso $[Kgf o Kg]$
+
+    $\Delta t:$ Diferencia de temperatura [$^\circ C$]    
+}
+    \item Calcular la cantidad de calor que es necesaria suministrar a $V=100L$ de agua para que su temperatura se eleve de 15C a 65C. Determinar el consumo eléctrico.
+    
+    \info{Calor transferido}{
+    \begin{equation}
+        Q=\dfrac{S\cdot Ct (t_1-t_2)\cdot \Delta t}{e}
+    \end{equation}
+    
+    Siendo:
+    
+    $Q$: Cantidad de calor. [Kcal]
+    
+    $Ct$: Coeficiente térmico.
+    
+    $S$: Superficie. [$m^2$]
+    
+    $t_1-t_2$: Variación de temperatura. [$^\circ C$]
+    
+    $\Delta t$: tiempo [s]
+    
+    $e$: Espesor [metros]
+    }
+
+    
+    \item Calcular la cantidad de calor que se transmite por conductividad a través de una losa de hormigón armado con una superficie de $S=16m^2$ y un espesor $e=10cm$ cuando la temperatura exterior es de $t_e=45^\circ C$ y la interior es $t_i=15^\circ C$
+    \item Calcular la cantidad de calor que se transmite por conductividad a través del cilindro de un motor a explosión de acero fundido con diámetro interior de $d_i=150mm$ y diametro exterior $d_e=180mm$ y $l=250mm$ de longitud, si la temperatura interna des de $t_i=300^\circ C$ y la externa $t_e= 90^\circ C$
+    \item Calcula $Q$ que en un día pasa a través de una pared vertical con superficie $S=20m^2$, constituída por dos muros de mampostería de 20cm separados por una capa de corcho de 1cm, cuando la temperatura exterior es de $t_e=40^\circ C$ y la interior $t_i=-10^\circ C$
+    
+    \info{Paredes multiples}{
+    Cuando tenemos paredes múltiples ya sean en serie o en paralelo, se puede buscar una analogía con la ley de Ohm, en este caso la resistencia térmica. El calor transferido es proporcional a la diferencia de temperatura e inversamente proporcional a la resistencia térmica.
+    \begin{equation}
+        R_t=\dfrac{e}{S\cdot Ct}
+    \end{equation}
+    \begin{equation}
+        Q=\dfrac{ \Delta t}{R_t}
+    \end{equation}
+  
+    \begin{equation}
+        Q=\dfrac{ \Delta t}{\dfrac{e}{S\cdot Ct}}
+    \end{equation}
+    \begin{equation}
+        R_t=R_1+R_2+\dots+R_n=\dfrac{e_1}{S_1\cdot Ct_1}+\dfrac{e_2}{S_2\cdot Ct_2}+\dots+\dfrac{e_n}{S_n\cdot Ct_n}
+    \end{equation}
+    \begin{equation}
+        Q=\dfrac{ \Delta t}{\dfrac{e_1}{S_1\cdot Ct_1}+\dfrac{e_2}{S_2\cdot Ct_2}+\dots+\dfrac{e_n}{S_n\cdot Ct_n}}
+    \end{equation}
+    
+    
+    }
+    
+    
+    \item Calcular Q en una pared con una superficie de $S=25m^2$ separados por un aislamiento de hormigón ($CT_{homrigon}=1.3$) armado de 20cm de espesor recubiertos con ladrillos refractarios de 20cm($CT_{ladrillos}=0.6$) en ambos lados y revocado en ambos lados de 5cm de espesor cada uno cuando la temperatura va de $35^\circ C$ a $10^\circ C$. Graficar.
+    \item Calcular $Q$ que en 24 horas pasa a través de una losa de hormigón armado de $e=25cm$ de espesor y $S=90m^2$ de superficie con una mampostería de ladrillo en la parte exterior de $7cm$ y yeso en la parte interior de $1cm$, La temperatura varía entre $t_i=45^\circ C$ y $t_f=0 ^\circ C$.
+    
+\end{enumerate}
+
+
+
+
+\end{document}

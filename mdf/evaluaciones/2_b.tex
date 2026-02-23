@@ -1,0 +1,32 @@
+\documentclass[./examen.tex]{subfiles}
+\usepackage[first=1, last=20]{lcg}
+\newcommand{\random}{\rand\arabic{rand}}
+\usepackage{verbatim}
+\newcounter{z}
+\newcommand\y[2]{
+  \loop \ifnum\value{z} < #1
+    #2%
+    \stepcounter{z}%
+  \repeat
+}
+
+\begin{document}
+\y{15}{
+\begin{center}
+
+\makebox[\textwidth]{Nombre y Apellido:\enspace\hrulefill}
+\end{center}
+\begin{questions}
+\small
+\question[2] Un cubo de hierro de 20cm de arista se sumerge totalmente en agua $\gamma_{H_2O}=1000\vec{kg}/m^3$. Si tiene un peso de $P=560,40 N$, calcular: ¿Qué magnitud de empuje recibe y cuál será la magnitud del peso aparente del cubo?
+
+\question[2] Una esfera de volumen de $V_e=3 \times 10^{-4}m^3$, está totalmente inmersa en un líquido cuya densidad es de $\rho_{l}=900 kg/m^3$, determine, a) La intensidad de empuje que actúa en la esfera, b) El peso de la esfera para que se desplace hacia arriba o hacia abajo. 
+
+\question[3] Un cubo de cobre, de base igual a $b=35cm^2$ y una altura de $h=12 cm$, se sumerge hasta la mitad, por medio de un alambre, en un recipiente que contiene alcohol $\gamma_{alcohol}=0,8Kg/dm^3$.  ¿Cuál es la magnitud del peso aparente del cubo debido al empuje, si la magnitud de su peso es de 32.36 N?
+
+\question[3] El volumen pulmonar total de \emph{el Caniche Toy de Riahnna} es de $V=0,6lts$, si tiene un peso de $P=6,8\vec{kg}$ y ocupa un volumen de $V=6,6lts$ con los pulmones vacíos, averiguar si el perro flota o se hunde con los pulmones llenos de aire y vacío.
+
+\end{questions}
+
+}
+\end{document}

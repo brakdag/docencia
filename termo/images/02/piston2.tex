@@ -1,0 +1,139 @@
+% --- Para probar este código de forma independiente ---
+\documentclass[tikz, border=10pt]{standalone}
+
+% --- Paquetes necesarios ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % Mejores fuentes
+\usepackage{amsmath} % Para el nodo de texto
+\usepackage{graphicx}
+% --- Librerías TikZ ---
+\usetikzlibrary{
+    patterns.meta,  % Para el achurado (hatch) del pistón
+    arrows.meta,    % Para las flechas (mejor que 'arrows')
+    calc            % Para cálculos de coordenadas
+}
+
+\begin{document}
+ 
+
+\begin{tikzpicture}[
+    % --- Estilos Globales ---
+    thick_wall/.style={line width=1.5pt},
+    piston_pattern/.style={
+        pattern={Lines[angle=45, distance=3pt, line width=0.8pt]}
+    },
+    big_arrow/.style={
+        -Triangle [length=8mm, width=8mm] , % Flecha grande y gruesa
+        line width=2.5pt
+    },
+    pressure_arrow/.style={
+        -Stealth, % Flecha de presión estándar
+        thick
+    }
+]
+
+% ==========================================================
+% 1. DEFINICIÓN DE DIMENSIONES (Paramétrico)
+% ==========================================================
+\def\W{6}      % Ancho interno del cilindro
+\def\T{0.4}    % Grosor de las paredes del cilindro
+\def\Hbase{6}  % Altura inicial del gas (de A-B a C-D)
+\def\Hpist{1}  % Grosor/Altura del pistón
+\def\Hrod{5}   % Altura del vástago (mango)
+\def\Wrod{1}   % Ancho del vástago (mango)
+\def\dL{4}     % Desplazamiento (distancia dL)
+\def\Htop{7}   % Altura total de la pared interna (debe ser > Hbase+dL+Hrod)
+
+% ==========================================================
+% 2. DIBUJO DEL CILINDRO
+% ==========================================================
+% --- Coordenadas base internas ---
+\coordinate (A) at (-\W/2, 0);
+\coordinate (B) at (\W/2, 0);
+
+% --- Paredes (dibujadas como cajas) ---
+% Relleno blanco para tapar cualquier cosa detrás (si se usara \includegraphics)
+\fill[white] (-\W/2-\T, -\T) rectangle (\W/2+\T, \Hbase+\Htop);
+
+% --- Líneas de las paredes ---
+\draw[thick_wall] (A) -- (-\W/2, \Hbase+\Htop); % Pared interna izq
+\draw[thick_wall] (B) -- (\W/2, \Hbase+\Htop);  % Pared interna der
+\draw[thick_wall] (A) -- (B);                     % Base interna A-B
+
+\draw[thick_wall] (-\W/2-\T, -\T) -- (-\W/2-\T, \Hbase+\Htop); % Pared externa izq
+\draw[thick_wall] (\W/2+\T, -\T) -- (\W/2+\T, \Hbase+\Htop);  % Pared externa der
+\draw[thick_wall] (-\W/2-\T, -\T) -- (\W/2+\T, -\T);          % Base externa
+
+% ==========================================================
+% 3. SISTEMA DE GAS (Posición inicial)
+% ==========================================================
+% --- Coordenadas de la parte superior del gas ---
+\coordinate (C) at (-\W/2, \Hbase);
+\coordinate (D) at (\W/2, \Hbase);
+
+% --- Caja punteada "Límite del Sistema" ---
+\draw[dashed, thick] (A) -- (B) -- (D) -- (C) -- cycle;
+\node at (0, \Hbase/2) {\Huge GAS};
+
+% --- Etiqueta "Límite del Sistema" ---
+\draw[-Stealth, thick] (\W/2 + 2.5, \Hbase*0.7) -- ($(B) + (0.5, 0.5)$);
+\node[right, align=left] at (\W/2 + 2.5, \Hbase*0.7) {LIMITE DEL \\ SISTEMA};
+
+% ==========================================================
+% 4. PISTÓN Y VÁSTAGO (Posición inicial)
+% ==========================================================
+% --- Pistón (achurado) ---
+\fill[piston_pattern] (C) rectangle (\W/2, \Hbase + \Hpist);
+\draw[thick_wall] (C) rectangle (\W/2, \Hbase + \Hpist);
+
+% --- Vástago (mango) ---
+\coordinate (Rod_BL) at (-\Wrod/2, \Hbase + \Hpist); % Base Izq
+\coordinate (Rod_TR) at (\Wrod/2, \Hbase + \Hpist + \Hrod); % Arriba Der
+\draw[thick_wall, fill=white] (Rod_BL) rectangle (Rod_TR);
+\node[right, xshift=3mm] at (Rod_TR.north west) {$p$};
+
+% --- Flechas de Presión (sobre el pistón, no sobre el vástago) ---
+\foreach \x in {-\W/2+0.7, -\W/2+1.8, \W/2-0.7, \W/2-1.8} {
+    \draw[pressure_arrow] (\x, \Hbase + \Hpist + 0.7) -- (\x, \Hbase + \Hpist);
+}
+
+% ==========================================================
+% 5. POSICIÓN FINAL (Punteada) Y COTA "dL"
+% ==========================================================
+% --- Coordenadas de la posición final ---
+\coordinate (E) at (-\W/2, \Hbase + \dL);
+\coordinate (F) at (\W/2, \Hbase + \dL);
+
+% --- Dibujo punteado del pistón y vástago ---
+\draw[dashed, thick] (E) rectangle (\W/2, \Hbase + \dL + \Hpist);
+\draw[dashed, thick] ($(Rod_BL) + (0, \dL)$) rectangle ($(Rod_TR) + (0, \dL)$);
+
+% --- Cota dL ---
+\draw[<->, thick] (\W/2 + \T + 0.7, \Hbase) -- (\W/2 + \T + 0.7, \Hbase + \dL) 
+    node[midway, right, xshift=2mm] {$dL$};
+
+% ==========================================================
+% 6. FLECHAS DE ENERGÍA Y ETIQUETAS A-F
+% ==========================================================
+% --- Energía Calorífica (Abajo) ---
+\draw[big_arrow] (0, -2.5) -- (0, -\T) 
+    node[midway, left, xshift=-5mm, align=center] {ENERGIA \\ CALORIFICA};
+
+% --- Energía Mecánica (Arriba) ---
+% Se origina en la posición final del vástago
+\coordinate (Rod_Top_Final) at (0, \Hbase + \Hpist + \Hrod + \dL);
+\draw[big_arrow] (Rod_Top_Final) -- ($(Rod_Top_Final) + (0, 4.5)$) 
+    node[midway, right, xshift=5mm, align=center] {ENERGIA \\ MECANICA};
+
+% --- Etiquetas A, B, C, D, E, F ---
+%\node[left=2mm of A] {A};
+%\node[right=2mm of B] {B};
+%\node[left=2mm of C] {C};
+%\node[right=2mm of D] {D};
+%\node[left=2mm of E] {E};
+%\node[right=2mm of F] {F};
+
+\end{tikzpicture}
+
+\end{document}

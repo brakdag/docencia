@@ -1,0 +1,37 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{tikzpicture}[scale=0.08]
+\draw [line width=1mm] (0,0) circle (38/2);
+\draw [line width=1mm](0,0) circle (80/2);
+\draw [dashdotted] (0,0) circle (130/2);
+\draw [dashdotted](0,0) circle (150/2);
+\foreach \a in {0,45,90,135,180,225,270,-45}{
+    \draw [dashed](\a:130/2) circle (30/2);
+    \draw [dashed](\a:130/2) circle (35);
+    \draw [line width=1mm](\a:130/2-1)++(\a+90:30/2) arc (93+\a:263+\a:30/2);
+    \draw [line width=1mm](\a:130/2)++(\a+87:35) arc (\a+87:\a+107:35);
+    \draw [line width=1mm](\a:130/2)++(\a-87:35) arc (\a-87:\a-107:35);
+    \draw [line width=1mm](\a-22.5:150/2) arc (\a-22.5:\a-28:150/2);
+    \draw [line width=1mm](\a-22.5:150/2) arc (\a-22.5:\a-16.5:150/2);
+    %cotas
+    \draw [dimen] (-150/2,0)--(150/2,0) node {150};
+    \draw [dimen] (-150/2,0)--(150/2,0) node {150};
+    \draw [dimen] (-130/2,10)--(130/2,10) node {130};
+    \draw [dimen] (-38/2,30)--(38/2,30) node {38};
+    \draw [dimen] (-40,-30)--(40,-30) node {80};
+    \draw [dimen] (-30/2,-130/2)--(30/2,-130/2) node {30};
+    \draw [dimen] (-35,-180/2)--(35,-180/2) node {70};
+    %lineas auxiliares
+    \draw (-35,-180/2)--(-35,-130/2);
+    \draw (35,-180/2)--(35,-130/2);
+    \draw (38/2,30)--(38/2,0);
+    \draw (-38/2,30)--(-38/2,0);
+    \draw (35,-180/2)--(35,-130/2);
+    \draw (-40,-30)--(-40,0);
+    \draw (40,-30)--(40,0);
+     }
+\end{tikzpicture} 
+
+
+
+\end{document}

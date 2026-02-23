@@ -1,0 +1,76 @@
+
+\documentclass[../main]{subfiles}
+\usepackage{graphicx} % Para incluir imágenes
+
+\begin{document}
+
+\chapter{Ciclo de Carnot}
+
+\section{Introducción}
+
+El ciclo de Carnot es un ciclo termodinámico ideal que describe el funcionamiento de una máquina térmica reversible. Es el ciclo más eficiente que puede operar entre dos reservorios de calor a diferentes temperaturas. El ciclo de Carnot tiene una gran importancia teórica y práctica, ya que establece el límite de eficiencia para cualquier máquina térmica.
+
+\section{Teoría}
+
+El ciclo de Carnot consta de cuatro procesos reversibles:
+
+1. **Expansión isotérmica:** El gas absorbe calor del reservorio caliente a temperatura constante $T_H$. El volumen del gas aumenta y su presión disminuye.
+
+2. **Expansión adiabática:** El gas se expande sin intercambio de calor con el entorno. La temperatura del gas disminuye.
+
+3. **Compresión isotérmica:** El gas cede calor al reservorio frío a temperatura constante $T_C$. El volumen del gas disminuye y su presión aumenta.
+
+4. **Compresión adiabática:** El gas se comprime sin intercambio de calor con el entorno. La temperatura del gas aumenta.
+
+La eficiencia del ciclo de Carnot, representada por la letra griega $\eta$, se define como la relación entre el trabajo realizado por la máquina y el calor absorbido del reservorio caliente:
+
+$$\eta = \frac{W}{Q_H} = 1 - \frac{T_C}{T_H}$$
+
+Donde:
+
+* $W$ es el trabajo realizado por la máquina
+* $Q_H$ es el calor absorbido del reservorio caliente
+* $T_C$ es la temperatura del reservorio frío
+* $T_H$ es la temperatura del reservorio caliente
+
+**Ejemplo:**
+
+Consideremos un ciclo de Carnot que opera entre un reservorio caliente a 500 K y un reservorio frío a 300 K. La máquina absorbe 1000 J de calor del reservorio caliente. ¿Cuál es el trabajo realizado por la máquina?
+
+**Solución:**
+
+Primero, calculamos la eficiencia del ciclo:
+
+$$\eta = 1 - \frac{T_C}{T_H} = 1 - \frac{300 K}{500 K} = 0.4$$
+
+Luego, calculamos el trabajo realizado por la máquina:
+
+$$W = \eta Q_H = 0.4 \times 1000 J = 400 J$$
+
+**Fórmulas importantes:**
+
+* Eficiencia del ciclo de Carnot: $\eta = 1 - \frac{T_C}{T_H}$
+* Calor absorbido del reservorio caliente: $Q_H = \frac{W}{\eta}$
+* Calor cedido al reservorio frío: $Q_C = Q_H - W$
+
+\section{Cuestionario}
+
+1. ¿Qué es el ciclo de Carnot?
+
+2. ¿Cuáles son los cuatro procesos reversibles que componen el ciclo de Carnot?
+
+3. ¿Cómo se define la eficiencia del ciclo de Carnot?
+
+4. ¿De qué depende la eficiencia del ciclo de Carnot?
+
+5. ¿Cuál es el límite de eficiencia para cualquier máquina térmica?
+
+6. ¿En qué tipo de máquinas se utiliza el ciclo de Carnot?
+
+7. ¿Cuáles son las ventajas y desventajas del ciclo de Carnot?
+
+8. ¿Qué es la entropía y cómo se relaciona con el ciclo de Carnot?
+
+**Nota:** El código LaTeX se ha dividido en dos partes debido a que supera los 4096 caracteres. La segunda parte se encuentra en el siguiente comentario.
+
+\end{document}

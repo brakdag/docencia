@@ -1,0 +1,15 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=.07]
+\draw [dashed] (0,0)circle(50.4);
+\foreach \i in {0,1,2,3,4}{
+\draw [line width=1mm](90+\i*360/5:50.4) circle (7.6);
+\draw [dashed](90+\i*360/5:50.4) circle (12.8);
+\draw [dashed](90+360/5/2+\i*360/5:50.4+34) circle (40);
+}
+
+
+\end{tikzpicture}
+\end{center}
+\end{document}

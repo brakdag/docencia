@@ -1,0 +1,73 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{tikzpicture}[scale=0.1]
+\coordinate (O) at (0,0);
+\coordinate (A) at (55,0);
+\coordinate (B) at (120:55);
+\coordinate (C) at ($(55,0)+(60:55)$);
+\coordinate (D) at ($(C)+(B)$);
+\coordinate (E) at ($(B)+(75:66)$);
+
+%circulos
+\draw [line width=1mm](O) circle (6);
+\draw [line width=1mm](A) circle (6);
+\draw [line width=1mm](B) circle (6);
+\draw [line width=1mm](C) circle (6);
+\draw [line width=1mm](D) circle (6);
+\draw [line width=1mm](E) circle (6);
+
+\draw [dashed](O)+(60:55) circle (55);
+
+%lineas exteriores
+\draw [line width=1mm](0,-13)--(55,-13);
+\draw [line width=1mm](13,0)--(55-13,0);
+\draw [line width=1mm](A)++(60:13)--++(60:55-13-13);
+\draw [line width=1mm](O)++(210:13)--++(210-90:55);
+\draw [line width=1mm](A)++(-30:13)--($(C)+(-30:13)$);
+\draw [line width=1mm](C)+(30:13)--($(D)+(30:13)$);
+\draw [line width=1mm](D)+(66:13)--($(E)+(66:13)$);
+\draw [line width=1mm](E)+(66+90:13)--($(B)+(150:13)$);
+
+%internas
+\draw [line width=1mm](O)+(120:13)--($(B)+(-60:13)$);
+\draw [line width=1mm](B)+(75:13)--($(E)+(180+75:13)$);
+\draw [line width=1mm](C)+(120:13)--($(D)+(-60:13)$);
+\draw [line width=1mm](D)+(165:13)--($(E)+(-10:13)$);
+
+% arcos
+\draw [line width=1mm](0,-13) arc (270:210:13);
+\draw [line width=1mm](55,-13) arc (270:330:13);
+\draw [line width=1mm](13,0) arc (0:120:13);
+\draw [line width=1mm](55-13,0) arc (180:60:13);
+\draw [line width=1mm](C)+(-30:13) arc (-30:30:13);
+\draw [line width=1mm](D)+(30:13) arc (30:66:13);
+\draw [line width=1mm](E)+(66:13) arc (66:90+66:13);
+\draw [line width=1mm](B)+(210:13) arc (210:150:13);
+%internos
+\draw [line width=1mm](B)+(-60:13) arc (-60:75:13);
+\draw [line width=1mm](C)+(240:13) arc (240:120:13);
+\draw [line width=1mm](D)+(165:13) arc (165:300:13);
+\draw [line width=1mm](E)+(255:13) arc (255:350:13);
+
+\draw [dimen] (O)+(0,-10)--($(A)+(0,-10)$) node {55};
+\draw [dimen] (A)+(-30:20)--($(C)+(-30:20)$) node {55};
+\draw [dimen] (O)+(210:20)--($(B)+(210:20)$) node {55};
+
+\draw [dimen] (D)+(0:-6)--++(0:6) node {12};
+\draw [dimen] (O)+(30:-13)--++(30:13) node {26};
+\draw [dimen] (B)--(C) node {110};
+
+%lineas auxiliares
+\draw (A)--++(0,-10);
+\draw (O)--++(0,-10);
+\draw (A)--++(-30:25);
+\draw (C)--++(-30:25);
+\draw (O)--++(180+30:25);
+\draw (B)--++(180+30:25);
+
+
+
+\end{tikzpicture} 
+
+
+\end{document}

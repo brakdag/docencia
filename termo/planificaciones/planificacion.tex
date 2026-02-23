@@ -1,0 +1,114 @@
+\documentclass[a4paper]{article}
+\usepackage{subfiles,geometry,fancyhdr,tikz,longtable,enumitem,setspace}
+
+\newcommand{\ano}{2024} %########## CONFIGURACIÓN DE AÑO
+
+\geometry{
+ a4paper,
+ landscape,
+ left=10mm,
+ top=45mm,
+ right=10mm,
+ bottom=14mm
+ }
+\renewcommand{\familydefault}
+{\sfdefault}
+\renewcommand{\headrulewidth}{0pt}
+\newcommand{\estrategias}{\setstretch{1.5} \centering \begin{itemize}[leftmargin=0.3cm]\item Estudio dirigido de la bibliografía de archivos digitales seleccionados.\item Aplicación de diferentes métodos de organización de la información tales como mapas y redes conceptuales. \item Desarrollo de trabajos prácticos aplicando contenidos conceptuales a distintas situaciones problemáticas.\item Elaboración de informes de las distintas actividades realizadas.\item Mediación con el profesor por medio de classroom  y digitalización de trabajos\end{itemize}
+}
+\newcommand{\evaluacion}{\textbf{Formativa} \setstretch{2} Consiste en detector los progresos y las dificultades para hacer los ajustes necesarios en los procesos de enseñanza/aprendizaje   Evaluación continua del seguimiento de las actividades de los alumnos, en los trabajos prácticos y mediación a través de los canales de comunicación adoptado teniendo en cuenta la situación particular del contexto}
+
+
+
+\pagestyle{fancy}
+
+\fancyhf{} 
+
+\fancyhead[C]{
+    \begin{tikzpicture}[remember picture, overlay]
+        \draw  (0,-1+3)  node {\includegraphics{planificaciones/images/image1.png}};
+        \draw (0,0.4) node {\includegraphics{planificaciones/images/image2.png}};
+    \end{tikzpicture}
+}
+
+\begin{document}
+
+\section*{\centering PLANIFICACIÓN \ano}
+
+\begin{tabular}{r l}
+     
+\textbf{ÁREA:}&TÉCNICA ESPECÍFICA \\
+
+\textbf{ESPACIO CURRICULAR:} &TERMODINÁMICA Y MÁQUINAS TÉRMICAS. \\
+
+\textbf{CURSO:}&5° 2°\\
+
+\textbf{PROFESOR/A:}& FERREYRA, GUSTAVO DAVID\\
+
+\textbf{ORIENTACIÓN EN:} & ELECTROMECÁNICA  \\
+     
+\end{tabular}
+
+\subsection*{ACUERDOS INSTITUCIONALES:}
+\begin{itemize}
+    
+    \item Las planificaciones, diagnóstico y programa anual se deben entregar en formato digital al Coordinador de su Área para visar el aspecto disciplinar y sugerir posibles correcciones. Luego éste (COORDINADOR) subirá al Drive del SOE, en la carpeta que corresponda a cada área. 
+
+    \item Cada docente deberá entregar en formato papel al SOE (Asesoría) hasta el 17/4 
+
+    \item Cada área realizará acuerdos para establecer la forma, los tiempos de trabajo y proyectos que se ejecutaran durante el año. 
+
+    \item Se establece 2 reuniones de área anuales obligatorias, 1 en cada periodo. 
+
+    \item Colaborar en el cumplimiento de las Normas de Convivencia Institucional. 
+
+    \item Trabajar las diversas técnicas de estudio durante el primer y segundo año, teniendo en cuenta las profundas dificultades que presentan los alumnos para reconocer ideas principales, realizar resúmenes y gráficos en todos los espacios curriculares, sobre todo en aquellos que requieren más trabajo de lectura, comprensión y producción escrita.  
+
+    \item Seguimiento de logros y dificultades de los alumnos produciendo los reajustes necesarios y aplicando nuevas estrategias metodológicas que permitan modificar el rendimiento de los mismos. 
+
+    \item Generar y unificar criterios, formas de evaluar y canales de comunicación entre los docentes de cada área. 
+
+    \item Trabajo conjunto intra e inter área mediante la formulación de proyectos. 
+
+    \item Aplicar diferentes formatos de evaluación. 
+
+    \item Utilizar estrategias de enseñanza sugerida y variada que se adapten a los alumnos que presentan CUD. 
+
+    \item La carpeta debe contener el programa y el acuerdo áulico. 
+
+    \item Tener presente la heterogeneidad y diversidad del grupo clase. 
+
+    \item Fortalecer las habilidades sociales y los buenos modales, favoreciendo a una convivencia armónica y a un clima de respeto. 
+
+    \item Seleccionar, articular y secuenciar contenidos del área en torno a problemas emergentes, socialmente significativos, vinculados a la salud, al ambiente, debates éticos asociados a temáticas científicas y apelando al plateo de problemas y abordaje de proyectos escolares que partan de situaciones reales. 
+
+    \item Vincular la enseñanza y el aprendizaje con procesos de indagación científica, a partir de la experiencia y/o ideas con la guía docente. 
+
+    \item Integrar las TIC con las propuestas pedagógicas en ciencias. 
+
+    \item Trabajar en proceso de evaluación, integrando el aprendizaje y la enseñanza como un momento continuo de valoración. Considerar el error como un espacio y oportunidad de aprendizaje. 
+
+    \item Realizar las planificaciones en conjunto entre los profesores del mismo espacio curricular acordando saberes. 
+
+    \item Promover la articulación entre los espacios del área Técnica Específica con el resto de las áreas para lograr aprendizajes significativos.  
+
+    \item Preparar a los alumnos para la participación en diferentes muestras y concursos organizados por las instituciones escolares. 
+
+
+\end{itemize}
+
+\subsection*{ACUERDOS DEL ÁREA}
+\begin{itemize}
+    \item Ponderación de la carpeta de trabajos prácticos como una nota de proceso más. Se debe consensuar, con los alumnos, el formato y la presentación de la CTP.
+    \item Se usará el ABP como recurso para el desarrollo de la planificación. El trabajo conjunto entre distintos espacios curriculares es una opción siempre y cuando sea factible para el docente. 
+    \item Se debe entregar a los alumnos un programa con los contenidos de la planificación. Se sugiere que ese documento esté incluido en el contrato aúlico.
+    \item En el contrato aúlico se deberán establecer, de forma clara, los criterios de evaluación que se aplicarán durante el desarrollo de la materia. 
+    \item Se sugiere la implementación de un calendario que permita organizar y proyectar las actividades de la institución y de la materia en sí. Un ejemplo claro es la determinación de las fechas de la Expo de fin de año. 
+\end{itemize}
+
+  
+\clearpage
+\subfile{tabla.tex}
+\subfile{programa.tex}
+
+\end{document}

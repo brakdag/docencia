@@ -1,0 +1,99 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Cálculo de Recipientes Sometidos a Presión}
+
+\section{Cálculo de Recipientes Sometidos a Presión}
+
+\subsection{Introducción}
+
+El cálculo de recipientes sometidos a presión es fundamental en la ingeniería y en diversas aplicaciones industriales. Estos recipientes, como calderas, tanques y tuberías, deben ser diseñados para soportar las presiones internas sin fallos estructurales. A continuación, se presentan las fórmulas y conceptos básicos para el cálculo de recipientes sometidos a presión, así como un ejemplo de aplicación.
+
+\info{Recipientes a Presión}{
+Un recipiente a presión es un contenedor diseñado para mantener gases o líquidos a una presión significativamente diferente de la presión ambiental. Estos recipientes están sujetos a normas y códigos de diseño rigurosos para garantizar su seguridad y funcionalidad.}
+
+\subsection{Fórmulas Básicas}
+
+En el diseño y análisis de recipientes a presión, se utilizan varias fórmulas esenciales:
+
+1. \textbf{Espesor de pared del recipiente cilíndrico (fórmula de Barlow)}:
+    \begin{equation}
+    t = \dfrac{P \cdot D}{2 \cdot \sigma}
+    \end{equation}
+    Donde:
+    \begin{itemize}
+        \item $t$: Espesor de la pared del recipiente [m].
+        \item $P$: Presión interna del recipiente [Pa].
+        \item $D$: Diámetro interno del recipiente [m].
+        \item $\sigma$: Tensión admisible del material [Pa].
+    \end{itemize}
+
+2. \textbf{Fórmula de la presión máxima de trabajo admisible (PMTA)}:
+    \begin{equation}
+    P = \dfrac{2 \cdot \sigma \cdot t}{D}
+    \end{equation}
+    Donde:
+    \begin{itemize}
+        \item $P$: Presión máxima de trabajo admisible [Pa].
+        \item $\sigma$: Tensión admisible del material [Pa].
+        \item $t$: Espesor de la pared del recipiente [m].
+        \item $D$: Diámetro interno del recipiente [m].
+    \end{itemize}
+
+3. \textbf{Volumen de un cilindro}:
+    \begin{equation}
+    V = \pi \cdot r^2 \cdot h
+    \end{equation}
+    Donde:
+    \begin{itemize}
+        \item $V$: Volumen del cilindro [m^3].
+        \item $r$: Radio del cilindro [m].
+        \item $h$: Altura del cilindro [m].
+    \end{itemize}
+}
+
+\ejemplo{Ejemplo de Cálculo}{
+Calcular el espesor de la pared de un recipiente cilíndrico con un diámetro interno de 1.2 m, una presión interna de 5 MPa y una tensión admisible del material de 250 MPa.
+
+Datos:
+
+$P = 5 \cdot 10^6 \, Pa$
+
+$D = 1.2 \, m$
+
+$\sigma = 250 \cdot 10^6 \, Pa$
+
+\begin{equation}
+t = \dfrac{P \cdot D}{2 \cdot \sigma} = \dfrac{5 \cdot 10^6 \, Pa \cdot 1.2 \, m}{2 \cdot 250 \cdot 10^6 \, Pa} = 0.012 \, m
+\end{equation}
+}
+
+\actividad{Responder el siguiente cuestionario}
+\begin{enumerate}
+\item ¿Qué es un recipiente a presión?
+\item ¿Por qué es importante calcular el espesor de la pared de un recipiente sometido a presión?
+\item ¿Cuál es la fórmula de Barlow y para qué se utiliza?
+\item ¿Qué factores determinan la presión máxima de trabajo admisible (PMTA) de un recipiente?
+\item ¿Qué unidades se utilizan para medir la presión interna de un recipiente?
+\item ¿Cómo influye el diámetro del recipiente en el espesor necesario de su pared?
+\item ¿Qué es la tensión admisible de un material y por qué es relevante en el diseño de recipientes a presión?
+\item ¿Cómo se calcula el volumen de un cilindro y por qué es importante en el contexto de recipientes a presión?
+\item ¿Qué normas o códigos suelen aplicarse en el diseño de recipientes a presión?
+\item ¿Qué podría suceder si un recipiente a presión no se diseña correctamente?
+\end{enumerate}
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+\item Calcular el espesor de la pared de un recipiente cilíndrico con un diámetro interno de 0.8 m, una presión interna de 3 MPa y una tensión admisible del material de 200 MPa.
+\item Determinar la presión máxima de trabajo admisible (PMTA) para un recipiente con un espesor de pared de 0.015 m, un diámetro interno de 1 m y una tensión admisible del material de 150 MPa.
+\item Calcular el volumen de un cilindro con un radio de 0.5 m y una altura de 2 m.
+\item Si un recipiente tiene un diámetro interno de 1.5 m y una presión interna de 4 MPa, ¿cuál debe ser el espesor de la pared si la tensión admisible del material es de 300 MPa?
+\item Determinar la presión interna que soporta un recipiente con un espesor de pared de 0.01 m, un diámetro interno de 0.5 m y una tensión admisible del material de 250 MPa.
+\item Calcular el volumen de un cilindro con un diámetro de 1 m y una altura de 3 m.
+\item Si un recipiente tiene un espesor de pared de 0.02 m, un diámetro interno de 0.7 m y soporta una presión interna de 5 MPa, ¿cuál es la tensión admisible del material?
+\item Determinar el espesor necesario para un recipiente de 2 m de diámetro interno, soportando una presión de 6 MPa con una tensión admisible del material de 400 MPa.
+\item Calcular el volumen de un cilindro con un radio de 0.3 m y una altura de 4 m.
+\item Si un recipiente tiene una tensión admisible del material de 200 MPa y un diámetro interno de 1 m, ¿cuál debe ser el espesor de la pared para soportar una presión interna de 2.5 MPa?
+\end{enumerate}
+
+\end{document}

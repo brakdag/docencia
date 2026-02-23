@@ -1,0 +1,42 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=0.3]
+\coordinate (O) at (0,0);
+\coordinate (A) at (20,20);
+\coordinate (B) at (20-8,3);
+\coordinate (C) at (20-6,10);
+\coordinate (D) at (30,0);
+\coordinate (E) at (0,30);
+\coordinate (F) at ($(E)+(20-14,5)$);
+
+
+\draw [line width=1mm](O) rectangle (A);
+
+%extrusor 6M
+\draw (C)+(0,3) arc (90:360:3);
+\draw [line width=1mm](C) circle (2.5);
+
+% rosca sujetadora resistencia calefactora 1/8"
+\draw [line width=1mm](B) circle (3.25/2);
+
+\draw [line width=1mm](D) rectangle +(10,20);
+\draw [line width=1mm](D)+(5,10) circle (3.25/2);
+
+
+\draw [line width=1mm](E) rectangle +(20,10);
+%resistencia calefactora
+\draw [line width=1mm](F) circle (6/2);
+
+
+%dashed lines
+
+\draw [dashed] (20-14-3,0)--(20-14-3,20);
+\draw [dashed] (20-14+3,0)--(20-14+3,20);
+\draw [dashdotted] (20-14,-5)--(20-14,40);
+\draw [dashdotted] (E)+(-5,5)--++(25,5);
+
+
+\end{tikzpicture}
+\end{center}
+\end{document}

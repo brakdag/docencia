@@ -1,0 +1,67 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Número de Reynolds}
+\img{images/05/reynolds.jpg}{Régimen laminar y turbulento.}
+\info{
+Contenido}{
+Régimen laminar y turbulento, número de Reynolds.s
+}
+
+\section{Número de Reynolds}
+\begin{equation}
+N=\dfrac{\varrho \cdot U \cdot L}{\mu}=\dfrac{U\cdot L}{\gamma}
+\end{equation}
+siendo:
+
+$\varrho=$ densidad del líquido.
+
+$U=$velocidad media de la corriente.
+
+$L=$una longitud que caracteriza geométricamente a la corriente (diámetro, d en caso de cañerías circulares
+
+$\mu =$ coeficiente de viscosidad absoluta del líquido
+
+$\gamma=$ coeficiente de viscosidad cinemática del líquido. 
+
+\section{Régimen laminar}
+Según la teoría de Newton sobre la viscosidad, la masa líquida estaría formada por capas paralelas de espesor infinitésimo, que se deslizan unas sobre otras con velocidades diferentes. A este tipo de escurrimiento se lo denomina: laminar.
+\video{https://www.youtube.com/watch?v=y7Hyc3MRKno}{Regimen Laminar}
+\section {Régimen turbulento}
+Cuando los filetes líquidos escurren con trayectorias tortuosas, con retornos y desviaciones laterales respecto al movimiento general de la masa líquida, es escurrimiento 
+es \textbf{turbulento}.
+\video{https://www.youtube.com/watch?v=3bkh3HkKL8w}{Regimen turbulento}
+
+\section{Unidades}
+
+La unidad de medida de la viscosidad cinemática en el sistema métrico es el metro cuadrado por segundo (m²/s), pero en la práctica, se utiliza más comúnmente el centistokes (cSt), que es una centésima parte de un Stokes (St), que a su vez es equivalente a 1 cm²/s.
+
+La unidad $centipoise = 0,001 Pa \times s$ se escribe a veces como $mPa \cdot s$ o [$\dfrac{Kg \cdot s }{m^2}$]
+
+
+\actividad{Resolver los siguientes problemas.}
+\begin{enumerate}
+     \item Determinar el número de Reynolds para el flujo de agua (densidad $\rho=1000kg/m^3$, viscosidad cinemática $\nu=1.004 \times 10^{-6} m^2/s$) a través de una tubería de diámetro $D=1pulgada$ y velocidad promedio $V=1m/s$ utilizando la fórmula $Re = \frac{\rho \cdot V \cdot D}{\nu}$.
+
+  \item Calcular el número de Reynolds para el flujo de aire (densidad $\rho$, viscosidad cinemática $\nu$) sobre una placa plana de longitud $L$ con velocidad de flujo $V$ utilizando la fórmula $Re = \frac{\rho \cdot V \cdot L}{\nu}$. Supongamos que la densidad del aire ($\rho$) es de aproximadamente 1.225 kg/m³ a condiciones normales de temperatura y presión (CNTP), además que la viscosidad cinemática del aire ($\nu$) es de aproximadamente $1.5 \times 10^{-5}$ m²/s a CNTP. Si la longitud de la placa ($L$) es de, por ejemplo, 2 metros y la velocidad del flujo de aire ($V$) es de 10 metros por segundo.
+
+
+  \item Determinar el número de Reynolds para el flujo de un líquido (densidad $\rho$, viscosidad cinemática $\nu$) a través de un tubo de diámetro $D$, caudal volumétrico $Q$ y viscosidad dinámica $\mu$ utilizando la fórmula $Re = \frac{\rho \cdot Q \cdot D}{\mu}$. Supongamos que estás trabajando con agua, que tiene una densidad ($\rho$) de aproximadamente 1000 kg/m³ y una viscosidad cinemática ($\nu$) de aproximadamente $1 \times 10^{-6}$ m²/s a temperaturas y presiones normales.El diámetro del tubo ($D$) es de, por ejemplo, 0.1 metros (10 centímetros).El caudal volumétrico ($Q$) es de, por ejemplo, 0.01 metros cúbicos por segundo (10 litros por segundo). La viscosidad dinámica ($\mu$) del agua es directamente proporcional a su viscosidad cinemática y densidad: $\mu = \rho \cdot \nu$.
+
+  \item Calcular el número de Reynolds para el flujo de agua alrededor de una esfera de radio $R=10cm$ con velocidad $V=10m/s$ utilizando la fórmula $Re = \frac{\rho \cdot V \cdot R}{\nu}$.
+
+  \item Determinar el número de Reynolds para el flujo de aire (densidad $\rho=1,29kg/m^3$, viscosidad cinemática $\nu=0,018 centiPoise$) a través de una tubería de longitud $L=1m$, diámetro $D=1m$ y caudal másico $m$ utilizando la fórmula $Re = \frac{\rho \cdot D \cdot \sqrt{m/\rho}}{\nu}$.
+
+  \item Calcular el número de Reynolds para el flujo de un fluido (densidad $\rho=1000kg/m^3$, viscosidad cinemática $\nu=0,474 centistoke $) a través de un canal rectangular con ancho $w=1m$, altura $h=50cm$ y velocidad promedio $V=3m/s$ utilizando la fórmula $Re = \frac{\rho \cdot V \cdot h}{\nu}$.
+
+  \item Determinar el número de Reynolds para el flujo de un líquido (densidad $\rho=1000kg/m^3$, viscosidad cinemática $\nu=0,5centistoke$) en un conducto cilíndrico de radio interno $r_i=10cm$ y radio externo $r_e=11cm$ con velocidad promedio $V=3m/s$ utilizando la fórmula $Re = \frac{\rho \cdot V \cdot (r_e - r_i)}{\nu}$.
+
+  \item Calcular el número de Reynolds para el flujo de aire (densidad $\rho=1200kg/m^3$, viscosidad cinemática $\nu=1 centistoke$) a través de una tobera convergente-divergente de área de entrada $A_1=10cm^2$, área de garganta $A_t=5cm^2$ y velocidad de salida $V=1m/s$ utilizando la fórmula $Re = \frac{\rho \cdot V \cdot D_h}{\nu}$, donde $D_h=3cm$ es el diámetro hidráulico.
+
+  \item Determinar el número de Reynolds para el flujo de un líquido (densidad $\rho=1000kg/m^3$, viscosidad cinemática $\nu=1centistoke$) a través de un filtro poroso $D=0,1mm$ $U=0.2m/s$.
+
+
+\end{enumerate}
+
+
+
+\end{document}

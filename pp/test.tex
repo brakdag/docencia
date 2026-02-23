@@ -1,0 +1,21 @@
+\documentclass[14pt,a4paper,oneside]{book}
+\input{formato}
+\input{config}
+\begin{document}
+\begin{tikzpicture}[remember picture, overlay,shift={(0,-27.8)}]
+\tikzset{every node}=[font=\small\sffamily]
+\draw (-.50,0.5) node [scale=0.09]{\includegraphics[]{images/4117.jpg}};
+\draw [line width=1mm](-1,0) rectangle (17,28.6);
+\draw [line width=1mm](-1,1) -- (17,1);
+\draw [line width=0.5mm](0,0.5) -- (17,0.5);
+\draw [line width=0.5mm](0,0) -- (0,1);
+\draw (0,0.5) node [above right]{Esc. N$^\circ$ 4-117 Ejército de los Andes -  \materia - T.P.N.$^\circ$ \thechapter};
+\draw (0,0) node [above right]{Nombre y Apellido:};
+
+\draw (16.5,.5) node [above left]{ CURSO:..........HOJA N$^\circ$};
+\draw (16.5,0) node [above left]{FECHA:......../......../\the\year{}};
+\draw (13,0)--(13,1);
+
+\end{tikzpicture}
+pepe
+\end{document}

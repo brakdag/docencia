@@ -1,0 +1,65 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=0.1]
+\draw [line width=1mm] (0,0) circle (12.5);
+\draw [line width=1mm] (0,0) circle(20);
+
+\draw [line width=1mm] (32,16) circle(6);
+\draw [line width=1mm] (32,-16) circle(6);
+\draw [line width=1mm] (-32,16) circle(6);
+\draw [line width=1mm] (-32,-16) circle(6);
+
+%\draw [dashed] (32,16) circle(12);
+%\draw [dashed] (32,-16) circle(12);
+%\draw [dashed] (-32,16) circle(12);
+%\draw [dashed] (-32,-16) circle(12);
+
+%\draw [dashed] (-32,28) circle(80);
+%\draw [dashed] (32,28) circle(80);
+
+%\draw [dashed] (0,102) circle(80);
+%\draw [dashed] (0,-102) circle(80);
+
+\draw [line width=1mm] (-28,27) arc (270-20.35:270+20.35:80);
+\draw [line width=1mm] (-28,-27) arc (90+20.35:90-20.35:80);
+\draw [line width=1mm](43.5,12.5) arc (180-17.92:180+17.92:40);
+\draw [line width=1mm](-43.5,-12.5) arc (-17.92:17.92:40);
+
+%\draw [dashed] (32,-16)--++(17.92:52);
+%\draw [dashed] (32,16)--++(-17.92:52);
+%\draw [dashed] (32,16)--++(20.35+90:92);
+%\draw [dashed] (-32,16)--++(-20.35+90:92);
+%\draw [dashed] (44+37.5,0) circle (40);
+\draw [line width=1mm](43,12) arc (-18:108:12);
+\draw [line width=1mm](43.5,-12) arc (0+17.92:-90-20.35:12);
+\draw [line width=1mm](-43.5,12) arc (180+17.92:90-20.35:12);
+\draw [line width=1mm](-43.5,-12) arc (180-17.92:270+20.35:12);
+%cotas
+\draw [dimen] (-12.5,0)--(12.5,0) node {25};
+\draw [dimen] (-20,30)--(20,30) node {40};
+\draw [dimen] (-32,-40)--(32,-40) node {64};
+\draw [dimen] (-32,-30)--(0,-30) node {32};
+\draw [dimen] (-32-6,-16)--(-32+6,-16) node {12};
+\draw [dimen] (32-12,-16)--(32+12,-16) node {24};
+\draw [dimen] (-32-20,-16)--(-32-20,16) node {32};
+\draw [dimen] (-60,35)--(-70,35) node {10};
+\draw [dimen] (-104,35)--(-70,35) node {34};
+%lineas auxiliares
+\draw (-32,-16)--(-32,-16-30);
+\draw (32,-16)--(32,-16-30);
+\draw (0,-16)--(0,-16-20);
+\draw (20,0)--(20,16+20);
+\draw (-20,0)--(-20,16+20);
+\draw (-32,16)--(-32-20,16);
+\draw (-40,-16)--(-32-20,-16);
+\draw (-60,16+12)--(-60,40);
+\draw (-70,16+12)--(-70,40);
+\draw (-104,16)--(-104,40);
+%vista lateral
+\draw [line width=1mm](-60,16+12) rectangle (-70,-16-12);
+\draw [line width=1mm](-70,20) rectangle (-104,-20);
+\draw [dashed](-60,12.5) rectangle (-104,-12.5);
+\end{tikzpicture} 
+\end{center}
+\end{document}

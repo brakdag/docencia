@@ -1,0 +1,32 @@
+\documentclass[./examen.tex]{subfiles}
+\usepackage[first=1, last=20]{lcg}
+\newcommand{\random}{\rand\arabic{rand}}
+\usepackage{verbatim}
+\newcounter{z}
+\newcommand\y[2]{
+  \loop \ifnum\value{z} < #1
+    #2%
+    \stepcounter{z}%
+  \repeat
+}
+
+\begin{document}
+\y{15}{
+\begin{center}
+
+\makebox[\textwidth]{Nombre y Apellido:\enspace\hrulefill}
+\end{center}
+\begin{questions}
+\small
+\question[2] Un cilindro de plata de $r=11,28cm$ y altura $h=20cm$ se sumerge totalmente en agua $\gamma_{H_2O}=1000\vec{kg}/m^3$. Si tiene un peso de $P=57,2kgf$, calcular: ¿Qué magnitud de empuje recibe y cuál será la magnitud del peso aparente del cilindro?
+
+\question[2] Un bloque de volumen de $V_e=3 \times 10^{-4}m^3$, está totalmente inmerso en un líquido cuya densidad es de $\rho_{l}=900 kg/m^3$, determine, a) La intensidad de empuje que actúa sobre el bloque , b) El peso del bloque para que se desplace hacia arriba o hacia abajo. 
+
+\question[3] Un cubo de cobre, de base igual a $b=35cm^2$ y una altura de $h=12 cm$, se sumerge hasta la mitad, por medio de un alambre, en un recipiente que contiene glicerina $\gamma_{glicerina}=1,26Kg/dm^3$.  ¿Cuál es la magnitud del peso aparente del cubo debido al empuje, si la magnitud de su peso es de $P=3,3 Kg$?
+
+\question[3] El volumen pulmonar total de \emph{el pingüino emperador} es de $V=2,5lts$, si tiene un peso de $P=25,8\vec{kg}$ y ocupa un volumen de $V=24,6lts$ con los pulmones vacíos, averiguar si el pingüino flota o se hunde con los pulmones llenos de aire y vacío.
+
+\end{questions}
+
+}
+\end{document}

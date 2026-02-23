@@ -1,0 +1,41 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=0.2,font=\sffamily]
+%frontal
+\draw [line width=1mm](15,15) circle (7.5);
+\draw [line width=1mm](0,0)--++(30,0)--++(0,30)--++(-25,0)--++(-5,-5)--++(0,-25)--++(0,-5)--++(30,0)--++(0,5);
+%planta
+\draw [line width=1mm] (0,-10)rectangle++(30,-20);
+\draw [line width=1mm] (0,-15)--(30,-15);
+\draw [dashed] (15-7.5,-10)--(15-7.5,-15);
+\draw [dashed] (15+7.5,-10)--(15+7.5,-15);
+\draw [dashdotted] (15,30)--(15,-30);
+%cotas
+\draw [dimen] (0,5)--(30,5)node {30};
+\draw [dimen] (7.5,15)--(7.5+15,15)node {15};
+\draw [dimen] (5,35)--(30,35)node {25};
+\draw [dimen] (35,0)--(35,15)node {15};
+\draw [dimen] (35,15)--(35,30)node {15};
+\draw [dimen] (35,0)--(35,-5)node {10};
+\draw [dimen] (-5,0)--(-5,25)node {25};
+\draw [dimen] (35,-10)--(35,-15)node {5};
+\draw [dimen] (35,-15)--(35,-30)node {20};
+\draw [dimen] (0,-35)--(30,-35)node {30};
+%lineas auxiliares
+\draw (0,-30)--(0,-36);
+\draw (30,-30)--(30,-36);
+\draw (0,0)--(-6,0);
+\draw (0,25)--(-6,25);
+\draw (5,30)--(5,36);
+\draw (30,30)--(30,36);
+\draw (30,30)--(36,30);
+\draw (30,15)--(36,15);
+\draw (30,0)--(36,0);
+\draw (30,-5)--(36,-5);
+\draw (30,-10)--(36,-10);
+\draw (30,-15)--(36,-15);
+\draw (30,-30)--(36,-30);
+\end{tikzpicture}
+\end{center}
+\end{document}

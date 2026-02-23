@@ -1,0 +1,45 @@
+\documentclass[a4paper,12pt]{book}
+\input{packages}
+\usetikzlibrary{patterns,shapes,arrows,decorations.text}
+\usepackage{pdfpages}
+\pgfplotsset{compat=1.7}
+
+%\tikzstyle{line}=[draw] % here
+%\setlist[itemize]{leftmargin=*}
+
+\sectionfont{\sffamily}
+\subsectionfont{\sffamily}
+\titleformat{\chapter}{\sffamily\huge}{\textbf{Trabajo Práctico N$^\circ$:\thechapter}}{20pt}{\centering}
+\input{config}
+\input{formato}
+
+\begin{document}
+\frontmatter
+    \include{capitulos/00_a_portada}
+    %\include{capitulos/00_b_introduccion}
+
+\mainmatter
+    %\part{FORMAS DE ENERGÍA Y SUS TRANSFORMACIONES}
+    %\subfile{capitulos/01_transmision_de_calor}
+    %\subfile{capitulos/04_gases_perfectos}
+    %\subfile{capitulos/05_ley_de_avogadro}
+    \subfile{capitulos/02_sistemas_termodinamicos}
+    \subfile{capitulos/03_1_principio_de_la_termodinamica}
+    %\subfile{capitulos/05_transformaciones}
+    %\subfile{capitulos/06_ciclos_termodinamicos}
+    %\subfile{capitulos/07_ciclo_de_carnot}
+    %\subfile{capitulos/08_ciclo_de_carnot}
+    %\subfile{capitulos/11_vaporizacion}
+    %\subfile{capitulos/09_entropia}
+    %\subfile{capitulos/12_refrigeracion}
+    %\part{Anexos}
+    %\subfile{capitulos/13_anexo2}
+    %\subfile{capitulos/14_laboratorio1}
+    %\subfile{capitulos/15_problemasResueltos}
+    %\subfile{capitulos/00_c_planificacion}
+   % \part{MÁQUINAS DE COMBUSTIÓN INTERNA}
+%    \part{CICLOS TERMODINÁMICOS DE VAPOR Y GAS }
+\backmatter
+.
+%\printglossary[title=Special Terms, toctitle=List of terms]
+\end{document}

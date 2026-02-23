@@ -1,0 +1,122 @@
+\documentclass[12pt,a4paper]{exam}
+
+% Paquetes necesarios
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{siunitx} % Para unidades
+\usepackage{multicol}
+\usepackage{geometry}
+
+% Márgenes muy pequeños para 4 exámenes en 1 hoja A4
+% top, bottom, left, right
+\geometry{top=1cm, bottom=1cm, left=1cm, right=1cm, columnsep=1cm}
+
+\pagestyle{empty} % sin encabezados ni pies
+
+% Definir una regla para el nombre (con menos espacio)
+\newcommand{\nombre}{\noindent\makebox[\linewidth]{\textbf{Nombre y Apellido:}\enspace\hrulefill}\vspace{0.25cm}}
+
+% Nota sobre Kelvin (más corta)
+\newcommand{\notakelvin}{\small \textit{(Recuerde usar Kelvin para cálculos de $\eta$ ideal.)}}
+
+\begin{document}
+
+% Usamos un solo entorno multicols para toda la página
+% Col 1: Tema A (arriba), Tema C (abajo)
+% Col 2: Tema B (arriba), Tema D (abajo)
+\begin{multicols}{2}
+
+% ================= TEMA A ==================
+\nombre
+\begin{center}
+    \textbf{RECUPERATORIO - TEMA A} \\
+    \notakelvin
+\end{center}
+\vspace{0.1cm}
+\begin{questions}
+ \question (Carnot) Una máquina ideal opera entre $T_1 = \SI{600}{\celsius}$ y $T_2 = \SI{30}{\celsius}$. Absorbe $\SI{2500}{J}$ ($Q_1$) de la fuente caliente.
+    \begin{parts}
+        \part[2] Calcule la eficiencia térmica ideal ($\eta_{ideal}$).
+        \part[2] Determine el trabajo neto ($W$) realizado.
+        \part[1] Calcule el calor desechado ($Q_2$).
+    \end{parts}    
+ \question (Máquina real) Una máquina térmica realiza un trabajo neto $W = \SI{500}{J}$ y desecha $Q_2 = \SI{800}{J}$ al sumidero frío en cada ciclo.
+      \begin{parts}
+        \part[2] Calcule el calor absorbido ($Q_1$).
+        \part[3] Calcule la eficiencia térmica real ($\eta_{real}$) de la máquina.
+    \end{parts}
+\end{questions}
+\vfill % Empuja el siguiente examen hacia abajo
+
+% ================= TEMA C ==================
+\nombre
+\begin{center}
+    \textbf{RECUPERATORIO - TEMA C} \\
+    \notakelvin
+\end{center}
+\vspace{0.1cm}
+\begin{questions}
+ \question (Carnot) Una máquina ideal opera entre $T_1 = \SI{650}{\celsius}$ y $T_2 = \SI{20}{\celsius}$. Absorbe $\SI{2000}{J}$ ($Q_1$) de la fuente caliente.
+    \begin{parts}
+        \part[2] Calcule la eficiencia térmica ideal ($\eta_{ideal}$).
+        \part[2] Determine el trabajo neto ($W$) realizado.
+        \part[1] Calcule el calor desechado ($Q_2$).
+    \end{parts}    
+ \question (Máquina real) Una máquina térmica realiza un trabajo neto $W = \SI{400}{J}$ y desecha $Q_2 = \SI{700}{J}$ al sumidero frío en cada ciclo.
+      \begin{parts}
+        \part[2] Calcule el calor absorbido ($Q_1$).
+        \part[3] Calcule la eficiencia térmica real ($\eta_{real}$) de la máquina.
+    \end{parts}
+\end{questions}
+\vfill % Termina la primera columna
+
+\columnbreak % Pasa a la segunda columna
+
+% ================= TEMA B ==================
+\nombre
+\begin{center}
+    \textbf{RECUPERATORIO - TEMA B} \\
+    \notakelvin
+\end{center}
+\vspace{0.1cm}
+\begin{questions}
+ \question (Carnot) Una máquina ideal opera entre $T_1 = \SI{550}{\celsius}$ y $T_2 = \SI{25}{\celsius}$. Absorbe $\SI{3000}{J}$ ($Q_1$) de la fuente caliente.
+    \begin{parts}
+        \part[2] Calcule la eficiencia térmica ideal ($\eta_{ideal}$).
+        \part[2] Determine el trabajo neto ($W$) realizado.
+        \part[1] Calcule el calor desechado ($Q_2$).
+    \end{parts}    
+ \question (Máquina real) Una máquina térmica realiza un trabajo neto $W = \SI{600}{J}$ y desecha $Q_2 = \SI{1000}{J}$ al sumidero frío en cada ciclo.
+      \begin{parts}
+        \part[2] Calcule el calor absorbido ($Q_1$).
+        \part[3] Calcule la eficiencia térmica real ($\eta_{real}$) de la máquina.
+    \end{parts}
+\end{questions}
+\vfill % Empuja el siguiente examen hacia abajo
+
+% ================= TEMA D ==================
+\nombre
+\begin{center}
+    \textbf{RECUPERATORIO - TEMA D} \\
+    \notakelvin
+\end{center}
+\vspace{0.1cm}
+\begin{questions}
+ \question (Carnot) Una máquina ideal opera entre $T_1 = \SI{500}{\celsius}$ y $T_2 = \SI{15}{\celsius}$. Absorbe $\SI{3500}{J}$ ($Q_1$) de la fuente caliente.
+    \begin{parts}
+        \part[2] Calcule la eficiencia térmica ideal ($\eta_{ideal}$).
+        \part[2] Determine el trabajo neto ($W$) realizado.
+        \part[1] Calcule el calor desechado ($Q_2$).
+    \end{parts}    
+ \question (Máquina real) Una máquina térmica realiza un trabajo neto $W = \SI{750}{J}$ y desecha $Q_2 = \SI{1200}{J}$ al sumidero frío en cada ciclo.
+      \begin{parts}
+        \part[2] Calcule el calor absorbido ($Q_1$).
+        \part[3] Calcule la eficiencia térmica real ($\eta_{real}$) de la máquina.
+    \end{parts}
+\end{questions}
+\vfill % Termina la segunda columna
+
+\end{multicols}
+
+\end{document}

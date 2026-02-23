@@ -1,0 +1,25 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=.1]
+
+\draw [line width=1mm](0,0) circle(25);
+\draw [line width=1mm](17.6,42.4) circle(6.2);
+\draw [line width=1mm](-17.6,42.4) circle(6.2);
+\draw [line width=1mm](-17.6-25,0) circle(6.2);
+\draw [line width=1mm](+17.6+25,0) circle(6.2);
+\draw [line width=1mm](0,-42.4) circle(6.2);
+\draw [line width=1mm](-55,-10)--(-55,10);
+\draw [line width=1mm](55,-10)--(55,10);
+\draw [line width=1mm](-55,-10)--++(42.4,-42.4)--++(25.2,0);
+\draw [line width=1mm](55,-10)--++(-42.4,-42.4);
+\draw [line width=1mm](-55,10) arc (270:360:25);
+\draw [line width=1mm](55,10) arc (270:180:25);
+\draw [line width=1mm](-17.6-12.4,42.4) arc(180:90:12.4);
+\draw [line width=1mm](+17.6+12.4,42.4) arc(0:90:12.4);
+\draw [line width=1mm](-17.6,42.4+12.4)--(+17.6,42.4+12.4);
+\draw [line width=1mm] (55-25,10+25)--(55-25,42.4);
+\draw [line width=1mm] (-55+25,10+25)--(-55+25,42.4);
+\end{tikzpicture}
+\end{center}
+\end{document}

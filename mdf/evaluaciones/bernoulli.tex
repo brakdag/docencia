@@ -1,0 +1,39 @@
+\documentclass[./examen.tex]{subfiles}
+\usepackage[first=1, last=10]{lcg}
+\newcommand{\random}{\rand\arabic{rand}}
+\usepackage{verbatim}
+\newcounter{z}
+\newcommand\y[2]{
+  \loop \ifnum\value{z} < #1
+    #2%
+    \stepcounter{z}%
+  \repeat
+}
+
+\begin{document}
+\begin{comment}
+    
+    \question Responder las siguientes problemas:
+    
+       \end{comment}
+
+
+%\info{Evaluación Electrotécnia II}{Campo magnético, Inducción magnética, permeabilidad magnética,imanes, líneas de campo magnético, flujo magnético, unidades magnéticas}
+\y{10}{
+\begin{center}
+\vspace{1.1cm}
+\makebox[\textwidth]{Nombre y Apellido:\enspace\hrulefill}
+\end{center}
+\begin{questions}
+   
+    \question Resolver los siguientes problemas:
+     \begin{parts}
+     \part[2] Un tanque tricapa de marca ROTOPLAS $V=650L$ litros lleno de aceite, se vacía con caudal constante en $t=\random$ horas. Calcular el tamaño de la abertura, si sale con velocidad $v_2=0,0\random m/s$.
+    \part[2] Una cañería de diámetro $d_1=\random m$ se reduce a $d_2=0.5m$,si la velocidad inicial es de $v_1=10m/s$. Calcular la velocidad final.
+    \part[4] Un flujo de agua va de la $s_1$ a la $s_2$. La $s_1$ tiene $d_1=2\random mm$, la presión manométrica es de $p_1=\random45kPa$, y la velocidad de flujo es de $v_1=3 m/s$. La $s_2$, mide $d_2=50mm$ de diámetro, y se encuentra a 2 metros por arriba de la $s_1$. Si suponemos que no hay pérdida de energía en el sistema. Calcular la presión $p_2$.
+    \part[2] Un tanque de sección cuadrada de lado $l = \random0 cm$ contiene una masa de agua de $m = \random 000kg$. Si se perfora un pequeño orificio en la parte inferior, encuentra la velocidad $v_2$ de salida.
+    \end{parts}
+\end{questions}
+
+}
+\end{document}

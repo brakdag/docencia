@@ -1,0 +1,28 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=.1]
+\draw [dashed](0,0) circle(50);
+%\draw [dashed](0,0) circle(58/2);
+\draw [dashed](0,0) circle(119/2);
+
+% chaveta
+\draw [line width=1mm] (58/2+5,7.5)--++(0,-15);
+\draw [line width=1mm] (15:58/2)--++(6.5,0);
+\draw [line width=1mm] (-15:58/2)--++(6.5,0);
+\draw [line width=1mm](15:58/2) arc (15:345:58/2);
+
+\foreach \i in {0,36,72,108,144,180,216,252,288,324}{
+\draw [line width=1mm] (-90+\i:50)--++(-90+\i:19/2)--++(\i:-6)--++(\i-38:-30);
+}
+
+\draw [dimen] (-58/2,0)--(58/2,0) node {28};
+\draw [dimen] (58/2,-12)--(58/2+6.5,-12) node {6.5};
+\draw [dimen] (-119/2,-80)--(119/2,-80) node {119};
+\draw [dimen] (-50,-70)--(50,-70) node {100};
+% lineas auxiliares
+
+
+\end{tikzpicture}
+\end{center}
+\end{document}

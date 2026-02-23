@@ -1,0 +1,105 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Trabajo Práctico: Observación de Modelos y Prototipos Hidrodinámicamente Estables}
+%\author{Nombre del Estudiante}
+%\date{Fecha}
+
+%\maketitle
+
+\section{Introducción Teórica}
+
+La hidrodinámica es la rama de la física que estudia el comportamiento de los fluidos en movimiento. Este campo es esencial en diversas aplicaciones, desde el diseño de vehículos submarinos y barcos hasta la ingeniería de tuberías y sistemas de irrigación. Un aspecto crucial de la hidrodinámica es la estabilidad de los modelos y prototipos que se diseñan para interactuar con fluidos. La estabilidad hidrodinámica se refiere a la capacidad de un objeto para mantener su trayectoria o posición deseada cuando se encuentra en un fluido en movimiento.
+
+Un objeto hidrodinámicamente estable debe poder resistir perturbaciones sin desviarse significativamente de su curso o hundirse. Esto se logra a través del diseño cuidadoso de la forma del objeto y la distribución de su masa, así como el control de las condiciones del fluido en las que opera.
+
+\subsection{Fórmulas Fundamentales}
+
+Para entender y diseñar modelos hidrodinámicamente estables, es esencial conocer algunas fórmulas básicas de la hidrodinámica.
+
+\info{Ecuación de Bernoulli}{
+\begin{equation}
+P + \frac{1}{2} \rho v^2 + \rho gh = \text{constante}
+\end{equation}
+Donde:
+\begin{itemize}
+    \item $P$ es la presión del fluido (Pa)
+    \item $\rho$ es la densidad del fluido (kg/m³)
+    \item $v$ es la velocidad del fluido (m/s)
+    \item $g$ es la aceleración debido a la gravedad (9.81 m/s²)
+    \item $h$ es la altura relativa en el campo gravitacional (m)
+\end{itemize}
+}
+
+\info{Ecuación de Continuidad}{
+\begin{equation}
+A_1 v_1 = A_2 v_2
+\end{equation}
+Donde:
+\begin{itemize}
+    \item $A_1$ y $A_2$ son las áreas de las secciones transversales 1 y 2 (m²)
+    \item $v_1$ y $v_2$ son las velocidades del fluido en las secciones 1 y 2 (m/s)
+\end{itemize}
+}
+
+\info{Fuerza de Arrastre}{
+\begin{equation}
+F_d = \frac{1}{2} \rho v^2 C_d A
+\end{equation}
+Donde:
+\begin{itemize}
+    \item $F_d$ es la fuerza de arrastre (N)
+    \item $\rho$ es la densidad del fluido (kg/m³)
+    \item $v$ es la velocidad del objeto relativo al fluido (m/s)
+    \item $C_d$ es el coeficiente de arrastre (adimensional)
+    \item $A$ es el área frontal del objeto (m²)
+\end{itemize}
+}
+
+La ecuación de Bernoulli es fundamental para comprender cómo varían la presión y la velocidad en un fluido en movimiento. La ecuación de continuidad describe la conservación de la masa en un flujo de fluido, esencial para entender cómo se comporta el fluido en diferentes secciones de una tubería o canal. La fórmula de la fuerza de arrastre es crucial para el diseño de objetos que se mueven a través de un fluido, ya que ayuda a predecir la resistencia que el fluido ejercerá sobre el objeto.
+
+\subsection{Estabilidad Hidrodinámica}
+
+La estabilidad hidrodinámica de un modelo o prototipo se refiere a su capacidad para mantener una posición o trayectoria estable en un fluido en movimiento. Un objeto estable puede volver a su posición original después de una perturbación. Esto es vital para el diseño de embarcaciones, submarinos y otros vehículos acuáticos.
+
+Para que un objeto sea hidrodinámicamente estable, debe cumplir con ciertas condiciones:
+\begin{itemize}
+    \item \textbf{Centro de Gravedad Bajo}: Un centro de gravedad bajo ayuda a mantener el objeto estable y reduce el riesgo de vuelco.
+    \item \textbf{Distribución de Peso Adecuada}: Una distribución uniforme del peso evita que el objeto se incline o desestabilice.
+    \item \textbf{Forma Hidrodinámica}: La forma del objeto debe minimizar la resistencia al flujo del fluido y permitir un movimiento suave.
+\end{itemize}
+
+La estabilidad se puede analizar utilizando principios de la mecánica de fluidos y pruebas experimentales en túneles de viento o canales de agua.
+
+\section{Cuestionario de Investigación}
+
+\begin{enumerate}
+    \item ¿Qué es la hidrodinámica y cuáles son sus aplicaciones principales?
+    \item ¿Cómo se define la estabilidad hidrodinámica en un objeto?
+    \item ¿Qué factores afectan la estabilidad hidrodinámica de un modelo?
+    \item ¿Cómo se utiliza la ecuación de Bernoulli para analizar el flujo de un fluido?
+    \item ¿Qué es la ecuación de continuidad y cómo se aplica en sistemas hidráulicos?
+    \item ¿Cómo influye el coeficiente de arrastre en el diseño de objetos que se mueven en un fluido?
+    \item ¿Qué métodos experimentales se utilizan para evaluar la estabilidad hidrodinámica?
+    \item ¿Cómo afecta la forma de un objeto su resistencia al arrastre?
+    \item ¿Qué medidas se pueden tomar para mejorar la estabilidad de una embarcación?
+    \item ¿Cómo se puede calcular la fuerza de arrastre que actúa sobre un objeto en movimiento?
+
+\end{enumerate}
+
+\section{Problemas a Resolver}
+
+\begin{enumerate}
+    \item Un fluido con una densidad de 1000 kg/m³ fluye a través de una tubería de 0.1 m de diámetro a una velocidad de 3 m/s. Calcula el caudal del fluido en m³/s.
+    \item Si en una tubería la sección transversal se reduce de 0.05 m² a 0.02 m², y la velocidad inicial del fluido es 2 m/s, ¿cuál será la nueva velocidad del fluido?
+    \item Un avión vuela a una velocidad de 340 m/s en un medio donde la velocidad del sonido es 330 m/s. ¿Cuál es el número de Mach del avión?
+    \item Si la presión antes de una onda de choque es 101 kPa y el número de Mach es 2, calcula la presión después de la onda de choque usando $\gamma = 1.4$.
+    \item Una embarcación tiene un área frontal de 10 m² y se mueve a 5 m/s en agua con una densidad de 1000 kg/m³. Si el coeficiente de arrastre es 0.5, calcula la fuerza de arrastre.
+    \item En una tubería, el área de entrada es 0.04 m² y la velocidad del fluido es 1 m/s. Si el área de salida es 0.02 m², calcula la velocidad del fluido en la salida.
+    \item Un objeto se mueve a través de un fluido con una velocidad de 500 m/s. Si la velocidad del sonido en ese fluido es 350 m/s, ¿cuál es el número de Mach del objeto?
+    \item Si la presión de un fluido en una sección de una tubería es 150 kPa y la velocidad es 3 m/s, calcula la presión en una sección donde la velocidad aumenta a 5 m/s, considerando una densidad de 1000 kg/m³ y despreciando cambios en la altura.
+    \item Un fluido tiene una densidad de 850 kg/m³ y se mueve a una velocidad de 2 m/s en una tubería de 0.05 m de diámetro. ¿Cuál es el número de Reynolds si la viscosidad del fluido es 0.002 Pa·s?
+    \item Si en un sistema hidráulico la velocidad del fluido es 4 m/s en una sección de 0.03 m², ¿cuál será la velocidad en una sección de 0.01 m²?
+\end{enumerate}
+
+\end{document}

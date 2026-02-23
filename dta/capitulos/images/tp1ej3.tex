@@ -1,0 +1,38 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=1,font=\sffamily]
+ \draw [dashed](0,0) circle (20mm);
+ \draw [line width=1mm] (0,0) circle (10mm);
+ \draw [dashdotted] (-30mm,0)--(50mm,0);
+ \draw [dashdotted] (0mm,30mm)--(0mm,-30mm);
+ \draw [dimen] (-20mm,-30mm)--(20mm,-30mm) node {40};
+ \draw [dimen] (35mm,-10mm)--(35mm,10mm) node {20};
+ \draw [dimen] (30mm,-30mm)--(40mm,-30mm) node {10};
+ \draw [dimen] (50mm,-17.32mm)--(50mm,17.32mm) node {34,64};
+ \draw (40mm,25mm) node {CORTE A-A};
+ \draw (0mm,-12mm) arc (270:0:12mm);
+ \draw (-20mm,0)--(-20mm,-35mm);
+ \draw (20mm,0)--(20mm,-35mm);
+ \draw [line width=1mm] (0,26mm)--(0,20mm);
+ \draw [line width=1mm] (0,-26mm)--(0,-20mm);
+ \draw  (-10mm,23mm) node[above] {A}--(0,23mm)[-stealth];
+ \draw  (-10mm,-23mm)node[above] {A}--(0,-23mm)[-stealth];
+ 
+ \draw [line width=1mm] (30mm,-17.32mm) rectangle (40mm,17.32mm);
+ \draw [dashed] (30mm,10mm)rectangle(40mm,-10mm);
+ \foreach \i in {0,1,2,...,5} {
+ \draw [line width=1mm](\i*60:20mm)--+(120+\i*60:20mm);
+ }
+ 
+ \draw [pattern=north east lines] (30mm,-17.32mm) rectangle (40mm,-10mm); 
+ \draw [pattern=north east lines] (30mm,17.32mm) rectangle (40mm,10mm);  
+ %lineas auxiliares.
+ \draw (50mm,17.32mm)--(40mm,17.32mm);
+ \draw (50mm,-17.32mm)--(40mm,-17.32mm);
+ \draw (40mm,-35mm)--(40mm,-17.32mm);
+ \draw (30mm,-35mm)--(30mm,-17.32mm);
+ 
+ \end{tikzpicture}
+\end{center}
+\end{document}

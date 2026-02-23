@@ -1,0 +1,21 @@
+\documentclass[../../main.tex]{subfiles}
+
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\draw [line width=1mm](0,0) rectangle (100mm,100mm);
+\draw [line width=1mm](50mm,50mm) circle (25mm);
+\draw [dashdotted](-10mm,50mm)--(150mm,50mm);
+\draw [dashdotted](50mm,-10mm)--(50mm,110mm);
+\draw [line width=1mm] (120mm,0mm) rectangle (150mm,100mm);
+\draw [dashed] (120mm,25mm)--(150mm,25mm);
+\draw [dashed] (120mm,75mm)--(150mm,75mm);
+\draw [dimen] (0mm,10mm) -- (50mm,10mm) node {50};
+\draw [dimen] (50mm,10mm) -- (100mm,10mm) node {50};
+\draw [dimen] (10mm,0mm) -- (10mm,50mm) node {50};
+\draw [dimen] (10mm,50mm) -- (10mm,100mm) node {50};
+\draw [dimen] (120mm,10mm) -- (150mm,10mm) node {30};
+\draw [dimen] (25mm,50mm) -- (75mm,50mm) node {50};
+\end{tikzpicture}
+\end{center}
+\end{document}

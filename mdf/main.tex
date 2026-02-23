@@ -1,0 +1,44 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage{subfiles,longtable,enumitem,tikz,subfiles,shadowtext,toolsgf}
+\usepackage[toc]{glossaries}
+\usetikzlibrary{patterns,shapes,arrows,decorations.text}
+%\tikzstyle{line}=[draw] % here
+%\setlist[itemize]{leftmargin=*}
+  \usepackage{sectsty}
+    \sectionfont{\sffamily\Large}
+    \subsectionfont{\sffamily}
+\usepackage{titlesec}
+
+\titleformat{\chapter}{\normalfont\huge}{Trabajo Práctico N$^\circ$:\thechapter  }{20pt}{\huge\centering}
+
+\input{config}
+\input{formato}
+
+\begin{document}
+\frontmatter
+    \include{capitulos/00_a_portada}
+    \include{capitulos/00_b_introduccion}
+    \include{capitulos/00_c_acuerdos}
+\mainmatter
+    \part{ PRINCIPIOS Y FENÓMENOS FLUIDODINÁMICOS}
+    \subfile{capitulos/01_principio_de_pascal}
+    \subfile{capitulos/02_principio_de_arquimedes}
+    \subfile{capitulos/04_ecuaciones_de_continuidad}
+    \subfile{capitulos/03_teorema_de_bernoulli}
+    \subfile{capitulos/05_numero_de_reynolds}
+    \subfile{capitulos/12_exposicion}
+
+%    \subfile{capitulos/07_cavitacion}
+ %   \subfile{capitulos/08_ondas_de_choque}
+  %  \subfile{capitulos/09_simbologia}
+    
+    
+
+    
+    %\part{INSTALACIONES Y EQUIPOS OLEOHIDRAULICOS E HIDRÁULICOS.}
+    %\part{ INSTALACIONES Y EQUIPOS NEUMÁTICOS.}
+    %\part{ELEMENTOS DE MEDICIÓN Y ENSAYOS.}
+\backmatter
+.
+%\printglossary[title=Special Terms, toctitle=List of terms]
+\end{document}

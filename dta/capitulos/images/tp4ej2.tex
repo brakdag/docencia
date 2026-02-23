@@ -1,0 +1,27 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=0.05]
+\coordinate (O) at (0,0);
+\coordinate (A) at (48,0);
+\coordinate (B) at (96,0);
+\coordinate (C) at (0,48);
+\coordinate (D) at (0,-48);
+\coordinate (E) at (-48,0);
+\coordinate (F) at (-96,0);
+\draw [dimen] (-12,0)--(12,0) node {24};
+\draw [dimen] (D)+(-24,0)--($(D)+(24,0)$) node {48};
+\draw [dimen] (0,-72)--(0,-84) node {12};
+
+\foreach \j in {O,A,B,C,D,E,F}{
+\draw [line width=1mm](\j) circle (12); 
+\draw [line width=1mm](\j) circle (24); 
+}
+\draw [line width=1mm](O) ellipse (120 and 72);
+\draw [line width=1mm](O) ellipse (132 and 84);
+
+
+
+\end{tikzpicture}
+\end{center}
+\end{document}

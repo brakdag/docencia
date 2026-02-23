@@ -1,0 +1,87 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Ecuación de Continuidad en Hidrodinámica}
+
+\section{Teoría de la Ecuación de Continuidad}
+
+La ecuación de continuidad es fundamental en el estudio de la hidrodinámica\footnote{Rama de la física que estudia el comportamiento de los fluidos en movimiento}. Describe cómo se conserva la masa en un flujo de fluido y se deriva del principio de conservación de la masa, que establece que la masa de un sistema cerrado permanece constante con el tiempo, independientemente de los procesos internos que ocurran dentro del sistema.
+
+En su forma más básica, la ecuación de continuidad para un fluido incompresible se expresa como:
+
+\begin{equation}
+A_1 \cdot v_1 = A_2 \cdot v_2
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $A_1$ y $A_2$ son las áreas transversales de dos secciones diferentes de un tubo por donde fluye el fluido.
+    \item $v_1$ y $v_2$ son las velocidades del fluido en estas secciones.
+\end{itemize}
+
+Esta ecuación muestra que el producto del área de la sección transversal y la velocidad del fluido es constante a lo largo de un tubo de flujo, lo que implica que si el área disminuye, la velocidad del fluido debe aumentar y viceversa.
+
+Otra versión de la ecuación de continuidad, considerando un fluido compresible, es:
+
+\begin{equation}
+\rho_1 \cdot A_1 \cdot v_1 = \rho_2 \cdot A_2 \cdot v_2
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $\rho_1$ y $\rho_2$ son las densidades del fluido en las secciones 1 y 2 respectivamente.
+\end{itemize}
+
+### Ejemplo de Aplicación
+
+Supongamos un tubo de flujo donde el área transversal inicial es de $0.05 \, \text{m}^2$ y la velocidad del fluido es $3 \, \text{m/s}$. Si el área se reduce a $0.02 \, \text{m}^2$, ¿cuál es la nueva velocidad del fluido?
+
+Datos:
+\begin{itemize}
+    \item $A_1 = 0.05 \, \text{m}^2$
+    \item $v_1 = 3 \, \text{m/s}$
+    \item $A_2 = 0.02 \, \text{m}^2$
+\end{itemize}
+
+Utilizando la ecuación de continuidad:
+\begin{equation}
+A_1 \cdot v_1 = A_2 \cdot v_2
+\end{equation}
+
+Despejando $v_2$:
+\begin{equation}
+v_2 = \frac{A_1 \cdot v_1}{A_2} = \frac{0.05 \, \text{m}^2 \cdot 3 \, \text{m/s}}{0.02 \, \text{m}^2} = 7.5 \, \text{m/s}
+\end{equation}
+
+### Cuestionario
+
+\actividad{Responder el siguiente cuestionario}
+\begin{enumerate}
+    \item ¿Qué establece la ecuación de continuidad en hidrodinámica?
+    \item ¿Cómo varía la velocidad del fluido si el área de la sección transversal del tubo disminuye?
+    \item ¿Qué diferencia existe entre un fluido compresible e incompresible en el contexto de la ecuación de continuidad?
+    \item ¿Cómo afecta la densidad del fluido a la ecuación de continuidad?
+    \item ¿Por qué se conserva la masa en un flujo de fluido?
+    \item ¿Qué condiciones deben cumplirse para aplicar la ecuación de continuidad a un fluido?
+    \item ¿Cómo se deriva la ecuación de continuidad desde el principio de conservación de la masa?
+    \item ¿Qué aplicaciones prácticas tiene la ecuación de continuidad en ingeniería?
+    \item ¿Cómo se relaciona la ecuación de continuidad con la ecuación de Bernoulli?
+    \item ¿Qué experimentos pueden realizarse para verificar la ecuación de continuidad?
+
+### Problemas
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+    \item En un tubo, el área de la sección transversal inicial es de $0.1 \, \text{m}^2$ y la velocidad del fluido es $4 \, \text{m/s}$. Si el área se reduce a $0.04 \, \text{m}^2$, ¿cuál es la nueva velocidad del fluido?
+    \item Un fluido fluye a través de un tubo que tiene un área de sección transversal de $0.03 \, \text{m}^2$ y una velocidad de $5 \, \text{m/s}$. Si la densidad del fluido en esta sección es $1000 \, \text{kg/m}^3$, ¿cuál será la velocidad en una sección donde el área es $0.015 \, \text{m}^2$ y la densidad es $1200 \, \text{kg/m}^3$?
+    \item Determinar la velocidad de un fluido en una sección de un tubo si en otra sección con área de $0.02 \, \text{m}^2$ la velocidad es de $6 \, \text{m/s}$ y el área de la nueva sección es de $0.04 \, \text{m}^2$.
+    \item Un fluido fluye a través de un conducto con una densidad constante de $850 \, \text{kg/m}^3$. Si en una sección del conducto la velocidad es $3 \, \text{m/s}$ y el área es $0.05 \, \text{m}^2$, ¿qué área tendrá otra sección donde la velocidad es $1.5 \, \text{m/s}$?
+    \item En un sistema de tuberías, un fluido pasa de una sección con área de $0.025 \, \text{m}^2$ y velocidad de $4 \, \text{m/s}$ a otra sección con velocidad de $2.5 \, \text{m/s}$. ¿Cuál es el área de la nueva sección?
+    \item Un tubo tiene una sección de área $0.07 \, \text{m}^2$ por donde fluye un líquido a $2 \, \text{m/s}$. Si la densidad del líquido en esta sección es $950 \, \text{kg/m}^3$, ¿cuál será la densidad en una sección donde el área es $0.03 \, \text{m}^2$ y la velocidad es $4.5 \, \text{m/s}$?
+    \item Calcular el área de una sección de un tubo donde la velocidad del fluido es $5 \, \text{m/s}$, si en otra sección la velocidad es $3 \, \text{m/s}$ y el área es $0.02 \, \text{m}^2$.
+    \item Un fluido tiene una velocidad de $2 \, \text{m/s}$ en una sección de área $0.04 \, \text{m}^2$. Si la velocidad aumenta a $8 \, \text{m/s}$, ¿cuál es el área de la nueva sección?
+    \item En una tubería, la velocidad de un fluido es $1 \, \text{m/s}$ en una sección de área $0.06 \, \text{m}^2$. Si en otra sección el área es $0.03 \, \text{m}^2$, ¿qué velocidad tiene el fluido en esta nueva sección?
+    \item Un fluido fluye a través de una sección de un conducto con área de $0.02 \, \text{m}^2$ y velocidad de $3.5 \, \text{m/s}$. Si en otra sección del conducto el área es $0.05 \, \text{m}^2$, ¿cuál es la velocidad del fluido en esta sección?
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,69 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Ciclo de Carnot}
+
+\img{images/08/stirling.jpg}{Motor Stirling.}
+
+\info{
+Contenido}{
+Ciclo Carnot, rendimiento, diagramas, ciclos reales.
+}
+\section{Origen del ciclo de Carnot}
+
+Cuando tenía veintiocho años, en 1824, Carnot, hijo de un ministro de la Guerra de Bonaparte, publicó \emph{Reflexiones sobre la potencia motriz del fuego y de las máquinas destinadas a desarrollar esta potencia}.
+
+En ella se propone enunciar una teoría de la máquina a vapor. El prodigio de su invención consiste en que se basa en una noción falsa: Carnot, al igual que sus contemporáneos, consideraba que el calor era un fluido.
+
+Por tanto, Carnot se representaba también la máquina de vapor como una especie de molino en el que el flujo del calórico empujaba las piezas móviles. No es la única vez que una idea falsa conduce a una noción exacta.
+
+\subsection{Teoría de Carnot}
+Carnot dedujo  intelectual que el calórico se conserva como se conserva el agua de un molino, el calor pasa de un nivel elevado a un nivel inferior, porque, para que haya trabajo, hay que interrumpir el ciclo del calórico. Sobre esta base describió un ciclo teórico perfecto.
+
+Para comprender cómo funciona la máquina ideal del ciclo de Carnot, hay que precisar algunas nociones:
+
+
+La primera es que cuando un pistón comprime un gas en un cilindro, la temperatura de ese gas se eleva y se dice, en este caso, que la compresión es adiabática.
+
+Si el cilindro contiene una masa cualquiera que absorbe su excedente de calor, su temperatura no varía y entonces la compresión es isoterma.
+
+Si el gas contenido en el cilindro está aislado y, por tanto, no hay intercambio, positivo o negativo, con el medio exterior, la compresión es adiabática.
+
+En compresión adiabática la presión aumenta más que en una compresión isoterma, por el hecho de que la presión inicial provoca una presión suplementaria debida al calor.
+
+La idea de Carnot es que en un cilindro en contacto con una fuente caliente, como en el motor de Stirling, el cual nacería a partir del ciclo de Carnot, hay que distinguir cuatro tiempos:
+
+\video{https://www.youtube.com/watch?v=FWkt-QC8StU}{Motor Stirling}
+
+\section{Partes del ciclo}
+\begin{enumerate}
+\item El primero es aquel en el que el pistón A está en el extremo de su recorrido por la expansión del gas; es una expansión isoterma porque la fuente caliente exterior compensa la pérdida de calorías inherente a la descompresión.
+\item En el segundo tiempo, de B a C, el final de la expansión es adiabática, porque hay enfriamiento del gas por la descompresión.
+\item En el tercer tiempo, de C a D, la compresión es isoterma.
+\item El cuarto tiempo, de D a A, finaliza en una fase adiabática.
+\end{enumerate}
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{images/08/cicloc.jpg}
+\end{center}
+
+Son los tiempos de compresión los que consumen trabajo, los dos tiempos de expansión lo proporcionan. Por tanto, postula Carnot, es necesario que el trabajo proporcionando en la fase motriz no se utilice en su totalidad para reconstruir las condiciones iniciales de presión, con el fin de que la segunda compresión consuma menos trabajo del que ha proporcionado la expansión.
+
+\img{images/08/carnot_ciclo.jpg}{Ciclo de Carnot.}
+
+Carnot propone entonces, que se enfríe el gas en un punto dado de la expansión. El punto B, en el que el volumen del gas alcanza el máximo de su expansión y proporciona el rendimiento máximo, a partir del cual es necesario que la expansión se concluya en una fase adiabática.
+
+De tal modo que, del punto C al punto D, la compresión, que se realizará con un gas enfriado, exigirá menos trabajo. Ésta será entonces una compresión isoterma.
+
+En este punto, el contacto con la fuente fría se corta y es necesario que la compresión se concluya con una fase productora de calor con el fin de proporcionar energía al ciclo siguiente. Esta última fase será, pues, adiabática. En efecto, Carnot divide compresión y ex­pansión en dos partes, una isoter­ma y otra adiabática.
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+    \item Cierta cantidad de oxigeno realiza un ciclo de Carnot, en el estado de máxima presión tiene $5 atm$ y volumen $0,2 m^{3}$ estando el foco caliente a $\SI{127}{\celsius}$ y el foco frío a $\SI{10}{\celsius}$. El volumen máximo que se alcanza es $0,5m^{3}$, calcular:
+    \begin{enumerate}
+        \item La presión y temperatura en el estado de volumen máximo.
+\item Presión, volumen y temperatura del Estado correspondiente al punto de intersección entre la expansión isoterma y la expansión adiabática.
+\item Rendimiento.
+\item La variación de entropía en los focos y en el universo.
+    \end{enumerate}
+\end{enumerate}
+\end{document}

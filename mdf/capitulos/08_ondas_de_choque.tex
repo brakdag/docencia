@@ -1,0 +1,101 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Trabajo Práctico: Ondas de Choque}
+
+\section{Introducción}
+
+Las ondas de choque son perturbaciones que se propagan a través de un medio cuando un objeto se mueve a una velocidad mayor que la velocidad del sonido en ese medio. Este fenómeno es comúnmente observado en la aviación, explosiones y en ciertos procesos industriales. Cuando un objeto, como un avión, supera la velocidad del sonido, se crea una onda de choque que puede causar un aumento repentino de presión, temperatura y densidad en el fluido que lo rodea.
+
+Las ondas de choque se caracterizan por ser discontinuidades donde las propiedades del fluido cambian bruscamente. Pueden ser oblicuas o normales dependiendo del ángulo de incidencia de la onda con respecto al flujo del fluido. Las ondas de choque normales ocurren perpendicularmente al flujo y son comunes en túneles de viento y turbinas de gas.
+
+\subsection{Fórmulas Fundamentales}
+
+A continuación, se presentan algunas de las fórmulas fundamentales para el estudio de las ondas de choque:
+
+\info{Número de Mach}{
+\begin{equation}
+M = \frac{v}{c}
+\end{equation}
+Donde:
+\begin{itemize}
+    \item \( M \) es el número de Mach (adimensional)
+    \item \( v \) es la velocidad del objeto (m/s)
+    \item \( c \) es la velocidad del sonido en el medio (m/s)
+\end{itemize}
+}
+
+\info{Relación de Presión a través de una Onda de Choque}{
+\begin{equation}
+\frac{P_2}{P_1} = 1 + \frac{2\gamma}{\gamma + 1} (M_1^2 - 1)
+\end{equation}
+Donde:
+\begin{itemize}
+    \item \( P_2 \) es la presión después de la onda de choque (Pa)
+    \item \( P_1 \) es la presión antes de la onda de choque (Pa)
+    \item \( \gamma \) es la razón de calores específicos (adimensional)
+    \item \( M_1 \) es el número de Mach antes de la onda de choque (adimensional)
+\end{itemize}
+}
+
+\info{Ecuación de Continuidad}{
+\begin{equation}
+A_1 v_1 = A_2 v_2
+\end{equation}
+Donde:
+\begin{itemize}
+    \item \( A_1 \) y \( A_2 \) son las áreas de las secciones transversales 1 y 2 (m²)
+    \item \( v_1 \) y \( v_2 \) son las velocidades del fluido en las secciones 1 y 2 (m/s)
+\end{itemize}
+}
+
+El número de Mach es una medida fundamental para describir la velocidad de un objeto en comparación con la velocidad del sonido en el medio. La relación de presión a través de una onda de choque proporciona información sobre cómo la presión cambia cuando un fluido atraviesa una onda de choque. La ecuación de continuidad es una expresión de la conservación de la masa en el flujo de un fluido.
+
+\subsection{Propiedades y Efectos de las Ondas de Choque}
+
+Las ondas de choque tienen varias propiedades distintivas:
+\begin{itemize}
+    \item **Cambio Abrupto de Propiedades:** La presión, temperatura y densidad del fluido aumentan bruscamente al pasar por una onda de choque.
+    \item **Generación de Ruido:** Las ondas de choque son responsables de los estallidos sónicos que se escuchan cuando un objeto rompe la barrera del sonido.
+    \item **Energía Disipada:** Parte de la energía cinética del flujo se convierte en energía interna, lo que puede llevar a un aumento de la temperatura del fluido.
+
+Los efectos de las ondas de choque son significativos en diversas aplicaciones:
+\begin{itemize}
+    \item **Aeronáutica:** La formación de ondas de choque en las alas y el fuselaje de los aviones supersónicos afecta el diseño y el rendimiento de estas aeronaves.
+    \item **Explosiones:** Las ondas de choque producidas por explosiones tienen aplicaciones en minería, demoliciones controladas y armamento.
+    \item **Medicina:** Las ondas de choque se utilizan en litotricia, un tratamiento para romper cálculos renales sin cirugía.
+\end{itemize}
+
+\section{Cuestionario de Investigación}
+
+\begin{enumerate}
+    \item ¿Qué es una onda de choque y en qué condiciones se genera?
+    \item ¿Cómo se define el número de Mach y por qué es importante en la hidrodinámica?
+    \item ¿Qué diferencias existen entre una onda de choque normal y una oblicua?
+    \item ¿Cómo afecta una onda de choque a la presión y temperatura de un fluido?
+    \item ¿Qué aplicaciones prácticas tienen las ondas de choque en la ingeniería aeronáutica?
+    \item ¿Cómo se utiliza la relación de presión a través de una onda de choque para predecir cambios en el flujo de un fluido?
+    \item ¿Qué efectos tienen las ondas de choque en estructuras y materiales?
+    \item ¿Cómo se pueden mitigar los efectos negativos de las ondas de choque en el diseño de vehículos supersónicos?
+    \item ¿Qué rol juegan las ondas de choque en la tecnología de litotricia en medicina?
+    \item ¿Qué consideraciones se deben tener en cuenta para medir ondas de choque en un túnel de viento?
+
+\end{enumerate}
+
+\section{Problemas a Resolver}
+
+\begin{enumerate}
+    \item Un avión vuela a una velocidad de 340 m/s en un medio donde la velocidad del sonido es 330 m/s. ¿Cuál es el número de Mach del avión?
+    \item Si la presión antes de una onda de choque es 101 kPa y el número de Mach es 2, calcula la presión después de la onda de choque usando \( \gamma = 1.4 \).
+    \item Un fluido con una densidad de 1000 kg/m³ fluye a través de una tubería con un diámetro de 0.1 m a una velocidad de 3 m/s. ¿Cuál es el número de Reynolds si la viscosidad del fluido es 0.001 Pa·s?
+    \item Si en un sistema hidráulico la velocidad del fluido es 4 m/s en una sección de 0.03 m², ¿cuál será la velocidad en una sección de 0.01 m²?
+    \item Un avión que vuela a 1200 km/h genera una onda de choque. Si la velocidad del sonido en el aire es 343 m/s, ¿cuál es el número de Mach del avión?
+    \item Si la presión en una zona antes de una onda de choque es 101 kPa y después de la onda de choque es 150 kPa, ¿qué diferencia de presión se genera por la onda de choque?
+    \item En una tubería, el área de entrada es 0.04 m² y la velocidad del fluido es 1 m/s. Si el área de salida es 0.02 m², calcula la velocidad del fluido en la salida.
+    \item Un fluido tiene una densidad de 850 kg/m³ y se mueve a una velocidad de 2 m/s en una tubería de 0.05 m de diámetro. ¿Cuál es el número de Reynolds si la viscosidad del fluido es 0.002 Pa·s?
+    \item Un objeto se mueve a través de un fluido con una velocidad de 500 m/s. Si la velocidad del sonido en ese fluido es 350 m/s, ¿cuál es el número de Mach del objeto?
+    \item Si la presión de un fluido en una sección de una tubería es 150 kPa y la velocidad es 3 m/s, calcula la presión en una sección donde la velocidad aumenta a 5 m/s, considerando una densidad de 1000 kg/m³ y despreciando cambios en la altura.
+
+\end{enumerate}
+
+\end{document}

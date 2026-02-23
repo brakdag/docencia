@@ -1,0 +1,31 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=0.1]
+\coordinate (O) at (0,0);
+\coordinate (A) at (0,35);
+\coordinate (B) at ($(A)+(60:8*sqrt(3)$);
+\coordinate (C) at ($(A)+(180-60:8*sqrt(3)$);
+\coordinate (F) at (0,35+8+65);
+
+\draw [line width=1mm](O)--(A);
+\draw [line width=1mm](B)--(A);
+\draw [line width=1mm](C)--(A);
+\draw [line width=1mm](B)--(F);
+\draw [line width=1mm](C)--(F);
+
+\draw [line width=1mm] (O)++(-11,0) ellipse (11 and 15);
+\draw [line width=1mm] (O)++(11,0) ellipse (11 and 15);
+\draw [line width=1mm] (O)++(-11,0) ellipse (8 and 12);
+\draw [line width=1mm] (O)++(11,0) ellipse (8 and 12);
+
+%arcos
+\draw [line width=1mm] (F) arc (33:-19:70);
+\draw [line width=1mm] (B) arc (180:195:125);
+\draw [line width=1mm] (C) arc (0:-15:125);
+
+
+
+\end{tikzpicture}
+\end{center}
+\end{document}

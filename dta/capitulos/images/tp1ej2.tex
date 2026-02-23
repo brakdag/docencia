@@ -1,0 +1,27 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+\draw [line width=1mm](0,0) arc (270:90:50mm);
+\draw [line width=1mm] (0,0)--(100mm,0);
+\draw [line width=1mm] (100mm,0) arc (180:90:50mm);
+\draw [line width=1mm] (150mm,50mm)--(100mm,50mm);
+\draw [line width=1mm] (100mm,50mm)--(100mm,100mm)--(0mm,100mm);
+\draw [line width=1mm,pattern=north east lines](0,0) rectangle (50mm,50mm);
+
+\draw [line width=1mm] (200mm,0)--(200mm,100mm)--(210mm,100mm)--(210mm,50mm)--(215mm,50mm)--(215mm,0)--(200mm,0);
+
+\draw [dimen] (200mm,-10mm)--(215mm,-10mm) node {15};
+
+\draw [dimen] (200mm,110mm)--(210mm,110mm) node {10};
+
+\draw [dimen] (0mm,60mm)--(50mm,60mm) node {50};
+\draw [dimen] (-50mm,50mm)--(0mm,50mm) node {50};
+\draw [dimen] (50mm,50mm)--(100mm,50mm) node {50};
+
+\draw [dimen] (110mm,100mm)--(110mm,50mm) node {50};
+
+
+\end{tikzpicture}
+\end{center}
+\end{document}

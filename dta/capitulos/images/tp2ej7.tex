@@ -1,0 +1,19 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=.1]
+\draw [line width=1mm](0,0) circle (75/2);
+\draw [line width=1mm](0,0) circle (145/2);
+\draw [dashed](0,0) circle (110/2);
+\foreach \i in {0,45,90,135,180,225,270,-45}
+\draw [line width=1mm](\i:55) circle (8);
+%cotas
+\draw [dimen] (-75/2,0)--(75/2,0) node{75};
+\draw [dimen] (-145/2,-80)--(145/2,-80) node{145};
+\draw [dimen] (55-8,0)--(55+8,0) node{16};
+%lineas auxiliares
+\draw (-145/2,0)--(-145/2,-80);
+\draw (145/2,0)--(145/2,-80);
+\end{tikzpicture}
+\end{center}
+\end{document}

@@ -1,0 +1,35 @@
+\documentclass[./examen.tex]{subfiles}
+\usepackage[first=1, last=20]{lcg}
+\newcommand{\random}{\rand\arabic{rand}}
+\usepackage{verbatim}
+\newcounter{z}
+\newcommand\y[2]{
+  \loop \ifnum\value{z} < #1
+    #2%
+    \stepcounter{z}%
+  \repeat
+}
+
+\begin{document}
+
+\y{15}{
+\begin{center}
+
+\makebox[\textwidth]{Nombre y Apellido:\enspace\hrulefill}
+\end{center}
+\begin{questions}
+   
+    \question Resolver los siguientes problemas:
+     \begin{parts}
+    \part[2] ¿Qué presión hay en \emph{Fosa de las Marianas},  $h=11034m$ del nivel del mar?
+     \part[4] Calcular la fuerza obtenida $F_1$ en el émbolo mayor de una prensa hidráulica si en el menor se hacen $F_2=6N$ y los émbolos circulares tienen doble radio uno del otro $r_1=2 r_2$.
+    
+    \part[2]  ¿Qué profundidad de agua sería necesaria para alcanzar la presión absoluta $p=\random kg/cm^2$?
+    \part[4] Sobre el plato menor de la prensa se coloca una masa de $m_2=\random kg$, calcula qué masa se podría levantar colocada en el plato mayor. 
+ 
+    \part[2]  El área de un pistón en una bomba de fuerza es de $F_1=15cm^2$.¿Qué fuerza $F_2$ se requiere para elevar agua con el pistón hasta una altura de $h=30m$?
+    \end{parts}
+\end{questions}
+
+}
+\end{document}

@@ -1,0 +1,118 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Número de Reynolds}
+
+\section{Introducción al Número de Reynolds}
+
+El número de Reynolds es un parámetro adimensional\footnote{Cantidad sin unidades físicas asociadas} fundamental en mecánica de fluidos\footnote{Rama de la física que estudia el comportamiento de los fluidos en movimiento o en reposo}. Fue propuesto por Osborne Reynolds en 1883 y se utiliza para predecir el régimen de flujo en diferentes situaciones. Este número relaciona las fuerzas inerciales y las fuerzas viscosas presentes en un fluido, lo que permite caracterizar el movimiento del mismo.
+
+\subsection{Importancia del Número de Reynolds}
+
+El número de Reynolds es crucial para:
+
+\begin{itemize}
+    \item Determinar si el flujo es laminar o turbulento.
+    \item Predecir la transición entre estos regímenes.
+    \item Analizar la similitud dinámica en modelos a escala.
+    \item Diseñar sistemas de tuberías y canales.
+    \item Optimizar el rendimiento de dispositivos como alas de aviones o hélices.
+\end{itemize}
+
+\subsection{Fórmula del Número de Reynolds}
+
+La fórmula general para calcular el número de Reynolds es:
+
+\begin{equation}
+    Re = \frac{\rho v L}{\mu}
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $Re$: Número de Reynolds (adimensional)
+    \item $\rho$: Densidad del fluido (kg/m³)
+    \item $v$: Velocidad característica del fluido (m/s)
+    \item $L$: Longitud característica (m)
+    \item $\mu$: Viscosidad dinámica del fluido (kg/(m·s))
+\end{itemize}
+
+Alternativamente, podemos expresar el número de Reynolds utilizando la viscosidad cinemática $\nu$:
+
+\begin{equation}
+    Re = \frac{v L}{\nu}
+\end{equation}
+
+Donde $\nu = \frac{\mu}{\rho}$ es la viscosidad cinemática (m²/s).
+
+\subsection{Interpretación del Número de Reynolds}
+
+El valor del número de Reynolds nos permite clasificar el régimen de flujo:
+
+\begin{itemize}
+    \item $Re < 2300$: Flujo laminar
+    \item $2300 < Re < 4000$: Flujo de transición
+    \item $Re > 4000$: Flujo turbulento
+\end{itemize}
+
+Es importante notar que estos valores son aproximados y pueden variar según la geometría y las condiciones específicas del sistema.
+
+\subsection{Aplicaciones del Número de Reynolds}
+
+El número de Reynolds se aplica en diversos campos de la ingeniería y la ciencia:
+
+\begin{itemize}
+    \item Ingeniería hidráulica: Diseño de sistemas de tuberías y canales.
+    \item Aerodinámica: Estudio del flujo de aire alrededor de vehículos y estructuras.
+    \item Oceanografía: Análisis de corrientes marinas y flujos atmosféricos.
+    \item Ingeniería química: Diseño de reactores y equipos de proceso.
+    \item Ingeniería biomédica: Estudio del flujo sanguíneo en vasos sanguíneos.
+\end{itemize}
+
+\ejemplo{Cálculo del Número de Reynolds}{
+Consideremos un flujo de agua a través de una tubería circular. Dados los siguientes datos:
+
+\begin{itemize}
+    \item Diámetro de la tubería: $D = 0.05$ m
+    \item Velocidad del agua: $v = 2$ m/s
+    \item Densidad del agua: $\rho = 1000$ kg/m³
+    \item Viscosidad dinámica del agua: $\mu = 0.001$ kg/(m·s)
+\end{itemize}
+
+Calculemos el número de Reynolds:
+
+\begin{equation}
+    Re = \frac{\rho v D}{\mu} = \frac{1000 \text{ kg/m³} \times 2 \text{ m/s} \times 0.05 \text{ m}}{0.001 \text{ kg/(m·s)}} = 100,000
+\end{equation}
+
+Como $Re > 4000$, podemos concluir que el flujo es turbulento.
+}
+
+\actividad{Responder el siguiente cuestionario}
+\begin{enumerate}
+    \item ¿Quién propuso el número de Reynolds y en qué año?
+    \item ¿Qué fuerzas relaciona el número de Reynolds?
+    \item ¿Cuáles son las variables que intervienen en la fórmula del número de Reynolds?
+    \item ¿Qué representa la longitud característica en la fórmula?
+    \item ¿Cuál es la diferencia entre viscosidad dinámica y cinemática?
+    \item ¿Qué rangos de valores del número de Reynolds corresponden a flujo laminar y turbulento?
+    \item ¿Por qué es importante el número de Reynolds en la ingeniería hidráulica?
+    \item ¿Cómo se aplica el número de Reynolds en aerodinámica?
+    \item ¿Qué papel juega el número de Reynolds en el diseño de modelos a escala?
+    \item ¿En qué unidades se expresa el número de Reynolds?
+\end{enumerate}
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+    \item Calcular el número de Reynolds para el aire que fluye a 15 m/s a través de un tubo de 10 cm de diámetro. La densidad del aire es 1.225 kg/m³ y su viscosidad dinámica es 1.789 × 10⁻⁵ kg/(m·s).
+    \item Determinar la velocidad del agua en una tubería de 2 cm de diámetro si el número de Reynolds es 2000. La viscosidad cinemática del agua es 1 × 10⁻⁶ m²/s.
+    \item Un fluido con densidad 800 kg/m³ y viscosidad dinámica 0.01 kg/(m·s) fluye por un canal rectangular. Si la velocidad es 0.5 m/s y el número de Reynolds es 1000, calcular la longitud característica del canal.
+    \item ¿Cuál es la viscosidad dinámica de un fluido que fluye a 3 m/s en una tubería de 5 cm de diámetro si su número de Reynolds es 15000 y su densidad es 920 kg/m³?
+    \item Calcular la densidad de un fluido que fluye en una tubería de 8 cm de diámetro con una velocidad de 2.5 m/s. El número de Reynolds es 20000 y la viscosidad dinámica del fluido es 0.002 kg/(m·s).
+    \item Un líquido fluye a través de una tubería circular con un número de Reynolds de 1800. Si la velocidad se duplica manteniendo las demás condiciones constantes, ¿cuál será el nuevo número de Reynolds?
+    \item El agua fluye a través de una tubería de 4 cm de diámetro con un número de Reynolds de 3500. Calcular la velocidad del flujo si la viscosidad cinemática del agua es 1 × 10⁻⁶ m²/s.
+    \item Un fluido tiene una viscosidad cinemática de 2 × 10⁻⁵ m²/s. Si fluye a 1.5 m/s en un canal con una longitud característica de 0.1 m, ¿cuál es su número de Reynolds?
+    \item Determinar el diámetro de una tubería si el número de Reynolds es 5000, la velocidad del fluido es 2 m/s y su viscosidad cinemática es 1.5 × 10⁻⁵ m²/s.
+    \item Un aceite con viscosidad dinámica de 0.08 kg/(m·s) y densidad 900 kg/m³ fluye por una tubería. Si el número de Reynolds es 500 y el diámetro de la tubería es 3 cm, calcular la velocidad del flujo.
+\end{enumerate}
+
+\end{document}

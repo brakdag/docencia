@@ -1,0 +1,90 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=0.07]
+
+%cotas radios
+\draw (100,250)--++(10:100)[-Stealth];
+\draw (100,250)++(10:100)--++(10:20); 
+\draw (100,250)++(10:100)++(10:20)--++(10,0) node [above left]{100};
+\draw [dimen] (100,250)--++(30:80) node {80};
+\draw [dimen] (100,250)--++(155:30) node {30};
+\draw [dimen] (100,250)--++(70:70) node {70};
+\draw [dimen] (100,250)--++(-90:10) node {10};
+
+
+
+\draw [line width=1mm] (0,0)rectangle(200,240);
+\draw [line width=1mm] (-10,240)rectangle(210,250);
+\draw [line width=1mm] (70,250) arc (180:0:30);
+\draw [line width=1mm] (30,250) arc (180:0:70);
+\draw [line width=1mm] (20,250) arc (180:0:80);
+\draw [line width=1mm] (0,250) arc (180:0:100);
+\draw [line width=1mm] (100,250)--++(45:30);
+\draw [line width=1mm] (100,250)--++(90:30);
+\draw [line width=1mm] (100,250)--++(135:30);
+\draw [line width=1mm] (20,0)--++(0,240);
+\draw [line width=1mm] (30,0)--++(0,240);
+\draw [line width=1mm] (60,0)--++(0,240);
+\draw [line width=1mm] (90,0)--++(0,240);
+\draw [line width=1mm] (100,0)--++(0,240);
+\draw [line width=1mm] (110,0)--++(0,240);
+\draw [line width=1mm] (140,0)--++(0,240);
+\draw [line width=1mm] (170,0)--++(0,240);
+\draw [line width=1mm] (180,0)--++(0,240);
+\draw [line width=1mm] (30,40)--++(60,0);
+\draw [line width=1mm] (110,40)--++(60,0);
+\draw [line width=1mm] (30,120)--++(60,0);
+\draw [line width=1mm] (110,120)--++(60,0);
+\draw [line width=1mm] (30,200)--++(60,0);
+\draw [line width=1mm] (110,200)--++(60,0);
+%vitro
+\draw [line width=1mm] (110,200)--++(30,40);
+\draw [line width=1mm] (140,240)--++(30,-40);
+\draw [line width=1mm] (170,200)--++(-60,-80);
+\draw [line width=1mm] (110,120)--++(60,-80);
+\draw [line width=1mm] (170,40)--++(-30,-40);
+\draw [line width=1mm] (140,0)--++(-30,40);
+\draw [line width=1mm] (110,40)--++(60,80);
+\draw [line width=1mm] (170,120)--++(-60,80);
+
+\draw [line width=1mm] (110-80,200)--++(30,40);
+\draw [line width=1mm] (140-80,240)--++(30,-40);
+\draw [line width=1mm] (170-80,200)--++(-60,-80);
+\draw [line width=1mm] (110-80,120)--++(60,-80);
+\draw [line width=1mm] (170-80,40)--++(-30,-40);
+\draw [line width=1mm] (140-80,0)--++(-30,40);
+\draw [line width=1mm] (110-80,40)--++(60,80);
+\draw [line width=1mm] (170-80,120)--++(-60,80);
+
+%cotas
+\draw [dimen](0,-10)--(20,-10) node {20};
+\draw [dimen](20,-10)--(30,-10) node {10};
+\draw [dimen](30,-10)--(60,-10) node {30};
+\draw [dimen](60,-10)--(90,-10) node {30};
+\draw [dimen](90,-10)--(100,-10) node {10};
+\draw [dimen](100,-10)--(110,-10) node {10};
+\draw [dimen](110,-10)--(140,-10) node {30};
+\draw [dimen](140,-10)--(170,-10) node {30};
+\draw [dimen](170,-10)--(180,-10) node {10};
+\draw [dimen](200,-10)--(180,-10) node {20};
+
+\foreach \i in {0,1,...,5}{
+\draw [dimen](210,\i*40)--(210,\i*40+40) node {40};
+\draw [dimen](-10,\i*40)--(-10,\i*40+40) node {40};
+%lineas auxiliares
+\draw [help lines](-10,\i*40)--(60,\i*40);
+\draw [help lines](210,\i*40)--(140,\i*40);
+}
+\foreach \i in {0,20,30,60,90,100,110,140,170,180,200}{
+\draw [help lines] (\i,0)--(\i,-15);
+}
+
+%radios
+
+
+
+
+\end{tikzpicture}
+\end{center}
+\end{document}

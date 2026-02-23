@@ -1,0 +1,39 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[scale=0.3,font=\sffamily]
+%frontal
+\draw [line width=1mm](0,0)--(13,0);
+\draw [line width=1mm](0,0)--(0,5)--++(3,0)--++(0,15)--++(7,0)--++(3,-3);
+\draw [line width=1mm](13,0)--(13,17);
+
+%izquierda
+\draw [line width=1mm](-15,0)--(-5,0)--++(0,20)--++(-10,0)--++(0,-20);
+\draw [line width=1mm](-15,17)--(-5,17);
+\draw [dashed](-15,5)--(-5,5);
+%derecha
+\draw [line width=1mm](20,0)--(30,0)--++(0,20)--++(-10,0)--++(0,-20);
+\draw [line width=1mm] (20,5)--(30,5);
+\draw [dashed] (20,17)--(30,17);
+% planta
+\draw [line width=1mm] (0,-15)rectangle++(13,10);
+\draw [line width=1mm] (3,-15)--++(0,10);
+\draw [line width=1mm] (10,-15)--++(0,10);
+%cotas
+\draw [dimen] (32,0)--(32,20) node {20};
+\draw [dimen] (20,10)--(30,10) node {10};
+\draw [dimen] (0,-12)--(13,-12) node {13};
+\draw [dimen] (3,12)--(13,12) node {10};
+\draw [dimen] (-15,10)--(-5,10) node {10};
+\draw [dimen] (2,0)--(2,5) node {5};
+\draw [dimen] (-7,17)--(-7,20) node {3};
+\draw [dimen] (0,-10)--(3,-10) node {3};
+\draw [dimen] (10,-10)--(13,-10) node {3};
+%líneas auxiliares
+\draw (30,0)--(33,0);
+\draw (30,20)--(33,20);
+
+
+\end{tikzpicture}
+\end{center}
+\end{document}

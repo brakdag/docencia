@@ -1,0 +1,52 @@
+\documentclass[./examen.tex]{subfiles}
+\usepackage{csvsimple}
+\usepackage[first=1, last=20]{lcg}
+
+\newcommand{\random}{\rand\arabic{rand}}
+\usepackage{verbatim}
+\usepackage{moreenum}
+\newcounter{z}
+\newcommand\y[2]{
+  \loop \ifnum\value{z} < #1
+    #2%
+    \stepcounter{z}%
+  \repeat
+}
+
+\newcommand{\shuffle}[1]{%
+    \foreach \i in {#1} {%
+        \edef\temps{\noexpand\item \csname question\i\endcsname}%
+        \temp
+    }%
+}
+
+\begin{document}
+
+
+
+\csvreader[
+    head to column names, % Asigna nombres de columna
+    separator=comma % Define la coma como el separador del CSV
+    ]{./alumnos.csv}{}{% Itera sobre cada fila del CSV
+ 
+\begin{center}
+
+\makebox[\textwidth]{Esc:4-117 Ejército de los Andes, Evaluación Termodinámica. Nombre y Apellido:\nombre}
+\end{center}
+
+\begin{questions}
+ \begin{randomize}     
+     \question[1]  Determinar cuantos grados Kelvin representan \random3°F y cuántos °F representan $\random58 ^\circ C$
+
+    \question[2]  Determinar cuantas calorías representan $4\random BTU$ y cuántos $Chu$ representan $\random58 BTU$
+     
+     
+    \question[3] Calcular la cantidad de calor que suministra un bloque de \random0 Kg de material con calor específico medio $C_m=0,\random kcal/kg^\circ C$ cuya temperatura desciende de $\random0^\circ C$ a $\random^\circ C$.
+    
+     
+    \question[4]   Calcular la cantidad de calor que se transmite por conductividad durante $\tau=1.5h$ a través de una losa de hormigón armado $C_t=1,3\random\frac{kcal m}{m^2 h ^\circ C}$ con una superficie de $S=\random 6m^2$ y un espesor $e=1\random cm$ cuando la temperatura exterior es de $t_e=\random05^\circ C$ y la interior es $t_i=\random^\circ C$
+    \end{randomize}
+ \end{questions}
+
+}
+\end{document}

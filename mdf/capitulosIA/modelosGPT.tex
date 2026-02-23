@@ -1,0 +1,124 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Observación de Modelos y Prototipos Hidrodinámicamente Estables}
+
+\section{Introducción a la Hidrodinámica}
+
+La hidrodinámica es la rama de la física que estudia el movimiento de los fluidos y las fuerzas que actúan sobre ellos. Es fundamental en el diseño de modelos y prototipos que deben ser estables cuando interactúan con fluidos en movimiento.
+
+\section{Principios Básicos de la Hidrodinámica}
+
+\subsection{Ecuaciones Fundamentales}
+
+Existen varias ecuaciones fundamentales en la hidrodinámica, pero algunas de las más importantes para entender la estabilidad hidrodinámica son las siguientes:
+
+\info{Ecuación de Continuidad}{
+La ecuación de continuidad establece que, para un fluido incompresible, la masa que entra en un volumen debe ser igual a la masa que sale. Matemáticamente, se expresa como:
+\begin{equation}
+\nabla \cdot \mathbf{v} = 0
+\end{equation}
+
+Siendo:
+\begin{itemize}
+    \item $\nabla \cdot \mathbf{v}$: Divergencia del vector velocidad $\mathbf{v}$\footnote{La divergencia de un campo vectorial es una medida de la densidad neta de flujo saliendo de un punto.}.
+\end{itemize}
+}
+
+\info{Ecuación de Bernoulli}{
+La ecuación de Bernoulli es una de las más utilizadas en hidrodinámica y relaciona la presión, la velocidad y la altura en un flujo de fluido ideal. Se expresa como:
+\begin{equation}
+P + \frac{1}{2}\rho v^2 + \rho gh = \text{constante}
+\end{equation}
+
+Siendo:
+\begin{itemize}
+    \item $P$: Presión del fluido [Pa]
+    \item $\rho$: Densidad del fluido [kg/m$^3$]
+    \item $v$: Velocidad del fluido [m/s]
+    \item $g$: Aceleración debida a la gravedad [m/s$^2$]
+    \item $h$: Altura del fluido [m]
+\end{itemize}
+}
+
+\info{Ecuación de Navier-Stokes}{
+Las ecuaciones de Navier-Stokes describen el movimiento de los fluidos viscosos y son fundamentales para estudiar la estabilidad hidrodinámica. En su forma más simple, una de las ecuaciones se puede escribir como:
+\begin{equation}
+\rho \left( \frac{\partial \mathbf{v}}{\partial t} + \mathbf{v} \cdot \nabla \mathbf{v} \right) = -\nabla P + \mu \nabla^2 \mathbf{v} + \mathbf{f}
+\end{equation}
+
+Siendo:
+\begin{itemize}
+    \item $\rho$: Densidad del fluido [kg/m$^3$]
+    \item $\mathbf{v}$: Vector velocidad del fluido [m/s]
+    \item $P$: Presión [Pa]
+    \item $\mu$: Viscosidad dinámica [Pa·s]
+    \item $\mathbf{f}$: Fuerza externa por unidad de volumen [N/m$^3$]
+\end{itemize}
+}
+
+\subsection{Estabilidad Hidrodinámica}
+
+La estabilidad hidrodinámica se refiere a la capacidad de un cuerpo sumergido o flotante de regresar a su posición de equilibrio después de una perturbación. Esto es crucial en el diseño de barcos, submarinos y otros modelos que interactúan con fluidos.
+
+\section{Ejemplo de Cálculo: Aplicación de la Ecuación de Bernoulli}
+
+\ejemplo{Ejemplo}{Calcular la velocidad del agua que fluye a través de una tubería con una diferencia de presión entre dos puntos de 10,000 Pa. La densidad del agua es 1000 kg/m$^3$ y se considera que la altura se mantiene constante.
+
+Datos:
+\begin{itemize}
+    \item $P_1 = 10,000$ Pa
+    \item $P_2 = 0$ Pa (Presión de referencia)
+    \item $\rho = 1000$ kg/m$^3$
+    \item $h_1 = h_2$
+\end{itemize}
+
+Aplicamos la ecuación de Bernoulli:
+\begin{equation}
+P_1 + \frac{1}{2} \rho v_1^2 = P_2 + \frac{1}{2} \rho v_2^2
+\end{equation}
+
+Asumiendo que la velocidad inicial $v_1$ es pequeña y despreciable:
+\begin{equation}
+10,000 + 0 \approx 0 + \frac{1}{2} \cdot 1000 \cdot v_2^2
+\end{equation}
+
+Resolviendo para $v_2$:
+\begin{equation}
+v_2 = \sqrt{\frac{2 \cdot 10,000}{1000}} = \sqrt{20} \approx 4.47 \text{ m/s}
+\end{equation}
+}
+
+\section{Cuestionario}
+
+\actividad{Responder el siguiente cuestionario}
+\begin{enumerate}
+    \item ¿Qué es la ecuación de continuidad y cuál es su importancia en hidrodinámica?
+    \item ¿Cómo se aplica la ecuación de Bernoulli en el diseño de prototipos hidrodinámicos?
+    \item ¿Qué representan las ecuaciones de Navier-Stokes y por qué son fundamentales en hidrodinámica?
+    \item ¿Cómo se define la estabilidad hidrodinámica?
+    \item ¿Cuál es la relación entre la presión y la velocidad en un flujo de fluido según Bernoulli?
+    \item Explica cómo la viscosidad afecta el movimiento de los fluidos.
+    \item ¿Qué factores influyen en la estabilidad de un barco en el agua?
+    \item Describe un ejemplo real donde se aplique la hidrodinámica en ingeniería.
+    \item ¿Cómo se mide la densidad de un fluido y por qué es importante?
+    \item ¿Qué papel juega la gravedad en la hidrodinámica?
+\end{enumerate}
+
+\section{Problemas}
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+    \item Calcular la presión en un punto de una tubería donde el agua fluye a 3 m/s, si en otro punto de la tubería la presión es 5000 Pa y la velocidad es 1 m/s. La densidad del agua es 1000 kg/m$^3$.
+    \item Determinar la velocidad de un fluido que sale de un orificio en un tanque a 2 metros de altura sobre el nivel del agua. Considerar la densidad del fluido como 1000 kg/m$^3$.
+    \item Encontrar la altura a la que un fluido debe ser almacenado para que salga a una velocidad de 5 m/s por un orificio. La densidad del fluido es 1000 kg/m$^3$.
+    \item Calcular la fuerza externa necesaria para mantener un flujo constante en una tubería donde la velocidad del fluido es 2 m/s y la densidad es 1000 kg/m$^3$. La viscosidad es 0.001 Pa·s.
+    \item Determinar la velocidad de un fluido en una tubería si la presión en un punto es 2000 Pa y en otro punto es 0 Pa, con una densidad de 1000 kg/m$^3$.
+    \item Calcular la diferencia de presión en una tubería de agua con una densidad de 1000 kg/m$^3$ y una velocidad de flujo de 4 m/s.
+    \item Encontrar la presión en un punto de una tubería si la velocidad del fluido es 3 m/s y la densidad del fluido es 1000 kg/m$^3$, considerando que la presión en otro punto es 10000 Pa y la velocidad es 2 m/s.
+    \item Determinar la velocidad de un fluido en una tubería si la presión inicial es 15000 Pa y la presión final es 5000 Pa, con una densidad de 1000 kg/m$^3$.
+    \item Calcular la altura a la que un fluido debe ser almacenado para que salga a una velocidad de 6 m/s por un orificio, con una densidad de 1000 kg/m$^3$.
+    \item Encontrar la velocidad de un fluido en una tubería donde la presión inicial es 8000 Pa y la presión final es 2000 Pa, con una densidad de 1000 kg/m$^3$.
+\end{enumerate}
+
+\end{document}

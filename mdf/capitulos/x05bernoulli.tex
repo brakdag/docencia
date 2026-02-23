@@ -1,0 +1,81 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+
+\chapter{Teorema de Bernoulli}
+
+\section{Teoría del Teorema de Bernoulli}
+\info{Teorema de Bernoulli}{
+El Teorema de Bernoulli es un principio fundamental en la dinámica de fluidos que establece una relación entre la velocidad de un fluido, su presión y su energía potencial. Este teorema se aplica a fluidos incompresibles y en flujo estacionario, y es utilizado en diversas aplicaciones ingenieriles como la aerodinámica, la hidráulica y la ingeniería de tuberías.
+
+El teorema se basa en la conservación de la energía y puede expresarse matemáticamente como:
+
+\begin{equation}
+P + \frac{1}{2}\rho v^2 + \rho gh = \text{constante}
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $P$: Presión del fluido [Pa]
+    \item $\rho$: Densidad del fluido [kg/m^3]
+    \item $v$: Velocidad del fluido [m/s]
+    \item $g$: Aceleración de la gravedad [9.81 m/s^2]
+    \item $h$: Altura relativa en el campo gravitatorio [m]
+\end{itemize}
+
+Esta fórmula indica que, en un flujo de fluido ideal, la suma de la presión, la energía cinética por unidad de volumen y la energía potencial por unidad de volumen es constante a lo largo de una línea de corriente.
+
+Una forma más común y práctica de usar el Teorema de Bernoulli es la siguiente, especialmente en problemas de fluidos en movimiento a través de tuberías de diferentes secciones:
+
+\begin{equation}
+P_1 + \frac{1}{2}\rho v_1^2 + \rho gh_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho gh_2
+\end{equation}
+
+Donde los subíndices 1 y 2 indican dos puntos diferentes a lo largo de la línea de corriente. Esta ecuación es particularmente útil para resolver problemas en los cuales se conocen las condiciones en un punto y se desea determinar las condiciones en otro.
+
+Otro aspecto importante del Teorema de Bernoulli es su relación con la ecuación de continuidad, que establece que la masa de flujo de un fluido debe conservarse a lo largo de una tubería:
+
+\begin{equation}
+A_1 v_1 = A_2 v_2
+\end{equation}
+
+Donde:
+\begin{itemize}
+    \item $A_1$ y $A_2$: Áreas de las secciones transversales en dos puntos de la tubería [m^2]
+    \item $v_1$ y $v_2$: Velocidades del fluido en esos puntos [m/s]
+\end{itemize}
+
+Este principio de continuidad es esencial para comprender cómo los cambios en la geometría de una tubería afectan la velocidad y la presión del fluido.
+
+}
+
+\actividad{Responder el siguiente cuestionario}
+\begin{enumerate}
+\item ¿Qué establece el Teorema de Bernoulli?
+\item ¿Cuáles son las tres formas de energía que se suman en el Teorema de Bernoulli?
+\item ¿En qué tipo de fluidos y condiciones es aplicable el Teorema de Bernoulli?
+\item ¿Cómo se relaciona la velocidad de un fluido con su presión según el Teorema de Bernoulli?
+\item ¿Qué representa la ecuación de continuidad en el contexto de la dinámica de fluidos?
+\item ¿Qué sucede con la velocidad de un fluido cuando el área de la sección transversal de la tubería se reduce?
+\item ¿Cómo se puede aplicar el Teorema de Bernoulli en la práctica para medir la velocidad de un fluido?
+\item ¿Qué diferencias existen entre un flujo laminar y un flujo turbulento?
+\item ¿Cómo afecta la altura en el campo gravitatorio a la presión de un fluido en reposo?
+\item ¿Qué aplicaciones prácticas tiene el Teorema de Bernoulli en la ingeniería civil y mecánica?
+
+\end{enumerate}
+
+\actividad{Resolver los siguientes problemas}
+\begin{enumerate}
+\item En una tubería horizontal, el agua fluye con una velocidad de $3 \, \text{m/s}$ y una presión de $20000 \, \text{Pa}$. Si la velocidad en otro punto de la tubería es de $6 \, \text{m/s}$, ¿Cuál es la presión en ese punto? (Suponga $\rho = 1000 \, \text{kg/m}^3$ y $g = 9.81 \, \text{m/s}^2$)
+\item El agua fluye a través de una tubería con un diámetro de $0.1 \, \text{m}$ a una velocidad de $2 \, \text{m/s}$. Si la tubería se estrecha a un diámetro de $0.05 \, \text{m}$, ¿cuál es la velocidad del agua en la sección estrecha?
+\item Un fluido de densidad $850 \, \text{kg/m}^3$ fluye desde una altura de $10 \, \text{m}$ hasta el nivel del suelo. Si la velocidad del fluido en la parte superior es cero, ¿cuál es la velocidad del fluido al llegar al suelo?
+\item En un sistema de tuberías, el agua tiene una presión de $50000 \, \text{Pa}$ y una velocidad de $1 \, \text{m/s}$ en un punto A. En otro punto B, la presión es de $40000 \, \text{Pa}$. ¿Cuál es la velocidad del agua en el punto B?
+\item Un tanque de agua abierto tiene un orificio a $5 \, \text{m}$ por debajo de la superficie del agua. ¿Con qué velocidad sale el agua por el orificio? (Use $\rho = 1000 \, \text{kg/m}^3$ y $g = 9.81 \, \text{m/s}^2$)
+\item El aire fluye a través de un tubo horizontal con un diámetro de $0.2 \, \text{m}$ a una velocidad de $5 \, \text{m/s}$. Si la densidad del aire es $1.2 \, \text{kg/m}^3$, ¿cuál es la presión en un punto donde el diámetro del tubo es de $0.1 \, \text{m}$ y la velocidad es de $10 \, \text{m/s}$?
+\item Un río tiene una sección transversal de $30 \, \text{m}^2$ y fluye a una velocidad de $2 \, \text{m/s}$. Si el río se estrecha a una sección de $15 \, \text{m}^2$, ¿cuál es la nueva velocidad del flujo?
+\item En un laboratorio, un líquido de densidad $950 \, \text{kg/m}^3$ fluye a través de un tubo con una presión de $30000 \, \text{Pa}$ y una velocidad de $4 \, \text{m/s}$. ¿Cuál es la presión en otro punto donde la velocidad del líquido es $2 \, \text{m/s}$?
+\item Un avión vuela a una velocidad de $200 \, \text{m/s}$ a nivel del mar, donde la presión atmosférica es $101325 \, \text{Pa}$ y la densidad del aire es $1.225 \, \text{kg/m}^3$. ¿Cuál es la presión en un punto de la superficie del ala donde la velocidad del aire es $150 \, \text{m/s}$?
+\item En una tubería vertical, el agua fluye desde una altura de $20 \, \text{m}$ hasta una altura de $5 \, \text{m}$. Si la velocidad del agua en la parte superior es $1 \, \text{m/s}$, ¿cuál es la velocidad en la parte inferior? (Suponga $\rho = 1000 \, \text{kg/m}^3$ y $g = 9.81 \, \text{m/s}^2$)
+
+\end{enumerate}
+
+\end{document}

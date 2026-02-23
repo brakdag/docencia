@@ -1,0 +1,37 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\chapter{Pérdida de carga}
+\img{images/01/titanic.jpg}{Restos del Titanic a $3843m$ de profundidad.}
+\info{
+Contenido}{
+Teorema fundamental de la hidrostática, Principio de Pascal, funcionamiento de la prensa hidráulica.
+}
+\section{Pérdidas, perdida de carga} \label{sec:tp1}
+
+   
+La diferencia de presión entre dos puntos de un líquido en equilibrio es igual al peso específico de ese líquido por la altura entre ambos puntos.
+\begin{equation}
+    p_2-p_1=\gamma (h_2-h_1)
+\end{equation}
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+\draw[pattern=north west lines, pattern color=gray] (0,-1) rectangle (5,5); 
+\draw (5,5)--(5,6);
+\draw (0,5)--(0,6);
+\draw [dashed,Circle-](3,0)node [above]{$p_1$}--(6,0);
+\draw [dashed,Circle-](3,3) node [above]{$p_2$}--(6,3);
+\draw [-Stealth](6,0)node [right]{$h_1$}--(6,3)node [right]{$h_2$};
+\draw (2,2) node {$\gamma$};
+\end{tikzpicture}
+\end{center}
+
+\info{Principio de Pascal}{La presión ejercida sobre un fluido incompresible y en equilibrio dentro de un recipiente de paredes indeformables se transmite con igual intensidad en todas las direcciones y en todos los puntos del fluido}
+
+\section{Cálculo de prensa hidráulica}
+La prensa hidráulica permite amplificar las fuerzas, se usa en elevadores, frenos y constituye la aplicación del principio de Pascal, consta de dos cilindros de diferente sección comunicados entre sí, y cuyo interior está completamente lleno de un líquido incompresible. Dos émbolos de secciones diferentes se ajustan, respectivamente, en cada uno de los dos cilindros, de modo que estén en contacto con el líquido. Cuando sobre el émbolo de menor sección $A_1$ se ejerce una fuerza $F_1$ la presión $p_1$ que se origina en el líquido en contacto con él se transmite íntegramente y de forma casi instantánea a todo el resto del líquido. Por el principio de Pascal esta presión será exactamente igual a la presión $p_2$ que ejerce el fluido en la sección $A_2$, es decir:
+\begin{equation}
+p_{1}=p_{2}
+\end{equation}
+con lo que las fuerzas serán:
+\end{document}
