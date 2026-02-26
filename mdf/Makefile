@@ -7,7 +7,7 @@ FINAL_NAME = Guia-tp-mecanica-de-los-fluidos
 SUBDIRS = $(shell find . -maxdepth 2 -not -path '*/.*' -type d)
 OUT_SUBDIRS = $(addprefix $(OUT_DIR)/, $(SUBDIRS))
 
-LATEXMK_OPTS = -pdf -outdir=$(OUT_DIR) -interaction=nonstopmode
+LATEXMK_OPTS = -pdfxe -outdir=$(OUT_DIR) -interaction=nonstopmode
 
 .PHONY: all build release clean view
 
