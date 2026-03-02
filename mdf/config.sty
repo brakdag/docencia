@@ -1,27 +1,24 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{config}[07/6/22 Gustavo Ferreyra]
-\RequirePackage{subfiles,longtable,enumitem,subfiles,shadowtext,titlesec}
+\RequirePackage{longtable,enumitem,shadowtext,titlesec}
 \RequirePackage[toc]{glossaries}
-
 \RequirePackage{tikz}
 \usetikzlibrary{patterns,shapes,arrows,decorations.text}
 
 \RequirePackage{sectsty}
 \sectionfont{\sffamily\Large}
 \subsectionfont{\sffamily}
-
 \RequirePackage{titlesec}
 
-% Configuración para capítulos
-\titleformat{\chapter}[block]
-  {\normalfont\huge\bfseries} % Estilo del texto
-  {Trabajo Práctico N $^\circ$:\thechapter} % Etiqueta
-  {20pt} % Separación entre etiqueta y título
-  {\huge\filcenter} % Formato del título y centrado
+%\titleformat{\chapter}[block]
+%  {\normalfont\huge\bfseries\filcenter} % <- El centrado (\filcenter) va mejor aquí
+%  {Trabajo Práctico \thechapter:} % <- Le añadí dos puntos al final (opcional)
+%  {15pt} % <- Espacio entre "Trabajo Práctico X:" y el título del capítulo
+%  {} % <- Lo dejamos vacío porque el tamaño ya lo definimos arriba
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[spanish]{babel}
-\RequirePackage[[RPvoltages]{circuitikz}[american]
-\RequirePackage{amsmath,pgfplots,xcolor,newtxmath,titletoc}
-\RequirePackage{fontspec}
-\setmainfont{osifont}
+\RequirePackage[RPvoltages]{circuitikz}[american]
+\RequirePackage{amsmath,pgfplots,xcolor,titletoc}
+
+\endinput

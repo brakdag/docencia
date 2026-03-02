@@ -1,0 +1,63 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{iramA4}
+\RequirePackage{tikz}
+\RequirePackage{eso-pic}
+\RequirePackage{fontspec}
+\RequirePackage{geometry}
+\usetikzlibrary{arrows.meta,babel,positioning, patterns,decorations.markings,calc}
+% Configuración de geometría para A4
+\geometry{
+    a4paper,
+    inner=30mm,   % Margen para la carpeta
+    outer=15mm,   % Margen exterior
+    top=15mm,
+    bottom=25mm,
+    headheight=0pt,
+    footskip=0pt
+}
+
+% Fuente técnica (asegúrate de tener el archivo .ttf o cámbiala por Arial)
+\newfontfamily\fontTecnica[Path=./]{osifont.ttf}
+
+\AddToShipoutPictureFG{
+  \ifnum\value{page}>1
+
+    \begin{tikzpicture}[remember picture, overlay]
+      % Lógica para espejar márgenes (Impar: 25mm izq | Par: 25mm der)
+      \ifodd\value{page}
+        \def\mIzq{25mm}
+        \def\mDer{-10mm}
+      \else
+        \def\mIzq{10mm}
+        \def\mDer{-25mm}
+      \fi
+
+      % Puntos de las esquinas del recuadro
+      \coordinate (NW) at ([shift={(\mIzq,-10mm)}]current page.north west);
+      \coordinate (SE) at ([shift={(\mDer,10mm)}]current page.south east);
+      
+      % Dibujo del recuadro principal (Marco de la hoja)
+      \draw[line width=1mm] (NW) rectangle (SE);
+      
+      % Rótulo (Posicionado relativo a la esquina inferior del recuadro)
+      \begin{scope}[shift={(SE)}]
+        % El rótulo mide 175mm de ancho y 10mm de alto
+        \draw[line width=1mm] (0,0) rectangle (-175mm, 10mm);
+        
+        % 1. Logo (escala 0.08)
+        \node[anchor=west] at (-174mm, 5mm) {\includegraphics[scale=0.06]{\logo}};
+        
+        % 2. Materia: Electrotecnia
+        \node[anchor=west] at (-155mm, 5mm) {\fontTecnica\small \materia};
+        
+        % 3. Alumno: Nombre y Apellido
+        \node[anchor=west] at (-100mm, 5mm) {\fontTecnica\small ALUMNO: \rule{55mm}{0.1mm}};
+        
+        % 4. Número de Hoja (Automático)
+        \node[anchor=east] at (-5mm, 5mm) {\fontTecnica\small \fbox{\thepage}};
+      \end{scope}
+    \end{tikzpicture}
+  \fi
+}
+
+\endinput

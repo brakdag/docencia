@@ -1,34 +1,22 @@
+%! TEX program = xelatex
 \documentclass[a4paper,12pt]{book}
-\usepackage{config,toolsgf}
-
+\usepackage{config,toolsgf,iramA4,newtxtext,newtxmath}
 \input{config}
-\input{formato}
+
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatother
+\pagestyle{empty}
 
 \begin{document}
-\frontmatter
-    \include{capitulos/00_a_portada}
-    \include{capitulos/00_b_introduccion}
-    \include{capitulos/00_c_acuerdos}
-\mainmatter
-    \part{ PRINCIPIOS Y FENÓMENOS FLUIDODINÁMICOS}
+    %\include{capitulos/00_a_portada}
+    %\include{capitulos/00_b_introduccion}
+    %\include{capitulos/00_c_acuerdos}
+    %\subfile{capitulos/00_unidades.tex}
     \subfile{capitulos/01_principio_de_pascal}
-    \subfile{capitulos/02_principio_de_arquimedes}
-    \subfile{capitulos/04_ecuaciones_de_continuidad}
-    \subfile{capitulos/03_teorema_de_bernoulli}
-    \subfile{capitulos/05_numero_de_reynolds}
-    \subfile{capitulos/12_exposicion}
-
-%    \subfile{capitulos/07_cavitacion}
- %   \subfile{capitulos/08_ondas_de_choque}
-  %  \subfile{capitulos/09_simbologia}
-    
-    
-
-    
-    %\part{INSTALACIONES Y EQUIPOS OLEOHIDRAULICOS E HIDRÁULICOS.}
-    %\part{ INSTALACIONES Y EQUIPOS NEUMÁTICOS.}
-    %\part{ELEMENTOS DE MEDICIÓN Y ENSAYOS.}
-\backmatter
-.
-%\printglossary[title=Special Terms, toctitle=List of terms]
+    %\subfile{capitulos/02_principio_de_arquimedes}
+    %\subfile{capitulos/04_ecuaciones_de_continuidad}
+    %\subfile{capitulos/03_teorema_de_bernoulli}
+    %\subfile{capitulos/05_numero_de_reynolds}
+    %\subfile{capitulos/12_exposicion}
 \end{document}

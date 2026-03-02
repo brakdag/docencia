@@ -1,15 +1,18 @@
-
-\documentclass[12pt,oneside]{book}
+%! TEX program = xelatex
+\documentclass[12pt]{book}
 \usepackage{longtable}
-\usepackage{enumitem,subfiles}
+\usepackage{enumitem,subfiles,iramA4}
 \setlist[itemize]{leftmargin=*}
 \input{config}
 
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatother
+\pagestyle{empty}
+
 \begin{document}
-\frontmatter
     \subfile{capitulos/00_a_portada}
     \subfile{capitulos/00_b_introduccion}
-\mainmatter
     \part{Primera Parte}
     \subfile{capitulos/01_electromagnetismo}
     \subfile{capitulos/01_electromagnetismo2}  
@@ -20,13 +23,13 @@
     \subfile{capitulos/05_brushless}
     \part{Seguna Parte}
     \subfile{capitulos/06_alternadores}
+    \subfile{capitulosNew/sistematrifasicodesbalanceado.tex}
     \subfile{capitulos/07_motor}
     \subfile{capitulos/08_deslizamiento}
     \subfile{capitulos/09_perdidas}
     \subfile{capitulos/11_exposicion}
     \subfile{capitulos/10_laboratorio}
-\backmatter
     \include{capitulos/98formulas}
-    \include{capitulos/99ProblemasResuletos}
+    %\include{capitulos/99ProblemasResuletos}
     \include{capitulos/999bibliografia}
 \end{document}
