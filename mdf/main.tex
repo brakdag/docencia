@@ -1,6 +1,6 @@
 %! TEX program = xelatex
 \documentclass[a4paper,12pt]{book}
-\usepackage{config,toolsgf,iramA4,newtxtext,newtxmath}
+\usepackage{subfiles,config,toolsgf,iramA4,newtxtext,newtxmath}
 \input{config}
 
 \makeatletter
@@ -9,14 +9,14 @@
 \pagestyle{empty}
 
 \begin{document}
-    %\include{capitulos/00_a_portada}
-    %\include{capitulos/00_b_introduccion}
-    %\include{capitulos/00_c_acuerdos}
-    %\subfile{capitulos/00_unidades.tex}
+    \include{capitulos/00_a_portada}
+    \include{capitulos/00_b_introduccion}
+    \include{capitulos/00_c_acuerdos}
+    \subfile{capitulos/00_unidades.tex}
     \subfile{capitulos/01_principio_de_pascal}
-    %\subfile{capitulos/02_principio_de_arquimedes}
-    %\subfile{capitulos/04_ecuaciones_de_continuidad}
-    %\subfile{capitulos/03_teorema_de_bernoulli}
-    %\subfile{capitulos/05_numero_de_reynolds}
-    %\subfile{capitulos/12_exposicion}
+    \subfile{capitulos/02_principio_de_arquimedes}
+    \subfile{capitulos/04_ecuaciones_de_continuidad}
+    \subfile{capitulos/03_teorema_de_bernoulli}
+    \subfile{capitulos/05_numero_de_reynolds}
+    \subfile{capitulos/12_exposicion}
 \end{document}
