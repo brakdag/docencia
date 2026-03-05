@@ -1,24 +1,7 @@
 \documentclass[a4paper,12pt]{book}
-\usepackage{subfiles,longtable,enumitem,tikz,subfiles,shadowtext,toolsgf,siunitx}
-\usepackage{pdfpages}
-\usepackage[toc]{glossaries}
-\usetikzlibrary{patterns,shapes,arrows,decorations.text}
-\usepackage{sectsty}
-\usepackage{titlesec}
-\sectionfont{\sffamily}
-\subsectionfont{\sffamily}
-\titleformat{\chapter}{\sffamily\huge}{\textbf{Trabajo Práctico N$^\circ$:\thechapter}}{20pt}{\centering}
-
+\usepackage{setup}
 \input{config}
-%\input{formatoplanif}
 \input{formato}
-\tikzset{%
-    body/.style={inner sep=0pt,outer sep=0pt,shape=rectangle,draw,thick,pattern=north east lines wide},
-    dimen/.style={<->,>=latex,thin,every rectangle node/.style={fill=white,midway,font=\sffamily}},
-    symmetry/.style={dashed,thin},
-}
-\usepackage[light,math]{iwona}
-\usepackage[T1]{fontenc}
 \begin{document}
 \frontmatter
     \include{capitulos/00_a_portada}

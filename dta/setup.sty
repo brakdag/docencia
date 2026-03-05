@@ -1,0 +1,31 @@
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{setup}[03/3/26 Gustavo Ferreyra]
+\RequirePackage{fontawesome,tcolorbox,qrcode,hyperref,graphics,caption}
+\RequirePackage{subfiles,longtable,enumitem,tikz,shadowtext,toolsgf,siunitx}
+\RequirePackage{pdfpages,titlesec,sectsty}
+\RequirePackage[toc]{glossaries}
+\RequirePackage[light,math]{iwona}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[spanish]{babel}
+\RequirePackage[RPvoltages]{circuitikz}[american]
+\RequirePackage{amsmath}
+\RequirePackage{pgfplots,xcolor}
+\RequirePackage{newtxtext,newtxmath}
+\pgfplotsset{compat=1.7}
+\usetikzlibrary{calc,patterns,shapes,arrows,decorations.text}
+\tikzset{%
+    body/.style={inner sep=0pt,outer sep=0pt,shape=rectangle,draw,thick,pattern=north east lines wide},
+    dimen/.style={<->,>=latex,thin,every rectangle node/.style={fill=white,midway,font=\sffamily}},
+    symmetry/.style={dashed,thin},
+}
+
+\sectionfont{\sffamily}
+\subsectionfont{\sffamily}
+\titleformat{\chapter}{\sffamily\huge}{\textbf{Trabajo Práctico N$^\circ$:\thechapter}}{20pt}{\centering}
+
+
+\ProcessOptions\relax
+\endinput
+
