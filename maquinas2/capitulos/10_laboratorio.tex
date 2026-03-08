@@ -1,25 +1,34 @@
 \documentclass[../main]{subfiles}
-
 \begin{document}
-\newpage
-\pagestyle{empty}
 \section{Práctica de laboratorio motor paso a paso}
 \begin{center}
-\img{images/10/steppers.jpg}{Motores paso a paso de impresora matríz de puntos EPSON}
+\img{images/10/steppers.jpg}{Steppers de impresora matríz de puntos EPSON}
 \end{center}
-\info{¿Qué es un motor paso a paso?}{Un motor paso a paso es un tipo de motor eléctrico que convierte señales eléctricas en movimientos precisos y controlados en forma de pasos. A diferencia de los motores convencionales que giran continuamente, los motores paso a paso se mueven en incrementos discretos o pasos.
+\info{¿Qué es un motor paso a paso?}{Un motor paso a paso es un tipo de motor
+  eléctrico que convierte señales eléctricas en movimientos precisos y 
+  controlados en forma de pasos. A diferencia de los motores convencionales
+  que giran continuamente, los motores paso a paso se mueven en incrementos
+  discretos o pasos.
 
-Los motores paso a paso se utilizan comúnmente en aplicaciones que requieren un control preciso de la posición, la velocidad y la aceleración, como en máquinas CNC, impresoras 3D, robots y equipos de automatización industrial. También se pueden encontrar en sistemas de seguimiento solar, control de satélites y sistemas de enfoque de cámaras.
+Los motores paso a paso se utilizan comúnmente en aplicaciones que requieren 
+un control preciso de la posición, la velocidad y la aceleración, como en
+máquinas CNC, impresoras 3D, robots y equipos de automatización industrial.
+También se pueden encontrar en sistemas de seguimiento solar, control de
+satélites y sistemas de enfoque de cámaras.
 
-El funcionamiento de un motor paso a paso se basa en la activación secuencial de diferentes bobinas en el motor, que producen un campo magnético que hace girar el rotor en incrementos discretos. La velocidad y la dirección de rotación del motor se controlan mediante la secuencia de activación de las bobinas.
+El funcionamiento de un motor paso a paso se basa en la activación secuencial
+de diferentes bobinas en el motor, que producen un campo magnético que hace
+girar el rotor en incrementos discretos. La velocidad y la dirección de 
+rotación del motor se controlan mediante la secuencia de activación de las 
+bobinas.
 }
-
 \actividad{Actividad práctica:}
 \begin{enumerate}
-    \item Elaborar un esquema o forma de identificar los terminales de cada motor paso a paso, con numeración o codigo de colores.
-    \item Medir la resistencia entre todos los terminales de cada motor paso paso, para esto realizar una tabla de doble entrada.
-    
-    \begin{center}    
+    \item Elaborar un esquema o forma de identificar los terminales de cada
+      motor paso a paso, con numeración o codigo de colores.
+    \item Medir la resistencia entre todos los terminales de cada motor
+      paso a paso, para esto realizar una tabla de doble entrada.
+\begin{center}    
 \begin{tabular}{|c||c|c|c|c|c|c|c|c |}
 \hline
 \multicolumn{9}{|c|}{Tabla doble entrada} \\
@@ -44,8 +53,6 @@ pin & 1 & 2 & 3 & 4 & 5 & 6 & 7 &8\\
 \hline
 \end{tabular}
 \end{center}
-
-    
     \item A partir de la tabla anterior, identificar bobinas en cada motor, y justificar.
     \item Prueba de freno: Conectar una bobina del motor a tensión de la fuente 1V, e intentar realizar el giro manual del eje del motor,
     \item Prueba led: Conectar un led a los terminales de la bobina del motor, y relizar el giro manual del eje.
@@ -53,6 +60,4 @@ pin & 1 & 2 & 3 & 4 & 5 & 6 & 7 &8\\
     \item Contar la cantidad de pasos, que posee el motor y calcular el ángulo de precisión de cada paso.
     \item Elaborar un \bf{informe} de las actividades realizadas con fotos y enviar a la plataforma classroom.
 \end{enumerate}
-
-
 \end{document}

@@ -1,15 +1,7 @@
 %! TEX program = xelatex
 \documentclass[12pt]{book}
-\usepackage{longtable}
-\usepackage{enumitem,subfiles,iramA4}
-\setlist[itemize]{leftmargin=*}
+\usepackage{config}
 \input{config}
-
-\makeatletter
-\let\ps@plain\ps@empty
-\makeatother
-\pagestyle{empty}
-
 \begin{document}
     \subfile{capitulos/00_a_portada}
     \subfile{capitulos/00_b_introduccion}
@@ -21,7 +13,7 @@
     \subfile{capitulos/03_stepper_B}
     \subfile{capitulos/04_servo}
     \subfile{capitulos/05_brushless}
-    \part{Seguna Parte}
+    \part{Segunda Parte}
     \subfile{capitulos/06_alternadores}
     \subfile{capitulosNew/sistematrifasicodesbalanceado.tex}
     \subfile{capitulos/07_motor}
