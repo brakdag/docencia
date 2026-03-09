@@ -1,4 +1,3 @@
-\usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{circuitikz}[american]
 \usepackage{amsmath,eso-pic}
@@ -8,17 +7,16 @@
 \usepackage[]{toolsgf}
 \usepackage{titlesec}
 
-
 \newcommand\BackgroundPic{%
-    \put(-90,0){%
-        \parbox[b][\paperheight]{\paperwidth}{%
-            \vfill
-            \centering
-            % Aquí especificamos tu ruta: /images/background.png
-            \includegraphics[height=\paperheight,keepaspectratio=true]{images/background.png}%
-            \vfill
-        }
+  \put(-90,0){%
+    \parbox[b][\paperheight]{\paperwidth}{%
+      \vfill
+      \centering
+      % Aquí especificamos tu ruta: /images/background.png
+      \includegraphics[height=\paperheight,keepaspectratio=true]{images/background.png}%
+      \vfill
     }
+  }
 }
 \allsectionsfont{\sffamily}
 \pgfplotsset{compat=1.7}
@@ -36,5 +34,5 @@
 
 \sectionfont{\sffamily}
 \subsectionfont{\sffamily}
-\titleformat{\chapter}{\sffamily\huge}{\textbf{Trabajo Práctico N$^\circ$:\thechapter}}{20pt}{\centering}
-
+\titleformat{\chapter}{\sffamily\huge}{\textbf{Trabajo Práctico
+N$^\circ$:\thechapter}}{20pt}{\centering}

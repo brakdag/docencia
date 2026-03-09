@@ -1,10 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{config}
-\RequirePackage{longtable,enumitem,subfiles,iramA4}
+\RequirePackage{siunitx,longtable,enumitem,subfiles,iramA4}
+\DeclareSIUnit{\rpm}{rpm} % Le enseñamos a LaTeX qué es el rpm
 \setlist[itemize]{leftmargin=*}
 \makeatletter
 \let\ps@plain\ps@empty
 \makeatother
 \pagestyle{empty}
 \endinput
-

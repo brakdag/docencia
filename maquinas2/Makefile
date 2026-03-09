@@ -4,7 +4,7 @@ PROJECT=main
 # PROJECT=planificacion 
 
 all:
-	latexmk -pdf $(PROJECT).tex
+	latexmk -pdfxe $(PROJECT).tex
 
 clean:
 	latexmk -C
