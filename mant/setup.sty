@@ -1,18 +1,12 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{setup}[2026/03/05 v1.0 Configuración de Gustavo Ferreyra]
-
-% Carga de paquetes (eliminado el duplicado de 'multicol')
+\ProvidesPackage{setup}[2026/03/05 v1.0 Gustavo Ferreyra]
 \RequirePackage{microtype, multicol, enumitem, titlesec, lmodern}
 \RequirePackage[spanish]{babel}
 \RequirePackage{subfiles,tikz,svg,newtxtext,newtxmath}
 \usetikzlibrary{shapes,arrows}
 \RequirePackage[formato]{toolsgf}
 \allsectionsfont{\sffamily}
-% Configuraciones de listas
 \setlist{noitemsep, topsep=0pt, leftmargin=1.5em}
-
-% Formato de títulos
 \titleformat{\section}{\bfseries\Large}{\thesection}{1em}{}
 \titleformat{\subsection}{\bfseries}{\thesubsection}{1em}{}
-
 \endinput
