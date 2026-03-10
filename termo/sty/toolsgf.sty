@@ -1,16 +1,15 @@
-
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{toolsgf}[07/6/22 Gustavo Ferreyra]
 \RequirePackage{fontawesome,tcolorbox,qrcode,hyperref,graphics,caption}
 
-
-\newcommand{\actividad}[1]{\section*{\faEdit #1}}
+\newcommand{\actividad}[1]{
+\section*{\faEdit #1}}
 
 \newcommand{\caja}[2]{
-\begin{tcolorbox}
-\textbf{#1}
-\tcblower
-#2
+  \begin{tcolorbox}
+    \textbf{#1}
+    \tcblower
+    #2
 \end{tcolorbox}}
 
 \newcommand{\info}[2]{\caja{\faInfoCircle \hspace{1pt} #1:}{#2}}
@@ -18,13 +17,13 @@
 \newcommand{\ejemplo}[2]{\caja{\faHandORight \hspace{1pt} #1:}{#2}}
 
 \newcommand{\web}[2]{\caja{\faExternalLink \hspace{1.5pt} #2}{
-\begin{tabular}{c | c}
-\qrcode{#1} & \url{#1}
+    \begin{tabular}{c | c}
+      \qrcode{#1} & \url{#1}
 \end{tabular}}}
 
 \newcommand{\video}[2]{\caja{\faFilm \hspace{1.5pt} #2}{
-\begin{tabular}{c | c}
-\qrcode{#1} & \url{#1}
+    \begin{tabular}{c | c}
+      \qrcode{#1} & \url{#1}
 \end{tabular}}}
 
 \newsavebox{\picbox}
@@ -34,14 +33,15 @@
     color=white, minimum width=\wd\picbox,
     minimum height=\ht\picbox, path picture={
       \node at (path picture bounding box.center) {
-        \usebox{\picbox}};
-    }] {};}
+      \usebox{\picbox}};
+}] {};}
 
 \newcommand{\img}[2]{
-\begin{figure}[ht]
+  \begin{figure}[ht]
     \centering
     \cutpic{0.5cm}{.5\textwidth}{#1}
     \caption{#2}
-\end{figure}
+  \end{figure}
 }
 \ProcessOptions\relax
+

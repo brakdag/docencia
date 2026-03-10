@@ -1,18 +1,17 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{config}[08/3/26 Gustavo Ferreyra]
-
-\RequirePackage{pdfpages}
+% Paquetes
 \RequirePackage[spanish]{babel}
 \RequirePackage[toc]{glossaries}
 \RequirePackage[RPvoltages]{circuitikz}[american]
-\RequirePackage{fancyhdr,geometry,tikz,qrcode}
+\RequirePackage{pdfpages,fancyhdr,geometry,tikz,qrcode}
 \RequirePackage{csvsimple,subfiles,longtable,enumitem,tikz}
-\RequirePackage{subfiles, shadowtext, toolsgf, siunitx,longtable, wasysym}
+\RequirePackage{shadowtext, sty/toolsgf, siunitx,wasysym}
 \RequirePackage{titlesec,pgfplots,xcolor,newtxtext,newtxmath}
-\RequirePackage{sectsty}
-\RequirePackage{silence}
+\RequirePackage{silence,sectsty}
 
 \usetikzlibrary{patterns,shapes,arrows,decorations.text}
+\DeclareSIUnit{\atm}{atm} % Le enseñamos a LaTeX qué es el rpm
 
 \pgfplotsset{compat=1.7}
 \sectionfont{\sffamily}
@@ -21,7 +20,7 @@
 N$^\circ$:\thechapter}}{20pt}{\centering}
 
 \WarningFilter{everything}{}
-
+% Variables
 \newcommand{\ano}{2023}
 \newcommand{\division}{$5^\circ$ $2^\circ$}
 \newcommand{\nombre}{Ferreyra,Gustavo David }
@@ -31,6 +30,7 @@ N$^\circ$:\thechapter}}{20pt}{\centering}
 \newcommand{\email}{gustavoferreyra@outlook.com}
 \newcommand{\classroomcode}{}
 \newcommand{\urlqr}{https://www.scribd.com/document/588305457/}
+
 \title{
   \begin{tikzpicture}[overlay]
     \draw [line width=1mm](-3,-21.7) rectangle +(17,28.7);
@@ -49,6 +49,8 @@ N$^\circ$:\thechapter}}{20pt}{\centering}
 \author{\includegraphics[scale=0.25]{images/4117.jpg}\\
 Esc. N.$^\circ:$ 4-117 ´´EJÉRCITO DE LOS ANDES´´}
 \date{Año: \the\year}
+
+% Formato de Página
 \geometry{
   a4paper,
   left=30mm,
@@ -58,10 +60,13 @@ Esc. N.$^\circ:$ 4-117 ´´EJÉRCITO DE LOS ANDES´´}
 }
 
 \renewcommand{\headrule}{}
+
+% Recuadro
 \fancypagestyle{plain}{}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[CE,CO]{
+  \ifnum\value{page}>1
   \begin{tikzpicture}[remember picture,
     overlay,shift={(-8,-1.3)},font={\fontfamily{lmss}\selectfont}]
     \draw [line width=1mm](-1,0) rectangle (17,28.4);
@@ -81,5 +86,6 @@ Esc. N.$^\circ:$ 4-117 ´´EJÉRCITO DE LOS ANDES´´}
     \draw (12,0.25) node [right] {Nombre:};
     \draw (12,0.75) node [right] {Apellido:};
   \end{tikzpicture}
+  \fi
 }
 \endinput

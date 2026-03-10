@@ -1,134 +1,166 @@
 \documentclass[../main]{subfiles}
-
-
 \begin{document}
 \chapter{Motor de Carnot}
 \img{images/07/carnot.jpg}{Motor ideal de Carnot. }
 \info{
 Contenido}{
-Ciclo Carnot, rendimiento, diagramas, ciclos reales.
+  Ciclo Carnot, rendimiento, diagramas, ciclos reales.
 }
-
 \info{Ciclo de Carnot}{
-El ciclo de Carnot es un ciclo termodinámico que se produce en un equipo o máquina cuando trabaja absorbiendo una cantidad de calor $Q_1$ de una fuente de mayor temperatura y cediendo un calor $Q_2$ a la de menor temperatura produciendo un trabajo sobre el exterior.
+  El ciclo de Carnot es un ciclo termodinámico que se produce en un
+  equipo o máquina cuando trabaja absorbiendo una cantidad de calor
+  $Q_1$ de una fuente de mayor temperatura y cediendo un calor $Q_2$
+  a la de menor temperatura produciendo un trabajo sobre el exterior.
 }
 \section{Rendimiento}
 El rendimiento $\eta$ de este ciclo viene definido por
-
 \img{images/07/carnotciclo.png}{Esquema de una máquina de Carnot.}
 
 \begin{equation}
-    \eta = \frac{W}{Q_1}
+  \eta = \frac{W}{Q_1}
 \end{equation}
 
-como
+Como
 
 $Q_1=Q_2+W \Rightarrow W=Q_1-Q_2$
 
-entonces
+Entonces
 
 \begin{equation}
-    \eta = \frac{Q1-Q_2}{Q_1}=1-\frac{Q_2}{Q_1}
+  \eta = \frac{Q1-Q_2}{Q_1}=1-\frac{Q_2}{Q_1}
 \end{equation}
 
-
-
-
 \begin{equation}
- \eta =1-{\frac {T_{2}}{T_{1}}}
+  \eta =1-{\frac {T_{2}}{T_{1}}}
 \end{equation}
 
-siendo:
+Siendo:
 
-$W:$ Trabajo $[kcal,Joule,kgm]$
+$W$: Trabajo $[kcal,Joule,kgm]$
 
-$\eta :$ Rendimiento valor entre 1 y 0.
+$\eta$: Rendimiento valor entre 1 y 0.
 
-$T_2,T_1:$ Temperaturas de foco frío y caliente en grados Kelvin.
+$T_2,T_1$: Temperaturas de foco frío y caliente en grados Kelvin.
 
-$Q_1,Q_2:$ Calor de entrada y salida.$[kcal,Kg m,Joule]$
+$Q_1,Q_2$: Calor de entrada y salida.$[kcal,Kg m,Joule]$
 
 \begin{equation}
- \eta =1-{\frac {T_{2}}{T_{1}}}=1-{\frac {Q_{2}}{Q_{1}}}
+  \eta =1-{\frac {T_{2}}{T_{1}}}=1-{\frac {Q_{2}}{Q_{1}}}
 \end{equation}
-
-
 \begin{equation}
- \eta_{\%} =\left( 1-\frac {T_{2}}{T_{1}}\right)\times100
+  \eta_{\%} =\left( 1-\frac {T_{2}}{T_{1}}\right)\times100
 \end{equation}
 Una máquina térmica que realiza este ciclo se denomina máquina de Carnot.
-
-Como todos los procesos que tienen lugar en el ciclo ideal son reversibles, el ciclo puede invertirse y la máquina absorbería calor de la fuente fría y cedería calor a la fuente caliente, teniendo que suministrar trabajo a la máquina. Si el objetivo de esta máquina es extraer calor de la fuente fría (para mantenerla fría) se denomina máquina frigorífica, y si es ceder calor a la fuente caliente, bomba de calor.
-
+Como todos los procesos que tienen lugar en el ciclo ideal son
+reversibles, el ciclo puede invertirse y la máquina absorbería calor
+de la fuente fría y cedería calor a la fuente caliente, teniendo que
+suministrar trabajo a la máquina. Si el objetivo de esta máquina es
+extraer calor de la fuente fría (para mantenerla fría) se denomina
+máquina frigorífica, y si es ceder calor a la fuente caliente, bomba de calor.
 \actividad{Contestar el cuestionario}
 \begin{enumerate}
-    \item Explicar el ciclo de Carnot: Etapas, y grafique diagrama P-V \emph{(presión-volumen)} y T-S \emph{(temperatura - entropía)}.
-    \item Explique el primer y segundo teorema de Carnot.
-    \item ¿Cómo se calcula el rendimiento de una máquina de Carnot?
-    \item ¿Qué diferencia hay entre los ciclos reales y el ciclo de Carnot?
+  \item Explicar el ciclo de Carnot: Etapas, y realizar diagrama P-V
+    \emph{(presión-volumen)} y T-S \emph{(temperatura-entropía)}.
+  \item Explique el primer y segundo teorema de Carnot.
+  \item ¿Cómo se calcula el rendimiento de una máquina de Carnot?
+  \item ¿Qué diferencia hay entre los ciclos reales y el ciclo de Carnot?
 \end{enumerate}
-
 \actividad{Problemas}
 \begin{enumerate}
-    \item Supóngase que se tiene una máquina térmica capaz de funcionar de los siguientes modos:
-    
+  \item Supóngase que se tiene una máquina térmica capaz de funcionar
+    de los siguientes modos:
     \begin{enumerate}
-        \item Entre \qty{200}{\degree\kelvin}  y \SI{400}{\degree\kelvin},
-        \item Entre \SI{600}{\degree\kelvin} y \SI{400}{\degree\kelvin}.
-        \item Entre \SI{100}{\celsius} y \SI{20}{\celsius}
-        \item Entre \SI{473}{\celsius} y \SI{683}{\celsius}
-        
+      \item Entre \qty{200}{\degree\kelvin}  y \SI{400}{\degree\kelvin},
+      \item Entre \SI{600}{\degree\kelvin} y \SI{400}{\degree\kelvin}.
+      \item Entre \SI{100}{\celsius} y \SI{20}{\celsius}
+      \item Entre \SI{473}{\celsius} y \SI{683}{\celsius}
     \end{enumerate}
-    ¿Cuál es rendimiento del ciclo del ciclo ideal de Carnot que podría tener en cada caso?
-
-    \item Una máquina térmica con eficiencia de $\eta_{\%}=22\%$ produce $W=1530J$ de trabajo. Encontrar: \begin{enumerate}
-        \item La cantidad de calor absorbida del depósito térmico.
-        \item La cantidad de calor desechado al depósito térmico.
-    \end{enumerate} 
-    \item La máquina térmica con eficiencia de $\eta_{\%}=87\%$ produce $W=4186J$ de trabajo. Encontrar: \begin{enumerate}
-        \item La cantidad de calor absorbida del depósito térmico.
-        \item La cantidad de calor desechado al depósito térmico.
-    \end{enumerate} 
-    
-    \item Una máquina según un ciclo de Carnot reversible absorbiendo calor de un tanque de agua a $\SI{100}{\celsius}$ y cediéndolo al aire en el interior de un local que se mantiene a $\SI{26}{\celsius}$ La máquina produce un trabajo de $41860J$. Calcule:
+    ¿Cuál es rendimiento del ciclo del ciclo ideal de Carnot que
+    podría tener en cada caso?
+  \item Una máquina térmica con eficiencia de $\eta_{\%}=22\%$
+    produce $W=1530J$ de trabajo. Encontrar:
     \begin{enumerate}
-        \item El rendimiento $\eta$ de la máquina de Carnot.
-        \item La cantidad de calor cedido por la fuente caliente $Q_1$.
-        \item la cantidad de calor entregado en la fuente fría $Q_2$.
+      \item La cantidad de calor absorbida del depósito térmico.
+      \item La cantidad de calor desechado al depósito térmico.
     \end{enumerate}
-    
-      \item Una máquina de ciclo ideal tiene un rendimiento pobre del $\eta_{\%}=10\%$ Si produce un trabajo de W=1000J, estando la fuente fría a $T_2=\SI{10}{\celsius}.$ Calcular los calores entregados y recibidos $Q_1,Q_2$, la temperatura de la fuente caliente $T_1$.
-      
-      \item Para el funcionamiento de una máquina, se pierde el 30\% del calor entregado, si la fuente caliente está a $T_1=\SI{400}{\celsius}$ y se realiza un trabajo de 200J Calcular:
-      \begin{enumerate}
-          \item El calor perdido $Q_2$. 
-          \item El rendimiento $\eta$.
-          \item El calor entregad $Q_1$.
-          \item calcular $T_1$ y $T_2$
-          \item Si se quiere duplicar el trabajo realizado ¿Cuál debería ser la temperatura de la fuente caliente $T_1$? 
-      \end{enumerate}
-       \item Un vehículo de $P=2300kg$ que funciona mediante el ciclo de Carnot con un rendimiento de $\eta=95\%$, necesita subir una cuesta de $h=10m$ de altura, la fuente fría es la temperatura del ambiente de $T_2=\SI{30}{\celsius}.$ ¿Qué temperatura debe tener la fuente caliente para que pueda subir a esa altura?
-       \item Dos ciclos de carnot funciona en serie, end dos etapas, si el primer ciclo si las temperaturas correspondientes son $\SI{10}{\celsius}$ $\SI{150}{\celsius}$ y $\SI{400}{\celsius}$. Calcular el rendimiento en cada una de las etapas, y el trabajo en cada una si el calor entregado inicialmente es de $100J$.
-       \item Una máquina de Carnot trabaja entre $\SI{100}{\celsius}$ y $\SI{1000}{\celsius}$. Calcular el  cantidad de calor necesaria para producir el trabajo de 1J.
-       
-       \item Dos máquinas de Carnot se conectan en paralelo, entre $\SI{100}{\celsius}$ y $\SI{500}{\celsius}$, la primer máquina produce un trabajo de 100J y la segunda 200J. Calcular el rendimiento de cada una y del conjunto.
-       \item Siendo la temperatura de la fuente fría $\SI{100}{\celsius}$ y el rendimiento $\eta=75\%$, determinar la temperatura de la fuente caliente.
-       \item Siendo la temperatura de la fuente fría $\SI{200}{\celsius}$ y el rendimiento $\eta=55\%$, determinar la temperatura de la fuente caliente.
-       \item Al fluido que evoluciona dentro de una máquina térmica ideal de CARNOT se le suministra una cantidad de calor igual a $100000kcal$. Suponiendo que el foco caliente se encuentra a $\SI{127}{\celsius}$ y el foco frío a $\SI{7}{\celsius}$ , calcular:
-       \begin{enumerate}
-           \item el rendimiento térmico de la máquina.
-           \item el trabajo desarrolado; y
-           \item la cantidad de calor que pasa al foco frío.
-       \end{enumerate}
-       \item Una máquina térmica que funciona con ciclo ideal de CARNOT y cuyo rendimiento térmico es de $\eta\%=30\%$, tiene el foco frío a$\SI{7}{\celsius}$. Calcular la temperatura del foco caliente.
-       \item Calcular la eficiencia de una máquina firgorífica que funciona con el ciclo ideal de CARNOT, si el focoi caliente se encuentra a temperatura de $\SI{127}{\celsius}$ y el foco frío a $\SI{7}{\celsius}$ 
-       \item Un fluído que evoluciona dentro de una máquina frigorífica con ciclo ideal de CARNOT entrega en el foco caliente $100000 kcal$. Suponiendo que el foco frío se encuentra a $\SI{7}{\celsius}$ y el foco caliente en $\SI{127}{\celsius} $ . Calcular:
-       \begin{enumerate}
-           \item la cantidad de calor extraída del foco frío;
-           \item el trabajo mecánico que es necesario suministrar; y
-           \item la eficiencia de la máquina $\eta$.
-       \end{enumerate}
-
-       
+  \item La máquina térmica con eficiencia de $\eta_{\%}=87\%$ produce
+    $W=4186J$ de trabajo. Encontrar:
+    \begin{enumerate}
+      \item La cantidad de calor absorbida del depósito térmico.
+      \item La cantidad de calor desechado al depósito térmico.
+    \end{enumerate}
+  \item Una máquina según un ciclo de Carnot reversible absorbiendo
+    calor de un tanque de agua a $\SI{100}{\celsius}$ y cediéndolo al
+    aire en el interior de un local que se mantiene a
+    $\SI{26}{\celsius}$ La máquina produce un trabajo de $41860J$. Calcule:
+    \begin{enumerate}
+      \item El rendimiento $\eta$ de la máquina de Carnot.
+      \item La cantidad de calor cedido por la fuente caliente $Q_1$.
+      \item la cantidad de calor entregado en la fuente fría $Q_2$.
+    \end{enumerate}
+  \item Una máquina de ciclo ideal tiene un rendimiento pobre del
+    $\eta_{\%}=10\%$ Si produce un trabajo de W=1000J, estando la
+    fuente fría a $T_2=\SI{10}{\celsius}$. Calcular los calores
+    entregados y recibidos $Q_1,Q_2$, la temperatura de la fuente
+    caliente $T_1$.
+  \item Para el funcionamiento de una máquina, se pierde el 30\% del
+    calor entregado, si la fuente caliente está a
+    $T_1=\SI{400}{\celsius}$ y se realiza un trabajo de 200J Calcular:
+    \begin{enumerate}
+      \item El calor perdido $Q_2$.
+      \item El rendimiento $\eta$.
+      \item El calor entregad $Q_1$.
+      \item calcular $T_1$ y $T_2$
+      \item Si se quiere duplicar el trabajo realizado ¿Cuál debería
+        ser la temperatura de la fuente caliente $T_1$?
+    \end{enumerate}
+  \item Un vehículo de $P=2300kg$ que funciona mediante el ciclo de
+    Carnot con un rendimiento de $\eta=95\%$, necesita subir una
+    cuesta de $h=10m$ de altura, la fuente fría es la temperatura del
+    ambiente de $T_2=\SI{30}{\celsius}$ ¿Qué temperatura debe tener
+    la fuente caliente para que pueda subir a esa altura?
+  \item Dos ciclos de Carnot funciona en serie, end dos etapas, si el
+    primer ciclo si las temperaturas correspondientes son
+    $\SI{10}{\celsius}$ $\SI{150}{\celsius}$ y $\SI{400}{\celsius}$.
+    Calcular el rendimiento en cada una de las etapas, y el trabajo
+    en cada una si el calor entregado inicialmente es de $100J$.
+  \item Una máquina de Carnot trabaja entre $\SI{100}{\celsius}$ y
+    $\SI{1000}{\celsius}$. Calcular el  cantidad de calor necesaria
+    para producir el trabajo de 1J.
+  \item Dos máquinas de Carnot se conectan en paralelo, entre
+    $\SI{100}{\celsius}$ y $\SI{500}{\celsius}$, la primer máquina
+    produce un trabajo de 100J y la segunda 200J. Calcular el
+    rendimiento de cada una y del conjunto.
+  \item Siendo la temperatura de la fuente fría $\SI{100}{\celsius}$
+    y el rendimiento $\eta=75\%$, determinar la temperatura de la
+    fuente caliente.
+  \item Siendo la temperatura de la fuente fría $\SI{200}{\celsius}$
+    y el rendimiento $\eta=55\%$, determinar la temperatura de la
+    fuente caliente.
+  \item Al fluido que evoluciona dentro de una máquina térmica ideal
+    de CARNOT se le suministra una cantidad de calor igual a
+    $100000kcal$. Suponiendo que el foco caliente se encuentra a
+    $\SI{127}{\celsius}$ y el foco frío a $\SI{7}{\celsius}$, calcular:
+    \begin{enumerate}
+      \item el rendimiento térmico de la máquina.
+      \item el trabajo desarrollado; y
+      \item la cantidad de calor que pasa al foco frío.
+    \end{enumerate}
+  \item Una máquina térmica que funciona con ciclo ideal de CARNOT y
+    cuyo rendimiento térmico es de $\eta\%=30\%$, tiene el foco frío
+    a$\SI{7}{\celsius}$. Calcular la temperatura del foco caliente.
+  \item Calcular la eficiencia de una máquina frigorífica que
+    funciona con el ciclo ideal de CARNOT, si el foco caliente se
+    encuentra a temperatura de $\SI{127}{\celsius}$ y el foco frío a
+    $\SI{7}{\celsius}$
+  \item Un fluido que evoluciona dentro de una máquina frigorífica
+    con ciclo ideal de CARNOT entrega en el foco caliente $100000
+    kcal$. Suponiendo que el foco frío se encuentra a
+    $\SI{7}{\celsius}$ y el foco caliente en $\SI{127}{\celsius}$. Calcular:
+    \begin{enumerate}
+      \item la cantidad de calor extraída del foco frío;
+      \item el trabajo mecánico que es necesario suministrar; y
+      \item la eficiencia de la máquina $\eta$.
+    \end{enumerate}
 \end{enumerate}
 \end{document}
