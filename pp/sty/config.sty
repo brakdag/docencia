@@ -1,4 +1,46 @@
-\usepackage{fancyhdr,geometry,tikz,qrcode}
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{config}[09/6/22 Gustavo Ferreyra]
+\RequirePackage{subfiles,longtable,enumitem,tikz,shadowtext}
+\RequirePackage{sty/toolsgf,siunitx,rotating,fancyhdr,sectsty,titlesec}
+\RequirePackage[toc]{glossaries}
+\RequirePackage[spanish]{babel}
+\RequirePackage[RPvoltages]{circuitikz}[american]
+\RequirePackage{amsmath,pgfplots,xcolor,newtxtext,newtxmath,geometry,qrcode}
+
+\usetikzlibrary{patterns,shapes,arrows,decorations.text}
+%\tikzstyle{line}=[draw] % here
+%\setlist[itemize]{leftmargin=*}
+
+\sectionfont{\sffamily}
+\subsectionfont{\sffamily}
+
+\titleformat{\chapter}{\sffamily\huge}{\textbf{Trabajo Práctico
+N$^\circ$:\thechapter}}{20pt}{\centering}
+\pgfplotsset{compat=1.7}
+\newcommand{\materia}{  PRÁCTICAS PROFESIONALIZANTES}
+\newcommand{\TP}{}
+\newcommand{\logo}{images/logoenet2}
+\newcommand{\email}{gustavoferreyra@outlook.com}
+\newcommand{\classroomcode}{}
+\newcommand{\urlqr}{https://es.scribd.com/document/590050860/}
+\title{
+  \begin{tikzpicture}[overlay]
+    \draw [line width=1mm](-3,-21.7) rectangle +(17,28.7);
+  \end{tikzpicture}
+  \Huge  \color{purple} \textbf{ Guía de Trabajos Prácticos}\\\textbf{\materia}
+  \begin{table}[ht] \small \centering
+    \vspace{2cm}
+    \begin{tabular}{r l}
+      Docente & Gustavo David Ferreyra
+      \textbf{\classroomcode}\\
+      Contacto:& \email\\
+    \end{tabular}
+  \end{table}
+}
+\author{\includegraphics[scale=0.25]{images/4117.jpg}\\
+Esc. $N^\circ$: 4-117 EJÉRCITO DE LOS ANDES}
+
+\usepackage{}
 \geometry{
   a4paper,
   left=30mm,
@@ -10,8 +52,9 @@
 \fancypagestyle{plain}{}
 \pagestyle{fancy}
 \fancyhf{}
+%\ifnum\value{page}>1
+
 \fancyfoot[CE]{
-  \ifnum\value{page}>1
   \begin{tikzpicture}[remember picture,
     overlay,shift={(-8,-1.5)},font={\fontfamily{lmss}\selectfont}]
     \draw [line width=1mm](-1,0) rectangle (17,28.7);
@@ -35,10 +78,10 @@
     {Apellido:};
 
   \end{tikzpicture}
-  \fi
 }
 
 \fancyfoot[CO]{
+
   \begin{tikzpicture}[remember picture,
     overlay,shift={(-8,-1.5)},font={\fontfamily{lmss}\selectfont}]
     \draw [line width=1mm](-1,0) rectangle (17,28.7);
@@ -63,5 +106,6 @@
     {Apellido:};
 
   \end{tikzpicture}
-
 }
+\fi
+\endinput
