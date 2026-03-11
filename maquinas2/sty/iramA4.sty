@@ -2,10 +2,10 @@
 \ProvidesPackage{iramA4}
 \RequirePackage{tikz}
 \RequirePackage{eso-pic}
-%\RequirePackage{fontspec}
+\RequirePackage{fontspec}
 \RequirePackage{geometry}
-\usetikzlibrary{arrows.meta,babel,positioning, patterns}
-
+\usetikzlibrary{arrows.meta,babel,positioning,
+patterns,decorations.markings,calc}
 % Configuración de geometría para A4
 \geometry{
   a4paper,
@@ -18,9 +18,8 @@
 }
 
 % Fuente técnica (asegúrate de tener el archivo .ttf o cámbiala por Arial)
+\newfontfamily\fontTecnica[Path=./fonts/]{osifont.ttf}
 
-%\newfontfamily\fontTecnica[Path=./fonts/]{osifont.ttf}
-%\newfontfamily\fontTecnica[Path=./fonts/]{osifont.ttf}
 \AddToShipoutPictureFG{
   \ifnum\value{page}>1
 
@@ -47,17 +46,17 @@
       \draw[line width=1mm] (0,0) rectangle (-175mm, 10mm);
 
       % 1. Logo (escala 0.08)
-      \node[anchor=west] at (-174mm, 5mm) {\includegraphics[scale=0.08]{\logo}};
+      \node[anchor=west] at (-174mm, 5mm) {\includegraphics[scale=0.06]{\logo}};
 
       % 2. Materia: Electrotecnia
-      \node[anchor=west] at (-165mm, 5mm) { \materia};
+      \node[anchor=west] at (-155mm, 5mm) {\fontTecnica\small \materia};
 
       % 3. Alumno: Nombre y Apellido
-      \node[anchor=west] at (-100mm, 5mm) { ALUMNO:
+      \node[anchor=west] at (-100mm, 5mm) {\fontTecnica\small ALUMNO:
       \rule{55mm}{0.1mm}};
 
       % 4. Número de Hoja (Automático)
-      \node[anchor=east] at (-5mm, 5mm) { \fbox{\thepage}};
+      \node[anchor=east] at (-5mm, 5mm) {\fontTecnica\small \fbox{\thepage}};
     \end{scope}
   \end{tikzpicture}
   \fi
