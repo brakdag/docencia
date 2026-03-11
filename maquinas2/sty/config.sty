@@ -1,10 +1,50 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{config}
 \RequirePackage{siunitx,longtable,enumitem,subfiles,sty/iramA4}
+\RequirePackage[spanish]{babel}
+\RequirePackage{circuitikz}[american]
+\RequirePackage{amsmath,eso-pic}
+\RequirePackage{pgfplots}
+\RequirePackage{sectsty}
+\RequirePackage{newtxtext,newtxmath}
+\RequirePackage[]{sty/toolsgf}
+\RequirePackage{titlesec}
+
 \DeclareSIUnit{\rpm}{rpm} % Le enseñamos a LaTeX qué es el rpm
 \setlist[itemize]{leftmargin=*}
 \makeatletter
 \let\ps@plain\ps@empty
 \makeatother
 \pagestyle{empty}
+
+\newcommand\BackgroundPic{%
+  \put(-90,0){%
+    \parbox[b][\paperheight]{\paperwidth}{%
+      \vfill
+      \centering
+      % Aquí especificamos tu ruta: /images/background.png
+      \includegraphics[height=\paperheight,keepaspectratio=true]{images/background.png}%
+      \vfill
+    }
+  }
+}
+\allsectionsfont{\sffamily}
+\pgfplotsset{compat=1.7}
+
+\newcommand{\materia}{MÁQUINAS  ELÉCTRICAS II}
+\newcommand{\TP}{}
+\newcommand{\logo}{images/4124}
+\newcommand{\email}{gustavo@merin.edu.ar}
+\newcommand{\classroomcode}{6sgmgfkt}
+\newcommand{\urlqr}{https://www.merin.edu.ar/}
+
+\title{\vspace{3.5cm}\Huge Guía de Trabajos Prácticos\\\textbf{\materia}}
+\author{Ferreyra G.}
+\date{Año: 2026}
+
+\sectionfont{\sffamily}
+\subsectionfont{\sffamily}
+\titleformat{\chapter}{\sffamily\huge}{\textbf{Trabajo Práctico
+N$^\circ$:\thechapter}}{20pt}{\centering}
+
 \endinput
