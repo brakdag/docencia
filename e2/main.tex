@@ -1,25 +1,7 @@
 %! TEX program = xelatex
 \documentclass[12pt]{book}
-\input{config}
-%\input{formato}
-\input{images/logo/4124}
-\makeglossaries
-\usetikzlibrary{shapes,arrows,decorations.text}
-\tikzstyle{line}=[draw] % here
-\setlist[itemize]{leftmargin=*}
-
-\makeatletter
-\let\ps@plain\ps@empty
-\makeatother
-\pagestyle{empty}
-
+\usepackage{sty/config}
 \begin{document}
-
-\newglossaryentry{formula}
-{
-  name=formula,
-  description={A mathematical expression}
-}
 \subfile{capitulos/0_portada/00_a_portada.tex}
 \subfile{capitulos/0_portada/00_a_portada2}
 \subfile{capitulos/00_b_introduccion}

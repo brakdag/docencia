@@ -1,0 +1,63 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{config}[07/6/22 Gustavo Ferreyra]
+\RequirePackage{longtable,enumitem,shadowtext,titlesec}
+\RequirePackage[toc]{glossaries}
+\RequirePackage{tikz,subfiles,config,sty/toolsgf,sty/iramA4,newtxtext,newtxmath}
+\usetikzlibrary{patterns,shapes,arrows,decorations.text}
+
+\RequirePackage{sectsty}
+\sectionfont{\sffamily\Large}
+\subsectionfont{\sffamily}
+\RequirePackage{titlesec}
+
+%\titleformat{\chapter}[block]
+%  {\normalfont\huge\bfseries\filcenter} % <- El centrado
+% (\filcenter) va mejor aquí
+%  {Trabajo Práctico \thechapter:} % <- Le añadí dos puntos al final (opcional)
+%  {15pt} % <- Espacio entre "Trabajo Práctico X:" y el título del capítulo
+%  {} % <- Lo dejamos vacío porque el tamaño ya lo definimos arriba
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[spanish]{babel}
+\RequirePackage[RPvoltages]{circuitikz}[american]
+\RequirePackage{amsmath,pgfplots,xcolor,titletoc}
+
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatother
+\pagestyle{empty}
+
+\tikzset{%
+  body/.style={inner sep=0pt,outer
+  sep=0pt,shape=rectangle,draw,thick,pattern=north east lines wide},
+  dimen/.style={<->,>=latex,thin,every rectangle
+  node/.style={fill=white,midway,font=\sffamily}},
+  symmetry/.style={dashed,thin},
+}
+
+\pgfplotsset{compat=1.7}
+\newcommand{\materia}{MECANICA DE LOS FLUIDOS}
+\newcommand{\TP}{}
+\newcommand{\logo}{images/4117.jpg}
+\newcommand{\email}{gustavoferreyra@outlook.com}
+\newcommand{\classroomcode}{}
+\newcommand{\urlqr}{https://www.scribd.com/document/579190649/}
+\title{
+  \begin{tikzpicture}[overlay]
+    \draw [line width=1mm](-3,-21.7) rectangle +(17,28.7);
+  \end{tikzpicture}
+  \Huge  \color{purple} \textbf{ Guía de Trabajos Prácticos}\\\textbf{\materia}
+  \begin{table}[ht] \small \centering
+    \vspace{2cm}
+    \begin{tabular}{r l}
+      classroom.google.com & código de la clase:s6dbl3b
+      \textbf{\classroomcode}\\
+      Contacto:& \email\\
+      Revisión: & \today
+    \end{tabular}
+  \end{table}
+}
+\author{\includegraphics[scale=0.25]{images/4117.jpg}\\
+Esc. N.$^\circ:$ 4-117 ´´EJÉRCITO DE LOS ANDES´´}
+\date{Año: 2023}
+\endinput
