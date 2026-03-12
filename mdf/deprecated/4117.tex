@@ -1,0 +1,43 @@
+\documentclass[]{standalone}
+\usepackage{../../sty/tikz_preamble}
+\begin{document}
+\begin{tikzpicture}
+  \draw [green,line width=1mm](0,0) node
+  {\includegraphics[]{../../images/logoenet2.jpg}};
+  %\draw [green,line width=1mm](0,0) circle(2cm);
+  %\draw [line width=2mm] (2,0) arc (360:225:1.9cm)+--+(-2cm,0);
+  \draw [line width=2mm] (3.5,0) arc (360:225:3.5cm);
+  %\draw [green,line width=1mm](0,0) circle (3.5cm);
+  %\draw [green,line width=1mm](0,0) circle (3.2cm);
+  %\draw [green,line width=1mm](0,0) circle (4.7cm);
+  \draw [line width=2mm](2cm,0)--(4.7cm,0);
+  % ladrillos
+  \draw [line width=1mm](-1.3cm,0.55)--(-4.6cm,0.55);
+  \draw [line width=1mm](-1.3cm,0)--(-4.6cm,0);
+  \draw [line width=1mm](-1cm,-0.55cm)--(-4.2cm,-.55cm);
+  \draw [line width=1mm](-1cm,-1.1cm)--(-4.2cm,-1.1cm);
+  \draw [line width=1mm](-1.3cm,0cm)--(-1.3cm,.55cm);
+  \draw [line width=1mm](-1cm,-1.1cm)--(-1cm,-.55cm);
+  \draw [line width=1mm](-4.2cm,-1.1cm)--(-4.2cm,-.55cm);
+  \draw [line width=1mm](-4.6cm,0cm)--(-4.6cm,.55cm);
+
+  \draw [line width=1mm](-2.4cm,0cm)--(-2.4cm,.55cm);
+  \draw [line width=1mm](-2.7cm,0cm)--(-2.7cm,-.55cm);
+  \draw [line width=1mm](-1.6cm,0cm)--(-1.6cm,-.55cm);
+  \draw [line width=1mm](-3.8cm,0cm)--(-3.8cm,-.55cm);
+
+  \draw [line width=1mm](-3.2cm,-1.10cm)--(-3.2cm,-.55cm);
+  \draw [line width=1mm](-2.2cm,-1.10cm)--(-2.2cm,-.55cm);
+
+  \foreach \x in {0,...,6}
+  \draw [line width=2mm](-12-\x*24:3.5cm)--(-12-\x*24:4cm)--
+  +(-12+30-\x*24:1cm);
+
+  \foreach \x in {1,...,6}
+  \draw [line width=2mm](+6-\x*24:3.5cm)--(+6-\x*24:4cm)-- +(6-30-\x*24:1cm);
+
+  \foreach \x in {1,...,7}
+  \draw [line width=2mm](17-\x*24:4.8cm)-- +(17-\x*24+90:6.5mm);
+\end{tikzpicture}
+
+\end{document}

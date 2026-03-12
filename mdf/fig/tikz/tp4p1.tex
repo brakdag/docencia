@@ -1,19 +1,13 @@
 \documentclass[tikz]{standalone}
 \usepackage{../../sty/tikz_preamble}
 \begin{document}
-
-\begin{center}
-
-  \begin{tikzpicture}
-    \draw (0,0) rectangle (4,8);
-    \draw (4,1) rectangle (6,3);
-    \draw (6,3)--(7,2.5);
-    \draw (6,1)--(7,1.5);
-    \draw (7,1.5)-- node [right]{$d_3$} (7,2.5) ;
-    \draw (6,2) node [right]{$d_2$};
-    \draw [dimen](0,6) -- (4,6) node {$d_1$};
-  \end{tikzpicture}
-\end{center}
-
+\begin{tikzpicture}
+  \draw (0,0) rectangle (4,8);
+  \draw (4,1) rectangle (6,3);
+  \draw (6,3)--(7,2.5);
+  \draw (6,1)--(7,1.5);
+  \draw (7,1.5)-- node [right]{$d_3$} (7,2.5) ;
+  \draw (6,2) node [right]{$d_2$};
+  \draw [dimen](0,6) -- (4,6) node {$d_1$};
+\end{tikzpicture}
 \end{document}
-

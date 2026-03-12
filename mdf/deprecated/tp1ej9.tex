@@ -1,0 +1,17 @@
+\documentclass[]{standalone}
+\usepackage{../../sty/tikz_preamble}
+\begin{document}
+\begin{tikzpicture}
+  \draw[ultra thick]
+  (0,0)--(10,0)--(10,5)--(6,5)--(6,2)--(1,2)--(1,5)--(0,5)--(0,0);
+  \draw (0.5,6) node [right]{$F$}--(0.5,4)[-Stealth];
+  \draw (0.5,2) --(0.5,1)[-Stealth];
+  \draw (8,2) node [right]{$B$}--(8,3)[-Stealth];
+  \draw (2,1)--(5,1)[-Stealth];
+  \fill [gray] (0,4) rectangle (1,3);
+  \fill [gray] (6,3.5) rectangle (10,4.5);
+  \draw (8,5.2) node []{\fontsize{50}{60}};
+  \draw (1,3) node [right]{$A_A=50cm^2$};
+  \draw (8,3.2) node []{$A_B=4000cm^2$};
+\end{tikzpicture}
+\end{document}
