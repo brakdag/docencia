@@ -1,19 +1,19 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{config}
-\RequirePackage{siunitx,longtable,enumitem,subfiles,sty/iramA4}
+\RequirePackage{../common/sty/iramA4,../common/sty/toolsgf}
+\RequirePackage{siunitx,longtable,enumitem,subfiles}
 \RequirePackage[spanish]{babel}
 \RequirePackage{circuitikz}[american]
 \RequirePackage{amsmath,eso-pic}
 \RequirePackage{pgfplots,etoolbox}
 \RequirePackage{sectsty}
 \RequirePackage{newtxtext,newtxmath}
-\RequirePackage[]{sty/toolsgf}
 \RequirePackage{titlesec}
 \RequirePackage[nottoc]{tocbibind}
 \DeclareSIUnit{\rpm}{rpm} % Le enseñamos a LaTeX qué es el rpm
 \setlist[itemize]{leftmargin=*}
 \makeatletter
-\let\ps@plain\ps@empty
+\let\ps@plain\ps@empty{}
 \makeatother
 \pagestyle{empty}
 
