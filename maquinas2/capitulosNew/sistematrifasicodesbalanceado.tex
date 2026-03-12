@@ -1,121 +1,164 @@
 \documentclass[../main]{subfiles}
-
 \begin{document}
-
-\chapter{Sistema trifásico desbalanceado: cálculo de corriente de neutro}
-
-\section{Sistema trifásico desbalanceado}
-
+\chapter{Sistema trifásico desbalanceado}
+\section{Cálculo de corriente de neutro}
 \subsection{Introducción}
+Un sistema trifásico es un tipo de sistema polifásico que utiliza
+tres señales de corriente alterna que están desfasadas entre sí 120°.
+Estos sistemas son fundamentales en la distribución de energía
+eléctrica y pueden clasificarse en sistemas balanceados y
+desbalanceados. En un \textbf{sistema trifásico balanceado}, todas
+las corrientes y tensiones son iguales en magnitud y están desfasadas
+exactamente 120° entre sí. Sin embargo, en un \textbf{sistema
+trifásico desbalanceado}, las magnitudes o los ángulos de fase de las
+corrientes y tensiones varían, lo que genera una corriente de neutro.
 
-Un sistema trifásico es un tipo de sistema polifásico que utiliza tres señales de corriente alterna que están desfasadas entre sí 120°. Estos sistemas son fundamentales en la distribución de energía eléctrica y pueden clasificarse en sistemas balanceados y desbalanceados. En un \textbf{sistema trifásico balanceado}, todas las corrientes y tensiones son iguales en magnitud y están desfasadas exactamente 120° entre sí. Sin embargo, en un \textbf{sistema trifásico desbalanceado}, las magnitudes o los ángulos de fase de las corrientes y tensiones varían, lo que genera una corriente de neutro.
-
-\info{Corriente de Neutro}{La corriente de neutro\footnote{Es la corriente que circula por el conductor neutro en un sistema polifásico, debido a las diferencias entre las corrientes de las fases.} surge cuando las corrientes de las fases no se cancelan entre sí debido al desbalance. Esta corriente puede calcularse mediante la suma vectorial de las corrientes de las fases.}
+\info{Corriente de Neutro}{La corriente de neutro\footnote{Es la
+    corriente que circula por el conductor neutro en un sistema
+    polifásico, debido a las diferencias entre las corrientes de las
+  fases.} surge cuando las corrientes de las fases no se cancelan entre
+  sí debido al desbalance. Esta corriente puede calcularse mediante la
+suma vectorial de las corrientes de las fases.}
 
 \subsection{Fórmulas fundamentales}
 
-Para calcular la corriente de neutro en un sistema trifásico desbalanceado, utilizamos la siguiente expresión:
+Para calcular la corriente de neutro en un sistema trifásico
+desbalanceado, utilizamos la siguiente expresión:
 
 \begin{equation}
-I_N = \sqrt{I_A^2 + I_B^2 + I_C^2 + 2  \cdot (I_A \cdot I_B + I_B \cdot I_C + I_C \cdot I_A) \cdot cos(\theta)}
+  I_N = \sqrt{I_A^2 + I_B^2 + I_C^2 + 2  \cdot (I_A \cdot I_B + I_B
+  \cdot I_C + I_C \cdot I_A) \cdot \cos(\theta)}
 \end{equation}
 
 Donde:
 \begin{itemize}
-    \item $I_N$: Corriente de neutro [A]
-    \item $I_A$, $I_B$, $I_C$: Corrientes de las fases A, B y C respectivamente [A]
-    \item $\theta$: angulo entre fases.
+  \item $I_N$: Corriente de neutro [A]
+  \item $I_A$, $I_B$, $I_C$: Corrientes de las fases A, B y C
+    respectivamente [A]
+  \item $\theta$: angulo entre fases.
 \end{itemize}
 
-La corriente de neutro se calcula sumando vectorialmente las corrientes de cada fase. En un sistema balanceado, la suma de estas corrientes es cero, mientras que en un sistema desbalanceado, esta suma da lugar a una corriente en el conductor neutro.
+La corriente de neutro se calcula sumando de forma vectorial las
+corrientes de cada fase. En un sistema balanceado, la suma de estas
+corrientes es cero, mientras que en un sistema desbalanceado, esta
+suma da lugar a una corriente en el conductor neutro.
 
 \subsection{Ejemplo}
 
-\ejemplo{Ejemplo}{Calcular la corriente de neutro en un sistema trifásico desbalanceado donde:
+\ejemplo{Ejemplo}{Calcular la corriente de neutro en un sistema
+  trifásico desbalanceado donde:
 
-\begin{itemize}
+  \begin{itemize}
     \item $I_A = 10 \, A$
     \item $I_B = 8 \, A$
     \item $I_C = 7 \, A$
     \item $\theta = 120^\circ$
-\end{itemize}
+  \end{itemize}
 
-Usamos la fórmula para la corriente de neutro:
+  Usamos la fórmula para la corriente de neutro:
 
-\begin{equation}
-I_N = \sqrt{10^2 + 8^2 + 7^2 + 2 \cdot (10 \cdot 8 + 8 \cdot 7 + 7 \cdot 10)\cdot cos(120^\circ)}
-\end{equation}
+  \begin{equation}
+    I_N = \sqrt{10^2 + 8^2 + 7^2 + 2 \cdot (10 \cdot 8 + 8 \cdot 7 +
+    7 \cdot 10)\cdot \cos(120^\circ)}
+  \end{equation}
 
-\begin{equation}
-I_N = \sqrt{100 + 64 + 49 -  \cdot (80 + 56 + 70) }
-\end{equation}
+  \begin{equation}
+    I_N = \sqrt{100 + 64 + 49 -  \cdot (80 + 56 + 70) }
+  \end{equation}
 
-\begin{equation}
-I_N = \sqrt{213 - 206} = \sqrt{7} = 2,64\, A
-\end{equation}
+  \begin{equation}
+    I_N = \sqrt{213 - 206} = \sqrt{7} = 2,64\, A
+  \end{equation}
 }
 
 \section{Representación gráfica}
 
-A continuación, una representación gráfica del sistema trifásico desbalanceado utilizando:
+A continuación, una representación gráfica del sistema trifásico
+desbalanceado utilizando:
 
 \begin{center}
-\begin{tikzpicture}
-  \draw[-stealth] (0,0) -- (3,0) node[right] {Fase A};
-  \draw[-stealth] (0,0) -- (1.5,2.6) node[above right] {Fase B};
-  \draw[-stealth] (0,0) -- (-1.5,2.6) node[above left] {Fase C};
-  \draw[dashed,->] (0,0) -- (0,3) node[above] {Neutro};
-  \node[below] at (0,0) {Centro};
-\end{tikzpicture}
+  \begin{tikzpicture}
+    \draw[-stealth] (0,0) -- (3,0) node[right] {Fase A};
+    \draw[-stealth] (0,0) -- (1.5,2.6) node[above right] {Fase B};
+    \draw[-stealth] (0,0) -- (-1.5,2.6) node[above left] {Fase C};
+    \draw[dashed,->] (0,0) -- (0,3) node[above] {Neutro};
+    \node[below] at (0,0) {Centro};
+  \end{tikzpicture}
 \end{center}
 
 \newpage
 
 \actividad{Responder el siguiente cuestionario}
 \begin{enumerate}
-    \item ¿Qué es un sistema trifásico desbalanceado?
-    \item ¿Qué es la corriente de neutro?
-    \item ¿Por qué en un sistema trifásico balanceado la corriente de neutro es cero?
-    \item ¿Cómo se comportan las corrientes en las tres fases de un sistema trifásico balanceado?
-    \item ¿Cuál es el desfase entre las fases de un sistema trifásico ideal?
-    \item Explica cómo influye el desfase entre las corrientes de las fases en la corriente de neutro.
-    \item ¿Qué consecuencias tiene el desbalance en un sistema trifásico?
-    \item ¿Cómo se puede medir la corriente de neutro en un sistema desbalanceado?
-    \item ¿Qué sucede si la corriente de neutro es demasiado elevada en un sistema eléctrico?
-    \item ¿Qué factores pueden causar un desbalance en un sistema trifásico?
+  \item ¿Qué es un sistema trifásico desbalanceado?
+  \item ¿Qué es la corriente de neutro?
+  \item ¿Por qué en un sistema trifásico balanceado la corriente de
+    neutro es cero?
+  \item ¿Cómo se comportan las corrientes en las tres fases de un
+    sistema trifásico balanceado?
+  \item ¿Cuál es el desfase entre las fases de un sistema trifásico ideal?
+  \item Explica cómo influye el desfase entre las corrientes de las
+    fases en la corriente de neutro.
+  \item ¿Qué consecuencias tiene el desbalance en un sistema trifásico?
+  \item ¿Cómo se puede medir la corriente de neutro en un sistema desbalanceado?
+  \item ¿Qué sucede si la corriente de neutro es demasiado elevada en
+    un sistema eléctrico?
+  \item ¿Qué factores pueden causar un desbalance en un sistema trifásico?
 \end{enumerate}
 
 \actividad{Resolver los siguientes problemas}
 
 \begin{enumerate}
-    \item En un sistema trifásico desbalanceado, se tiene $I_A = 12 \, A$, $I_B = 9 \, A$, $I_C = 5 \, A$ y un desfase de $\theta = 120^\circ$. Calcula la corriente de neutro.
-    \item Si en un sistema trifásico desbalanceado se miden $I_A = 15 \, A$, $I_B = 12 \, A$, $I_C = 8 \, A$ y $\theta = 120^\circ$, ¿cuál es la corriente de neutro?
-    \item Calcular la corriente de neutro en un sistema con $I_A = 20 \, A$, $I_B = 18 \, A$, $I_C = 15 \, A$ y $\theta = 120^\circ$.
-    \item Un sistema trifásico tiene $I_A = 25 \, A$, $I_B = 20 \, A$, $I_C = 17 \, A$ y $\theta = 120^\circ$. Determina la corriente de neutro.
-    \item Determina la corriente de neutro si $I_A = 30 \, A$, $I_B = 25 \, A$, $I_C = 22 \, A$ con un desfase de $\theta = 120^\circ$.
-    \item En un sistema con $I_A = 8 \, A$, $I_B = 6 \, A$, $I_C = 4 \, A$ y $\theta = 120^\circ$, ¿cuál es la corriente de neutro?
-    \item Un sistema desbalanceado tiene $I_A = 10 \, A$, $I_B = 7 \, A$, $I_C = 5 \, A$ y $\theta = 120^\circ$. Calcula la corriente de neutro.
-   \actividad{Resolver (usar números complejos para encontrar la corriente de neutro)}
-\textit{Tome secuencia $ABC$ y ángulos en grados. Indique $\underline{I}_A,\ \underline{I}_B,\ \underline{I}_C$ y $I_N$.}
-
+  \item En un sistema trifásico desbalanceado, se tiene $I_A = 12 \,
+    A$, $I_B = 9 \, A$, $I_C = 5 \, A$ y un desfase de $\theta =
+    120^\circ$. Calcula la corriente de neutro.
+  \item Si en un sistema trifásico desbalanceado se miden $I_A = 15
+    \, A$, $I_B = 12 \, A$, $I_C = 8 \, A$ y $\theta = 120^\circ$,
+    ¿cuál es la corriente de neutro?
+  \item Calcular la corriente de neutro en un sistema con $I_A = 20
+    \, A$, $I_B = 18 \, A$, $I_C = 15 \, A$ y $\theta = 120^\circ$.
+  \item Un sistema trifásico tiene $I_A = 25 \, A$, $I_B = 20 \, A$,
+    $I_C = 17 \, A$ y $\theta = 120^\circ$. Determina la corriente de neutro.
+  \item Determina la corriente de neutro si $I_A = 30 \, A$, $I_B =
+    25 \, A$, $I_C = 22 \, A$ con un desfase de $\theta = 120^\circ$.
+  \item En un sistema con $I_A = 8 \, A$, $I_B = 6 \, A$, $I_C = 4 \,
+    A$ y $\theta = 120^\circ$, ¿cuál es la corriente de neutro?
+  \item Un sistema desbalanceado tiene $I_A = 10 \, A$, $I_B = 7 \,
+    A$, $I_C = 5 \, A$ y $\theta = 120^\circ$. Calcula la corriente de neutro.
+    \actividad{Resolver (usar números complejos para encontrar la
+    corriente de neutro)}
+    \textit{Tome secuencia $ABC$ y ángulos en grados. Indique
+    $\underline{I}_A,\ \underline{I}_B,\ \underline{I}_C$ y $I_N$.}
 \end{enumerate}
-
-
 \begin{enumerate}
+  \item $\underline{V}_{AN}=220\angle
+    0^\circ\ \text{V},\ \underline{V}_{BN}=228\angle
+    -120^\circ\ \text{V},\ \underline{V}_{CN}=232\angle
+    120^\circ\ \text{V};\ \underline{Z}_A=18+j9\ \Omega,\ \underline{Z}_B=22+j8\ \Omega,\ \underline{Z}_C=20+j12\ \Omega$.
 
-\item $\underline{V}_{AN}=220\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=228\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=232\angle 120^\circ\ \text{V};\ \underline{Z}_A=18+j9\ \Omega,\ \underline{Z}_B=22+j8\ \Omega,\ \underline{Z}_C=20+j12\ \Omega.$
+  \item $\underline{V}_{AN}=230\angle
+    0^\circ\ \text{V},\ \underline{V}_{BN}=225\angle
+    -120^\circ\ \text{V},\ \underline{V}_{CN}=220\angle
+    120^\circ\ \text{V};\ \underline{Z}_A=16+j12\ \Omega,\ \underline{Z}_B=24+j6\ \Omega,\ \underline{Z}_C=18+j9\ \Omega$.
 
-\item $\underline{V}_{AN}=230\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=225\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=220\angle 120^\circ\ \text{V};\ \underline{Z}_A=16+j12\ \Omega,\ \underline{Z}_B=24+j6\ \Omega,\ \underline{Z}_C=18+j9\ \Omega.$
+  \item $\underline{V}_{AN}=215\angle
+    0^\circ\ \text{V},\ \underline{V}_{BN}=215\angle
+    -120^\circ\ \text{V},\ \underline{V}_{CN}=240\angle
+    120^\circ\ \text{V};\ \underline{Z}_A=25+j5\ \Omega,\ \underline{Z}_B=20+j10\ \Omega,\ \underline{Z}_C=15+j12\ \Omega$.
 
-\item $\underline{V}_{AN}=215\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=215\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=240\angle 120^\circ\ \text{V};\ \underline{Z}_A=25+j5\ \Omega,\ \underline{Z}_B=20+j10\ \Omega,\ \underline{Z}_C=15+j12\ \Omega.$
+  \item $\underline{V}_{AN}=225\angle
+    0^\circ\ \text{V},\ \underline{V}_{BN}=235\angle
+    -118^\circ\ \text{V},\ \underline{V}_{CN}=230\angle
+    122^\circ\ \text{V};\ \underline{Z}_A=12+j8\ \Omega,\ \underline{Z}_B=28+j7\ \Omega,\ \underline{Z}_C=21+j9\ \Omega$.
 
-\item $\underline{V}_{AN}=225\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=235\angle -118^\circ\ \text{V},\ \underline{V}_{CN}=230\angle 122^\circ\ \text{V};\ \underline{Z}_A=12+j8\ \Omega,\ \underline{Z}_B=28+j7\ \Omega,\ \underline{Z}_C=21+j9\ \Omega.$
+  \item $\underline{V}_{AN}=218\angle
+    0^\circ\ \text{V},\ \underline{V}_{BN}=222\angle
+    -120^\circ\ \text{V},\ \underline{V}_{CN}=226\angle
+    120^\circ\ \text{V};\ \underline{Z}_A=30+j10\ \Omega,\ \underline{Z}_B=18+j12\ \Omega,\ \underline{Z}_C=26+j6\ \Omega$.
 
-\item $\underline{V}_{AN}=218\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=222\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=226\angle 120^\circ\ \text{V};\ \underline{Z}_A=30+j10\ \Omega,\ \underline{Z}_B=18+j12\ \Omega,\ \underline{Z}_C=26+j6\ \Omega.$
-
-\item $\underline{V}_{AN}=240\angle 0^\circ\ \text{V},\ \underline{V}_{BN}=230\angle -120^\circ\ \text{V},\ \underline{V}_{CN}=235\angle 120^\circ\ \text{V};\ \underline{Z}_A=22+j11\ \Omega,\ \underline{Z}_B=16+j8\ \Omega,\ \underline{Z}_C=32+j10\ \Omega.$
-
-
+  \item $\underline{V}_{AN}=240\angle
+    0^\circ\ \text{V},\ \underline{V}_{BN}=230\angle
+    -120^\circ\ \text{V},\ \underline{V}_{CN}=235\angle
+    120^\circ\ \text{V};\ \underline{Z}_A=22+j11\ \Omega,\ \underline{Z}_B=16+j8\ \Omega,\ \underline{Z}_C=32+j10\ \Omega$.
 \end{enumerate}
-
 \end{document}

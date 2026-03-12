@@ -1,0 +1,61 @@
+\documentclass[border=10mm]{standalone}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calendar,decorations.markings}
+
+% --- Colores ---
+\colorlet{darkgreen}{green!50!black}
+
+% --- Traducción y Estilo de Cabeceras ---
+\newcommand{\calrow}[1]{%
+  \node[anchor=base east](Mon){L};
+  \node[base right=of Mon](Tue){M}; \node[base right=of Tue](Wed){M};
+  \node[base right=of Wed](Thu){J}; \node[base right=of Thu](Fri){V};
+  \node[base right=of Fri](Sat){S}; \node[base right=of Sat](Sun){D};
+  \node[darkgreen,above=of Thu]{\textbf{#1}};
+}
+
+% --- Macro de Calendario con Resaltado ---
+\newcommand{\calperiod}[1]{%
+  \calendar[dates=\the\year-#1-01 to \the\year-#1-last]
+  if (Sunday) [red!80!black]
+  \holidays
+  % Resaltado: Usamos 'nodes' para dibujar un círculo detrás del número
+  if (between=\the\year-02-05 and \the\year-02-15)
+  [days={fill=green!30, circle,inner sep=2pt}];
+}
+
+\newcommand{\holidays}{% Feriados Argentina
+  if (equals=01-01) [red!80!black] if (equals=03-24) [red!80!black]
+  if (equals=04-02) [red!80!black] if (equals=05-01) [red!80!black]
+  if (equals=05-25) [red!80!black] if (equals=06-20) [red!80!black]
+  if (equals=07-09) [red!80!black] if (equals=12-08) [red!80!black]
+  if (equals=12-25) [red!80!black]
+}
+
+\begin{document}
+\begin{tikzpicture}[every calendar/.style={week list}, scale=0.9]
+  \sffamily
+  \matrix[%
+    row 1/.style={darkgreen,node distance=.3ex},
+    row 3/.style={darkgreen,node distance=.3ex},
+    row 5/.style={darkgreen,node distance=.3ex},
+    column sep=2ex,
+    row sep=3ex,
+    draw=darkgreen,thick,rounded corners=5pt,
+    postaction={decorate,decoration={markings,mark=at position 0.51 with
+        {\node[fill=white,text=darkgreen,font={\bfseries\huge}] (year)
+    {\the\year};}}}
+  ]{%
+    \calrow{Enero} & \calrow{Febrero} & \calrow{Marzo} & \calrow{Abril} \\
+    \calperiod{01} & \calperiod{02} & \calperiod{03} & \calperiod{04} \\[1ex]
+
+    \calrow{Mayo} & \calrow{Junio} & \calrow{Julio} & \calrow{Agosto} \\
+    \calperiod{05} & \calperiod{06} & \calperiod{07} & \calperiod{08} \\[1ex]
+
+    \calrow{Septiembre} & \calrow{Octubre} & \calrow{Noviembre} &
+    \calrow{Diciembre} \\
+    \calperiod{09} & \calperiod{10} & \calperiod{11} & \calperiod{12} \\
+  };
+\end{tikzpicture}
+\end{document}

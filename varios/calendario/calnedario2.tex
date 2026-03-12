@@ -1,0 +1,77 @@
+\documentclass[a4paper,border=10mm]{standalone}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calendar,decorations.markings}
+
+% --- Colores ---
+\colorlet{darkgreen}{green!50!black}
+
+% --- Traducción y Estilo de Cabeceras ---
+\newcommand{\calrow}[1]{%
+  \node[anchor=base east](Mon){L};
+  \node[base right=of Mon](Tue){M}; \node[base right=of Tue](Wed){M};
+  \node[base right=of Wed](Thu){J}; \node[base right=of Thu](Fri){V};
+  \node[base right=of Fri](Sat){S}; \node[base right=of Sat](Sun){D};
+  \node[darkgreen,above=of Thu]{\textbf{#1}};
+}
+
+\newcommand{\holidays}{% Feriados Argentina
+  if (equals=01-01) [red!80!black] if (equals=03-24) [red!80!black]
+  if (equals=04-02) [red!80!black] if (equals=05-01) [red!80!black]
+  if (equals=05-25) [red!80!black] if (equals=06-20) [red!80!black]
+  if (equals=07-09) [red!80!black] if (equals=12-08) [red!80!black]
+  if (equals=12-25) [red!80!black]
+}
+
+% --- 1. Función para meses NORMALES ---
+\newcommand{\calperiod}[1]{%
+  \calendar[dates=\the\year-#1-01 to \the\year-#1-last]
+  if (Sunday) [red!80!black]
+  \holidays;
+}
+
+% --- 2. Función para meses CON RANGO (Sin líneas en blanco para
+% evitar errores) ---
+\newcommand{\calrange}[3]{%
+  \calendar[dates=\the\year-#1-01 to \the\year-#1-last]
+  if (Sunday) [red!80!black]
+  \holidays
+  if (between=\the\year-#1-#2 and \the\year-#1-#3)
+  [days={fill=green!50, rectangle, inner sep=2pt}]
+  if (equals=\the\year-#1-#2) [days={fill=red!50, rectangle, inner sep=2pt}]
+  if (equals=\the\year-#1-#3) [days={fill=red!50, rectangle, inner sep=2pt}];
+}
+
+\begin{document}
+\begin{tikzpicture}[every calendar/.style={week list}, scale=0.9]
+  \sffamily
+  \matrix[%
+    row 1/.style={darkgreen,node distance=.3ex},
+    row 3/.style={darkgreen,node distance=.3ex},
+    row 5/.style={darkgreen,node distance=.3ex},
+    column sep=2ex,
+    row sep=3ex,
+    draw=darkgreen,thick,rounded corners=5pt,
+    postaction={decorate,decoration={markings,mark=at position 0.51 with
+        {\node[fill=white,text=darkgreen,font={\bfseries\huge},anchor=west]
+          (year)
+    {\the\year{} Escuela 4-239 Cerro el Sosneado};}}}
+  ]{%
+    % Ejemplo: Usamos \calperiod para los normales y \calrange para
+    % marcar rangos
+    \calrow{Enero} & \calrow{Febrero} & \calrow{Marzo} &
+    \calrow{Abril} \\
+    \calperiod{01} & \calperiod{02} & \calrange{03}{16}{31} &
+    \calrange{04}{17}{25} \\[1ex]
+
+    \calrow{Mayo} & \calrow{Junio} & \calrow{Julio} & \calrow{Agosto} \\
+    \calrange{05}{16}{31} & \calrange{06}{15}{30} & \calrange{07}{23}{31} &
+    \calrange{8}{16}{31} \\[1ex]
+
+    \calrow{Septiembre} & \calrow{Octubre} & \calrow{Noviembre} &
+    \calrow{Diciembre} \\
+    \calrange{09}{15}{30} & \calrange{10}{16}{24} &
+    \calrange{11}{15}{30} & \calrange{12}{11}{19} \\
+  };
+\end{tikzpicture}
+\end{document}
