@@ -1,5 +1,5 @@
 ## Ignorar el archivo de salida principal
-**/main.pdf
+**/*.pdf
 
 ## Archivos auxiliares de LaTeX (Motores: pdfLaTeX, XeLaTeX, LuaLaTeX)
 *.aux
