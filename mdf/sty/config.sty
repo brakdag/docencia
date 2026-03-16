@@ -1,39 +1,33 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesPackage{config}[07/6/22 Gustavo Ferreyra]
-\RequirePackage{longtable,enumitem,shadowtext,titlesec}
+\ProvidesPackage{sty/config}[07/6/22 Gustavo Ferreyra]
+\RequirePackage{longtable,enumitem,shadowtext,titlesec,subfiles,newtxtext,newtxmath}
 \RequirePackage[toc]{glossaries}
-\RequirePackage{sty/tikz_preamble,subfiles,config,sty/toolsgf,sty/iramA4,newtxtext,newtxmath}
+\RequirePackage{sty/tikz_preamble,../common/sty/toolsgf,../common/sty/iramA4}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[spanish]{babel}
+\RequirePackage[RPvoltages]{circuitikz}[american]
+\RequirePackage{amsmath,pgfplots,xcolor,titletoc}
+\RequirePackage{sectsty}
 
-\RequirePackage[mode=build]{standalone} % Fundamental para incluir
-\RequirePackage{import}
-
-% Esto permite buscar imágenes en las carpetas numeradas automáticamente
 \graphicspath{
   {images/}
   {../images/}
   {images/01/}
   {images/02/}
-  % ... agregar según necesites
 }
-\RequirePackage{sectsty}
+
 \sectionfont{\sffamily\Large}
 \subsectionfont{\sffamily}
-\RequirePackage{titlesec}
 
 \titleformat{\chapter}[block]
-{\normalfont\huge\bfseries\filcenter} % <- El centrado
-(\filcenter) va mejor aquí
+{\normalfont\huge\bfseries\filcenter} % <- El centrado (\filcenter)
+% va mejor aquí
 {Trabajo Práctico \thechapter:} % <- Le añadí dos puntos al final (opcional)
 {15pt} % <- Espacio entre "Trabajo Práctico X:" y el título del capítulo
 {} % <- Lo dejamos vacío porque el tamaño ya lo definimos arriba
 
-\RequirePackage[utf8]{inputenc}
-\RequirePackage[spanish]{babel}
-\RequirePackage[RPvoltages]{circuitikz}[american]
-\RequirePackage{amsmath,pgfplots,xcolor,titletoc}
-
 \makeatletter
-\let\ps@plain\ps@empty
+\let\ps@plain\ps@empty{}
 \makeatother
 \pagestyle{empty}
 
@@ -60,6 +54,6 @@
   \end{table}
 }
 \author{\includegraphics[scale=0.25]{images/4117.jpg}\\
-Esc. N.$^\circ:$ 4-117 ´´EJÉRCITO DE LOS ANDES´´}
-\date{Año: 2023}
+Esc. N.$^\circ$:4117 ´´EJÉRCITO DE LOS ANDES´´}
+\date{Año: 2026}
 \endinput

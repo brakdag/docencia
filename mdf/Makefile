@@ -13,7 +13,7 @@ OUT_SUBDIRS = $(addprefix $(OUT_DIR)/, $(SUBDIRS))
 
 LATEXMK_OPTS = -pdfxe -outdir=$(OUT_DIR) -interaction=nonstopmode
 # Opciones para TikZ: usamos -cd para que latexmk compile en el directorio de cada figura
-LATEXMK_TIKZ_OPTS = -pdfxe -interaction=nonstopmode
+LATEXMK_TIKZ_OPTS = -pdf -interaction=nonstopmode
 
 .PHONY: all build release clean view tikz
 
