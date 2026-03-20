@@ -1,0 +1,92 @@
+\chapter{Introducción al CAD y Entorno de Trabajo}
+
+\section{Fundamentos del CAD y Entorno de Trabajo}
+
+El Dibujo Técnico Asistido por Computadora (CAD, por sus siglas en
+inglés: Computer-Aided Design) es una tecnología que permite la
+creación, modificación, análisis y optimización de diseños utilizando
+computadoras. En el nivel secundario, es la herramienta fundamental
+para el dibujo técnico, reemplazando tableros y reglas por entornos
+virtuales precisos.
+
+El CAD ha revolucionado la ingeniería y la arquitectura. Mientras que
+el dibujo técnico manual depende de la destreza física del dibujante,
+el CAD garantiza precisión, repetibilidad y facilidad de modificación.
+
+\subsection{Historia y evolución}
+
+El origen del CAD se remonta a la década de 1960 con el sistema
+Sketchpad de Ivan Sutherland, que permitió por primera vez la
+interacción gráfica con una computadora. A lo largo de las décadas, el
+software CAD evolucionó de herramientas de dibujo 2D (líneas y arcos)
+a potentes sistemas de modelado 3D paramétrico, que permiten simular
+el comportamiento físico de las piezas.
+
+\subsection{El entorno de trabajo CAD}
+
+El entorno de trabajo se basa en un plano cartesiano infinito donde
+cada punto se define por coordenadas $(x, y, z)$. La precisión es
+absoluta, permitiendo dibujar unidades de medida exactas (milímetros,
+metros) que se ajustan mediante escalas de impresión.
+
+Un software CAD típico consta de los siguientes elementos:
+
+\begin{itemize}
+    \item \textbf{Barra de herramientas (Ribbon):} Acceso rápido a los
+    comandos más usados (línea, círculo, recortar).
+    \item \textbf{Línea de comandos (Command Line):} El corazón del
+    sistema, donde se introducen órdenes mediante el teclado y se
+    reciben mensajes del software.
+    \item \textbf{Espacio Modelo:} Espacio infinito donde se dibuja en
+    escala real (1:1).
+    \item \textbf{Espacio Papel (Layout):} Entorno de diseño para
+    configurar la lámina de impresión con sus vistas, escala y
+    rótulos.
+    \item \textbf{Capas (Layers):} Herramienta que permite organizar el
+    dibujo en distintos niveles, gestionando colores, grosores de
+    línea y visibilidad.
+\end{itemize}
+
+\subsection{Tipos de software CAD}
+
+Existen dos tipos principales de CAD:
+
+\begin{enumerate}
+    \item \textbf{CAD 2D (Drafting):} Centrado en la representación
+    bidimensional, es el sucesor digital del dibujo en tablero.
+    \item \textbf{CAD 3D (Modelado):} Permite la creación de sólidos y
+    superficies, fundamentales para ingeniería mecánica y diseño
+    industrial. Se divide a su vez en:
+    \begin{itemize}
+        \item \textbf{Paramétrico:} Los cambios en una dimensión
+        actualizan automáticamente todo el modelo.
+        \item \textbf{Directo:} Se manipulan las geometrías directamente
+        sin historial de operaciones.
+    \end{itemize}
+\end{enumerate}
+
+\section{Cuestionario}
+\begin{enumerate}
+    \item ¿Qué significan las siglas CAD?
+    \item ¿Por qué es importante el uso de coordenadas cartesianas en CAD?
+    \item ¿Cuál es la diferencia entre el Espacio Modelo y el Espacio Papel?
+    \item Define qué es una capa (layer) y para qué sirve.
+    \item ¿Cómo afecta la escala 1:1 en el diseño de un objeto pequeño?
+    \item ¿Por qué la precisión digital supera al dibujo manual?
+    \item ¿Quién creó el primer sistema CAD y en qué década?
+    \item Explica la diferencia entre CAD paramétrico y directo.
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+    \item Configurar una unidad de dibujo en milímetros en el software.
+    \item Crear una línea de 100mm horizontal en el eje X.
+    \item Crear un cuadrado de 50x50mm usando coordenadas relativas.
+    \item Dibujar un círculo de diámetro 40mm centrado en el origen.
+    \item Crear dos capas nuevas: "Ejes" (roja, línea discontinua) y "Contornos" (negra, línea continua).
+    \item Mover el círculo a la capa "Contornos".
+    \item Dibujar un rectángulo de 100x60mm y centrarlo en el origen.
+    \item Aplicar un zoom a extensión para ver todo el dibujo.
+    \item Crear un nuevo archivo y configurar un tamaño de papel A4.
+    \item Realizar un dibujo libre usando al menos 3 capas diferentes.
+\end{enumerate}

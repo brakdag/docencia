@@ -1,0 +1,84 @@
+\chapter{Acotado y Anotaciones}
+
+\section{Normas de Acotado y Anotaciones Técnicas}
+
+El acotado (dimensionamiento) es el proceso crítico mediante el cual
+se indican en el dibujo técnico las dimensiones reales de un objeto,
+para que este pueda ser fabricado sin ambigüedades. Las cotas deben ser
+precisas, legibles y seguir estrictas normas IRAM que regulan su
+representación.
+
+\subsection{Elementos de una Cota}
+
+Toda cota consta de tres elementos fundamentales:
+\begin{itemize}
+	\item \textbf{Línea de cota:} Es la línea fina sobre la cual se
+	      coloca el valor numérico.
+	\item \textbf{Líneas auxiliares (o de referencia):} Son líneas
+	      finas que se extienden desde el objeto hacia la línea de
+	      cota.
+	\item \textbf{Flechas o terminaciones:} Indican los límites de la
+	      cota.
+	\item \textbf{Valor de la cota:} Es la medida real del objeto,
+	      que se expresa siempre en la misma unidad (generalmente mm).
+\end{itemize}
+
+\subsection{Reglas Fundamentales del Acotado}
+
+\begin{enumerate}
+	\item \textbf{Claridad:} Las cotas no deben entorpecer la
+	      lectura del dibujo.
+	\item \textbf{No redundancia:} Una cota solo debe aparecer una vez
+	      en el plano.
+	\item \textbf{Funcionalidad:} Se deben acotar las dimensiones
+	      que son importantes para el funcionamiento o el montaje de
+	      la pieza.
+	\item \textbf{Lectura:} Los valores de las cotas deben poder
+	      leerse desde abajo o desde la derecha del plano.
+\end{enumerate}
+
+\subsection{Anotaciones y Tolerancias}
+
+Las anotaciones son textos complementarios que proporcionan información
+adicional indispensable: materiales, tratamientos térmicos, acabados
+superficiales, notas sobre procesos de fabricación, etc.
+
+Por otro lado, la \textbf{tolerancia dimensional} es el margen de error
+permitido en una dimensión. Ninguna pieza se fabrica con exactitud
+matemática; la tolerancia garantiza que la pieza sea funcional dentro
+de un rango aceptable.
+
+\section{Cuestionario}
+\begin{enumerate}
+	\item Define cota, línea de cota y línea auxiliar.
+	\item ¿Qué es la escala de cota y cuándo se ajusta?
+	\item ¿Cómo deben ser las flechas en un acotado normalizado?
+	\item Menciona las reglas fundamentales para evitar el acotado
+	      redundante.
+	\item ¿Qué es una cota funcional vs. una cota no funcional?
+	\item ¿Cómo influye el acabado superficial en la pieza y cómo se
+	      indica?
+	\item ¿Qué es la tolerancia dimensional y por qué es necesaria?
+	\item ¿Cómo se acotan correctamente arcos y círculos?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+	\item Configurar el estilo de cota en el software: fuente, altura de
+	      texto, tipo de flecha y precisión decimal.
+	\item Acotar un objeto simple utilizando cotas lineales horizontales
+	      y verticales.
+	\item Acotar un diámetro y un radio usando los símbolos adecuados.
+	\item Crear una cota alineada para una cara inclinada de una pieza.
+	\item Añadir un texto de nota en un plano (ej: "Tratamiento térmico:
+	      templado").
+	\item Acotar una pieza compleja utilizando al menos tres vistas
+	      diferentes.
+	\item Usar cotas continuas (en cadena) y paralelas (por base) para
+	      una misma pieza.
+	\item Crear una tolerancia dimensional para un eje (ej: 20 +/- 0.05
+	      mm).
+	\item Añadir un símbolo normalizado de acabado superficial en una cara.
+	\item Realizar un acotado completo para un plano de fabricación
+	      mecánica.
+\end{enumerate}

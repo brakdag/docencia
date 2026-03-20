@@ -1,0 +1,32 @@
+\chapter{Proyectos Aplicados: Elementos de Máquina}
+
+\section{Proyecto Final: Aplicación en Elementos de Máquina}
+La finalidad última de la guía es aplicar todos los conocimientos a proyectos reales (mecánicos). Los elementos de máquina como pernos, tornillos, ejes, engranajes, chavetas y rodamientos están todos normalizados.
+
+El diseño asistido por computadora permite modelar estos componentes y ensamblarlos para formar máquinas completas.
+
+\section{Cuestionario}
+\begin{enumerate}
+	\item ¿Qué son los elementos de máquina normalizados?
+	\item ¿Cómo se representa un tornillo en el plano?
+	\item ¿Por qué es importante la tolerancia en el ajuste de un eje y un rodamiento?
+	\item ¿Cómo se define el ajuste entre dos piezas?
+	\item ¿Para qué se utiliza una chaveta?
+	\item Define qué es un elemento de máquina estático vs dinámico.
+	\item ¿Cómo se representan las piezas ensambladas?
+	\item ¿Qué información técnica debe tener una tabla de lista de piezas (BOM)?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+	\item Dibujar un perno y su tuerca según norma.
+	\item Dibujar un eje con su chavetero.
+	\item Representar un rodamiento simple.
+	\item Realizar el conjunto de un eje, una chaveta y una polea.
+	\item Crear una lista de piezas (BOM) para el conjunto anterior.
+	\item Dibujar una pieza mecánica simple con tolerancias dimensionales.
+	\item Realizar las vistas de un cuerpo de válvula.
+	\item Dibujar un engranaje recto básico.
+	\item Realizar un plano de montaje completo de un conjunto mecánico.
+	\item Acotar correctamente todas las piezas del conjunto.
+\end{enumerate}

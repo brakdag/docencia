@@ -1,0 +1,39 @@
+\chapter{Construcciones Geométricas Básicas en CAD}
+
+\section{Fundamentos de Construcciones Geométricas}
+
+Las construcciones geométricas son la base del dibujo técnico. En CAD, estas se realizan con herramientas digitales que emulan las herramientas manuales pero con una precisión nanométrica.
+
+El comando de \textbf{línea} permite dibujar segmentos, mientras que los comandos de \textbf{círculo} y \textbf{arco} permiten dibujar curvas. La \textbf{tangencia} es clave: dibujar una línea tangente a un círculo es una operación geométrica fundamental en CAD.
+
+\subsection{Conceptos clave:}
+\begin{itemize}
+	\item \textbf{OSNAP (Objetos de ajuste):} Herramienta que permite "engancharse" a puntos específicos de un objeto (centro, punto medio, final, intersección).
+	\item \textbf{Modo Orto:} Fuerza las líneas a estar paralelas a los ejes X o Y.
+\end{itemize}
+
+\section{Cuestionario}
+\begin{enumerate}
+	\item ¿Qué es el modo Orto?
+	\item ¿Cómo ayuda el OSNAP a la precisión del dibujo?
+	\item Define qué es un círculo, radio y diámetro.
+	\item ¿Cómo se traza un arco tangente a dos líneas?
+	\item ¿Qué son los puntos de control en una curva?
+	\item Explica la importancia de la tangencia.
+	\item ¿Cómo se calcula el área de una figura compleja?
+	\item ¿Qué es el perímetro?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+	\item Dibujar un triángulo equilátero de 50 mm de lado.
+	\item Dibujar un polígono regular de 6 lados inscrito en un círculo de 40 mm de radio.
+	\item Trazar dos círculos y unirlos mediante una línea tangente.
+	\item Dividir una línea de 100 mm en 5 partes iguales.
+	\item Dibujar un arco de 60 grados con radio 30 mm.
+	\item Construir una elipse con radios 50 y 30 mm.
+	\item Dibujar un cuadrado de 40 mm y redondear sus vértices con radio 5 mm.
+	\item Trazar dos líneas perpendiculares y unirlas con un arco de radio 10 mm.
+	\item Dibujar un círculo tangente a tres líneas dadas.
+	\item Crear una figura compleja compuesta por arcos y líneas.
+\end{enumerate}

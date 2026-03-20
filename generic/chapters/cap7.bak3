@@ -1,0 +1,85 @@
+\chapter{Introducción a Bloques y Capas}
+
+\section{Gestión Eficiente con Bloques y Capas}
+
+La eficiencia en el dibujo CAD no solo depende de la velocidad de
+dibujo, sino de cómo se gestiona y organiza la información. El uso
+adecuado de \textbf{bloques} y \textbf{capas} es lo que diferencia a un
+dibujante aficionado de un profesional.
+
+\subsection{El Poder de los Bloques}
+
+Un bloque es un conjunto de entidades geométricas (líneas, arcos,
+círculos, texto) que se agrupan para formar una sola entidad compleja.
+
+\textbf{Ventajas principales:}
+\begin{enumerate}
+	\item \textbf{Reutilización:} Permite insertar elementos estándar
+	      (ej: tornillos, puertas, símbolos eléctricos) repetidas veces
+	      en un mismo dibujo o en dibujos diferentes, ahorrando tiempo
+	      y espacio.
+	\item \textbf{Actualización global:} Si el bloque se edita, todas
+	      las instancias insertadas en el dibujo se actualizan
+	      automáticamente.
+	\item \textbf{Reducción del tamaño de archivo:} Al insertar múltiples
+	      copias de un bloque, el archivo ocupa mucho menos que si
+	      se dibujara cada elemento individualmente.
+\end{enumerate}
+
+\subsection{La Organización mediante Capas (Layers)}
+
+Las capas funcionan como láminas de transparencia superpuestas. Cada
+capa permite gestionar la información del dibujo de forma lógica y
+ordenada.
+
+Cada capa tiene propiedades que definen el comportamiento de todas las
+entidades dibujadas en ella:
+\begin{itemize}
+	\item \textbf{Visibilidad (On/Off):} Permite ocultar elementos
+	      temporales.
+	\item \textbf{Congelado (Freeze):} Similar a apagar, pero además
+	      la computadora no procesa los datos, aumentando la velocidad.
+	\item \textbf{Bloqueo (Lock):} Impide editar elementos de esa capa
+	      sin ocultarlos.
+	\item \textbf{Propiedades:} Color, tipo de línea (continua,
+	      discontinua, eje) y grosor de línea (fundamental para la
+	      calidad en la impresión).
+\end{itemize}
+
+La correcta gestión de capas es vital para imprimir planos técnicos,
+donde se necesita controlar qué información es visible y cuál debe
+tener un grosor de línea específico (ej: trazos gruesos para contornos y
+finos para cotas).
+
+\section{Cuestionario}
+\begin{enumerate}
+	\item Define bloque y explica su principal ventaja en términos de
+	      actualización.
+	\item ¿Cómo se edita un bloque después de haber sido insertado?
+	\item ¿Para qué sirve el gestor de capas en proyectos grandes?
+	\item Diferencia técnica entre un bloque y un grupo de entidades.
+	\item ¿Cómo ayuda el uso de capas en el proceso de impresión?
+	\item ¿Qué sucede al "congelar" una capa y por qué mejora el
+	      rendimiento?
+	\item ¿Qué es un atributo de bloque y para qué sirve?
+	\item ¿Para qué se utilizan los colores asignados a las capas?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+	\item Crear un bloque que represente una puerta normalizada y
+	      guardarlo en la biblioteca.
+	\item Insertar varias copias del bloque en un plano de planta complejo.
+	\item Crear un bloque con atributos para el número de habitación (ID).
+	\item Organizar un plano en al menos 5 capas (ej: Muros, Muebles,
+	      Cotas, Texto, Ejes) con colores y tipos de línea distintos.
+	\item Cambiar el color de todas las entidades en la capa "Muebles"
+	      rápidamente.
+	\item Bloquear la capa "Muros" para no editar accidentalmente las
+	      paredes mientras se dibuja la instalación eléctrica.
+	\item Crear un bloque anidado (un bloque dentro de otro).
+	\item Cambiar el tipo de línea de la capa "Ejes" a "línea trazo-punto".
+	\item Insertar un bloque existente desde otro archivo de dibujo.
+	\item Gestionar la visibilidad de las capas para imprimir solo el
+	      plano de arquitectura, ocultando instalaciones.
+\end{enumerate}

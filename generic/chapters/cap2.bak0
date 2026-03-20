@@ -1,0 +1,35 @@
+\chapter{Normas IRAM y Escalas}
+
+\section{Parte Teórica}
+El dibujo técnico no sería posible si no estuviera estandarizado. Las normas IRAM (Instituto Argentino de Normalización y Certificación) garantizan que el diseño de un componente sea interpretado de la misma manera por ingenieros en Argentina y en otros países que siguen normas ISO equivalentes.
+
+El uso de escalas permite representar objetos que son o muy grandes o muy pequeños en un formato de papel estándar. La fórmula básica para la escala es:
+$Escala = \frac{\text{Tamaño Dibujo}}{\text{Tamaño Real}}$
+
+Si Escala > 1, es ampliación. Si Escala < 1, es reducción. Si Escala = 1, es escala natural.
+
+\section{Cuestionario}
+\begin{enumerate}
+    \item ¿Qué entidad regula las normas IRAM?
+    \item Define qué es la escala natural.
+    \item ¿Por qué se usan escalas de reducción?
+    \item Menciona tres tipos de líneas normalizadas y su aplicación.
+    \item ¿Cómo influye el tamaño del formato (A4, A3, etc.) en la elección de la escala?
+    \item Explica la diferencia entre escala gráfica y escala numérica.
+    \item ¿Por qué las vistas ortogonales son fundamentales en el dibujo técnico?
+    \item ¿Cuál es la finalidad de un rótulo en un plano?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+    \item Diseñar un formato A4 con cajetín (rótulo) según norma IRAM.
+    \item Dibujar un rectángulo de 200x150 mm en escala 1:2.
+    \item Representar un objeto de 500x300 mm en escala 1:5.
+    \item Dibujar una línea de eje usando el estilo de línea adecuado.
+    \item Crear una escala 2:1 para un pequeño tornillo de 10mm.
+    \item Insertar texto con formato normalizado.
+    \item Dibujar una pieza simple aplicando tres escalas distintas.
+    \item Completar el rótulo del formato con datos ficticios.
+    \item Crear un estilo de cota ajustado a la escala del dibujo.
+    \item Realizar un plano de conjunto a escala 1:10.
+\end{enumerate}

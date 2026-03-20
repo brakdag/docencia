@@ -1,0 +1,84 @@
+\chapter{Proyectos Aplicados: Elementos de Máquina}
+
+\section{Proyecto Final: Aplicación en Elementos de Máquina}
+
+La finalidad última de esta guía es aplicar todos los conocimientos
+adquiridos a proyectos reales de ingeniería mecánica. El diseño
+asistido por computadora (CAD) no es un fin en sí mismo, sino una
+herramienta fundamental para modelar componentes que deben interactuar
+física y mecánicamente entre sí.
+
+\subsection{Normalización de Componentes}
+
+En la industria, rara vez se diseña un tornillo, una chaveta o un
+rodamiento desde cero. Estos componentes están \textbf{normalizados}
+(IRAM, DIN, ISO), lo que significa que tienen medidas, materiales y
+resistencias estándares a nivel mundial.
+
+El desafío del proyectista no es diseñar el componente en sí, sino
+saber \textbf{seleccionar} el componente adecuado para la aplicación y
+\textbf{representarlo} correctamente en el plano técnico.
+
+\subsection{El Conjunto Mecánico}
+
+Un proyecto CAD de conjunto mecánico implica:
+\begin{enumerate}
+	\item \textbf{Modelado de piezas individuales:} Crear cada pieza
+	      respetando sus tolerancias y ajustes.
+	\item \textbf{Ensamblaje virtual:} Unir las piezas en el espacio
+	      3D (si el software lo permite) o representar su montaje en
+	      vistas 2D (plano de conjunto).
+	\item \textbf{Lista de piezas (BOM - Bill of Materials):} Es una
+	      tabla indispensable que acompaña al plano de conjunto,
+	      enumerando cada pieza, su nombre, cantidad, material y
+	      número de norma.
+\end{enumerate}
+
+La \textbf{tolerancia de ajuste} (eje-agujero) es un concepto vital:
+determina si dos piezas ensambladas tendrán juego (movimiento libre),
+estarán ajustadas (fricción) o requerirán presión (interferencia).
+
+La realización de este proyecto final integrará los conocimientos de
+vistas, cortes, acotado, capas y bloques para entregar un conjunto de
+planos profesionales, listos para la fabricación en el taller.
+
+\section{Cuestionario}
+\begin{enumerate}
+	\item ¿Por qué es fundamental utilizar elementos de máquina
+	      normalizados en lugar de diseñarlos desde cero?
+	\item ¿Cómo se representa convencionalmente un tornillo y su rosca
+	      en un plano técnico?
+	\item ¿Por qué es crítica la tolerancia en el ajuste de un eje y un
+	      rodamiento?
+	\item ¿Cómo se define el tipo de ajuste (juego, transición,
+	      interferencia) entre dos piezas?
+	\item ¿Para qué se utiliza una chaveta en un conjunto eje-polea?
+	\item Define qué es un elemento de máquina estático vs dinámico.
+	\item ¿Cómo se representan las piezas ensambladas en un plano de
+	      conjunto?
+	\item ¿Qué información técnica mínima debe tener una tabla de lista
+	      de piezas (BOM)?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+	\item Dibujar un perno y su tuerca según norma, utilizando bloques
+	      para facilitar la inserción.
+	\item Dibujar un eje con su chavetero, aplicando las tolerancias
+	      necesarias.
+	\item Representar un rodamiento simple mediante cortes y secciones.
+	\item Realizar el conjunto de un eje, una chaveta y una polea en
+	      una vista de corte.
+	\item Crear una tabla de lista de piezas (BOM) vinculada a los
+	      elementos del conjunto anterior.
+	\item Dibujar una pieza mecánica simple (soporte) con tolerancias
+	      dimensionales ajustadas.
+	\item Realizar las vistas de un cuerpo de válvula con corte total.
+	\item Dibujar un engranaje recto básico, incluyendo datos de
+	      módulo y número de dientes.
+	\item Realizar un plano de montaje completo de un conjunto
+	      mecánico (ej: caja reductora simple).
+	\item Acotar correctamente todas las piezas del conjunto,
+	      asegurando que las medidas coincidan entre piezas
+	      ensambladas.
+\end{enumerate}

@@ -1,0 +1,80 @@
+\chapter{Construcciones Geométricas Básicas en CAD}
+
+\section{Fundamentos de Construcciones Geométricas}
+
+Las construcciones geométricas constituyen el lenguaje fundamental del
+dibujo técnico. En CAD, estas operaciones se realizan con una
+precisión inigualable, permitiendo transformar primitivas simples en
+diseños mecánicos o arquitectónicos complejos.
+
+\subsection{Primitivas Geométricas}
+
+Los programas CAD utilizan entidades básicas:
+\begin{itemize}
+	\item \textbf{Líneas y Polilíneas:} Son los elementos base. Las
+	      polilíneas permiten crear un objeto compuesto de múltiples
+	      segmentos rectos y curvos tratados como una sola entidad.
+	\item \textbf{Círculos y Arcos:} Definidos habitualmente por su
+	      centro y radio, o por puntos de paso (inicio, fin, radio).
+	\item \textbf{Elipses:} Definidas por sus ejes mayor y menor.
+\end{itemize}
+
+\subsection{Herramientas de Precisión}
+
+La verdadera potencia del CAD reside en sus herramientas de ayuda:
+\begin{itemize}
+	\item \textbf{OSNAP (Objetos de ajuste o Referencias a objetos):}
+	      Es una herramienta esencial que permite al cursor "pegarse"
+	      a puntos geométricos clave de las entidades existentes, como
+	      el centro de un círculo, el punto medio de una línea, una
+	      intersección o un punto final.
+	\item \textbf{Modo Orto:} Fuerza el movimiento del cursor para
+	      que las líneas solo se dibujen de forma horizontal o
+	      vertical (ángulos de 0, 90, 180, 270 grados).
+	\item \textbf{Rastreo Polar:} Permite dibujar líneas según
+	      ángulos prefijados, facilitando construcciones inclinadas
+	      precisas.
+\end{itemize}
+
+\subsection{Operaciones de Modificación}
+
+Además de dibujar, el CAD ofrece comandos para modificar geometrías:
+\begin{itemize}
+	\item \textbf{Empalme (Fillet):} Crea un arco tangente entre dos
+	      entidades (líneas, arcos).
+	\item \textbf{Chaflán (Chamfer):} Crea una línea inclinada (bisel)
+	      entre dos entidades.
+	\item \textbf{Recortar/Extender (Trim/Extend):} Modifica las
+	      longitudes de las entidades basadas en otras entidades
+	      cercanas.
+\end{itemize}
+
+La tangencia es una propiedad crítica en el diseño mecánico, asegurando
+transiciones suaves entre curvas y rectas, lo cual es fundamental para
+la correcta funcionalidad de piezas móviles y ensamblajes.
+
+\section{Cuestionario}
+\begin{enumerate}
+	\item ¿Qué es el modo Orto y en qué situaciones es útil?
+	\item ¿Cómo ayuda el OSNAP a la precisión del dibujo?
+	\item Define qué es un círculo, radio y diámetro.
+	\item ¿Cómo se traza un arco tangente a dos líneas?
+	\item ¿Qué son los puntos de control en una curva?
+	\item Explica la importancia de la tangencia en el diseño mecánico.
+	\item ¿Cómo se calcula el área de una figura compleja mediante CAD?
+	\item ¿Qué es el perímetro?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+	\item Dibujar un triángulo equilátero de 50 mm de lado.
+	\item Dibujar un polígono regular de 6 lados inscrito en un círculo de 40 mm de radio.
+	\item Trazar dos círculos y unirlos mediante una línea tangente.
+	\item Dividir una línea de 100 mm en 5 partes iguales.
+	\item Dibujar un arco de 60 grados con radio 30 mm.
+	\item Construir una elipse con radios 50 y 30 mm.
+	\item Dibujar un cuadrado de 40 mm y redondear sus vértices con radio 5 mm.
+	\item Trazar dos líneas perpendiculares y unirlas con un arco de radio 10 mm.
+	\item Dibujar un círculo tangente a tres líneas dadas.
+	\item Crear una figura compleja compuesta por arcos y líneas.
+\end{enumerate}

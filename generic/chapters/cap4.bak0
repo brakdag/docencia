@@ -1,0 +1,32 @@
+\chapter{Vistas y Proyecciones Ortogonales}
+
+\section{Parte Teórica}
+La representación de objetos 3D en un plano 2D se basa en proyecciones ortogonales. Según la norma IRAM, se utiliza el sistema europeo (Primer Diedro) de proyección.
+
+Las vistas principales son: Vista de frente (o alzada), vista superior (planta), vista lateral derecha (perfil), lateral izquierda, inferior, posterior. La interdependencia entre estas vistas permite definir completamente un objeto 3D sin ambigüedades.
+
+\section{Cuestionario}
+\begin{enumerate}
+    \item ¿En qué se basa el sistema de proyección del Primer Diedro?
+    \item Define las vistas principales.
+    \item ¿Qué es la línea de referencia o línea de tierra?
+    \item ¿Por qué son necesarias las líneas discontinuas en una vista?
+    \item ¿Qué ocurre si dos vistas no coinciden?
+    \item ¿Cómo ayuda el CAD a proyectar estas vistas?
+    \item ¿Qué es un sólido en el contexto de CAD?
+    \item ¿Por qué es importante elegir correctamente la vista de frente?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+    \item Dibujar las tres vistas principales de un cubo de 50 mm.
+    \item Dibujar las vistas de un prisma rectangular de 60x40x20 mm.
+    \item Proyectar las vistas de una pieza con forma de L.
+    \item Dibujar las vistas de un cilindro apoyado en la base.
+    \item Representar una pieza con un agujero central mediante líneas discontinuas.
+    \item Dibujar las vistas de un cono truncado.
+    \item Proyectar una pieza con caras inclinadas.
+    \item Dibujar las vistas de una pieza mecánica simple.
+    \item Crear una vista de detalle de un elemento pequeño.
+    \item Comprobar la correspondencia entre las tres vistas.
+\end{enumerate}

@@ -1,0 +1,34 @@
+\chapter{Introducción a Bloques y Capas}
+
+\section{Parte Teórica}
+Los bloques y capas son fundamentales para la eficiencia en CAD.
+
+\textbf{Bloques:} Son conjuntos de entidades (líneas, arcos, etc.) agrupados en un solo objeto. Pueden ser insertados múltiples veces en el mismo archivo (o en otros) y si se edita el bloque, todas las instancias se actualizan automáticamente.
+
+\textbf{Capas:} Son el mecanismo de gestión de la información. Cada capa puede tener sus propiedades, como: estado (visible/invisible), color, grosor de línea y tipo de línea (continua, trazo, punto).
+
+\section{Cuestionario}
+\begin{enumerate}
+    \item Define bloque y su principal ventaja.
+    \item ¿Cómo se actualiza un bloque después de ser insertado?
+    \item ¿Para qué sirve el gestor de capas?
+    \item Diferencia entre bloque y grupo.
+    \item ¿Cómo ayuda el uso de capas en la impresión?
+    \item ¿Qué sucede al congelar una capa?
+    \item ¿Qué es un atributo de bloque?
+    \item ¿Para qué se utilizan los colores en las capas?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+    \item Crear un bloque que represente una puerta normalizada.
+    \item Insertar varias copias del bloque en un plano de planta.
+    \item Crear un bloque con atributos para el número de habitación.
+    \item Organizar un plano en 5 capas: Muros, Muebles, Cotas, Texto, Ejes.
+    \item Cambiar el color de todas las entidades en la capa "Muebles".
+    \item Bloquear la capa "Muros" para no editar accidentalmente los muros.
+    \item Crear un bloque anidado.
+    \item Cambiar el tipo de línea de la capa "Ejes".
+    \item Insertar un bloque desde otro archivo.
+    \item Gestionar la visibilidad de las capas para imprimir solo el plano de arquitectura.
+\end{enumerate}

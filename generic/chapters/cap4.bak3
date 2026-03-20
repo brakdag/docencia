@@ -1,0 +1,79 @@
+\chapter{Vistas y Proyecciones Ortogonales}
+
+\section{Sistemas de Proyección y Vistas Ortogonales}
+
+La representación de objetos tridimensionales (3D) en un plano
+bidimensional (2D) es el desafío central del dibujo técnico. La técnica
+para lograr esto con precisión se denomina \textbf{proyección
+ortogonal}. Según la normativa IRAM, se utiliza predominantemente el
+sistema europeo (proyección en el Primer Diedro).
+
+\subsection{El concepto de Proyección}
+
+Imaginemos el objeto situado dentro de un cubo de cristal. Las
+proyecciones se obtienen proyectando los puntos del objeto sobre las
+caras internas de este cubo, siguiendo líneas perpendiculares al plano
+de proyección. Al desplegar las caras del cubo sobre un plano, obtenemos
+las vistas necesarias para definir el objeto.
+
+\subsection{Vistas Principales}
+
+Las vistas normalizadas permiten describir completamente una pieza:
+\begin{itemize}
+	\item \textbf{Vista de frente (Alzada):} Es la vista principal que
+	      debe mostrar la forma general y las características
+	      más importantes de la pieza.
+	\item \textbf{Vista superior (Planta):} Se sitúa debajo de la
+	      vista de frente.
+	\item \textbf{Vista lateral derecha (Perfil):} Se sitúa a la
+	      derecha de la vista de frente.
+\end{itemize}
+
+Otras vistas incluyen la lateral izquierda, inferior y posterior, aunque
+se utilizan solo cuando las tres principales no son suficientes.
+
+\subsection{Correspondencia entre Vistas}
+
+La interdependencia entre estas vistas es absoluta:
+\begin{enumerate}
+	\item La vista de frente y la vista superior comparten la misma
+	      anchura.
+	\item La vista de frente y la vista lateral comparten la misma
+	      altura.
+	\item La vista superior y la vista lateral comparten la misma
+	      profundidad.
+\end{enumerate}
+
+Esta correspondencia permite verificar la exactitud del dibujo. Las
+\textbf{líneas ocultas} (trazos discontinuos) son cruciales para
+representar bordes o aristas que no son visibles desde la dirección
+de observación, permitiendo comprender la estructura interna de la
+pieza sin necesidad de cortes.
+
+\section{Cuestionario}
+\begin{enumerate}
+	\item ¿En qué se basa el sistema de proyección del Primer Diedro?
+	\item Define las vistas principales y su disposición.
+	\item ¿Qué es la línea de referencia o línea de tierra?
+	\item ¿Por qué son necesarias las líneas discontinuas en una vista?
+	\item ¿Qué ocurre si dos vistas no coinciden en sus medidas?
+	\item ¿Cómo ayuda el software CAD a proyectar automáticamente estas
+	      vistas?
+	\item ¿Qué es un sólido en el contexto de CAD?
+	\item ¿Por qué es importante elegir correctamente la vista de frente
+	      al iniciar un diseño?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+	\item Dibujar las tres vistas principales de un cubo de 50 mm.
+	\item Dibujar las vistas de un prisma rectangular de 60x40x20 mm.
+	\item Proyectar las vistas de una pieza con forma de L.
+	\item Dibujar las vistas de un cilindro apoyado en la base.
+	\item Representar una pieza con un agujero central mediante líneas discontinuas.
+	\item Dibujar las vistas de un cono truncado.
+	\item Proyectar una pieza con caras inclinadas.
+	\item Dibujar las vistas de una pieza mecánica simple.
+	\item Crear una vista de detalle de un elemento pequeño.
+	\item Comprobar la correspondencia entre las tres vistas.
+\end{enumerate}

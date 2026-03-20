@@ -1,0 +1,26 @@
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay]
+    % Background
+    \fill[blue!10] (current page.south west) rectangle (current page.north east);
+    
+    % Minimalist Geometric Component
+    \begin{scope}[shift={(current page.center)}, scale=1.5]
+        \draw[thick, blue!50!black] (0,0) -- (2,1) -- (2,3) -- (0,2) -- cycle;
+        \draw[thick, blue!50!black] (2,1) -- (4,0) -- (4,2) -- (2,3);
+        \draw[thick, blue!50!black] (0,2) -- (2,3) -- (4,2);
+        \draw[dashed, blue!50!black] (0,0) -- (2,-1) -- (4,0);
+        \draw[dashed, blue!50!black] (2,-1) -- (2,1);
+    \end{scope}
+
+    % Title
+    \node[anchor=north, yshift=-2cm] at (current page.north) {
+        \Huge \textbf{Guía de Trabajos Prácticos}
+    };
+    \node[anchor=north, yshift=-4cm] at (current page.north) {
+        \Huge \textbf{Dibujo Técnico Asistido}
+    };
+    \node[anchor=south, yshift=2cm] at (current page.south) {
+        \Large Autor: Equipo Docente
+    };
+\end{tikzpicture}
+\end{titlepage}

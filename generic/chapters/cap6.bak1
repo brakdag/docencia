@@ -1,0 +1,30 @@
+\chapter{Cortes y Secciones}
+
+\section{Representación mediante Cortes y Secciones}
+Cuando una pieza tiene partes internas complejas, las líneas discontinuas pueden ser difíciles de interpretar. Para resolver esto, se utilizan cortes (secciones) en los que se imagina que la pieza se corta por un plano imaginario, mostrando el interior.
+
+\section{Cuestionario}
+\begin{enumerate}
+	\item ¿Qué es un plano de corte?
+	\item Define qué es una sección.
+	\item ¿Cómo se representan las superficies cortadas (rayado)?
+	\item ¿Cómo se indica la dirección del corte?
+	\item ¿Qué partes no se deben cortar (ej: pernos)?
+	\item Diferencia entre corte total y media sección.
+	\item ¿Para qué sirven los cortes parciales?
+	\item ¿Cómo se identifica la sección en el plano?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+	\item Dibujar una pieza simple y realizar un corte total longitudinal.
+	\item Realizar un corte transversal a un cilindro hueco.
+	\item Aplicar rayado normalizado a una pieza cortada.
+	\item Dibujar un corte escalonado para mostrar dos detalles internos.
+	\item Realizar un corte parcial en una pieza con una parte interna simple.
+	\item Dibujar una sección girada en el mismo plano.
+	\item Crear una vista de sección para una pieza con nervios de refuerzo.
+	\item Aplicar diferentes tipos de rayado según el material.
+	\item Dibujar una pieza simétrica usando media sección.
+	\item Realizar un plano que incluya una sección de un eje con chavetero.
+\end{enumerate}

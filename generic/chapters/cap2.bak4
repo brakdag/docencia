@@ -1,0 +1,78 @@
+\chapter{Normas IRAM y Escalas}
+
+\section{Normalización IRAM y Aplicación de Escalas}
+
+El dibujo técnico no sería posible si no estuviera estandarizado. Las
+normas IRAM (Instituto Argentino de Normalización y Certificación)
+garantizan que el diseño de un componente sea interpretado de la misma
+manera por ingenieros en Argentina y en otros países que siguen normas
+ISO equivalentes.
+
+\subsection{Importancia de la Normalización}
+
+La normalización establece reglas comunes para:
+\begin{itemize}
+	\item Formatos de papel (A4, A3, A2, etc.).
+	\item Tipos de líneas (continua, trazo, punto).
+	\item Representación de vistas (proyecciones).
+	\item Acotación.
+	\item Simbología técnica.
+\end{itemize}
+
+Sin estas reglas, un plano de una máquina simple sería incomprensible
+para cualquier persona que no haya participado en su diseño.
+
+\subsection{El concepto de Escala}
+
+El uso de escalas permite representar objetos que son o muy grandes o
+muy pequeños en un formato de papel estándar. La fórmula básica para la
+escala es:
+
+$Escala = \frac{\text{Tamaño Dibujo}}{\text{Tamaño Real}}$
+
+Donde:
+\begin{itemize}
+	\item \textbf{Tamaño Dibujo}: Medida representada en el papel
+	      (en mm).
+	\item \textbf{Tamaño Real}: Medida real del objeto (en mm).
+\end{itemize}
+
+Existen tres tipos principales de escalas:
+\begin{enumerate}
+	\item \textbf{Escala de ampliación (E > 1):} El dibujo es más
+	      grande que el objeto real (ej: 2:1, 5:1). Se utiliza para
+	      objetos muy pequeños.
+	\item \textbf{Escala natural (E = 1):} El dibujo tiene el mismo
+	      tamaño que el objeto real (1:1).
+	\item \textbf{Escala de reducción (E < 1):} El dibujo es más
+	      pequeño que el objeto real (ej: 1:2, 1:5, 1:10). Se utiliza
+	      para piezas grandes o conjuntos.
+\end{enumerate}
+
+Es crucial indicar siempre la escala utilizada en el rótulo del plano.
+
+\section{Cuestionario}
+\begin{enumerate}
+	\item ¿Qué entidad regula las normas IRAM?
+	\item Define qué es la escala natural.
+	\item ¿Por qué se usan escalas de reducción?
+	\item Menciona tres tipos de líneas normalizadas y su aplicación.
+	\item ¿Cómo influye el tamaño del formato (A4, A3, etc.) en la elección de la escala?
+	\item Explica la diferencia entre escala gráfica y escala numérica.
+	\item ¿Por qué las vistas ortogonales son fundamentales en el dibujo técnico?
+	\item ¿Cuál es la finalidad de un rótulo en un plano?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+	\item Diseñar un formato A4 con cajetín (rótulo) según norma IRAM.
+	\item Dibujar un rectángulo de 200x150 mm en escala 1:2.
+	\item Representar un objeto de 500x300 mm en escala 1:5.
+	\item Dibujar una línea de eje usando el estilo de línea adecuado.
+	\item Crear una escala 2:1 para un pequeño tornillo de 10mm.
+	\item Insertar texto con formato normalizado.
+	\item Dibujar una pieza simple aplicando tres escalas distintas.
+	\item Completar el rótulo del formato con datos ficticios.
+	\item Crear un estilo de cota ajustado a la escala del dibujo.
+	\item Realizar un plano de conjunto a escala 1:10.
+\end{enumerate}

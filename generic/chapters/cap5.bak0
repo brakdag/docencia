@@ -1,0 +1,32 @@
+\chapter{Acotado y Anotaciones}
+
+\section{Parte Teórica}
+El acotado (dimensionamiento) es el proceso mediante el cual se indican en el dibujo las dimensiones reales del objeto. Las cotas deben ser precisas, legibles, y no deben repetirse innecesariamente. Las normas IRAM estipulan cómo deben ser las flechas, las líneas de cota y el texto de cota.
+
+Las anotaciones incluyen textos para indicar materiales, procesos de fabricación, tolerancias, acabado superficial, etc.
+
+\section{Cuestionario}
+\begin{enumerate}
+    \item Define cota y línea de cota.
+    \item ¿Qué es la escala de cota?
+    \item ¿Cómo deben ser las flechas en un acotado normalizado?
+    \item Menciona las reglas para evitar el acotado redundante.
+    \item ¿Qué es una cota funcional?
+    \item ¿Cómo influye el acabado superficial en la pieza?
+    \item ¿Qué es la tolerancia dimensional?
+    \item ¿Cómo se acotan arcos y círculos?
+\end{enumerate}
+
+\section{Parte Práctica}
+\begin{enumerate}
+    \item Configurar el estilo de cota: fuente, flechas y precisión.
+    \item Acotar un objeto simple usando cotas lineales.
+    \item Acotar un diámetro y un radio.
+    \item Crear una cota alineada para una cara inclinada.
+    \item Añadir un texto de nota en un plano.
+    \item Acotar una pieza con 3 vistas diferentes.
+    \item Usar cotas continuas y paralelas.
+    \item Crear una tolerancia dimensional para un eje.
+    \item Añadir un símbolo de acabado superficial.
+    \item Realizar un acotado completo para un plano de fabricación.
+\end{enumerate}
