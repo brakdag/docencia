@@ -1,0 +1,58 @@
+\documentclass[a4paper,12pt]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  numbers=left
+}
+
+\usepackage{../common/sty/iramA4}
+\usepackage{../common/sty/toolsgf}
+\usepackage{../common/sty/calcgdf}
+
+\newcommand{\logo}{../common/img/4063.png}
+\newcommand{\materia}{Diseño Asistido por Computadora}
+
+\newcommand{\chapterimage}[1]{%
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{#1}
+  \end{figure}
+}
+
+\title{Guía de Trabajos Prácticos: FreeCAD}
+\author{Departamento de Educación Técnica}
+\date{2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\include{chapters/cap1_introduccion}
+\include{chapters/cap2_interfaz}
+\include{chapters/cap3_dibujo2d}
+\include{chapters/cap4_modelado3d}
+\include{chapters/cap5_restricciones}
+\include{chapters/cap6_operaciones}
+\include{chapters/cap7_modulos}
+\include{chapters/cap8_planos}
+\include{chapters/cap9_ensamblajes}
+\include{chapters/cap10_impresion3d}
+\include{chapters/cap11_proyecto}
+
+\bibliographystyle{plain}
+\bibliography{bib/referencias}
+
+\end{document}
+

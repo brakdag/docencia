@@ -1,0 +1,15 @@
+\ProvidesPackage{sty/config}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{../common/sty/iramA4}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\let\faPencil\faPen
+\newcommand{\logo}{../common/img/4117.jpg}
+\newcommand{\materia}{Mantenimiento}
+\title{Guía de Trabajos Prácticos: \\
+  Mantenimiento de Máquinas y Equipos \\
+Agropecuarios}
+\author{Escuela Técnica Agropecuaria}
+\date{\today}

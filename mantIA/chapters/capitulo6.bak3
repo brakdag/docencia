@@ -1,0 +1,85 @@
+% Capítulo 6: Manuales de Mantenimiento y Procedimientos
+\section*{Manuales de Mantenimiento y Procedimientos Técnicos}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{img/cap6_manual.jpg}
+	\caption{Manual técnico de mantenimiento de equipo agropecuario}
+\end{figure}
+
+Los manuales de mantenimiento son documentos técnicos esenciales que detallan
+las especificaciones, intervalos de servicio y procedimientos de reparación
+proporcionados por el fabricante. Su correcta interpretación es la base para
+garantizar la longevidad y seguridad de cualquier equipo agropecuario.
+
+\subsection*{Mantenimiento Correctivo: Motores de 2 Tiempos}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{img/cap6_motor2t.jpg}
+	\caption{Diagnóstico y reparación de motores de 2 tiempos}
+\end{figure}
+
+\subsubsection*{Introducción al problema}
+En el ámbito agropecuario, el uso de herramientas portátiles con motores de
+combustión interna de dos tiempos (como motoguadañas, motosierras y
+pulverizadoras) es intensivo durante temporadas específicas. Un problema
+técnico recurrente es la imposibilidad de arrancar estos equipos tras períodos
+de almacenamiento prolongado (superior a 30 o 60 días) con combustible en su
+interior.
+
+\subsubsection*{La degradación del combustible}
+La lubricación depende de la premezcla de aceite con gasolina. Al quedar
+almacenada, sufre:
+\begin{itemize}
+	\item \textbf{Volatilización:} Pérdida de fracciones ligeras.
+	\item \textbf{Oxidación:} Formación de residuos gomosos y "barnices".
+	\item \textbf{Obstrucción:} Los residuos tapan chicleres y endurecen
+	      diafragmas.
+\end{itemize}
+
+\subsubsection*{Protocolo de intervención técnica}
+\begin{enumerate}
+	\item \textbf{Reemplazo total de la mezcla:} Drenar y preparar mezcla fresca.
+	\item \textbf{Purga del sistema:} Usar el cebador para extraer combustible
+	      viejo.
+	\item \textbf{Sistema de encendido:} Limpiar bujía y expulsar vapores de la
+	      cámara.
+	\item \textbf{Filtro de aire:} Limpiar y lubricar ligeramente.
+	\item \textbf{Arranque en frío:} Usar estrangulador (choke).
+\end{enumerate}
+
+\subsubsection*{Mantenimiento Preventivo (Invernaje)}
+Vaciar el tanque y encender el motor hasta que se apague por sí solo antes de
+guardar el equipo para evitar la formación de gomas en el sistema de
+alimentación.
+
+\section*{\faPencil\space Investigar y responder}
+\begin{enumerate}
+	\item ¿Por qué se afirma que la gasolina pierde sus propiedades después de
+	      30 a 60 días? Explica el proceso químico.
+	\item ¿Qué función cumple tirar de la cuerda de arranque mientras la bujía
+	      está retirada del cilindro?
+	\item ¿Qué daño específico causan los "barnices" y gomas del combustible viejo
+	      en los componentes internos del carburador?
+	\item ¿Por qué indicarías que agregar gasolina nueva sobre la vieja es una mala
+	      práctica?
+	\item Describe los pasos correctos para realizar el mantenimiento preventivo
+	      (invernaje) de una motoguadaña.
+	\item ¿Por qué es necesario aplicar una ligera capa de aceite limpio al filtro
+	      de aire de espuma después de lavarlo y secarlo?
+\end{enumerate}
+
+\section*{\faWrench\space Resolver los siguientes problemas}
+\begin{enumerate}
+	\item Inspeccione un motor 2T y determine si el carburador requiere limpieza.
+	\item Calibre una bujía según especificaciones del fabricante.
+	\item Prepare mezcla 50:1 para 5 litros de combustible.
+	\item Limpie y reacondicione un filtro de aire de espuma.
+	\item Simule el procedimiento de invernaje en un equipo del taller.
+	\item Diagnostique una falla de arranque por carburación.
+	\item Verifique el estado de las mangueras de combustible.
+	\item Compare la viscosidad de dos aceites para 2T.
+	\item Identifique las causas de una mezcla demasiado rica.
+	\item Documente un caso de reparación exitosa de 2T.
+\end{enumerate}
