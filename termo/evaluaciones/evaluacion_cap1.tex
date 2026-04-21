@@ -1,0 +1,85 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=1cm]{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+
+% Entorno para cada versión (4 por página)
+\newenvironment{versionexamen}[1]{
+  \begin{minipage}[t]{0.48\textwidth}
+    \textbf{Evaluación Transferencia de Calor - Versión #1} \\
+    \textit{Escuela 4117 - 5to 2da}
+    \begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=15pt, topsep=4pt, itemsep=4pt]
+      \small
+}{
+    \end{enumerate}
+    \vspace{0.4cm}
+  \end{minipage}
+}
+
+\begin{document}
+
+\begin{versionexamen}{A}
+	\item Conversión: Realice las siguientes conversiones entre escalas termométricas, detallando los procedimientos necesarios:
+	\begin{enumerate}[label=\alph*., nosep, leftmargin=15pt]
+		\item Convierta 30$^\circ$C a $^\circ$F.
+		\item Convierta 140$^\circ$F a $^\circ$C.
+		\item Exprese el resultado del inciso (b) en Kelvin ($^\circ$K).
+		\item Exprese el resultado del inciso (c) en Fahrenheit ($^\circ$F).
+	\end{enumerate}
+	\item Unidades: Determine cuántas calorías equivalen exactamente a 50 BTU. (Considere 1 BTU = 252 cal). Justifique el cálculo.
+	\item Calorimetría: Se dispone de una masa de 2 Kg de agua. Calcule la cantidad de calor necesaria para incrementar su temperatura desde los 20$^\circ$C hasta los 80$^\circ$C. (Considere $Ce=1$ kcal/kg$^\circ$C).
+	\item Conducción: Calcule el flujo de calor a través de una placa de hormigón de 10 cm de espesor y 2 m$^2$ de superficie, considerando un coeficiente térmico $Ct=1.5$ kcal/h$\cdot$m$^2\cdot^\circ$C y una diferencia de temperatura de 30$^\circ$C.
+	\item Cilindro: Determine la transferencia de calor en un cilindro de acero de motor con $di=150$ mm, $de=180$ mm y $L=25$ cm, con una diferencia de temperatura entre caras de 200$^\circ$C.
+	\item Paredes: Calcule el calor transmitido en una pared de 20 m$^2$ con dos capas en serie: Mampostería ($e=20$ cm, $Ct=1.3$) y aislante ($e=20$ cm, $Ct=0.6$). La diferencia de temperatura es de 40$^\circ$C.
+\end{versionexamen}
+\hfill
+\begin{versionexamen}{B}
+	\item Conducción: Calcule el flujo de calor a través de una placa de hormigón de 12 cm de espesor y 3 m$^2$ de superficie, considerando un coeficiente térmico $Ct=1.6$ kcal/h$\cdot$m$^2\cdot^\circ$C y una diferencia de temperatura de 40$^\circ$C.
+	\item Paredes: Calcule el calor transmitido en una pared de 25 m$^2$ con dos capas en serie: Mampostería ($e=22$ cm, $Ct=1.4$) y aislante ($e=22$ cm, $Ct=0.7$). La diferencia de temperatura es de 50$^\circ$C.
+	\item Conversión: Realice las siguientes conversiones entre escalas termométricas, detallando los procedimientos necesarios:
+	\begin{enumerate}[label=\alph*., nosep, leftmargin=15pt]
+		\item Convierta 35$^\circ$C a $^\circ$F.
+		\item Convierta 150$^\circ$F a $^\circ$C.
+		\item Exprese el resultado del inciso (b) en Kelvin ($^\circ$K).
+		\item Exprese el resultado del inciso (c) en Fahrenheit ($^\circ$F).
+	\end{enumerate}
+	\item Calorimetría: Se dispone de una masa de 3 Kg de agua. Calcule la cantidad de calor necesaria para incrementar su temperatura desde los 20$^\circ$C hasta los 80$^\circ$C. (Considere $Ce=1$ kcal/kg$^\circ$C).
+	\item Unidades: Determine cuántas calorías equivalen exactamente a 60 BTU. (Considere 1 BTU = 252 cal). Justifique el cálculo.
+	\item Cilindro: Determine la transferencia de calor en un cilindro de acero de motor con $di=160$ mm, $de=190$ mm y $L=30$ cm, con una diferencia de temperatura entre caras de 210$^\circ$C.
+\end{versionexamen}
+\vfill
+\begin{versionexamen}{C}
+	\item Cilindro: Determine la transferencia de calor en un cilindro de acero de motor con $di=170$ mm, $de=200$ mm y $L=35$ cm, con una diferencia de temperatura entre caras de 220$^\circ$C.
+	\item Conversión: Realice las siguientes conversiones entre escalas termométricas, detallando los procedimientos necesarios:
+	\begin{enumerate}[label=\alph*., nosep, leftmargin=15pt]
+		\item Convierta 40$^\circ$C a $^\circ$F.
+		\item Convierta 160$^\circ$F a $^\circ$C.
+		\item Exprese el resultado del inciso (b) en Kelvin ($^\circ$K).
+		\item Exprese el resultado del inciso (c) en Fahrenheit ($^\circ$F).
+	\end{enumerate}
+	\item Paredes: Calcule el calor transmitido en una pared de 30 m$^2$ con dos capas en serie: Mampostería ($e=24$ cm, $Ct=1.5$) y aislante ($e=24$ cm, $Ct=0.8$). La diferencia de temperatura es de 60$^\circ$C.
+	\item Unidades: Determine cuántas calorías equivalen exactamente a 70 BTU. (Considere 1 BTU = 252 cal). Justifique el cálculo.
+	\item Conducción: Calcule el flujo de calor a través de una placa de hormigón de 15 cm de espesor y 4 m$^2$ de superficie, considerando un coeficiente térmico $Ct=1.7$ kcal/h$\cdot$m$^2\cdot^\circ$C y una diferencia de temperatura de 50$^\circ$C.
+	\item Calorimetría: Se dispone de una masa de 4 Kg de agua. Calcule la cantidad de calor necesaria para incrementar su temperatura desde los 20$^\circ$C hasta los 80$^\circ$C. (Considere $Ce=1$ kcal/kg$^\circ$C).
+\end{versionexamen}
+\hfill
+\begin{versionexamen}{D}
+	\item Calorimetría: Se dispone de una masa de 5 Kg de agua. Calcule la cantidad de calor necesaria para incrementar su temperatura desde los 20$^\circ$C hasta los 80$^\circ$C. (Considere $Ce=1$ kcal/kg$^\circ$C).
+	\item Cilindro: Determine la transferencia de calor en un cilindro de acero de motor con $di=180$ mm, $de=210$ mm y $L=40$ cm, con una diferencia de temperatura entre caras de 230$^\circ$C.
+	\item Unidades: Determine cuántas calorías equivalen exactamente a 80 BTU. (Considere 1 BTU = 252 cal). Justifique el cálculo.
+	\item Paredes: Calcule el calor transmitido en una pared de 35 m$^2$ con dos capas en serie: Mampostería ($e=26$ cm, $Ct=1.6$) y aislante ($e=26$ cm, $Ct=0.9$). La diferencia de temperatura es de 70$^\circ$C.
+	\item Conversión: Realice las siguientes conversiones entre escalas termométricas, detallando los procedimientos necesarios:
+	\begin{enumerate}[label=\alph*., nosep, leftmargin=15pt]
+		\item Convierta 45$^\circ$C a $^\circ$F.
+		\item Convierta 170$^\circ$F a $^\circ$C.
+		\item Exprese el resultado del inciso (b) en Kelvin ($^\circ$K).
+		\item Exprese el resultado del inciso (c) en Fahrenheit ($^\circ$F).
+	\end{enumerate}
+	\item Conducción: Calcule el flujo de calor a través de una placa de hormigón de 18 cm de espesor y 5 m$^2$ de superficie, considerando un coeficiente térmico $Ct=1.8$ kcal/h$\cdot$m$^2\cdot^\circ$C y una diferencia de temperatura de 60$^\circ$C.
+\end{versionexamen}
+
+\end{document}
