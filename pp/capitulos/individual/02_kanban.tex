@@ -2,44 +2,56 @@
 \usetikzlibrary{shapes,backgrounds}
 \begin{document}
 \chapter{Tarjetas Kanban y pizarras}
-\img{images/02/kanban.jpg}{Tablero Kanban.}
+\img{images/02/kanban.jpg}{Tablero Kanban aplicado a la gestión de proyectos.}
 
 \info{
 Kanban}{
-Se trata de un método visual de gestión de proyectos que permite a los equipos visualizar sus flujos y la carga de trabajo. En un tablero Kanban, el trabajo se muestra en forma de tablero organizado por columnas. Tradicionalmente, cada columna representa una etapa del trabajo. 
+Se trata de un m\u00e9todo visual de gesti\u00f3n de proyectos que permite a los equipos visualizar sus flujos y la carga de trabajo. En un tablero Kanban, el trabajo se muestra en forma de tablero organizado por columnas, donde cada columna representa una etapa del proceso productivo.
 }
 
-\section{Introducción}
+\section{Introducci\u00f3n}
 
-En el desarrollo de proyectos, es común utilizar herramientas que permitan organizar las tareas de manera efectiva. Una de estas herramientas es la pizarra o tarjeta Kanban, que permite visualizar el estado de las tareas en un proyecto y mejorar la gestión del flujo de trabajo.
+En el desarrollo de proyectos electromec\u00e1nicos, la organizaci\u00f3n de las tareas es cr\u00edtica para evitar el caos en el taller. Una de las herramientas m\u00e1s efectivas es la pizarra o tarjeta Kanban, que permite visualizar el estado de cada componente o tarea en tiempo real y optimizar el flujo de trabajo.
 
 \section{¿Qué es una Pizarra o Tarjeta Kanban?}
 
-La pizarra o tarjeta Kanban es una herramienta visual para la gestión de proyectos que se originó en la industria manufacturera japonesa. Consiste en un panel o pizarra en la que se colocan tarjetas o notas adhesivas que representan las tareas que se deben realizar en un proyecto.
+La pizarra Kanban es una herramienta visual originada en la industria manufacturera japonesa (Toyota). Consiste en un panel donde se colocan tarjetas que representan tareas específicas. A medida que la tarea avanza en el proceso (por ejemplo, de "Dise\u00f1o" a "Fabricaci\u00f3n"), la tarjeta se desplaza físicamente a la columna correspondiente.
 
-\section{Ventajas de las Pizarras o Tarjetas Kanban}
+\section{Ventajas en el Entorno de Taller}
 
-Entre las ventajas que ofrecen las pizarras o tarjetas Kanban, se encuentran:
+Para un proyecto de electromec\u00e1nica, el uso de Kanban ofrece beneficios concretos:
 
 \begin{itemize}
-    \item Visualización del estado de las tareas en tiempo real.
-    \item Identificación de cuellos de botella y áreas de mejora en el flujo de trabajo.
-    \item Facilidad para priorizar tareas y asignar responsabilidades.
-    \item Mejora en la comunicación y colaboración del equipo.
+    \item \textbf{Transparencia}: Todo el equipo sabe exactamente en qu\u00e1 la etapa est\u00e1 cada pieza o sistema.
+    \item \textbf{Detecci\u00f3n de Cuellos de Botella}: Si la columna de "Soldadura" tiene 10 tarjetas y la de "Montaje" ninguna, el equipo sabe d\u00f3nde est\u00e1 el problema.
+    \item \textbf{Priorizaci\u00f3n}: Permite mover las tareas m\u00e1s urgentes a la parte superior de la columna.
+    \item \textbf{Sincronizaci\u00f3n}: Facilita la coordinaci\u00f3n entre quienes diseñan y quienes fabrican.
 \end{itemize}
 
-\section{Ejemplo de Uso de una Pizarra o Tarjeta Kanban}
+\section{Flujo de Trabajo Industrial (Ejemplo)}
 
-A continuación, se muestra un ejemplo de uso de una pizarra o tarjeta Kanban para la gestión de un proyecto de desarrollo de software:
+En lugar de flujos gen\u00e9ricos, un proyecto electromec\u00e1nico suele seguir una secuencia de producción real. Un tablero Kanban optimizado para el taller tendr\u00eda las siguientes columnas:
 
-En este ejemplo, las tarjetas se dividen en cuatro columnas: \textit{Backlog}, \textit{To Do}, \textit{Doing} y \textit{Done}. Cada tarjeta representa una tarea que debe ser realizada.
+\begin{center}
+\textbf{Ideaci\u00f3n} $\rightarrow$ \textbf{Dise\u00f1o/Planos} $ightarrow$ \textbf{Compra de Materiales} $ightarrow$ \textbf{Fabricaci\u00f3n/Montaje} $ightarrow$ \textbf{Pruebas/QA} $ightarrow$ \textbf{Terminado}
+\end{center}
 
-\actividad{Cuestionario de Comprensión}
+\subsection{L\u00edmites de Trabajo en Curso (WIP Limits)}
+
+Un concepto fundamental de Kanban es el \textbf{WIP (Work In Progress)}. El l\u00edmite WIP es la cantidad m\u00e1xima de tarjetas que pueden estar en una columna al mismo tiempo.
+
+\textbf{Analog\u00eda del Espacio de Taller}: Imaginemos que solo tenemos 2 bancos de trabajo disponibles para el montaje. Si permitimos que haya 10 tareas en la columna de "Fabricaci\u00f3n/Montaje", tendremos un taller lleno de m\u00e1quinas a medio armar que estorban el paso y generan desorden. Establecer un \textbf{L\u00edmite WIP = 2} obliga al equipo a terminar lo que empezaron antes de iniciar una nueva tarea, optimizando el espacio y el tiempo.
+
+\newpage
+\actividad{Taller de Implementaci\u00f3n Kanban}
+
+\textbf{Objetivo}: Dise\u00f1ar un sistema de gesti\u00f3n visual para el propio proyecto del alumno.
 
 \begin{enumerate}
-    \item ¿Qué es Kanban y cómo funciona?
-\item ¿Cuáles son los beneficios de utilizar Kanban en los procesos de trabajo?
-\item ¿Cómo se implementa Kanban en diferentes contextos, como el desarrollo de software, la producción de manufactura, la gestión de proyectos, entre otros?
+    \item \textbf{Desglose de Tareas}: Realice una lista detallada de todas las tareas f\u00edsicas necesarias para su proyecto (ej. "Cortar perfiles de acero", "Cablear tablero el\u00e9ctrico", "Programar PLC", "Pintar estructura").
+    \item \textbf{Dise\u00f1o del Tablero}: Dibuje la estructura de su pizarra Kanban. Defina las columnas que mejor se adapten a su flujo de trabajo (puede usar el ejemplo industrial o crear uno propio). 
+    \item \textbf{Definici\u00f3n de L\u00edmites WIP}: Identifique la etapa m\u00e1s cr\u00edtica de su proyecto (la que consume m\u00e1s tiempo o espacio) y asigne un l\u00edmite WIP. Justifique por qu\u00e9 eligi\u00f3 ese n\u00fameros.
+    \item \textbf{Simulaci\u00f3n}: Ubique las primeras 5 tareas de su proyecto en el tablero y simule el avance de una de ellas hasta la columna de "Terminado".
 \end{enumerate}
 
 \end{document}

@@ -58,14 +58,46 @@ se centra en las \textit{relaciones} entre tareas.
 \end{itemize}
 
 \newpage
+\section{Guía de Cálculo de Redes PERT}
+Para determinar la duración del proyecto y el camino crítico, utilizamos dos pasadas de cálculo:
+
+\subsection{A. Pasada hacia adelante (Tiempos Tempranos)}
+Se utiliza para hallar el tiempo más pronto que una actividad puede iniciar (\textbf{ES}) y finalizar (\textbf{EF}).
+\begin{enumerate}
+  \item \textbf{Inicio}: La primera actividad tiene $ES = 0$.
+  \item \textbf{Cálculo}: $EF = ES + \text{Duración}$.
+  \item \textbf{Sucesión}: El $ES$ de una actividad posterior es el $EF$ de su predecesora. Si tiene varias predecesoras, el $ES$ es el \textbf{máximo} $EF$ de todas ellas.
+\end{enumerate}
+
+\subsection{B. Pasada hacia atrás (Tiempos Tardóos)}
+Se utiliza para hallar el tiempo más tarde que una actividad puede iniciar (\textbf{LS}) y finalizar (\textbf{LF}) sin retrasar el proyecto.
+\begin{enumerate}
+  \item \textbf{Fin}: El $LF$ de la úlitma actividad es igual a su $EF$ (duración total del proyecto).
+  \item \textbf{Cálculo}: $LS = LF - \text{Duración}$.
+  \item \textbf{Precedencia}: El $LF$ de una actividad predecesora es el $LS$ de su sucesora. Si es predecesora de varias, el $LF$ es el \textbf{mÍnimo} $LS$ de todas ellas.
+\end{enumerate}
+
+\subsection{C. Holgura y Camino Crítico}
+\begin{itemize}
+  \item \textbf{Holgura (Slack)}: Tiempo que una actividad puede retrasarse sin afectar el proyecto. $\text{Holgura} = LF - EF$ (o $LS - ES$).
+  \item \textbf{Camino Crítico}: Secuencia de actividades donde la $\text{Holgura} = 0$. Cualquier retraso aquí retrasa todo el proyecto.
+\end{itemize}
+
+\info{Cheat Sheet de Cálculo}{\textbf{Hacia adelante} $\rightarrow$ Usar el MÁXIMO $EF$ | \textbf{Hacia atrás} $\rightarrow$ Usar el MÍNIMO $LS$}
+
+\ejemplo{Ejemplo Guiado (Para completar)}{Considere una red simple: A (Dur: 3) $\rightarrow$ B (Dur: 2). \newline
+1. Actividad A: $ES=0, EF=3$. \newline
+2. Actividad B: $ES= \text{EF de A} = 3, EF = 3 + 2 = 5$. \newline
+3. Pasada atrás B: $LF=5, LS= 5-2=3$. \newline
+4. Pasada atrás A: $LF= \text{LS de B} = 3, LS = 3-3=0$. \newline
+\textbf{Resultado}: Camino Crítico A $\rightarrow$ B. Holgura = 0.}
 
 \actividad{Guía de Trabajos Prácticos}
 
+\subsection*{Tareas Esenciales (En Clase)}
 \begin{enumerate}
-  \item Defina qué es un diagrama de Gantt y mencione tres de sus
-    componentes principales.
-  \item Explique la diferencia conceptual entre un diagrama de Gantt
-    y un diagrama PERT. ¿Cuándo es conveniente utilizar cada uno?
+  \item Defina qué es un diagrama de Gantt y mencione tres de sus componentes principales.
+  \item Explique la diferencia conceptual entre un diagrama de Gantt y un diagrama PERT. ¿Cuándo es conveniente utilizar cada uno?
 
   \item \textbf{Análisis de Proyecto Industrial.}
     Un proyecto presenta las siguientes actividades y dependencias:
@@ -96,7 +128,11 @@ se centra en las \textit{relaciones} entre tareas.
       \item Identifique y resalte el \textbf{Camino Crítico}.
       \item Represente la gráfica de Gantt correspondiente.
     \end{enumerate}
+\end{enumerate}
 
+\subsection*{Tareas de Extensión (Opcionales/Tarea)}
+\begin{enumerate}
+  \setcounter{enumi}{3}
   \item \textbf{Caso: Clima Cuyo S.R.L.}
     La empresa local se dedica a la climatización de edificios
     mediante sistemas de bomba de calor. Cada instalación requiere
@@ -131,8 +167,9 @@ se centra en las \textit{relaciones} entre tareas.
       \item Las actividades F y G son correlativas ($F \rightarrow G$).
       \item La actividad E puede realizarse en paralelo a las ramas
         B-C-D y F-G, pero debe comenzar después de A.
-      \item La actividad H requiere haber finalizado D, G y E.
-      \item La actividad I es la óltima del proceso, realizándose después de H.
+      \item la actividad H requiere haber finalizado D, G y E.
+      \item la actividad I es la óltima del proceso, realizándose
+        después de H.
     \end{itemize}
 
     \begin{enumerate}
@@ -178,7 +215,7 @@ se centra en las \textit{relaciones} entre tareas.
       \item Finalmente, se realizará I.
     \end{itemize}
 
-    \textbf{Consigna:} Realice el gráfico PERT, calcule el tiempo
+    \textbf{Consigna}: Realice el gráfico PERT, calcule el tiempo
     total del proyecto e indique el camino crítico.
 \end{enumerate}
 \end{document}
