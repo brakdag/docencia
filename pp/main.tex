@@ -1,22 +1,50 @@
 \documentclass[a4paper,12pt]{book}
 \usepackage{sty/config}
 \begin{document}
-\subfile{capitulos/00_a_portada}
-\subfile{capitulos/00_b_introduccion}
-\subfile{capitulos/00_d_acuerdo}
-\subfile{capitulos/01_gantt_b}
-\subfile{capitulos/02_b_idea.tex}
-\subfile{capitulos/02_kanban}
-\subfile{capitulos/04_costos}
-\subfile{capitulos/05_costos_variables}
-\subfile{capitulos/06_estudio_mercado}
-\subfile{capitulos/08_marco_juridico}
-\subfile{capitulos/07_mantenimiento}
-\subfile{capitulos/09_control_de_calidad}
-\subfile{capitulos/10_diagramas_de_flujo}
-\subfile{capitulos/11_estudio_de_tiempos}
-\subfile{capitulos/12_localizacion}
-\subfile{capitulos/13_nuevosmateriales}
-\subfile{capitulos/14_formulariopasantias}
-\subfile{capitulos/99_bibliografia}
+
+% --- SECCIÓN GENERAL ---
+\subfile{capitulos/comun/00_a_portada}
+\subfile{capitulos/comun/00_b_introduccion}
+% \subfile{capitulos/comun/00_c_planificacion} % Movido a carpeta externa por requerimientos administrativos
+\subfile{capitulos/comun/00_d_acuerdo}
+
+\part{Fundamentos Técnicos y Actividades Individuales}
+
+\subfile{capitulos/individual/01_gantt}
+\subfile{capitulos/individual/02_idea}
+\subfile{capitulos/individual/02_kanban}
+\subfile{capitulos/individual/04_costos}
+\subfile{capitulos/individual/05_costos_variables}
+\subfile{capitulos/individual/06_estudio_mercado}
+\subfile{capitulos/individual/07_mantenimiento}
+\subfile{capitulos/individual/08_marco_juridico}
+\subfile{capitulos/individual/09_control_de_calidad}
+\subfile{capitulos/individual/10_diagramas_de_flujo}
+\subfile{capitulos/individual/11_estudio_de_tiempos}
+\subfile{capitulos/individual/12_localizacion}
+\subfile{capitulos/individual/13_nuevosmateriales}
+
+% Resetear el contador de capítulos para que la parte del proyecto empiece desde el 1
+\setcounter{chapter}{0}
+
+\part{Guía de Implementación del Proyecto Profesionalizante}
+
+\subfile{capitulos/proyecto/01_gantt}
+\subfile{capitulos/proyecto/02_idea}
+\subfile{capitulos/proyecto/02_kanban}
+\subfile{capitulos/proyecto/04_costos}
+\subfile{capitulos/proyecto/05_costos_variables}
+\subfile{capitulos/proyecto/06_estudio_mercado}
+\subfile{capitulos/proyecto/07_mantenimiento}
+\subfile{capitulos/proyecto/08_marco_juridico}
+\subfile{capitulos/proyecto/09_control_de_calidad}
+\subfile{capitulos/proyecto/10_diagramas_de_flujo}
+\subfile{capitulos/proyecto/11_estudio_de_tiempos}
+\subfile{capitulos/proyecto/12_localizacion}
+\subfile{capitulos/proyecto/13_nuevosmateriales}
+
+% --- CIERRE Y ADMINISTRATIVO ---
+\subfile{capitulos/comun/14_formulariopasantias}
+\subfile{capitulos/comun/99_bibliografia}
+
 \end{document}
