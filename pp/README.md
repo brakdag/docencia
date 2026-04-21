@@ -1,5 +1,13 @@
 # Guía de Trabajos Prácticos de Prácticas Profesionalizantes.
 
+## ⚠️ SISTEMA DE ORQUESTACIÓN (VITAL)
+
+Para la gestión de este proyecto, se utiliza un sistema de agentes especializados. Es **fundamental** seguir la guía de coordinación para interactuar con los colaboradores:
+
+- **[Guía de uso de run_instance](docs/run_instance_guide.md)**: Instrucciones obligatorias para la invocación de especialistas (Editor Técnico, Consultor Pedagógico, Especialista LaTeX).
+
+---
+
 ## Especificaciones del documento.
 
 1. Es un documento hecho en LaTeX.
@@ -11,7 +19,7 @@
 1. Está destinado a alumnos de colegio técnico secundario de 5to Año, por lo
    equivalente tienen entre 17 y 18 años, cuya materia tiene 4 horas lo que corresponde
    a 4 módulos semanales de 40 minutos de cursado, equivalente a 160 minutos semanales.
-2. Tenemos 8 meses de clases y podría restarse 1 por feriados y demás eventos.
+2. Tenemos 8 meses de clases y podrña restarse 1 por feriados y demás eventos.
 
 ## Modalidad de trabajo.
 
