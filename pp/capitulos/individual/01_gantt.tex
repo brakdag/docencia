@@ -52,7 +52,7 @@ se centra en las \textit{relaciones} entre tareas.
     \begin{itemize}
       \item \textit{Early} (Temprano): El momento más pronto en que
         una actividad puede comenzar.
-      \item \textit{Last} (Tardóo): El momento más tarde en que
+      \item \textit{Last} (Tardío): El momento más tarde en que
         una actividad puede terminar sin retrasar el proyecto.
     \end{itemize}
 \end{itemize}
@@ -69,12 +69,12 @@ Se utiliza para hallar el tiempo más pronto que una actividad puede iniciar (\t
   \item \textbf{Sucesión}: El $ES$ de una actividad posterior es el $EF$ de su predecesora. Si tiene varias predecesoras, el $ES$ es el \textbf{máximo} $EF$ de todas ellas.
 \end{enumerate}
 
-\subsection{B. Pasada hacia atrás (Tiempos Tardóos)}
+\subsection{B. Pasada hacia atrás (Tiempos Tardíos)}
 Se utiliza para hallar el tiempo más tarde que una actividad puede iniciar (\textbf{LS}) y finalizar (\textbf{LF}) sin retrasar el proyecto.
 \begin{enumerate}
-  \item \textbf{Fin}: El $LF$ de la úlitma actividad es igual a su $EF$ (duración total del proyecto).
+  \item \textbf{Fin}: El $LF$ de la última actividad es igual a su $EF$ (duración total del proyecto).
   \item \textbf{Cálculo}: $LS = LF - \text{Duración}$.
-  \item \textbf{Precedencia}: El $LF$ de una actividad predecesora es el $LS$ de su sucesora. Si es predecesora de varias, el $LF$ es el \textbf{mÍnimo} $LS$ de todas ellas.
+  \item \textbf{Precedencia}: El $LF$ de una actividad predecesora es el $LS$ de su sucesora. Si es predecesora de varias, el $LF$ es el \textbf{mínimo} $LS$ de todas ellas.
 \end{enumerate}
 
 \subsection{C. Holgura y Camino Crítico}
@@ -165,10 +165,10 @@ Se utiliza para hallar el tiempo más tarde que una actividad puede iniciar (\te
       \item Las actividades B, C y D son correlativas (secuenciales:
         $B \rightarrow C \rightarrow D$).
       \item Las actividades F y G son correlativas ($F \rightarrow G$).
-      \item La actividad E puede realizarse en paralelo a las ramas
+      \item la actividad E puede realizarse en paralelo a las ramas
         B-C-D y F-G, pero debe comenzar después de A.
       \item la actividad H requiere haber finalizado D, G y E.
-      \item la actividad I es la óltima del proceso, realizándose
+      \item la actividad I es la última del proceso, realizándose
         después de H.
     \end{itemize}
 
