@@ -1,0 +1,37 @@
+\documentclass[tikz, border=10pt]{standalone}
+
+\begin{document}
+\begin{tikzpigcture}
+    % CONFIGURACIÓN
+    % Define el área del billete/fondo
+    \clip (0,0) rectangle (12,7); 
+    \fill[white] (0,0) rectangle (12,7); % Fondo base
+
+    % --- CAPA 1: ONDAS DE FONDO (Cyan) ---
+    % Iteramos desde abajo (0) hasta arriba (7) en pasos muy pequeños (0.05)
+    \foreach \y in {0, 0.05, ..., 7.5} {
+        
+        % EXPLICACIÓN DE LA FUNCIÓN:
+        % (\x, {\y + ...}) -> La línea base está en 'y'
+        % sin(150*\x)      -> Frecuencia horizontal (que tan rápido vibra)
+        % + 50*\y          -> DESPLAZAMIENTO DE FASE (La magia: la curva cambia según la altura)
+        
+        \draw[cyan!60!black, opacity=0.4, ultra thin] 
+            plot[domain=0:12, samples=150, variable=\x] 
+            (\x, { \y + 0.15 * sin(180*\x + 60*\y) });
+    }
+
+    % --- CAPA 2: INTERFERENCIA (Magenta - Opcional para efecto Moiré) ---
+    % Hacemos lo mismo pero con el ángulo invertido o diferente frecuencia
+    % Esto crea esos "diamantes" visuales típicos de los billetes.
+    \foreach \y in {0, 0.05, ..., 7.5} {
+        \draw[magenta!60!gray, opacity=0.3, ultra thin] 
+            plot[domain=0:12, samples=150, variable=\x] 
+            (\x, { \y + 0.15 * sin(140*\x - 40*\y) });
+    }
+    
+    % Marco simple para delimitar
+    \draw[line width=1pt, color=blue!30!black] (0,0) rectangle (12,7);
+
+\end{tikzpicture}
+\end{document}
