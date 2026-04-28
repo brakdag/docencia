@@ -1,0 +1,21 @@
+{
+    "last_quota_date": "2026-04-27",
+    "counts": {
+        "models/gemini-3.1-flash-lite-preview": 2
+    },
+    "limits": {
+        "models/gemini-3.1-flash-lite": 500,
+        "models/gemma-4-31b-it": 1500,
+        "models/gemma-4-26b-it": 1500,
+        "models/gemini-3-flash": 20,
+        "models/gemini-2.5-flash": 20,
+        "models/gemini-2-flash-lite": 20,
+        "models/gemma-3-1b-it": 14400,
+        "models/gemma-3-2b-it": 14400,
+        "models/gemma-3-4b-it": 14400,
+        "models/gemma-3-12b-it": 14400,
+        "models/gemma-3-27b-it": 14400,
+        "models/text-embedding-004": 1000,
+        "models/text-embedding-005": 1000
+    }
+}
