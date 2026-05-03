@@ -1,0 +1,32 @@
+\ProvidesPackage{pres_config}
+
+% --- Beamer Theme ---
+\usetheme{Madrid}
+\usecolortheme{whale}
+
+% --- Fonts and Encoding ---
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% --- Custom Colors ---
+\definecolor{merinblue}{RGB}{0, 51, 102}
+\setbeamercolor{structure}{fg=merinblue}
+
+% --- Layout Adjustments ---
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+
+% --- Custom Commands ---
+\newcommand{\hookframe}[1]{% 
+  \begin{frame}{#1}
+    \centering
+    \Huge \textbf{#1}
+    \vfill
+    \small \textit{¿Cómo funciona realmente?}
+  \end{frame}
+}
