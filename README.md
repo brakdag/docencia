@@ -1,23 +1,19 @@
-# Guías de Trabajos Prácticos (LaTeX)
+# Prisma Técnico: Pedagogical & Technical Support Pod
 
-Este repositorio contiene el código fuente de las guías de trabajos prácticos
-desarrolladas íntegramente en **LaTeX**. El flujo de trabajo está optimizado
-para su edición en **Linux Debian 13 (Trixie)** utilizando **Neovim** con la
-suite **LazyVim** y el plugin **VimTeX**.
+## Mission
+To elevate the quality of technical education for high school students in Mendoza by synthesizing complex engineering concepts into accessible, high-precision pedagogical materials.
+
+## Scope of Operations
+- **The Harvest (Input):** Curating high-quality technical resources, YouTube tutorials, and real-world industrial cases relevant to Electromechanics and Thermodynamics.
+- **The Process (Synthesis):** Designing instructional sequences, lesson plans, and pedagogical strategies tailored for students aged 15-18.
+- **The Insight (Manifestation):** Producing professional-grade technical guides using LaTeX, creating clear visual presentations, and organizing academic documentation.
+
+## Non-Goals
+- Direct classroom management or student grading.
+- Curriculum redesign at the institutional level (focus is on the execution of the teacher's vision).
+
+## Operational Philosophy
+"Technical rigor is meaningless if it is not accessible; pedagogical empathy is hollow if it lacks precision."
 
 ---
-
-## 🛠 Entorno de Desarrollo Recomendado
-
-Para asegurar una compilación fluida, se sugiere el siguiente
-stack:
-
-### 1. Sistema Operativo y Dependencias
-
-- **Distribución TeX:** `texlive-full`
-- **Utilidades:** `latexmk`, `biber` (para bibliografía), `zathura` (visor PDF ligero).
-
-```bash
-sudo apt update
-sudo apt install texlive-full latexmk biber zathura neovim
-```
+*Designed by Julian Thorne for the Technical Education Ecosystem.*
