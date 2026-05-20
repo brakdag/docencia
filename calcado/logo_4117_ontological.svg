@@ -1,0 +1,82 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradiente de Fuerza (Engranaje) -->
+    <linearGradient id="forceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradiente de Materia (Ladrillos) -->
+    <linearGradient id="matterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#CD5C5C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradiente de Inteligencia (Electrónica) -->
+    <linearGradient id="intelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Patrón de hachurado para los libros (Teoría) -->
+    <pattern id="bookLines" patternUnits="userSpaceOnUse" width="4" height="4">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#DDD" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Fondo Neutro -->
+  <rect width="600" height="600" fill="white" />
+
+  <!-- 1. LA FUERZA (Engranaje Inferior) -->
+  <g transform="translate(300, 300)">
+    <path d="M -200,0 
+             A 200,200 0 0 0 -160,160 
+             L -180,180 L -140,180 L -120,160 
+             L -100,180 L -60,180 L -40,160 
+             L -20,180 L 20,180 L 0,160 
+             L 40,180 L 80,180 L 100,160 
+             A 200,200 0 0 0 200,0 
+             L 200,-20 A 180,180 0 0 1 -200,-20 Z" 
+          fill="url(#forceGrad)" stroke="black" stroke-width="4" />
+  </g>
+
+  <!-- 2. LA MATERIA (Muro de Ladrillos Izquierda) -->
+  <g transform="translate(80, 250)">
+    <rect x="0" y="0" width="70" height="30" rx="2" fill="url(#matterGrad)" stroke="black" stroke-width="2" />
+    <rect x="75" y="0" width="70" height="30" rx="2" fill="url(#matterGrad)" stroke="black" stroke-width="2" />
+    <rect x="37" y="35" width="70" height="30" rx="2" fill="url(#matterGrad)" stroke="black" stroke-width="2" />
+    <rect x="112" y="35" width="70" height="30" rx="2" fill="url(#matterGrad)" stroke="black" stroke-width="2" />
+    <rect x="0" y="70" width="70" height="30" rx="2" fill="url(#matterGrad)" stroke="black" stroke-width="2" />
+    <rect x="75" y="70" width="70" height="30" rx="2" fill="url(#matterGrad)" stroke="black" stroke-width="2" />
+  </g>
+
+  <!-- 3. LA TEORÍA (Libros Derecha) -->
+  <g transform="translate(380, 250)">
+    <rect x="0" y="60" width="150" height="35" rx="4" fill="white" stroke="black" stroke-width="2" />
+    <rect x="0" y="60" width="20" height="35" fill="#CCC" />
+    <rect x="10" y="30" width="130" height="30" rx="4" fill="white" stroke="black" stroke-width="2" />
+    <rect x="10" y="30" width="20" height="30" fill="#CCC" />
+    <rect x="20" y="0" width="110" height="30" rx="4" fill="white" stroke="black" stroke-width="2" />
+    <rect x="20" y="0" width="20" height="30" fill="#CCC" />
+  </g>
+
+  <!-- 4. LA INTELIGENCIA (Electrónica Superior) -->
+  <g transform="translate(300, 300)">
+    <!-- Cables de flujo -->
+    <path d="M -220,-50 A 220,220 0 0 1 220,-50" fill="none" stroke="black" stroke-width="2" />
+    <path d="M -200,-70 A 200,200 0 0 1 200,-70" fill="none" stroke="black" stroke-width="2" />
+    <path d="M -180,-90 A 180,180 0 0 1 180,-90" fill="none" stroke="black" stroke-width="2" />
+
+    <!-- Componentes de señal -->
+    <g id="node">
+      <rect x="-15" y="-150" width="30" height="50" rx="3" fill="url(#intelGrad)" stroke="black" stroke-width="2" />
+      <circle cx="0" cy="-100" r="5" fill="white" stroke="black" stroke-width="1" />
+    </g>
+    
+    <use href="#node" transform="rotate(-60)" />
+    <use href="#node" transform="rotate(-30)" />
+    <use href="#node" transform="rotate(0)" />
+    <use href="#node" transform="rotate(30)" />
+    <use href="#node" transform="rotate(60)" />
+  </g>
+</svg>
