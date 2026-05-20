@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt,landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[most]{tcolorbox}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{helvet}
+\usepackage{setspace}
+\usepackage{array}
+
+\geometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
+\renewcommand{\familydefault}{\sfdefault}
+\setstretch{1.15}
+
+\definecolor{bannergreen}{RGB}{160, 210, 60}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\arrayrulewidth}{0.6pt}
+
+\newcommand{\distrito}{4117}
+\newcommand{\escuela}{Escuela Técnica N° X}
+\newcommand{\docente}{Ferreyra Gustavo David}
+\newcommand{\materia}{Termodinámica y Máquinas Térmicas}
+\newcommand{\curso}{5to Año}
+\newcommand{\division}{A}
+\newcommand{\ciclo}{2026}
+
+\newcommand{\makeheader}[1]{%
+    \begin{center}
+        \begin{minipage}{0.25\textwidth}
+            \centering
+            \includegraphics[width=2.2cm]{/mnt/DataSD/sandbox/repositorio_docente/Planificaciones_Docentes/distritos/4117/templates/logo1.jpg}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.25\textwidth}
+            \centering
+            \includegraphics[width=2.2cm]{/mnt/DataSD/sandbox/repositorio_docente/Planificaciones_Docentes/distritos/4117/templates/logo2.jpg}
+        \end{minipage}
+        \vspace{0.3cm}
+        \begin{tcolorbox}[colback=bannergreen, colframe=bannergreen, arc=20pt, center, halign=center, fontupper=\bfseries\normalsize, boxrule=0pt, width=0.98\textwidth, top=1pt, bottom=1pt]
+            #1
+        \end{tcolorbox}
+    \end{center}
+    \vspace{0.4cm}
+}
+
+\begin{document}
+
+\makeheader{PLANIFICACIÓN ANUAL \ciclo}
+
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+    \hline
+    \textbf{Escuela:} & \escuela & \textbf{Curso:} & \curso \division \\ \hline
+    \textbf{Docente:} & \docente & \textbf{Materia:} & \materia \\ \hline
+    \textbf{Distrito:} & \distrito & \textbf{Ciclo:} & \ciclo \\ \hline
+\end{tabularx}
+
+\vspace{0.8cm}
+
+\begin{tabularx}{\textwidth}{|p{3cm}|X|p{4cm}|p{3cm}|}
+    \hline
+    \textbf{Unidad} & \textbf{Contenidos} & \textbf{Estrategias} & \textbf{Tiempo} \\ \hline
+    U1: Calor y Temp. & Transmisión de calor, Conducción, Convección, Radiación & Clases expositivas, TP & 4 semanas \\ \hline
+    U2: Sistemas Termo. & Definición de sistema, Variables de estado & Resolución de problemas & 3 semanas \\ \hline
+    U3: 1er Principio & Energía interna, Trabajo, Calor & Análisis de procesos & 5 semanas \\ \hline
+    U4: Gases Perfectos & Ley de Boyle, Charles, Avogadro & Laboratorio, TP & 4 semanas \\ \hline
+    U5: Ciclos & Carnot, Ciclos Térmicos, Eficiencia & Simulaciones, TP & 6 semanas \\ \hline
+    U6: Vaporización & Cambios de fase, Tablas de vapor & Casos industriales & 4 semanas \\ \hline
+\end{tabularx}
+
+\end{document}
