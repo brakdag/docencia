@@ -1,7 +1,7 @@
 {
     "last_quota_date": "2026-05-20",
     "counts": {
-        "models/gemma-4-31b-it": 16
+        "models/gemma-4-31b-it": 22
     },
     "limits": {
         "models/gemini-3.1-flash-lite": 500,
