@@ -3,7 +3,7 @@
 # Configuración
 PDFLATEX = pdflatex
 # Definimos la ruta absoluta de build para que el comando 'mv' no falle tras el 'cd'
-BUILD_DIR = $(shell pwd)/../build
+BUILD_DIR = $(shell pwd)/build
 
 # Buscar todos los archivos .tex ÚNICAMENTE en subcarpetas de core_content
 SOURCES = $(shell find core_content -mindepth 2 -name "*.tex")
