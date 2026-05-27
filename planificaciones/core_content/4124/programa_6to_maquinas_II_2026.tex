@@ -1,0 +1,87 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{helvet}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\input{../../config.tex}
+
+\geometry{
+    a4paper,
+    landscape,
+    left=5mm,
+    right=5mm,
+    top=5mm,
+    bottom=5mm,
+    headheight=30mm,
+    includehead=true
+}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{% 
+    \begin{minipage}[c][30mm][c]{0.6\textwidth}
+        \centering
+        \includegraphics[width=10cm]{logoDGE.jpeg} \\
+        \vspace{0.3cm}
+        \fontsize{11pt}{13pt}\selectfont Escuela 4-124 \textquotedbl Reynaldo Merín\textquotedbl
+    \end{minipage}
+}
+\renewcommand{\headrulewidth}{1mm}
+
+\begin{document}
+
+\begin{center}
+    \fontsize{14pt}{16pt}\selectfont \textbf{\uppercase{Programa}}
+\end{center}
+
+\vspace{0.3cm}
+
+\raggedright
+\textbf{ESPACIO CURRICULAR:} Máquinas Eléctricas II \\
+\textbf{CURSO:} 6to \\
+\textbf{PROFESOR/A:} \profesor \\
+\textbf{TÍTULO DEL EGRESADO:} Técnico en Electricidad
+
+\vspace{0.5cm}
+
+\fontsize{12pt}{14pt}\selectfont
+Esta propuesta formativa plantea la apropiación de las características constructivas y los fenómenos electromagnéticos que dan vida a las Máquinas Eléctricas y al funcionamiento de la maquinaria eléctrica más empleada en el sector técnico, ya sea como motores o generadores eléctricos. Se analizan los motores asincrónicos trifásicos, con sus principios de funcionamiento, conceptualizando comportamientos energéticos de rotores y representándolos a través de diagramas vectoriales y circuitos equivalentes. Como saberes eléctricos se destacan las curvas que hacen referencia a los arranques de los motores eléctricos, ya sea de forma directa o estrella-triángulo, dependiendo de la potencia eléctrica instalada. También se analizarán los tipos de arranque resistivo, reactivo, con empleo diverso de capacitores, etc., al observar el funcionamiento de las máquinas monofásicas en particular.
+
+Las teorías de fundamento desarrolladas con anterioridad en Circuitos Eléctricos II, Máquinas Eléctricas I y Electrotecnia II propician la comprensión de los campos electromagnéticos alternativos y rodantes, con sus fuerzas electromotrices respectivas. Se desarrollan proyectos articulados con los espacios curriculares de Seguridad e Higiene en el Trabajo, Laboratorio de Mediciones Eléctricas II, Obras Eléctricas, Electrónica Industrial y Operaciones de Taller de Electricidad II. Es importante la permanente articulación con el Laboratorio de Ensayos Eléctricos, para efectuar las prácticas con el instrumental correspondiente, tanto de los motores asincrónicos trifásicos, como de las máquinas monofásicas, motores de denominación universal y todas las máquinas que son objeto de estudio de este espacio curricular.
+
+La presente propuesta formativa integra teoría y práctica, conforme lo establece el artículo 35 de la Resolución CFE 229/14.
+
+\vspace{0.5cm}
+
+\begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=*]
+    \item \textbf{FUNDAMENTOS DE MÁQUINAS MONOFÁSICAS}
+    \begin{itemize}
+        \item Reconocer los principios básicos que fundamentan el funcionamiento de una máquina eléctrica con energía alterna.
+        \begin{itemize}
+            \item Explicitación de las leyes electromagnéticas presentes en una máquina eléctrica.
+            \item Interpretación de los campos electromagnéticos originados por corriente alterna.
+            \item Distinción de la frecuencia y la velocidad de sincronismo en una máquina eléctrica.
+            \item Caracterización de la electrodinámica en máquinas industriales.
+        \end{itemize}
+        \item Interpretar las teorías electrodinámicas eléctricas en una máquina rotativa.
+    \end{itemize}
+    \item \textbf{MOTORES ASINCRÓNICOS TRIFÁSICOS EN DIVERSOS ENSAYOS ELÉCTRICOS}
+    \begin{itemize}
+        \item Conocer la naturaleza eléctrica de las máquinas asincrónicas.
+        \item Analizar críticamente los ensayos eléctricos característicos de un motor asincrónico que fundamentan los distintos fenómenos energéticos.
+    \end{itemize}
+    \item \textbf{ENSAYOS EN MÁQUINAS SINCRÓNICAS}
+    \begin{itemize}
+        \item Comprender el funcionamiento de las partes constitutivas de una máquina sincrónica.
+        \item Valorar la utilidad industrial de una máquina sincrónica considerando su importancia tecnológica eléctrica.
+    \end{itemize}
+\end{enumerate}
+
+\end{document}
