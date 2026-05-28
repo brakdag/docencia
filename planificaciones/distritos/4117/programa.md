@@ -13,6 +13,8 @@ Profesor/a Responsable:
 
 ## %tabla de una sola columna%
 
+(llenar esta tabla en base a DCP para la materia /home/gustavo/sandbox/repositorio_docente/planificaciones/docs/DCP)
+
 ## EJE Nº 1:
 
 ## EJE Nº 2:
