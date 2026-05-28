@@ -1,6 +1,10 @@
 # formato Planificación
 
+- Hoja apaisada apaisada
+
 ## encabezado
+
+el mismo definido en formato.md
 
 ## Plantilla
 
