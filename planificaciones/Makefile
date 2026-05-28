@@ -2,7 +2,6 @@
 
 # Configuración
 PDFLATEX = pdflatex
-# Definimos la ruta absoluta de build para que el comando 'mv' no falle tras el 'cd'
 BUILD_DIR = $(shell pwd)/build
 
 # Buscar todos los archivos .tex ÚNICAMENTE en subcarpetas de core_content
@@ -17,11 +16,10 @@ all: $(TARGETS)
 
 # Regla de compilación
 %.pdf: %.tex
-	@dir=$$(dirname $<); base=$$(basename $< .tex); dest_dir=$$(echo $$dir | sed 's|^core_content/||'); \
-	mkdir -p $(BUILD_DIR)/$$dest_dir && \
-	cd $$dir && $(PDFLATEX) -interaction=nonstopmode $$base.tex && $(PDFLATEX) -interaction=nonstopmode $$base.tex && \
-	mv $$base.pdf $(BUILD_DIR)/$$dest_dir/$$base.pdf && \
-	rm -f *.aux *.log
+	@dest_dir=$$(echo $(dir $<) | sed 's|core_content/||; s|/$$||'); 
+	mkdir -p $(BUILD_DIR)/$$dest_dir
+	cd $(dir $<) && $(PDFLATEX) -interaction=nonstopmode -output-directory=$(BUILD_DIR)/$$dest_dir $(notdir $<)
+	cd $(dir $<) && $(PDFLATEX) -interaction=nonstopmode -output-directory=$(BUILD_DIR)/$$dest_dir $(notdir $<)
 
 # Limpiar archivos auxiliares y PDFs
 clean:
