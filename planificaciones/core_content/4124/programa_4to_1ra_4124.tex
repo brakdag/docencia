@@ -3,6 +3,7 @@
 \usepackage[spanish]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{geometry}
+\usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{helvet}
@@ -33,7 +34,9 @@
         \fontsize{11pt}{13pt}\selectfont Escuela 4-124 \textquotedbl Reynaldo Merín\textquotedbl
     \end{minipage}
 }
+\definecolor{brown}{RGB}{139,69,19}
 \renewcommand{\headrulewidth}{1mm}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{brown}\leaders\hrule height \headrulewidth\hfill}}
 
 \begin{document}
 

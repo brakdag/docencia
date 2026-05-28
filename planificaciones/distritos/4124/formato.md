@@ -12,7 +12,7 @@
 - Se repite en todas las hojas
 - Logo de DGE grande (centrado).
 - Texto: Escuela 4-124 "Reynaldo Merín" (centrado) 11pt
-- Hay un separador linea 1mm espesor en la parte inferior a los 35mm el top de la página.
+- Hay un separador linea 1mm espesor de color marrón en la parte inferior a los 35mm el top de la página.
 - o sea el tamaño del encabezado es de 30mm.
 
 ## Documento.
