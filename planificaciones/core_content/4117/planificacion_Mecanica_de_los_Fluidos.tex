@@ -1,11 +1,103 @@
-[PREAMBULO]
-[ENCABEZADO]
-[TITULO]
-[FORMULARIO]
-[FUNDAMENTACION]
-[ACUERDOS]
-[CAP_INST]
-[CAP_ESP]
-[TABLA_EJES]
-[TABLA_PROY]
-[FIN]
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[table]{xcolor}
+\definecolor{schoolgreen}{HTML}{92D050}
+\usepackage{geometry}
+\geometry{landscape, margin=1.5cm, top=4cm, headheight=2.5cm, headsep=0.5cm}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage{amssymb}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=2cm]{../../distritos/4117/templates/logo1.jpg}}
+\fancyhead[R]{\includegraphics[height=2cm]{../../distritos/4117/templates/logo2.jpg}}
+\fancyhead[C]{\fontsize{10}{12}\selectfont \textbf{\textit{ESCUELA N.° 4-117 EJÉRCITO DE LOS ANDES \\ DIRECCIÓN DE EDUCACIÓN TÉCNICA Y TRABAJO \\ SECCIÓN V}}}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+\noindent\colorbox{schoolgreen}{\begin{minipage}{\dimexpr\textwidth-2\fboxsep}\centering \textbf{\fontsize{14}{16}\selectfont PLANIFICACIÓN ANUAL 2026}\end{minipage}}
+
+\vspace{1em}
+\begin{flushleft}
+\textbf{Espacio Curricular:} Mecánica de los Fluidos \\
+\textbf{Ciclo Lectivo:} 2026 \\
+\textbf{Curso:} 5to 3ra \\
+\textbf{Profesor Responsable:} Ferreyra Gustavo David
+\end{flushleft}
+
+\vspace{1em}
+\noindent \textbf{FUNDAMENTACIÓN:}
+\textit{La Mecánica de los Fluidos es fundamental para la formación del Técnico Electromecánico, ya que proporciona las bases teóricas y prácticas para comprender el comportamiento de los líquidos y gases. El estudio de la hidrostática y la hidrodinámica permite al alumno diseñar, operar y mantener sistemas de transmisión de potencia hidráulica y neumática, esenciales en la automatización industrial moderna. Se busca que el estudiante desarrolle un pensamiento analítico para resolver problemas de presión, caudal y flujo, integrando conocimientos de física y matemáticas aplicadas.}
+
+\vspace{1em}
+\noindent \textbf{ACUERDOS DE ÁREA:}
+\begin{itemize}
+\item Priorización de la seguridad en el manejo de equipos a presión.
+\item Fomento del trabajo colaborativo en la resolución de problemas técnicos.
+\item Uso de normativa técnica vigente para la representación de circuitos.
+\end{itemize}
+
+\vspace{1em}
+\noindent \textbf{CAPACIDADES INSTITUCIONALES:}
+\begin{itemize}
+\item Comprender y producir textos orales y escritos con eficacia y autonomía.
+\item Aplicar conocimientos, habilidades, destrezas, actitudes y valores en la resolución y planteo de situaciones problemáticas con creatividad, eficacia, eficiencia, calidad, seguridad y productividad.
+\end{itemize}
+
+\vspace{1em}
+\noindent \textbf{CAPACIDADES ESPECÍFICAS DEL ÁREA:}
+\begin{itemize}
+\item Analizar el comportamiento de los fluidos en reposo y movimiento aplicando leyes físicas.
+\item Calcular parámetros de presión y caudal en sistemas hidráulicos y neumáticos.
+\item Interpretar y diseñar esquemas de circuitos oleohidráulicos y neumáticos.
+\item Evaluar la eficiencia de sistemas de bombeo y transporte de fluidos.
+\end{itemize}
+
+\vspace{1em}
+\begin{longtable}{|p{2.5cm}|p{3cm}|p{4cm}|p{3cm}|p{2.5cm}|p{1.5cm}|p{3cm}|}
+\hline
+\rowcolor{gray!20} \textbf{Saberes/ Contenidos} & \textbf{Aprendizajes Prioritarios} & \textbf{Estrategias Didácticas} & \textbf{Capacidades Específicas} & \textbf{Recursos} & \textbf{Tiempo} & \textbf{Evaluación} \\
+\hline
+\multicolumn{7}{|l|}{\textbf{EJE Nº 1: FUNDAMENTOS DE LA FLUIDODINÁMICA Y MECÁNICA DE FLUIDOS}} \\
+\hline
+Hidrostática y Fenómenos Básicos & Aplicar los principios de Pascal y Arquímedes en sistemas reales & Resolución de problemas, experimentos de presión & Análisis y cálculo & Simuladores, manómetros & 4 semanas & Pruebas escritas, resolución de ejercicios \\
+\hline
+Hidrodinámica y Flujo & Resolver problemas de continuidad, Bernoulli y Reynolds & Análisis de casos reales, laboratorio de fluidos & Interpretación técnica & Tubos de Venturi, software de simulación & 5 semanas & Informes de laboratorio, rúbricas de desempeño \\
+\hline
+Fenómenos Críticos y Estabilidad & Analizar la cavitación, ondas de choque y estabilidad hidrodinámica & Estudio de casos, simulaciones computacionales & Análisis crítico & Software de simulación, videos técnicos & 3 semanas & Evaluación de casos, defensa oral \\
+\hline
+Simbología y Aplicaciones Técnicas & Calcular pérdida de carga y diseñar recipientes a presión & Diseño de esquemas, cálculo de espesores & Diseño y normativa & Tablas técnicas, software de cálculo & 4 semanas & Proyecto de cálculo, lista de cotejo \\
+\hline
+\multicolumn{7}{|l|}{\textbf{EJE Nº 2: INSTALACIONES Y EQUIPOS OLEOHIDRAULICOS}} \\
+\hline
+Bombas hidráulicas y circuitos de comando & Seleccionar la bomba adecuada según la carga & Diseño de circuitos básicos, análisis de catálogos & Diseño y selección & Catálogos técnicos, maquetas & 6 semanas & Proyecto de diseño de circuito, defensa oral \\
+\hline
+\multicolumn{7}{|l|}{\textbf{EJE Nº 3: INSTALACIONES Y EQUIPOS NEUMÁTICOS}} \\
+\hline
+Compresores, válvulas y actuadores & Implementar lógicas de control neumático & Montaje de circuitos en banco de pruebas & Implementación técnica & Bancos neumáticos, válvulas & 6 semanas & Evaluación de desempeño en taller \\
+\hline
+\multicolumn{7}{|l|}{\textbf{EJE Nº 4: ELEMENTOS DE MEDICIÓN Y ENSAYOS}} \\
+\hline
+Instrumentos de medición (caudalímetros, manómetros) & Calibrar y utilizar instrumentos de medición & Prácticas de medición en instalaciones reales & Precisión y control & Manómetros, caudalímetros & 4 semanas & Lista de cotejo de habilidades prácticas \\
+\hline
+\end{longtable}
+
+\vspace{1em}
+\noindent \textbf{PROYECTOS DE ARTICULACIÓN:}
+\begin{tabular}{|p{5cm}|p{12cm}|}
+\hline
+\rowcolor{gray!20} \textbf{Proyecto} & \textbf{Actividades y Temas de Articulación} \\
+\hline
+Articulación Proyecto Alfabetización & Redacción de informes técnicos sobre el comportamiento de los fluidos, enfatizando el uso de vocabulario específico y normas de escritura técnica. \\
+\hline
+Articulación Proyecto de Matemáticas & Aplicación de ecuaciones diferenciales y álgebra para el cálculo de pérdidas de carga y dimensionamiento de cañerías. \\
+\hline
+Articulación Proyecto de Bullyng & Promoción de un ambiente de respeto y colaboración durante las prácticas de laboratorio y el trabajo en equipo en el taller. \\
+\hline
+\end{tabular}
+\end{document}

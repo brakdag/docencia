@@ -5,7 +5,7 @@ PDFLATEX = pdflatex
 BUILD_DIR = $(shell pwd)/build
 
 # Buscar todos los archivos .tex ÚNICAMENTE en subcarpetas de core_content
-SOURCES = $(shell find core_content -mindepth 2 -name "*.tex")
+SOURCES = $(shell find core_content -name "*.tex")
 TARGETS = $(SOURCES:.tex=.pdf)
 
 # Fuentes específicas por escuela
@@ -28,10 +28,10 @@ all: $(TARGETS)
 
 # Regla de compilación
 %.pdf: %.tex
-	@dest_dir=$$(echo $(dir $<) | sed 's|core_content/||; s|/$$||'); 
-	mkdir -p $(BUILD_DIR)/$$dest_dir
-	cd $(dir $<) && $(PDFLATEX) -interaction=nonstopmode -output-directory=$(BUILD_DIR)/$$dest_dir $(notdir $<)
-	cd $(dir $<) && $(PDFLATEX) -interaction=nonstopmode -output-directory=$(BUILD_DIR)/$$dest_dir $(notdir $<)
+	@dest_dir=$(basename $(dir $<)); 
+	mkdir -p $(BUILD_DIR)/$dest_dir
+	$(PDFLATEX) -interaction=nonstopmode -output-directory=$(BUILD_DIR)/$dest_dir $<
+	$(PDFLATEX) -interaction=nonstopmode -output-directory=$(BUILD_DIR)/$dest_dir $<
 
 # Limpiar archivos auxiliares y PDFs
 clean:
