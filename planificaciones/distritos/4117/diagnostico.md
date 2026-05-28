@@ -2,15 +2,6 @@
 
 - Hoja vertical.
 
-## Encabezado.
-
-- El encabezado tiene dos logos izquierda logo4117 y derecha logoDGE
-  y este texto centrado, en negrita y cursiva, tamaño 10pt.
-
-ESCUELA N.° 4-117 EJÉRCITO DE LOS ANDES
-DIRECCIÓN DE EDUCACIÓN TÉCNICA Y TRABAJO
-SECCIÓN V
-
 ## Cuerpo del texto.
 
 El texto va todo en tamaño 11pt

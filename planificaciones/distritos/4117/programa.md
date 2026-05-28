@@ -1,5 +1,7 @@
 # Plantilla de programa
 
+- La página va apaisada.
+
 PROGRAMA 2026 (titulo general)
 
 %formulario%
