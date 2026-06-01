@@ -1,0 +1,65 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=1cm]{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+
+% Entorno para cada versión (4 por página)
+\newenvironment{versionexamen}[1]{
+  \begin{minipage}[t]{0.48\textwidth}
+    \textbf{Evaluación Termodinámica - Versión #1} \\
+    \textit{Escuela 4117 - 5to 2da}
+    \begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=15pt, topsep=4pt, itemsep=4pt]
+      \small
+}{
+    \end{enumerate}
+    \vspace{0.4cm}
+  \end{minipage}
+}
+
+\begin{document}
+
+\begin{versionexamen}{A}
+	\item Determinar la cantidad de trabajo necesaria para que $1\text{m}^3$ de gas entre en un tanque que ya tiene el mismo gas a una presión de $5\text{atm}$. (1,5 pts)
+	\item Calcular el trabajo efectuado por el gas contenido en un cilindro con volumen inicial $v_i=0,025\text{m}^3$ y presión $p_i=2,5\text{atm}$, si al calentarle por su base el volumen aumenta a $v_f=0,175\text{m}^3$ permaneciendo constante la presión. (1,5 pts)
+	\item Una masa gaseosa que ocupa un volumen de $0,15\text{m}^3$ es comprimida isotérmicamente desde la presión de $1,3\text{atm}$ hasta la presión de $3,5\text{atm}$. Calcular el volumen final de la masa gaseosa. (1,5 pts)
+	\item Calcular el aumento de presión que experimentará el gas encerrado en un depósito rígido, a la presión de $p=1\text{atm}$, cuando la temperatura aumenta de $17^\circ$C a $57^\circ$C. (1,5 pts)
+	\item Determinar el volumen molar que posee un gas de la atmósfera a $27^\circ$C y $p=1\text{Atm}= 10330\frac{\text{kg}}{\text{m}^2\text{g}}$. (1,0 pts)
+	\item Calcular el número de moles de una masa gaseosa que ocupa un volumen de $v=0,4\text{m}^3$ a la presión $p=2,5\text{atm}$ y a la temperatura $t=-3^\circ$C. (1,0 pts)
+	\item Una cámara de presión contiene 2 moles de gas nitrógeno a una temperatura de 25°C y una presión de 2 atmósferas. Si se reduce el volumen de la cámara a la mitad y se aumenta la temperatura a 50°C, ¿cuál será la nueva presión del gas? (2,0 pts)
+\end{versionexamen}
+\hfill
+\begin{versionexamen}{B}
+	\item Un cilindro con un pistón contiene un gas a una presión de $3\text{atm}$. Se desea introducir $0,5\text{m}^3$ de gas en el cilindro. ¿Cuánto trabajo se necesita realizar para lograrlo? (1,5 pts)
+	\item Calcular el trabajo que es necesario efectuar sobre $v=0,5\text{m}^3$ de gas para que ingrese a un tanque que contiene el mismo gas a presión de $p=3\text{atm}$. (1,5 pts)
+	\item El gas contenido en un cilindro ocupa el volumen de $v=0,36\text{m}^3$ a la temperatura de $t=27^\circ$C. Suponiendo que el pistón ejerce una presión constante, calcular el volumen que ocupará la masa gaseosa si la temperatura se eleva a $t_2=72^\circ$C. (1,5 pts)
+	\item Calcular la presión que posee $1\text{kg}$ de oxígeno cuando ocupa un volumen $1\text{m}^3$ a la temperatura de $27^\circ$C. (1,5 pts)
+	\item ¿Cuál es el volumen molar de un gas de la atmósfera a $27^\circ$C y una presión de 1 atmósfera? (1,0 pts)
+	\item ¿Cuántos moles de gas hay en un volumen de $0,4\text{m}^3$ a una presión de $2,5\text{atm}$ y una temperatura de $-3^\circ$C? (1,0 pts)
+	\item Un globo de helio tiene un volumen de 5 litros a una presión de 1 atmósfera y una temperatura de 20°C. Si se le añade helio hasta que su volumen es de 10 litros a una temperatura de 30°C, ¿cuál será la nueva presión en el globo? (2,0 pts)
+\end{versionexamen}
+\vfill
+\begin{versionexamen}{C}
+	\item En una instalación de almacenamiento de gas, se tiene un tanque a una presión de $5\text{atm}$. Se requiere agregar $1\text{m}^3$ de gas al tanque. ¿Cuál es el trabajo necesario para llevar a cabo esta tarea? (1,5 pts)
+	\item Calcular el trabajo de circulación producido en un compresor si al mismo ingresa $v=1\text{m}^3$ de aire a la presión de la atmósfera y salen $v_f=0,025\text{m}^3$ a la presión de $p_f=3\text{atm}$, siendo el trabajo de compresión $T=13500\text{kgm}$. (2,0 pts)
+	\item Calcular el volumen ocupado por $m_{He}=2\text{kg}$ de helio que está comprimido a la presión de $p_{He}=5\text{atm}$ y a la temperatura de $t=-13^\circ$C. (1,5 pts)
+	\item Calcular el volumen que ocupará una masa gaseosa, a la presión de $3,3\text{atm}$ y a la temperatura de $t=57^\circ$C, si a la presión de $p=5\text{atm}$ y a la temperatura de $t=-33^\circ$C ocupa un volumen de $v=1,2\text{m}^3$. (1,5 pts)
+	\item Una mezcla de nitrógeno y oxígeno que a $t=27^\circ$C y $p=1\text{atm}$, pesa $100\text{kg}$, contiene un $40\%$ en peso de nitrógeno. Calcular las presiones parciales de cada gas. (1,5 pts)
+	\item Una mezcla de $48\text{kg}$ de oxígeno, $42\text{kg}$ de nitrógeno y $10\text{kg}$ de hidrógeno se encuentra a $t=47^\circ$C y $p=1,5\text{atm}$. Calcular el número de moles y el volumen de la mezcla. (1,0 pts)
+	\item Determinar la cantidad de trabajo necesaria para que $1\text{m}^3$ de gas entre en un tanque que ya tiene el mismo gas a una presión de $5\text{atm}$. (1,0 pts)
+\end{versionexamen}
+\hfill
+\begin{versionexamen}{D}
+	\item Un sistema de refrigeración utiliza un compresor para mantener la presión del gas a $2\text{atm}$ dentro de un contenedor. Si se desea introducir $2\text{m}^3$ de gas, ¿cuánto trabajo debe realizar el compresor? (1,5 pts)
+	\item Un compresor toma $0,5\text{m}^3$ de aire a la presión atmosférica y lo comprime hasta un volumen de $0,02\text{m}^3$ a una presión de $3\text{atm}$. Si el trabajo de compresión es de $8000\text{J}$, ¿cuál es el trabajo de compresión producido? (2,0 pts)
+	\item Un globo de helio tiene un volumen de $5\text{L}$ a $1\text{atm}$ y $20^\circ$C. Si se le añade helio hasta que su volumen es de $10\text{L}$ a $30^\circ$C, ¿cuál será la nueva presión? (1,5 pts)
+	\item Una cámara de presión contiene $2\text{moles}$ de nitrógeno a $25^\circ$C y $2\text{atm}$. Si se reduce el volumen a la mitad y se aumenta la temperatura a $50^\circ$C, ¿cuál será la nueva presión? (1,5 pts)
+	\item Si un gas ocupa un volumen de $2,5\text{L}$ a $25^\circ$C y una presión de $1\text{atm}$, ¿cuántos moles de gas hay? (1,0 pts)
+	\item ¿Cuál es la presión parcial del nitrógeno en una mezcla que contiene $0,5\text{moles}$ de nitrógeno y $1,5\text{moles}$ de oxígeno si la presión total es de $2\text{atm}$? (1,5 pts)
+	\item Determinar la constante del aire si a $0^\circ$C y a la presión atmosférica normal, el volumen específico es igual a $0,7725 \text{m}^3/\text{kg}$. (1,0 pts)
+\end{versionexamen}
+
+\end{document}
