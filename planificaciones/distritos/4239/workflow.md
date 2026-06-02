@@ -2,7 +2,7 @@
 
 ## Objetivo.
 
-Producir 3 documentos por curso (ver cursos.md) en LaTeX.
+Producir "planificación,diagnóstico y programa" por curso (ver cursos.md) en LaTeX.
 La información está en
 
 - formato.md

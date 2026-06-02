@@ -4,60 +4,65 @@
 \usepackage[T1]{fontenc}
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage[margin=0.85cm]{geometry}
+\usepackage[margin=1.5cm, top=1.5cm]{geometry}
 \usepackage{graphicx}
+\graphicspath{{core_content/4239/}}
 \usepackage{fancyhdr}
 \usepackage[table]{xcolor}
-\setlength{\headheight}{72pt}
+\setlength{\headheight}{80pt}
 \usepackage{hyperref}
 \usepackage{array}
 \usepackage{longtable}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins}
-\graphicspath{{/mnt/DataSD/sandbox/repositorio_docente/planificaciones/core_content/4239/}}
 
 \definecolor{linkblue}{RGB}{0,0,255}
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\llap{\includegraphics[height=1.5cm]{logo_esc_4239.png}}}
-\fancyhead[R]{\rlap{\includegraphics[height=1.5cm]{logo_dge_4239.png}}}
-\fancyhead[C]{\begin{minipage}{12cm}\centering\fontsize{8pt}{10pt}\selectfont\bfseries\rmfamily
-Escuela Nº 4-239 “Cerro el Sosneado” \\
-Dirección de Educación Técnica y Trabajo \\
-Paraje “El Sosneado”, San Rafael - Mendoza \\
-\textcolor{linkblue}{\underline{estec4239sup@gmail.com}} \\
-\fontsize{11pt}{13pt}\selectfont SUPERVISION IV – SUPERVISORA PROF. PATRICIA OROZCO
-\end{minipage}}
+\fancyhead[C]{% 
+  \begin{tabular}{ccc}
+    \includegraphics[height=1.5cm]{logo_esc_4239.png} & 
+    \begin{minipage}{12cm}\centering\fontsize{8pt}{10pt}\selectfont\bfseries\rmfamily
+    Escuela Nº 4-239 “Cerro el Sosneado” \\
+    Dirección de Educación Técnica y Trabajo \\
+    Paraje “El Sosneado”, San Rafael - Mendoza \\
+    \textcolor{linkblue}{\underline{estec4239sup@gmail.com}} \\
+    \fontsize{11pt}{13pt}\selectfont SUPERVISION IV – SUPERVISORA PROF. PATRICIA OROZCO
+    \end{minipage} & 
+    \includegraphics[height=1.5cm]{logo_dge_4239.png}
+  \end{tabular}
+}
 \renewcommand{\headrulewidth}{0pt}
 
+\usepackage{tabularx}
 \begin{document}
 \tcbset{colback=white, colframe=black, boxrule=0.2mm, sharp corners}
-
 
 \begin{center}
 \fontsize{12pt}{14pt}\selectfont\bfseries CICLO LECTIVO 2026
 \end{center}
 
 \vspace{0.5cm}
-\noindent\textbf{\underline{ÁREA: TÉCNICA AGROPECUARIA}}\
-\noindent\textbf{\underline{ESPACIO CURRICULAR: MANTENIMIENTO DE MÁQUINAS Y EQUIPOS}}\
-\noindent\textbf{\underline{CURSO: 4to 1ra}}\
-\noindent\textbf{\underline{PROFESOR/A: FERREYRA GUSTAVO DAVID}}\
+\noindent\textbf{\underline{ÁREA: TÉCNICA AGROPECUARIA}}\\
+\noindent\textbf{\underline{ESPACIO CURRICULAR: MANTENIMIENTO DE MÁQUINAS Y EQUIPOS}}\\
+\noindent\textbf{\underline{CURSO: 4to 1ra}}\\
+\noindent\textbf{\underline{PROFESOR/A: FERREYRA GUSTAVO DAVID}}\\
 \noindent PROGRAMA 2026
 
 \vspace{0.5cm}
-\begin{tabular}{|p{4cm}|p{6cm}|p{8cm}|}
+\begin{center}
+\begin{tabularx}{0.98\textwidth}{|p{4cm}|p{6cm}|X|}
 \hline
 \rowcolor{gray!20}\fontsize{10pt}{12pt}\selectfont\bfseries EJE TEMÁTICO & \textbf{APRENDIZAJE PRIORITARIO} & \textbf{APRENDIZAJES ESPECÍFICOS} \\ \hline
-\fontsize{10pt}{12pt}\selectfont MOTORES, MÁQUINAS Y CONTROLADORES & Reconocer principios de funcionamiento y operar tractores agrícolas & $\bullet$ Diferenciación de principios físicos de motores y equipos.\\ $\bullet$ Mantenimiento primario del parque automotor y herramientas.\\ $\bullet$ Características de motores: potencia, torque y reserva de par.\\ $\bullet$ Criterios de operación eficiente de tractores e implementos. \\ \hline
-\fontsize{10pt}{12pt}\selectfont EQUIPOS E IMPLEMENTOS AGROPECUARIOS & Análisis crítico y manejo de implementos agroindustriales & $\bullet$ Funcionamiento de Arados, Rastras, Sembradoras y Pulverizadoras.\\ $\bullet$ Operación de Cosechadoras, Picadoras y Enfardadoras.\\ $\bullet$ Equipos de ordeñe, básculas y prensas.\\ $\bullet$ Sistemas de transporte: cintas, moledoras y lavadoras. \\ \hline
-\fontsize{10pt}{12pt}\selectfont CRITERIOS DE EFICIENCIA Y CONSERVACIÓN & Aplicar criterios de conservación ambiental en la maquinaria & $\bullet$ Valoración de la fragilidad ecológica y riesgos de erosión.\\ $\bullet$ Prevención de la contaminación por residuos de maquinaria.\\ $\bullet$ Impacto del uso de equipos en los agroecosistemas.\\ $\bullet$ Técnicas profilácticas y sostenibilidad. \\ \hline
+\fontsize{10pt}{12pt}\selectfont MOTORES, MÁQUINAS Y CONTROLADORES & Reconocer principios de funcionamiento y operar tractores agrícolas & $\bullet$ Diferenciación de principios físicos de motores y equipos.\newline $\bullet$ Mantenimiento primario del parque automotor y herramientas.\newline $\bullet$ Características de motores: potencia, torque y reserva de par.\newline $\bullet$ Criterios de operación eficiente de tractores e implementos. \\ \hline
+\fontsize{10pt}{12pt}\selectfont EQUIPOS E IMPLEMENTOS AGROPECUARIOS & Análisis crítico y manejo de implementos agroindustriales & $\bullet$ Funcionamiento de Arados, Rastras, Sembradoras y Pulverizadoras.\newline $\bullet$ Operación de Cosechadoras, Picadoras y Enfardadoras.\newline $\bullet$ Equipos de ordeñe, básculas y prensas.\newline $\bullet$ Sistemas de transporte: cintas, moledoras y lavadoras. \\ \hline
+\fontsize{10pt}{12pt}\selectfont CRITERIOS DE EFICIENCIA Y CONSERVACIÓN & Aplicar criterios de conservación ambiental en la maquinaria & $\bullet$ Valoración de la fragilidad ecológica y riesgos de erosión.\newline $\bullet$ Prevención de la contaminación por residuos de maquinaria.\newline $\bullet$ Impacto del uso de equipos en los agroecosistemas.\newline $\bullet$ Técnicas profilácticas y sostenibilidad. \\ \hline
 \multicolumn{3}{|l|}{\textbf{BIBLIOGRAFÍA:}} \\ \hline
 \multicolumn{3}{|l|}{$\bullet$ Manuales de Operación de Tractores y Maquinaria Agrícola.} \\ \hline
 \multicolumn{3}{|l|}{$\bullet$ Normativas de Seguridad e Higiene en el Trabajo Rural.} \\ \hline
 \multicolumn{3}{|l|}{$\bullet$ Guías de Mantenimiento Preventivo y Correctivo.} \\ \hline
-\end{tabular}
-
+\end{tabularx}
+\end{center}
 
 \end{document}
