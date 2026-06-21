@@ -1,29 +1,33 @@
-# Nombre del archivo principal (sin la extensión .tex)
-DOCNAME = test
+# --- Configuración del Escriba Técnico ---
+# Nombre del archivo por defecto (sin extensión .tex)
+target ?= tex_diploma_promedio_2025
 
-# Compilador
+# Compilador y Banderas
 COMPILER = xelatex
-
-# Opciones: 
-# -interaction=nonstopmode: Para que no se frene ante errores (evita el "?")
-# -synctex=1: Habilita la sincronización entre el PDF y el código (útil si usas editores gráficos)
 FLAGS = -interaction=nonstopmode -synctex=1
+OUT_DIR = out
 
-# Regla por defecto (se ejecuta al escribir 'make')
-all: $(DOCNAME).pdf
+# Detección de todas las fuentes de diplomas
+SOURCES = $(wildcard tex_*.tex)
+# Corrección: Usamos addprefix para construir la lista de PDFs en la carpeta out/
+PDFS = $(addprefix $(OUT_DIR)/, $(SOURCES:.tex=.pdf))
 
-# Regla para generar el PDF
-$(DOCNAME).pdf: $(DOCNAME).tex
-	$(COMPILER) $(FLAGS) $(DOCNAME).tex
-	# Descomenta la siguiente línea si usas referencias cruzadas o índices (compila dos veces)
-	# $(COMPILER) $(FLAGS) $(DOCNAME).tex
+# Regla principal: Genera el PDF del target especificado en la carpeta out/
+all: $(OUT_DIR)/$(target).pdf
 
-# Regla para limpiar archivos auxiliares (log, aux, out, etc.)
+# Regla masiva: Genera los PDFs de TODOS los archivos tex_ en la carpeta out/
+all_tex: $(PDFS)
+
+# Regla genérica de compilación con redirección de salida
+$(OUT_DIR)/%.pdf: %.tex
+	mkdir -p $(OUT_DIR)
+	$(COMPILER) $(FLAGS) -output-directory=$(OUT_DIR) $<
+
+# Limpieza de artefactos: Borra la carpeta de salida completa
 clean:
-	rm -f *.aux *.log *.out *.synctex.gz *.toc *.fls *.fdb_latexmk
+	rm -rf $(OUT_DIR)
 
-# Regla para limpiar todo, incluyendo el PDF final
+# Limpieza total
 distclean: clean
-	rm -f $(DOCNAME).pdf
 
-.PHONY: all clean distclean
+.PHONY: all all_tex clean distclean
