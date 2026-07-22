@@ -1,0 +1,8 @@
+{
+    "rendering_mode": "IRC",
+    "provider": "ZAI",
+    "model_name": "glm-5.2",
+    "default_temperature": 0.3,
+    "rpm_limit": 40,
+    "context_window_limit": 100000
+}

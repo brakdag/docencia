@@ -1,0 +1,255 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+\pagestyle{empty}
+\chapter{Motor paso a paso}
+\normalsize
+El motor paso a paso (\emph{Stepper en inglés}) conocido también como
+motor de pasos es
+un dispositivo electromecánico que convierte una serie de impulsos eléctricos
+en desplazamientos angulares discretos, lo que significa que es capaz de girar
+una cantidad de grados (paso o medio paso) dependiendo de sus
+entradas de control.
+
+\video{https://www.youtube.com/watch?v=b_-PQCjyRRQ}{Funcionamiento de
+motor paso a paso.}
+
+El motor paso a paso se comporta de la misma manera que un conversor
+digital-analógico
+(D/A) y puede ser gobernado por impulsos procedentes de sistemas digitales.
+Este motor presenta las ventajas de tener precisión y repetitividad
+en cuanto al posicionamiento. Entre sus principales aplicaciones
+destacan los robots,
+drones, radio control, impresoras digitales, automatización,
+foto componedoras, pre prensa, etc.
+
+\img{images/stepper/stepper}{Motor paso a paso.}
+
+\subsection{Tipos de motores paso a paso}
+Existen 3 tipos fundamentales de motores paso a paso: el motor de
+reluctancia variable, el motor de magnetización permanente, y el motor híbrido.
+\begin{itemize}
+
+  \item El motor de pasos de reluctancia variable (VR): Tiene un
+    rotor multipolar de hierro y un estator devanado, opcionalmente
+    laminado. Rota cuando el (o los) diente (s) más cercano (s) del
+    rotor es (o son) atraído (s) a la (s) bobina (s) del estator
+    energizada (s) (obteniéndose por lo tanto, la ruta de menor
+    reluctancia). La respuesta de este motor es muy rápida, pero la
+    inercia permitida en la carga es pequeña. Cuando los devanados no
+    están energizados, el par estático de este tipo de motor es cero.
+
+  \item El motor de pasos de rotor de imán permanente: Permite
+    mantener un par diferente de cero cuando el motor no está
+    energizado. Dependiendo de la construcción del motor, es
+    típicamente posible obtener pasos angulares de 7.5, 11.25, 15,
+    18, 45 o 90$^o$. El ángulo de rotación se determina por el número
+    de polos en el estator.
+
+  \item El motor de pasos híbrido: Se caracteriza por tener varios
+    dientes en el estator y en el rotor, el rotor con un imán
+    concéntrico magnetizado axialmente alrededor de su eje. Se puede
+    ver que esta configuración es una mezcla de los tipos de
+    reluctancia variable e imán permanente. Este tipo de motor tiene
+    una alta precisión y alto par, se puede configurar para
+    suministrar un paso angular tan pequeño como 1.8$^o$.
+
+\end{itemize}
+\subsection{Motores paso a paso unipolares}
+\img{images/stepper/unipolar}{Modelo conceptual de motor unipolar.}
+Estos motores suelen tener 5 o 6 cables de salida dependiendo de su
+conexión interna. Este tipo se caracteriza por ser más simple de
+controlar, estos utilizan un cable común a la fuente de alimentación
+y posteriormente se van colocando las otras líneas a tierra en un
+orden específico para generar cada paso, si tienen 6 cables es porque
+cada par de bobinas tienen un común separado, si tiene 5 cables es
+porque las cuatro bobinas tienen un polo común; un motor unipolar de
+6 cables puede ser usado como un motor bipolar si se deja las líneas
+del común al aire.
+
+\subsection{Motores paso a paso bipolares}
+Estos tienen generalmente 4 cables de salida. Necesitan ciertos
+trucos para ser controlados debido a que requieren del cambio de
+dirección de flujo de corriente a través de las bobinas en la
+secuencia apropiada para realizar un movimiento.
+
+Secuencia de rotación en un motor Bipolar: Obsérvese cómo la
+variación de la dirección del campo magnético creado en el estator
+producirá movimiento de seguimiento de parte del rotor del imán
+permanente, el cual intentará alinearse con el campo magnético
+inducido por las bobinas que excitan los electroimanes (en este caso
+A y B). Vcc es la alimentación de corriente continua (por ejemplo:
+$5V, 12V, 24V \ldots$)
+
+\subsection{Control de las bobinas}
+
+\img{images/stepper/puenteh}{
+Topología de "puente en H" para las bobinas A y B}
+\img{images/stepper/puenteh2}{
+Variación de la alimentación según los transistores T1, T2, T3, T4}
+
+Para el control del motor paso a paso de este tipo (bipolar), se
+establece el principio de ``Puente H'', si se activan T1 y T4, permiten
+la alimentación en un sentido; si cambiamos el sentido de la
+alimentación activando T2 y T3, cambiaremos el sentido de
+alimentación y el sentido de la corriente.
+
+\info{Velocidad de rotación}{
+  La velocidad de rotación en R.P.M. (revoluciones por minuto) viene
+  definida por la ecuación:
+  \begin{equation}
+    N=60\cdot {\frac {f}{n}}
+  \end{equation}
+
+  Donde:
+
+  $f$: frecuencia del tren de impulsos (ciclos/segundo)
+
+  $n$: Número de de polos que forman el motor
+
+  1. \textbf{Velocidad angular ($\omega$)}:
+  \[ \omega = \frac{2\pi \cdot N}{60} \]
+
+  2. \textbf{Resolución del paso ($\alpha$)}:
+  \[ \alpha = \frac{360}{S} \]
+
+  3. \textbf{Torque ($\tau$)}:
+  \[ \tau = F \cdot r \]
+
+  4. \textbf{Corriente (I)}
+  \[ I = \frac{V}{R} \]
+
+}
+
+Si bien hay que decir que para estos motores, la máxima frecuencia
+admisible suele estar alrededor de los 625 Hz, en caso de que la
+frecuencia de pulsos sea demasiado elevada, el motor puede reaccionar
+en alguna de las siguientes maneras:
+\begin{itemize}
+
+  \item No realizar ningún movimiento en absoluto.
+  \item Comenzar a vibrar pero sin llegar a girar.
+  \item Girar erráticamente.
+  \item Girar en sentido opuesto.
+  \item Perder potencia
+
+\end{itemize}
+
+Como ayuda es recomendable que también se coloque a disposición un
+simulador o circuito para probar estos motores paso a paso para
+descartar fallas en ello.
+
+\actividad{Investigar y Responder}
+\begin{enumerate}
+  \item ¿Cuáles son las ventajas y desventajas de los motores paso a
+    paso en comparación con los motores de corriente continua?
+  \item ¿Cuáles son las aplicaciones típicas de los motores paso a paso?
+  \item ¿Cuáles son los diferentes tipos de motores paso a paso
+    disponibles en el mercado?
+  \item ¿Cuál es la composición básica de un motor paso a paso?
+  \item ¿Qué significa que un motor paso a paso tenga reluctancia variable?
+  \item ¿Cuáles son las principales diferencias entre los motores
+    paso a paso bipolares y unipolares?
+  \item ¿Cómo se realiza la identificación y conexión de las bobinas
+    en motores paso a paso bipolares y unipolares?
+  \item ¿Qué es un controlador de motor paso a paso y qué
+    características eléctricas son importantes al elegir uno?
+  \item ¿Cuáles son las ventajas del ULN2003 como controlador de
+    motor paso a paso y cuántos motores puede controlar?
+  \item ¿Cuál es la diferencia entre el ULN2003 y el L293D en
+    términos de control de motores paso a paso?
+
+\end{enumerate}
+
+\actividad{Resolver}
+\begin{enumerate}
+  \item Un motor paso a paso tiene una velocidad angular de \( \omega
+    = 200 \) rad/s. ¿Cuál es su velocidad en RPM (revoluciones por minuto)?
+
+  \item Si un motor paso a paso tiene una resolución del paso de \(
+    \alpha = 1.8^\circ \), ¿cuántos pasos tiene por revolución?
+
+  \item Un motor paso a paso produce un torque de \( \tau = 0.5 \) Nm
+    cuando se aplica una fuerza de \( F = 2 \) N a una distancia de
+    \( r = 0.25 \) metros desde el eje de rotación. ¿Cuál es la
+    resistencia mecánica del motor?
+
+  \item Si la corriente necesaria para alimentar un motor paso a paso
+    es \( I = 1.5 \) A y la resistencia del motor es \( R = 4 \)
+    $\Omega$, ¿cuál es el voltaje aplicado al motor?
+
+  \item Si un motor paso a paso tiene una velocidad de \( 300 \) RPM,
+    ¿cuál es su velocidad angular en rad/s?
+
+  \item ¿Cuál es la resolución del paso de un motor paso a paso que
+    tiene \( 4000 \) pasos por revolución?
+
+  \item Si el torque producido por un motor paso a paso es de \( 0.8
+    \) Nm y se aplica una fuerza de \( 5 \) N a una distancia de \(
+    0.1 \) metros desde el eje de rotación, ¿cuál es el torque resultante?
+
+  \item ¿Cuál es la corriente necesaria para alimentar un motor paso
+    a paso si el voltaje aplicado es de \( 12 \) V y la resistencia
+    del motor es de \( 8 \) $\Omega$?
+
+  \item Si un motor paso a paso tiene una velocidad angular de \( 100
+    \) rad/s, ¿cuál es su velocidad en RPM?
+
+  \item Si la resolución del paso de un motor paso a paso es de \(
+    0.9^\circ \), ¿cuántos pasos tiene por revolución?
+
+  \item Un motor paso a paso mueve un mecanismo de impresión en una
+    impresora 3D con una velocidad angular de \( \omega = 500 \)
+    rad/s. ¿Cuánto tiempo tardará en imprimir un objeto de 10 cm de
+    altura si la capa de impresión tiene un grosor de 0.2 mm y es
+    necesaria una vuelta del motor por capa?
+
+  \item Se utiliza un motor paso a paso para controlar el movimiento
+    de un sistema de seguimiento solar. Si el motor tiene una
+    resolución del paso de \( \alpha = 0.2^\circ \), ¿Cuántos pasos
+    debe dar el motor para seguir el movimiento del sol durante una hora?
+
+  \item Un motor paso a paso es utilizado para mover una cortina de
+    teatro en un escenario. Si el motor produce un torque de \( \tau
+    = 2 \) Nm y la cortina pesa 10 kg, ¿Con qué velocidad angular
+    debe girar el motor para levantar la cortina con una aceleración
+    de 1 m/s\(^2\) y velocidad final $v_f=1m/s$?
+
+  \item Se requiere un motor paso a paso para controlar el movimiento
+    de un telescopio astronómico. Si el motor necesita una corriente
+    de \( I = 2 \) A para funcionar y la batería de 60000mAh del
+    telescopio suministra un voltaje de \( V = 12 \) V, ¿Cuántas
+    horas puede funcionar continuamente el telescopio antes de que la
+    batería se agote?
+
+  \item Un motor paso a paso se utiliza para mover un sistema de
+    riego automático en un jardín. Si el motor debe girar a una
+    velocidad de \( 120 \) RPM para cubrir eficientemente toda el
+    área del jardín, ¿Cuál es la distancia lineal recorrida por el
+    sistema de riego en un minuto si el radio del área de riego es de 5 metros?
+
+  \item Se emplea un motor paso a paso para controlar el movimiento
+    de una plataforma en una línea de producción de una fábrica. Si
+    el motor tiene una resolución del paso de \( \alpha = 0.1^\circ
+    \), ¿cuántos pasos debe dar el motor para mover la plataforma
+    exactamente 1 metro?
+
+  \item Un motor paso a paso se utiliza en un robot para levantar
+    objetos pesados. Si el motor puede producir un torque máximo de
+    \( \tau = 3 \) Nm, ¿cuál es la masa máxima que puede levantar el
+    robot si la distancia desde el eje de rotación del motor hasta el
+    punto de aplicación de la fuerza es de 0.15 metros?
+
+  \item Se instala un motor paso a paso en una puerta automática de
+    garaje. Si el motor necesita una corriente de \( I = 1.8 \) A
+    para funcionar y la tensión de la red eléctrica es de \( V = 220
+    \) V, ¿Cuánto cuesta en energía eléctrica cada ciclo de apertura
+    y cierre de la puerta del garaje si cada ciclo tarda 20 segundos?
+
+  \item Un motor paso a paso se utiliza en un sistema de
+    posicionamiento automático para alinear antenas de comunicación.
+    Si la velocidad angular máxima permitida para la antena es de \(
+    \omega = 300 \) RPM, ¿cuál debe ser la resolución mínima del paso
+    del motor para garantizar una precisión de apuntamiento de 0.1 grados?
+\end{enumerate}
+
+\end{document}
