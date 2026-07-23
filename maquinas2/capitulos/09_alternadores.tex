@@ -1,115 +1,228 @@
-\documentclass[../main]{subfiles}
+\documentclass{subfiles}
 \begin{document}
 \chapter{Alternador trifásico}
+
 \info{Contenido}{Alternadores, frecuencia del alternador,
-  monofásicos, trifásicos, tensiones compuestas, simples, corrientes
-simples compuestas,carga trifásica}
+  sistemas trifásicos, conexiones en estrella y triángulo, potencias
+  y corrección del factor de potencia.}
+
+\section{El alternador}
+Un alternador es una máquina eléctrica rotativa que transforma
+energía mecánica en energía eléctrica de corriente alterna. Su
+principio de funcionamiento se basa en la ley de Faraday: cuando un
+conductor se mueve dentro de un campo magnético variable, se induce
+en él una fuerza electromotriz (fem).
+
+\subsection{Frecuencia del alternador}
+La frecuencia de la tensión generada depende de la velocidad de giro
+del rotor y del número de pares de polos del inductor. La relación
+matemática que los vincula es:
+
+\begin{equation}
+  f = \frac{n \cdot p}{60}
+\end{equation}
+
+Donde:
+\begin{itemize}
+  \item $f$ = frecuencia de la tensión generada, en Hertz (\unit{Hz}).
+  \item $n$ = velocidad de rotación, en revoluciones por minuto (\unit{rpm}).
+  \item $p$ = número de pares de polos.
+\end{itemize}
+
+\section{Sistemas trifásicos}
+Un sistema trifásico es un conjunto de tres tensiones alternas de
+igual amplitud y frecuencia, desfasadas entre sí $120^\circ$. Es el
+sistema estándar para la generación y distribución de energía
+eléctrica debido a su eficiencia y constancia en la potencia
+instantánea entregada.
+
+En un sistema trifásico se distinguen dos tipos de tensiones y dos
+tipos de corrientes:
+\begin{itemize}
+  \item \textbf{Tensión simple} ($V_S$): Es la tensión entre una fase
+    y el neutro.
+  \item \textbf{Tensión compuesta} ($V_C$): Es la tensión entre dos
+    fases cualesquiera.
+  \item \textbf{Corriente simple} ($I_S$): Es la corriente que circula
+    por la carga en cada fase.
+  \item \textbf{Corriente compuesta} ($I_C$): Es la corriente que
+    circula por las líneas de alimentación.
+\end{itemize}
+
+\section{Conexiones de un sistema trifásico}
+Las cargas trifásicas se pueden conectar principalmente de dos
+formas: en estrella (Y) o en triángulo ($\Delta$).
+
+\subsection{Conexión estrella (Y)}
+En la conexión estrella, un extremo de cada impedancia se une a un
+punto común llamado neutro. En este sistema se cumple:
+\begin{equation}
+  V_C = \sqrt{3} \cdot V_S \approx 1{,}732 \cdot V_S
+\end{equation}
+
+\subsection{\texorpdfstring{Conexión triángulo ($\Delta$)}{Conexión triángulo (Delta)}}
+En la conexión triángulo, las impedancias se cierran formando un
+lazo, y las líneas se conectan a los vértices. En este sistema se
+cumple:
+\begin{equation}
+  I_C = \sqrt{3} \cdot I_S \approx 1{,}732 \cdot I_S
+\end{equation}
+
+\section{Potencias en sistemas trifásicos}
+En un sistema trifásico equilibrado, las potencias totales se
+calculan utilizando los valores compuestos (de línea):
+
+\begin{equation}
+  P = \sqrt{3} \cdot V_C \cdot I_C \cdot \cos(\varphi)
+\end{equation}
+\begin{equation}
+  Q = \sqrt{3} \cdot V_C \cdot I_C \cdot \sin(\varphi)
+\end{equation}
+\begin{equation}
+  S = \sqrt{3} \cdot V_C \cdot I_C
+\end{equation}
+
+Además, la potencia aparente se relaciona con las potencias activa
+y reactiva mediante:
+\begin{equation}
+  S = \sqrt{P^2 + Q^2}
+\end{equation}
+
+\subsection{Corrección del factor de potencia}
+Para corregir el factor de potencia conectando un banco de
+condensadores en paralelo a la carga, la potencia reactiva del banco
+se calcula como:
+\begin{equation}
+  Q_C = P \left( \tan(\varphi_1) - \tan(\varphi_2) \right)
+\end{equation}
+
+
+\section{Problemas resueltos}
 \actividad{Resolver los siguientes problemas}
 \begin{enumerate}
   \item Determinar la frecuencia que produce un alternador que gira a
-    una velocidad de $n=1500 RPM$ si éste posee dos pares de polos.
+    una velocidad de $n=\qty{1500}{rpm}$ si éste posee dos pares de
+    polos.
   \item Determinar la frecuencia que produce un alternador que gira a
-    una velocidad de $n=3500 RPM$ si posee 4 pares de polos.
-  \item Determinar el numero de pares de polos que posee un generador
-    que gira a una velocidad de $n=4500rpm$ y genera una frecuencia de 300Hz.
-  \item Determinar el numero de pares de polos que posee un generador
-    que gira a una velocidad de $n=3000rpm$ y genera una frecuencia de 100Hz.
+    una velocidad de $n=\qty{3500}{rpm}$ si posee 4 pares de polos.
+  \item Determinar el número de pares de polos que posee un generador
+    que gira a una velocidad de $n=\qty{4500}{rpm}$ y genera una
+    frecuencia de \qty{300}{Hz}.
+  \item Determinar el número de pares de polos que posee un generador
+    que gira a una velocidad de $n=\qty{3000}{rpm}$ y genera una
+    frecuencia de \qty{100}{Hz}.
   \item ¿A qué velocidad deberá girar un alternador con cuatro pares
-    de polos para producir una frecuencia de $f=50Hz$?
+    de polos para producir una frecuencia de $f=\qty{50}{Hz}$?
   \item Determinar la tensión compuesta que corresponde a un sistema
-    trifásico que posee una tensión simple de $V_S=223V$.
+    trifásico que posee una tensión simple de $V_S=\qty{223}{V}$.
   \item Determinar la tensión simple que corresponde a un sistema
-    trifásico que posee una tensión compuesta de $V_C=440V$.
+    trifásico que posee una tensión compuesta de $V_C=\qty{440}{V}$.
   \item Un motor trifásico posee sus bobinas conectadas en estrella.
     Determinar la corriente eléctrica que absorberá de la línea si al
-    conectarlo a una red con una tensión entre fases de $V_C=400V$
-    desarrolla una potencia de $P=10KW$ con un factor de potencia de
-    $\cos(\varphi)=0,8$, Averiguar la potencia reactiva $Q$ y aparente
-    $S$ del mismo.
+    conectarlo a una red con una tensión entre fases de
+    $V_C=\qty{400}{V}$ desarrolla una potencia de $P=\qty{10}{kW}$ con
+    un factor de potencia de $\cos(\varphi)=0{,}8$. Averiguar la
+    potencia reactiva $Q$ y aparente $S$ del mismo.
   \item Se conectan en estrella tres bobinas iguales a una red
-    trifásica de $V_C=220V, f=50Hz$. Cada una de las mismas posee
-    $R=12\Omega$ de resistencia, y $X_L=20\Omega$ de reactancia
-    inductiva. Calcular la impedancia $Z$, corrientes simples, factor
-    de potencia $\cos(\varphi)$, potencia activa $P$ potencia reactiva
-    $Q$ y potencia aparente  $S$.
-  \item se desea conectar a una red trifásica con neutro y una
-    tensión entre fases de $V_C=400V$, 30 lámparas fluorescentes de
-    $P=20W,230V \cos(\varphi)=0.6$.
+    trifásica de $V_C=\qty{220}{V}$, $f=\qty{50}{Hz}$. Cada una de las
+    mismas posee $R=\qty{12}{\Omega}$ de resistencia, y
+    $X_L=\qty{20}{\Omega}$ de reactancia inductiva. Calcular la
+    impedancia $Z$, corrientes simples, factor de potencia
+    $\cos(\varphi)$, potencia activa $P$, potencia reactiva $Q$ y
+    potencia aparente $S$.
+  \item Se desean conectar a una red trifásica con neutro y una
+    tensión entre fases de $V_C=\qty{400}{V}$, 30 lámparas
+    fluorescentes de $P=\qty{20}{W}$, $\qty{230}{V}$,
+    $\cos(\varphi)=0{,}6$.
     \begin{itemize}
       \item ¿Cómo deben conectarse para que la carga esté equilibrada?
-      \item Averiguar la corriente simples y compuestas.
+      \item Averiguar las corrientes simples y compuestas.
       \item Calcular la potencia del conjunto y por fase.
     \end{itemize}
   \item Un motor trifásico posee sus bobinas conectadas en triángulo.
     Determinar la corriente eléctrica que absorberá de la línea si al
-    conectarlo a una red con tensión entre fases de $V_C=380V$, se
-    desarrolla una potencia de $P=15Kw$, con $\cos(\varphi)=0,7$.
-    Averiguar la potencia reactiva $Q$ y aparente $S$.
-  \item Se conectan en triángulo bobinas de $R=10\Omega$ y
-    $X_L=10\Omega$ a una red trifásica de $V_C=400V, f=50Hz$.
-    Calcular $I_C,I_S, \cos(\varphi), P,Q,S$.
-  \item Se desean conectar 54 lámparas incandescentes de 100W, 220V,
-    a una red trifásica con una tensión entre fases de $V_C=220V$.
-    ¿Cómo deben conectarse y que consumo poseen?
-  \item En un sistema trifásico $V=380V$ con carga equilibrada se
-    mide una intensidad de línea de $I_C=30A$, con un factor de
-    potencia de $\cos(\varphi)=0,75$. Si la tensión entre fases es de
-    $V_C=230V$. Averiguar las potencias $Q,P,S$.
+    conectarlo a una red con tensión entre fases de
+    $V_C=\qty{380}{V}$, se desarrolla una potencia de
+    $P=\qty{15}{kW}$, con $\cos(\varphi)=0{,}7$. Averiguar la potencia
+    reactiva $Q$ y aparente $S$.
+  \item Se conectan en triángulo bobinas de $R=\qty{10}{\Omega}$ y
+    $X_L=\qty{10}{\Omega}$ a una red trifásica de $V_C=\qty{400}{V}$,
+    $f=\qty{50}{Hz}$. Calcular $I_C$, $I_S$, $\cos(\varphi)$, $P$,
+    $Q$, $S$.
+  \item Se desean conectar 54 lámparas incandescentes de
+    $\qty{100}{W}$, $\qty{220}{V}$, a una red trifásica con una
+    tensión entre fases de $V_C=\qty{220}{V}$. ¿Cómo deben conectarse
+    y qué consumo poseen?
+  \item En un sistema trifásico con carga equilibrada se mide una
+    intensidad de línea de $I_C=\qty{30}{A}$, con un factor de
+    potencia de $\cos(\varphi)=0{,}75$. Si la tensión entre fases es
+    de $V_C=\qty{380}{V}$. Averiguar las potencias $Q$, $P$, $S$.
   \item En un sistema trifásico con carga equilibrada de tres hilos
-    se mide una potencia en $P=36W$, una intensidad de $I_C=97,4A$.
-    Averiguar el factor de potencia $\cos(\varphi)$ de la carga.
+    se mide una potencia de $P=\qty{36}{kW}$ y una intensidad de
+    $I_C=\qty{97{,}4}{A}$. Si la tensión entre fases es de
+    $V_C=\qty{380}{V}$, averiguar el factor de potencia
+    $\cos(\varphi)$ de la carga.
   \item Un aparato de calefacción trifásico consta de tres
-    resistencias con $R=10\Omega$ conectadas en estrella. Determinar
-    la potencia que consumirán cuando se aplique $V_C=230V$ entre
-    fases, así como la corriente simple $I_S$ y compuesta $I_C$.
-  \item ¿Si conectamos en triángulo las resistencias del problema
-    anterior que valores tomarán $I_C$ y $I_S$?
-  \item Un motor trifásico de $P=3990W$ y $\cos(\varphi)=0,65$ se
-    conecta a una red de $V_C=380V, f=50hz$, se trata de averiguar la
+    resistencias con $R=\qty{10}{\Omega}$ conectadas en estrella.
+    Determinar la potencia que consumirán cuando se aplique
+    $V_C=\qty{230}{V}$ entre fases, así como la corriente simple $I_S$
+    y compuesta $I_C$.
+  \item Si conectamos en triángulo las resistencias del problema
+    anterior, ¿qué valores tomarán $I_C$ y $I_S$?
+  \item Un motor trifásico de $P=\qty{3990}{W}$ y
+    $\cos(\varphi)=0{,}65$ se conecta a una red de
+    $V_C=\qty{380}{V}$, $f=\qty{50}{Hz}$. Se trata de averiguar la
     corriente de línea y de cada fase del motor cuando está conectado
-    en triángulo, así como su potencia activa $P$ reactiva $Q$ y
-    aparente $S$. Si cada una de las fases del motor se lo puede
-    considerar como una inductancia $Z$ que posee una reactancia
-    inductiva $X_L$ y una resistencia $R$. Determina el valor
-    de las mismas.
-  \item Se conecta.en triángulo tres bobinas iguales de $R=16\Omega$
-    y $X_L=10\Omega$ de reactancia inductiva. Si se conectan en un
-    sistema trifásico de $V_C=240V$ entre fases y $f=50Hz$. Determinar
+    en triángulo, así como su potencia activa $P$, reactiva $Q$ y
+    aparente $S$. Si cada una de las fases del motor se puede
+    considerar como una impedancia $Z$ que posee una reactancia
+    inductiva $X_L$ y una resistencia $R$, determinar el valor de las
+    mismas.
+  \item Se conectan en triángulo tres bobinas iguales de
+    $R=\qty{16}{\Omega}$ y $X_L=\qty{10}{\Omega}$ de reactancia
+    inductiva. Si se conectan en un sistema trifásico de
+    $V_C=\qty{240}{V}$ entre fases y $f=\qty{50}{Hz}$. Determinar:
     \begin{itemize}
       \item Las corrientes simples $I_S$ y compuestas $I_C$.
-      \item Factor de potencia $\cos(\varphi)$.
-      \item La potencia Activa $P$ y reactiva $Q$.
+      \item El factor de potencia $\cos(\varphi)$.
+      \item La potencia activa $P$ y reactiva $Q$.
     \end{itemize}
   \item Una red trifásica alimenta tres motores monofásicos de
-    inducción de $P=5CV$ ($1CV=736W$), $\cos(\varphi)=0,78, V_C=220V$,
-    cada uno conectados entre fase y neutro. Determinar:
+    inducción de $P=\qty{5}{CV}$ ($\qty{1}{CV}=\qty{736}{W}$),
+    $\cos(\varphi)=0{,}78$, $V_C=\qty{220}{V}$, cada uno conectado
+    entre fase y neutro. Determinar:
     \begin{itemize}
-      \item Las corrientes simples y compuestas $I_S,I_C$.
-      \item La potencia reactiva que deberá poseer de condensadores
-        para corregir el $\cos(\varphi)=0,9$
+      \item Las corrientes simples $I_S$ y compuestas $I_C$.
+      \item La potencia reactiva que deberá aportar un banco de
+        condensadores para corregir el factor de potencia a
+        $\cos(\varphi)=0{,}9$.
     \end{itemize}
-  \item Una empresa demanda una potencia aparente $S=700KVA$ a
-    $V_C=10KV$ en corriente alterna trifásica. Las lecturas de
-    consumo en dos meses son para el contador de activa de
-    $Ph=205000KWh$ y $Qh=150000KVAr/h$. Calcular:
+  \item Una empresa demanda una potencia aparente $S=\qty{700}{kVA}$
+    a $V_C=\qty{10}{kV}$ en corriente alterna trifásica. Las lecturas
+    de consumo en dos meses son: contador de energía activa
+    $P_h=\qty{205000}{kWh}$ y de energía reactiva
+    $Q_h=\qty{150000}{kvar\cdot h}$. Calcular:
     \begin{itemize}
       \item El $\cos(\varphi)$ medio en dicho período de facturación.
-      \item Intensidades $I_C, I_S$
-      \item Potencia reactiva en un banco de capacitores necesaria
-        para corregir el factor de potencia a $\cos(\varphi)=0,93$
-      \item Porcentaje de reducción de la corriente simple $I_S$ una
-        vez conectado el banco de capacitores.
+      \item Las intensidades $I_C$ e $I_S$.
+      \item La potencia reactiva de un banco de condensadores
+        necesaria para corregir el factor de potencia a
+        $\cos(\varphi)=0{,}93$.
+      \item El porcentaje de reducción de la corriente simple $I_S$
+        una vez conectado el banco de condensadores.
     \end{itemize}
-  \item Una instalación Industrial de 50kW, con un factor de potencia
-    de $\cos(\varphi)=0,65$, se alimenta a través de un transformador
-    trifásico, con una tensión en el primario entre fases de $V_{C1}=
-    24kV$ y de $V_{C2}=400V$ en el secundario. Averiguar:
+  \item Una instalación industrial de $\qty{50}{kW}$, con un factor
+    de potencia de $\cos(\varphi)=0{,}65$, se alimenta a través de un
+    transformador trifásico, con una tensión en el primario entre
+    fases de $V_{C1}=\qty{24}{kV}$ y de $V_{C2}=\qty{400}{V}$ en el
+    secundario. Averiguar:
     \begin{itemize}
       \item La potencia nominal del transformador en kVA, así como la
-        corriente por el primario y secundario.
-      \item Nuevas características del transformador si se corrige el
-        a $\cos(\varphi)=0.98$ mediante una batería automática de
-        condensadores conectada en el lado de baja tensión.
+        corriente por el primario y el secundario.
+      \item Las nuevas características del transformador si se
+        corrige el factor de potencia a $\cos(\varphi)=0{,}98$
+        mediante una batería automática de condensadores conectada en
+        el lado de baja tensión.
     \end{itemize}
 \end{enumerate}
 \end{document}

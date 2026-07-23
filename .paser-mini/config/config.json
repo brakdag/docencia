@@ -4,5 +4,6 @@
     "model_name": "glm-5.2",
     "default_temperature": 0.3,
     "rpm_limit": 40,
-    "context_window_limit": 100000
+    "context_window_limit": 100000,
+    "execute_enabled": true
 }
