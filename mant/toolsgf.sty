@@ -10,7 +10,7 @@
 % \news{title}{noticia}
 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesPackage{toolsgf}[2020/04/24 Gustavo Ferreyra]
+\ProvidesPackage{toolsgf}[2026/03/05 v1.1 Gustavo Ferreyra]
 
 \RequirePackage{fontawesome,tcolorbox,qrcode,hyperref,graphics,tikz,geometry,sectsty,multicol}
 \RequirePackage[labelfont=bf]{caption}
@@ -22,7 +22,6 @@
     % switch the bool-flag if this option is set
     \setbool{@formato}{true}%
 }
-
 
 
 \ProcessOptions\relax
@@ -61,7 +60,9 @@
     minimum height=\ht\picbox, path picture={
       \node at (path picture bounding box.center) {
         \usebox{\picbox}};
-    }] {};}
+    }] {};
+
+}
 
 \newcommand{\img}[2]{
 \begin{figure}[ht]
@@ -85,8 +86,9 @@
 
 
 
+\providecommand{\Sectionname}{}
 \let\Sectionmark\sectionmark
-\def\sectionmark#1{\def\Sectionname{#1}\Sectionmark{#1}}
+\def\sectionmark#1{\gdef\Sectionname{#1}\Sectionmark{#1}}
 
 \geometry{
  a4paper,
@@ -119,7 +121,6 @@
 \node at (14,4.2){NOMBRE:};
 \node at (13.8,3.6){CURSO:};
 \node at (14.8,3){FECHA: .../.../......};
-\renewcommand{\thesection}{\arabic{section}};
 \node at (17.3,3.6){T.P.N.$^o$:\thesection};
 \node at (17.15,3){ESC.:};
 \node at (9.5,3.7) {\materia};

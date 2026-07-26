@@ -1,12 +1,24 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{setup}[2026/03/05 v1.0 Gustavo Ferreyra]
+\ProvidesPackage{setup}[2026/03/05 v1.2 Gustavo Ferreyra]
 \RequirePackage{microtype, multicol, enumitem, titlesec, lmodern}
 \RequirePackage[spanish]{babel}
 \RequirePackage{subfiles,tikz,svg,newtxtext,newtxmath}
 \usetikzlibrary{shapes,arrows}
-\RequirePackage[]{toolsgf}
+
+% Activar el formato A4 con rótulo inferior
+\RequirePackage[formato]{toolsgf}
+
 \allsectionsfont{\sffamily}
 \setlist{noitemsep, topsep=0pt, leftmargin=1.5em}
+
+% Forzar salto de página en cada nuevo práctico (sección)
+\newcommand{\sectionbreak}{\clearpage}
+
+% Corregir numeración: pasar de 0.1.1 a 1.1 (sin capítulos)
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
 \titleformat{\section}{\bfseries\Large}{\thesection}{1em}{}
 \titleformat{\subsection}{\bfseries}{\thesubsection}{1em}{}
 \pagestyle{plain}
