@@ -1,160 +1,98 @@
 \documentclass[../main]{subfiles}
 \begin{document}
-\chapter{Interacción electromagnética}
-\info{
-Contenido}{
-  Interacción entre la corriente eléctrica y campo magnético,
-  generación de f.e.m y fuerzas.
-  f.e.m.inducida por un conductor que se mueve en un
-campo magnético}
-\info{Fórmulas}{
+\chapter{Interacci\'on electromagn\'etica}
+\info{Contenido}{
+  Interacci\'on entre la corriente el\'ectrica y campo magn\'etico, generaci\'on de f.e.m y fuerzas.
+  f.e.m. inducida por un conductor que se mueve en un campo magn\'etico.
+}
+\info{F\'ormulas}{
   \begin{center}
-    \begin{tabular}{c c}
-      $\epsilon= B l v =f.e.m = N \frac{\Delta \Phi}{\Delta t}$ &
-      $\epsilon_{auto}=\dfrac{\Delta \Phi}{\Delta t}$ \\
-      & \\
-      $e_{auto}=L\dfrac{\Delta I}{\Delta t}$ & $L= N \dfrac{\Phi}{I}$ \\
-      & \\
-      $F= B l I$ & $\Phi = B s$
+    \begin{tabular}{cc}
+      $\epsilon = B l v = N \frac{\Delta \Phi}{\Delta t}$ & $\epsilon_{auto} = \frac{\Delta \Phi}{\Delta t}$ \\
+      $e_{auto} = L \frac{\Delta I}{\Delta t}$ & $L = N \frac{\Phi}{I}$ \\
+      $F = B l I$ & $\Phi = B s$
     \end{tabular}
   \end{center}
 
   Siendo:
-
-  $s$: sección ($m^2$)
-
-  $\Phi$: Flujo magnético. (Tesla $m^2$)
-
-  $\Delta \Phi =\Phi_{final} -\Phi_{inicial} $: Variación de flujo magnético.
-
-  $\Delta t=t_{final}-t_{inicial}$:Variación de tiempo.
-
-  $I$: Corriente (Ampere)
-
-  $\Delta I = I_{final}-I_{inicial}$: Variación de corriente. (Ampere)
-
-  $L$: Coeficiente de autoinducción.
-
-  $N$: Número de espiras.
-
-  $F$: Fuerza (Newtons)
-
-  $\epsilon$: f.e.m.inducida.(Volts)
-
-  $\epsilon_{auto}$: f.e.m.de auto inducción. (Volts)
-
-  $B$: Inducción magnética. (Tesla)
-
-  $l$: Longitud del conductor.(metros)
-
-  $v$: Velocidad del conductor (m/s)
-
+  \begin{itemize}
+    \item $s$: secci\'on transversal \unit{m^2}
+    \item $\Phi$: Flujo magn\'etico \unit{Wb} (Weber = Tesla $\cdot m^2$)
+    \item $\Delta \Phi = \Phi_{final} - \Phi_{inicial}$: Variaci\'on de flujo magn\'etico.
+    \item $\Delta t = t_{final} - t_{inicial}$: Variaci\'on de tiempo \unit{s}
+    \item $I$: Corriente el\'ectrica \unit{A}
+    \item $\Delta I = I_{final} - I_{inicial}$: Variaci\'on de corriente \unit{A}
+    \item $L$: Coeficiente de autoinducci\'on \unit{H} (Henrio)
+    \item $N$: N\'umero de espiras.
+    \item $F$: Fuerza electromotriz \unit{N}
+    \item $\epsilon$: f.e.m. inducida \unit{V}
+    \item $\epsilon_{auto}$: f.e.m. de autoinducci\'on \unit{V}
+    \item $B$: Inducci\'on magn\'etica \unit{T}
+    \item $l$: Longitud del conductor \unit{m}
+    \item $v$: Velocidad del conductor \unit{m/s}
+  \end{itemize}
 }
-\iffalse
+
 \begin{tcolorbox}
-  Teoría
+  Teor\'ia
   \tcblower
   \begin{tabular}{|p{12cm}|c|}\hline
-    Descripción & Código \\ \hline
-    f.e.m inducida por un conductor  que se mueve en un campo
-    magnético & \qrcode{https://www.youtube.com/watch?v=6N7ukJxvQ_M}\\\hline
-    Coeficiente de autoinducción &
-    \qrcode{https://www.youtube.com/watch?v=Xb5GHlaWv7g}  \\\hline
-    Fuerza producida en un conductor por el que circula corriente
-    dentro en un campo magnético &
+    Descripci\'on & C\'odigo \\ \hline
+    f.e.m inducida por un conductor que se mueve en un campo magn\'etico & \qrcode{https://www.youtube.com/watch?v=6N7ukJxvQ_M}\\\hline
+    Coeficiente de autoinducci\'on &
+    \qrcode{https://www.youtube.com/watch?v=Xb5GHlaWv7g} \\\hline
+    Fuerza producida en un conductor por el que circula corriente dentro de un campo magn\'etico &
     \qrcode{https://www.youtube.com/watch?v=QvBbUOn_T4k}\\ \hline
   \end{tabular}
-
 \end{tcolorbox}
-\fi
 
 \actividad{Resolver los siguientes problemas}
 
 \begin{enumerate}
-  \item Un conductor se desplaza a una velocidad lineal de $v=10m/s$
-    dentro de un campo magnético fijo de $B=1,5T$ de inducción.
-    Determinar el valor de la f.e.m.inducida en el mismo si posee
-    una longitud de $l=1m$.
-  \item A que velocidad se deberá mover un conductor de longitud
-    $l=0.5m$ para que dentro de una inducción de campo magnético de
-    $B=1T$ produzca una f.e.m de $e=5V$.
-  \item Determinar la inducción de campo magnético $B$, que será
-    necesaria para que un conductor de $l=1m$ de longitud que se
-    mueve a $v=10m/s$ cortando las líneas del campo magnético
-    produzca una f.e.m de $e=12V$.
-  \item ¿Cuál la f.e.m de auto-inducción si el flujo magnético $\Phi$
-    que existe en el campo magnético producido por una bobina de una
-    electroválvula si tiene esta un núcleo cilíndrico de diámetro
-    $d=4cm$ y la inducción magnética en la misma crece de $B=0T$ a
-    $B=1.5T$ en $\Delta t=0.3s$?
-  \item Calcular el valor de la f.e.m de auto-inducción que se
-    desarrollará una boina con coeficiente de auto-inducción de 50
-    milihernios si se aplica una corriente que crece desde cero hasta
-    $I=20A$ en un tiempo de $\Delta t=0,1 seg$.
-  \item Cuanto tiempo habrá que esperar para que la f.e.m de
-    auto-inducción se reduzca a $e_{auto}=1V$ si se hace circular
-    $I=10A$ por una bobina con un coeficiente de auto-inducción de $L=60 mH$
-  \item Cual es la f.e.m de auto inducción del problema anterior
-    cuando pasa 1 milisegundo de tiempo $t=0,001seg$ y ¿Cuál es el
-    valor de la fem de auto-inducción después de 1 minuto?
-  \item Con los datos del problema anterior elaborar un gráfico donde
-    en el eje vertical (ordenadas) se coloque el valor de f.e.m.
-    auto-inducción $e_{auto}$  en el eje de las abscisas los valores
-    de tiempo para $t_1=0.01s$, $t_2=0.1s$, $t_3=0.5s$, $t_4=0.8s$,
-    $t_5=1s$, $t_6=2s$, $t_7=4s,t_8=5s$ y $t_9=10s$
-  \item Una bobina de $N=200$ espiras se mueve cortando
-    perpendicularmente un campo magnético. La variación de flujo
-    experimentado es uniforme y va desde los $\Phi_1=5mWb$ a los
-    $\Phi_2=10mWb$ en un intervalo de tiempo de $\Delta t = 0.5
-    s$.Averiguar la f.e.m inducida.
-  \item Una bobina de $N=100$ espiras corta con un ángulo de $45^o$
-    un campo magnético uniforme, la variación de flujo experimentada
-    es uniforme y es de $\Delta \Phi = 4mWb$ en $\Delta t = 1s$.
-    Averiguar la f.e.m inducida.
-  \item Los terminales de una bobina son conectados a una resistencia
-    $R=1\Omega$ y se genera una corriente de $I=0,5A$ y cuando esta
-    se mueve produce una variación de flujo de  $\Delta \Phi =5mWb$
-    en $\Delta t = 2s$ ¿Cuántas espiras N tiene?
-  \item Hallar la longitud que tiene que tener un conductor que corta
-    perpendicularmente un campo magnético el cual posee una inducción
-    de B=3T, y moviéndose a una velocidad de $v=5m/s$ genera una
-    f.e.m de $e=10V$.
-  \item Calcular el valor de la f.e.m.de autoinducción que
-    desarrollará una bobina con un coeficiente de autoinducción de
-    $L=50mH$, si se aplica una corriente que crece regularmente desde
-    cero hasta $I=10A$ en un tiempo de $t=0.01s$.
-  \item Calcular el coeficiente de autoinducción si se genera una
-    f.e.m de $e=60V$ con una corriente que va desde $I_i=0A$ a
-    $I_f=12A$ en el tiempo de $\Delta t=0,1s$.
-  \item Calcular cuánto debe variar la corriente de forma uniforme
-    para que se produzca una f.e.m.de $e=12V$ en una bobina con
-    coeficiente de autoinducción de $L=60mH$, en el tiempo de $\Delta t=0,1s$.
-  \item Una bobina posee $N=500$ espiras y produce un flujo magnético
-    de $\Phi=10mWb$ cuando es atravesada por una corriente de
-    $I=10A$. Determinar el coeficiente de autoinducción.
-  \item Una bobina que posee $N=500$ espiras tiene un coeficiente de
-    autoinducción $L=0,5H$. Averiguar si produce un flujo magnético
-    de $\Phi=10mWb$ ¿Cuánta corriente circula por la misma?
-  \item Averiguar el número de espiras que tiene una bobina que
-    produce una variación de flujo magnético de $\Delta \Phi=0,01Wb$
-    cuando es travesada por una corriente de 10A y tiene un
-    coeficiente de autoinducción igual a $L=0,5H$.
-  \item Un conductor de $l=25cm$ se mueve en forma circular dentro de
-    un campo magnético cortando el flujo magnético según la función
-    $sen(\alpha)$ si el flujo máximo $\Phi=50mWb$. Si demora $t=1s$
-    en dar una vuelta. Realizar un gráfico donde el eje de las
-    ordenadas sea el tiempo en segundos y las ordenadas el valor de
-    la f.e.m generada.
-  \item Un imán produce una inducción $\Phi=100mWb$ en una superficie
-    de $s=20cm^2$ determinar el valor de la inducción del imán.
-  \item Un super imán de $B=10T$ tiene sección hexagonal de cuyo
-    radio que lo circunscribe es $r=10cm$. Determinar el flujo
-    magnético en una cara del imán $\Phi$.
-  \item Un imán de $B=3T$ tiene una longitud de 50cm, se pasa sobre
-    el imán un conductor cuyo longitud es $l=20cm$ con una velocidad
-    del $v=5m/s$. Determinar el valor de la f.e.m.que se produce.\@ ¿A
-    qué velocidad hay que hacerlo pasar para obtener 10 V?
-  \item Diseñar un generador para que genere una f.em. 10V, cuando
-    posea un conductor que mueva a la velocidad de 3.14m/s.
+  \item Un conductor se desplaza a una velocidad lineal de $v=\qty{10}{m/s}$ dentro de un campo magn\'etico fijo de $B=\qty{1,5}{T}$ de inducci\'on. Determinar el valor de la f.e.m. inducida en el mismo si posee una longitud de $l=\qty{1}{m}$.
+
+  \item ¿A qu\'e velocidad se deber\'a mover un conductor de longitud $l=\qty{0,5}{m}$ para que dentro de una inducci\'on de campo magn\'etico de $B=\qty{1}{T}$ produzca una f.e.m de $e=\qty{5}{V}$?
+
+  \item Determinar la inducci\'on de campo magn\'etico $B$, que ser\'a necesaria para que un conductor de $l=\qty{1}{m}$ de longitud que se mueve a $v=\qty{10}{m/s}$ cortando las l\'ineas del campo magn\'etico produzca una f.e.m de $e=\qty{12}{V}$.
+
+  \item ¿Cu\'al la f.e.m de auto-inducci\'on si el flujo magn\'etico $\Phi$ que existe en el campo magn\'etico producido por una bobina de una electrov\'alvula si tiene esta un n\'ucleo cil\'indrico de di\'ametro $d=\qty{4}{cm}$ y la inducci\'on magn\'etica en la misma crece de $B=\qty{0}{T}$ a $B=\qty{1,5}{T}$ en $\Delta t=\qty{0,3}{s}$?
+
+  \item Calcular el valor de la f.e.m de auto-inducci\'on que se desarrollar\'a en una bobina con coeficiente de auto-inducci\'on de $\qty{50}{mH}$ si se aplica una corriente que crece desde cero hasta $I=\qty{20}{A}$ en un tiempo de $\Delta t=\qty{0,1}{s}$.
+
+  \item ¿Cu\'anto tiempo habr\'a que esperar para que la f.e.m de auto-inducci\'on se reduzca a $e_{auto}=\qty{1}{V}$ si se hace circular $I=\qty{10}{A}$ por una bobina con un coeficiente de auto-inducci\'on de $L=\qty{60}{mH}$?
+
+  \item ¿Cu\'al es la f.e.m de auto inducci\'on del problema anterior cuando pasa \qty{1}{ms} de tiempo $t=\qty{0,001}{s}$ y ¿Cu\'al es el valor de la fem de auto-inducci\'on despu\'es de \qty{1}{min}?
+
+  \item Con los datos del problema anterior elaborar un gr\'afico donde en el eje vertical (ordenadas) se coloque el valor de f.e.m. auto-inducci\'on $e_{auto}$ en el eje de las abscisas los valores de tiempo para $t_1=\qty{0,01}{s}$, $t_2=\qty{0,1}{s}$, $t_3=\qty{0,5}{s}$, $t_4=\qty{0,8}{s}$, $t_5=\qty{1}{s}$, $t_6=\qty{2}{s}$, $t_7=\qty{4}{s}, t_8=\qty{5}{s}$ y $t_9=\qty{10}{s}$.
+
+  \item Una bobina de $N=200$ espiras se mueve cortando perpendicularmente un campo magn\'etico. La variaci\'on de flujo experimentado es uniforme y va desde los $\Phi_1=\qty{5}{mWb}$ a los $\Phi_2=\qty{10}{mWb}$ en un intervalo de tiempo de $\Delta t = \qty{0,5}{s}$. Averiguar la f.e.m inducida.
+
+  \item Una bobina de $N=100$ espiras corta con un \'angulo de $45^\circ$ un campo magn\'etico uniforme, la variaci\'on de flujo experimentada es uniforme y es de $\Delta \Phi = \qty{4}{mWb}$ en $\Delta t = \qty{1}{s}$. Averiguar la f.e.m inducida.
+
+  \item Los terminales de una bobina son conectados a una resistencia $R=\qty{1}{\Omega}$ y se genera una corriente de $I=\qty{0,5}{A}$ y cuando esta se mueve produce una variaci\'on de flujo de $\Delta \Phi =\qty{5}{mWb}$ en $\Delta t = \qty{2}{s}$ ¿Cu\'antas espiras N tiene?
+
+  \item Hallar la longitud que tiene que tener un conductor que corta perpendicularmente un campo magn\'etico el cual posee una inducci\'on de $B=\qty{3}{T}$, y movi\'endose a una velocidad de $v=\qty{5}{m/s}$ genera una f.e.m de $e=\qty{10}{V}$.
+
+  \item Calcular el valor de la f.e.m. de autoinducci\'on que desarrollar\'a una bobina con un coeficiente de autoinducci\'on de $L=\qty{50}{mH}$, si se aplica una corriente que crece regularmente desde cero hasta $I=\qty{10}{A}$ en un tiempo de $t=\qty{0,01}{s}$.
+
+  \item Calcular el coeficiente de autoinducci\'on si se genera una f.e.m de $e=\qty{60}{V}$ con una corriente que va desde $I_i=\qty{0}{A}$ a $I_f=\qty{12}{A}$ en el tiempo de $\Delta t=\qty{0,1}{s}$.
+
+  \item Calcular cu\'anto debe variar la corriente de forma uniforme para que se produzca una f.e.m. de $e=\qty{12}{V}$ en una bobina con coeficiente de autoinducci\'on de $L=\qty{60}{mH}$, en el tiempo de $\Delta t=\qty{0,1}{s}$.
+
+  \item Una bobina posee $N=500$ espiras y produce un flujo magn\'etico de $\Phi=\qty{10}{mWb}$ cuando es atravesada por una corriente de $I=\qty{10}{A}$. Determinar el coeficiente de autoinducci\'on.
+
+  \item Una bobina que posee $N=500$ espiras tiene un coeficiente de autoinducci\'on $L=\qty{0,5}{H}$. Averiguar si produce un flujo magn\'etico de $\Phi=\qty{10}{mWb}$ ¿Cu\'anta corriente circula por la misma?
+
+  \item Averiguar el n\'umero de espiras que tiene una bobina que produce una variaci\'on de flujo magn\'etico de $\Delta \Phi=\qty{0,01}{Wb}$ cuando es atravesada por una corriente de \qty{10}{A} y tiene un coeficiente de autoinducci\'on igual a $L=\qty{0,5}{H}$.
+
+  \item Un conductor de $l=\qty{25}{cm}$ se mueve en forma circular dentro de un campo magn\'etico cortando el flujo magn\'etico seg\'un la funci\'on $\sin(\alpha)$ si el flujo m\'aximo $\Phi=\qty{50}{mWb}$. Si demora $t=\qty{1}{s}$ en dar una vuelta. Realizar un gr\'afico donde el eje de las ordenadas sea el tiempo en segundos y las abscisas el valor de la f.e.m generada.
+
+  \item Un im\'an produce una inducci\'on $\Phi=\qty{100}{mWb}$ en una superficie de $s=\qty{20}{cm^2}$ determinar el valor de la inducci\'on del im\'an.
+
+  \item Un super im\'an de $B=\qty{10}{T}$ tiene secci\'on hexagonal cuyo radio que lo circunscribe es $r=\qty{10}{cm}$. Determinar el flujo magn\'etico en una cara del im\'an $\Phi$.
+
+  \item Un im\'an de $B=\qty{3}{T}$ tiene una longitud de \qty{50}{cm}, se pasa sobre el im\'an un conductor cuya longitud es $l=\qty{20}{cm}$ con una velocidad de $v=\qty{5}{m/s}$. Determinar el valor de la f.e.m. que se produce. ¿A qu\'e velocidad hay que hacerlo pasar para obtener \qty{10}{V}?
+
+  \item Dise\~nar un generador para que genere una f.e.m. \qty{10}{V}, cuando posea un conductor que mueva a la velocidad de \qty{3,14}{m/s}.
 \end{enumerate}
 \end{document}

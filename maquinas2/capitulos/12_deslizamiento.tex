@@ -1,166 +1,120 @@
-\documentclass[../mainnull]{subfiles}
+\documentclass[../main]{subfiles}
 \setcounter{chapter}{9}
 \begin{document}
 \chapter{Deslizamiento y sincronismo}
 \begin{center}
-  \img{images/08/logo.jpg}{Motor Trifásico}
+\img{images/08/logo.jpg}{Motor Trif\'asico}
 \end{center}
-\subsection{Sincronismo}
-La velocidad de giro del campo magnético se conoce como velocidad de
-sincronismo $n_s$. El motor síncrono gira a la misma velocidad que el
-campo magnético.
-\begin{equation}
-  N=f \frac{60}{p}
-\end{equation}
-donde:
-$N$: Numero de revoluciones por minuto.
-$f$:Frecuencia de la red en Hertz.
 
-$p$: Número de par de polos del motor.
+\subsection{Sincronismo}
+La velocidad de giro del campo magn\'etico{} se conoce como velocidad de sincronismo $n_s$. El motor s\'incrono{} gira a la misma velocidad que el campo magn\'etico.
+\begin{equation}
+n_s = f \frac{60}{p}
+\end{equation}
+
+donde:
+\begin{itemize}
+\item $n_s$: Velocidad de sincronismo en revoluciones por minuto \unit{rpm}.
+\item $f$: Frecuencia de la red en Hertz \unit{Hz}.
+\item $p$: N\'umero{} de pares de polos del motor.
+\end{itemize}
 
 \begin{table}[h!]
-  \centering
-  \begin{tabular}{|c|c|c|}\hline
-    $N^o$ de Polos &  50 Hz & 60 Hz \\ \hline \hline
-    2 polos & 3000 &3600 \\
-    4 polos & 1500 & 1800 \\
-    6 polos & 1000 & 1200 \\
-    8 polos & 750 & 900 \\
-    12 polos & 500 & 600 \\
-    16 polos & 375 & 450 \\
-    24 polos & 250 & 300 \\ \hline
-  \end{tabular}
-  \caption{Velocidad Sincrónica para motores a 50 y 60 Hz.}
-  \label{tab:my_tableherz}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+$N^o$ de Polos & 50 \unit{Hz} & 60 \unit{Hz} \\ \hline \hline
+2 polos & 3000 & 3600 \\
+4 polos & 1500 & 1800 \\
+6 polos & 1000 & 1200 \\
+8 polos & 750 & 900 \\
+12 polos & 500 & 600 \\
+16 polos & 375 & 450 \\
+24 polos & 250 & 300 \\ \hline
+\end{tabular}
+\caption{Velocidad Sincr\'onica{} para motores a 50 y 60 Hz.}
+\label{tab:vel_sincrona}
 \end{table}
 
 \subsection{Deslizamiento}
 
-\web{https://www.youtube.com/watch?v=duRA-drcfGQ}{Principio de
-funcionamiento de motor asincrónico}
-\info{Definición de deslizamiento}{El \emph{deslizamiento o
-  resbalamiento} en una máquina eléctrica es la diferencia relativa
-  entre la velocidad del campo magnético (velocidad de sincronismo) y
-la velocidad del rotor. En motores asincronicos esta velocidad no es igual.}
+\web{https://www.youtube.com/watch?v=duRA-drcfGQ}{Principio de funcionamiento de motor asincr\'onico}
+\info{Definici\'on{} de deslizamiento}{El \emph{deslizamiento o resbalamiento} en una m\'aquina{} el\'ectrica{} es la diferencia relativa entre la velocidad del campo magn\'etico{} (velocidad de sincronismo) y la velocidad del rotor. En motores asincr\'onicos{} esta velocidad no es igual.}
+
 Las siguientes expresiones son equivalentes para hallar el deslizamiento:
 \begin{equation}
-  S=\frac{\omega_s - \omega_m}{\omega_s} \cdot 100\%=
-  \frac{n_s-n_m}{n_s}\cdot 100\%
+s = \frac{\omega_s - \omega_m}{\omega_s} \cdot 100\% = \frac{n_s - n_m}{n_s} \cdot 100\%
 \end{equation}
 
 Donde:
+\begin{itemize}
+\item $s$: Velocidad de deslizamiento (expresada en porcentaje).
+\item $\omega_{s}$: Velocidad angular de sincronismo en radianes por segundo \unit{rad/s}.
+\item $\omega_{m}$: Velocidad angular del rotor en radianes por segundo \unit{rad/s}.
+\item $n_{s}$: Velocidad angular de sincronismo en revoluciones por minuto \unit{rpm}.
+\item $n_{m}$: Velocidad angular del rotor en revoluciones por minuto \unit{rpm}.
+\end{itemize}
 
-$S$: Velocidad de deslizamiento (expresada con base por unidad o en porcentaje).
-
-$\omega_{s}$: Velocidad angular de sincronismo en radianes por segundo.
-
-$\omega_{m}$: Velocidad angular del rotor en radianes por segundo.
-
-$n_{s}$: Velocidad angular de sincronismo en revoluciones por minuto.
-
-$n_{m}$: Velocidad angular del rotor en revoluciones por minuto.
-
-El deslizamiento es especialmente útil cuando analizamos el
-funcionamiento del Motor asíncrono ya que estas velocidades son
-distintas. El voltaje inducido en el bobinado rotórico de un motor de
-inducción depende de la velocidad relativa del rotor con relación a
-los campos magnéticos.
-Es posible expresar la velocidad mecánica del eje del rotor, en
-términos de la velocidad de sincronismo (velocidad del campo
-magnético) y de deslizamiento.
+El deslizamiento es especialmente \'util{} cuando analizamos el funcionamiento del Motor asincr\'onico{} ya que estas velocidades son distintas. El voltaje inducido en el bobinado rot\'orico{} de un motor de inducci\'on{} depende de la velocidad relativa del rotor con relaci\'on{} a los campos magn\'eticos.
+Es posible expresar la velocidad mec\'anica{} del eje del rotor, en t\'erminos{} de la velocidad de sincronismo (velocidad del campo magn\'etico) y del deslizamiento.
 \begin{equation}
-  n_{m}=n_{e}(1-s)
+n_{m} = n_{s}(1-s)
 \end{equation}
+
 \info{Rango de deslizamiento}{
-  En el Motor asíncrono $0<s<1$ ($-1<s<0$ funcionando como
-  generador depende la aplicación, alrededor de 5\%). En el Motor
-  síncrono $S=0$
+En el Motor asincr\'onico{} $0 < s < 1$ ($-1 < s < 0$ funcionando como generador, depende la aplicaci\'on{}, alrededor de \qty{5}{\%}). En el Motor s\'incrono{} $s = 0$.
 }
+
 \subsection{Par Motor y velocidad}
-\web{https://www.youtube.com/watch?v=vcr5pkT6p1o}{Arranque motores de inducción}
-\img{images/08/curva}{Curva Parmotor-velocidad}
-La velocidad nominal siempre será inferior a la velocidad de
-sincronismo o velocidad del campo magnético del estator, debido al
-deslizamiento.
-El par resistente aumenta a medida que aumenta la velocidad y el par
-motor disminuye al aumentarla velocidad.
-Alrededor de la velocidad nominal existe una zona estable  en la que
-el motor puede oscilar en función del par resistente,  variando
-ligeramente la velocidad. Si lo sacamos de esa zona el motor saldrá
-de sincronismo y se parará.
-La Intensidad de arranque es  muy elevada del orden de 8 veces
-superior a la Intensidad nominal.
-De ahí la necesidad de utilizar sistemas de arranque que minimicen la
-Intensidad de arranque.
+\web{https://www.youtube.com/watch?v=vcr5pkT6p1o}{Arranque motores de inducci\'on}
+\img{images/08/curva}{Curva Par motor-velocidad}
+
+La velocidad nominal siempre ser\'a{} inferior a la velocidad de sincronismo o velocidad del campo magn\'etico{} del estator, debido al deslizamiento.
+El par resistente aumenta a medida que aumenta la velocidad y el par motor disminuye al aumentar la velocidad.
+Alrededor de la velocidad nominal existe una zona estable en la que el motor puede oscilar en funci\'on{} del par resistente, variando ligeramente la velocidad. Si lo sacamos de esa zona el motor saldr\'a{} de sincronismo y se parar\'a.
+La Intensidad de arranque es muy elevada, del orden de 8 veces superior a la Intensidad nominal.
+De ah\'i{} la necesidad de utilizar sistemas de arranque que minimicen la Intensidad de arranque.
 \begin{equation}
-  P=\omega \cdot M
+P = \omega \cdot M
 \end{equation}
 
 Donde:
+\begin{itemize}
+\item $P$: Potencia en Watts \unit{W}.
+\item $\omega$: velocidad del motor en radianes por segundo \unit{rad/s}.
+\item $M$: Par motor en Newton-metro \unit{N.m}.
+\end{itemize}
 
-$P$: Potencia en Watts.
-
-$\omega$: velocidad del motor en (radianes/segundo)
-
-$M$:  Par motor en Newton/metro.
-
-Multiplicaremos por $\frac{2\cdot\pi}{60}$ para pasar de R.P.M. a
-radianes/segundo.
+Multiplicaremos por $\frac{2\pi}{60}$ para pasar de R.P.M. a radianes/segundo.
 
 \actividad{Resolver}
 \begin{enumerate}
-  \item Un motor asíncrono trifásico de rotor en cortocircuito posee
-    una velocidad de campo $n_S$ de 3000 R.P.M ¿Cuál será el
-    deslizamiento de rotor a plena carga si se mide con un tacómetro
-    una velocidad de 2750 R.P.M.?
-  \item Un motor asincrónico trifásico de 1 par de polos y funciona
-    con 60 Hz, si su velocidad nominal es de 3500 R.P.M ¿Cuál es su
-    deslizamiento?
-  \item El deslizamiento de un motor monofásico de 2 pares de polos
-    es de 8\%. Calcular la velocidad de sincronismo y la velocidad del motor.
-  \item El deslizamiento de un motor es de 10\% y su velocidad 1600
-    R.P.M. si el motor tiene 2 pares de polos ¿Qué frecuencia lo está
-    alimentando?
-  \item Calcular la velocidad de sincronismo de un motor que tiene
-    una velocidad de 2801 R.P.M. y un deslizamiento del 6\%.
-  \item Calcular el deslizamiento de un motor de 8 polos que gira a
-    800 R.P.M. y funciona a 60 Hz.
-  \item Con qué frecuencia será necesario alimentar un motor
-    asincrónico trifásico de 1 HP para que tenga una velocidad de
-    1000 R.P.M si posee 2 pares de polos.
-  \item El motor asíncrono de 1.5HP anda a 1400 R.P.M ¿Cuál es el
-    deslizamiento si es de 50 Hz y cuantos pares de polos tiene?
-  \item El motor trifásico \emph{Marelli} de 4HP gira a 2890 R.P.M
-    ¿Cuál es el deslizamiento si es de 50 Hz y cuantos pares de polos tiene?
-  \item El motor monofásico asincrónico \emph{Industria Argentina} de
-    1450 R.P.M de 1HP ¿Qué deslizamiento posee y cuántos pares de polos tiene?
-  \item Si los motores asincrónicos monofásicos normalizados tienen
-    1400 R.P.M ¿Cuál es el deslizamiento para un motor normalizado?
-  \item En la plaza de un motor asincrónico monofásico de
-    \emph{Industria Argentina} figuran los siguientes datos:
-    \begin{itemize}
-      \item 1HP
-      \item 1425 R.P.M
-      \item 50Hz
-      \item 5.7A
-      \item 220V
-      \item Cap 430/514$\mu$
-      \item $\cos(\varphi)=0,9$
-      \item IP21 uso general.
-    \end{itemize}
-    ¿Cuántos pares de polos tiene y cual es su rendimiento?
-  \item En una publicación se vende un motor trifásico de velocidad
-    3000 R.P.M., marca \emph{WEG} si posee un 5\% de deslizamiento
-    ¿Cuál es la velocidad del motor a carga nominal?
-  \item Se determinó que un motor da 24 giros en 1 segundo, además el
-    motor se alimenta con 220V 50Hz ¿Cuántos polos tiene el motor y
-    cual es su deslizamiento?
-  \item El eje de un motor tarda aproximadamente 20,8 milisegundos en
-    dar una vuelta. Determinar si se alimenta con 50 Hz, el número de
-    pares de polos, la velocidad de sincronismo y la velocidad del
-    motor en R.P.M.
-  \item Si un motor tiene un deslizamiento del 8\% y 2 pares de polos
-    alimentando por 220V, 50Hz. Determinar en cuántos milisegundos
-    da la vuelta el eje.
+\item Un motor as\'incrono{} trif\'asico{} de rotor en cortocircuito posee una velocidad de campo $n_s$ de \qty{3000}{rpm}. \textquestiondown{}Cu\'al{} ser\'a{} el deslizamiento del rotor a plena carga si se mide con un tac\'ometro{} una velocidad de \qty{2750}{rpm}?
+\item Un motor asincr\'onico{} trif\'asico{} de 1 par de polos funciona con \qty{60}{Hz}. Si su velocidad nominal es de \qty{3500}{rpm} \textquestiondown{}Cu\'al{} es su deslizamiento?
+\item El deslizamiento de un motor monof\'asico{} de 2 pares de polos es de \qty{8}{\%}. Calcular la velocidad de sincronismo y la velocidad del motor.
+\item El deslizamiento de un motor es de \qty{10}{\%} y su velocidad \qty{1600}{rpm}. Si el motor tiene 2 pares de polos \textquestiondown{}Qu\'e{} frecuencia lo est\'a{} alimentando?
+\item Calcular la velocidad de sincronismo de un motor que tiene una velocidad de \qty{2801}{rpm} y un deslizamiento del \qty{6}{\%}.
+\item Calcular el deslizamiento de un motor de 8 polos que gira a \qty{800}{rpm} y funciona a \qty{60}{Hz}.
+\item \textquestiondown{}Con qu\'e{} frecuencia ser\'a{} necesario alimentar un motor asincr\'onico{} trif\'asico{} de \qty{1}{HP} para que tenga una velocidad de \qty{1000}{rpm} si posee 2 pares de polos?
+\item El motor as\'incrono{} de \qty{1.5}{HP} gira a \qty{1400}{rpm}. \textquestiondown{}Cu\'al{} es el deslizamiento si es de \qty{50}{Hz} y cu\'antos{} pares de polos tiene?
+\item El motor trif\'asico{} \emph{Marelli} de \qty{4}{HP} gira a \qty{2890}{rpm}. \textquestiondown{}Cu\'al{} es el deslizamiento si es de \qty{50}{Hz} y cu\'antos{} pares de polos tiene?
+\item El motor monof\'asico{} asincr\'onico{} \emph{Industria Argentina} de \qty{1450}{rpm} de \qty{1}{HP}. \textquestiondown{}Qu\'e{} deslizamiento posee y cu\'antos{} pares de polos tiene?
+\item Si los motores asincr\'onicos{} monof\'asicos{} normalizados tienen \qty{1400}{rpm} \textquestiondown{}Cu\'al{} es el deslizamiento para un motor normalizado?
+\item En la placa de un motor asincr\'onico{} monof\'asico{} de \emph{Industria Argentina} figuran los siguientes datos:
+\begin{itemize}
+\item \qty{1}{HP}
+\item \qty{1425}{rpm}
+\item \qty{50}{Hz}
+\item \qty{5.7}{A}
+\item \qty{220}{V}
+\item Cap \qtyrange{430}{514}{\micro F}
+\item $\cos(\varphi) = 0,9$
+\item IP21 uso general.
+\end{itemize}
+\textquestiondown{}Cu\'antos{} pares de polos tiene y cu\'al{} es su rendimiento?
+\item En una publicaci\'on{} se vende un motor trif\'asico{} de velocidad \qty{3000}{rpm}, marca \emph{WEG}. Si posee un \qty{5}{\%} de deslizamiento \textquestiondown{}Cu\'al{} es la velocidad del motor a carga nominal?
+\item Se determin\'o{} que un motor da 24 giros en 1 segundo. Adem\'as{}, el motor se alimenta con \qty{220}{V} y \qty{50}{Hz}. \textquestiondown{}Cu\'antos{} polos tiene el motor y cu\'al{} es su deslizamiento?
+\item El eje de un motor tarda aproximadamente \qty{20,8}{ms} en dar una vuelta. Determinar si se alimenta con \qty{50}{Hz}, el n\'umero{} de pares de polos, la velocidad de sincronismo y la velocidad del motor en rpm.
+\item Si un motor tiene un deslizamiento del \qty{8}{\%} y 2 pares de polos, alimentado por \qty{220}{V} y \qty{50}{Hz}. Determinar en cu\'antos{} milisegundos da la vuelta el eje.
 \end{enumerate}
 \end{document}
