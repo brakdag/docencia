@@ -1,0 +1,4 @@
+
+url: https://aulasedutec2.mendoza.edu.ar/login/index.php
+user: 29078475
+pass: chinofer1

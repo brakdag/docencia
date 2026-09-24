@@ -1,0 +1,74 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=1cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+\setlist[enumerate]{nosep, leftmargin=1.5em}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Large Solucionario - Continuidad y Bernoulli}\\
+  \textbf{\large Mecánica de los Fluídos}
+\end{center}
+
+\vspace{0.3cm}
+
+\section*{Versión A (Superior Izquierdo)}
+
+\begin{enumerate}
+  \item \textbf{Cañería con reducción:} $d_1=1$ m, $d_2=0,5$ m, $v_1=10$ m/s. Continuidad: $A_1v_1=A_2v_2$. $A_1=\pi(0,5)^2=0,25\pi$, $A_2=\pi(0,25)^2=0,0625\pi$. $v_2=10\cdot\frac{0,25\pi}{0,0625\pi}=40$ m/s.
+  \item \textbf{Central hidroeléctrica:} $d_1=2$ m, $v_1=2$ m/s, $d_2=0,5$ m. $A_1=\pi$, $A_2=0,0625\pi$. $v_2=2\cdot\frac{\pi}{0,0625\pi}=32$ m/s.
+  \item \textbf{Tanque cilíndrico + Torricelli:} $r=50$ cm, $m=10000$ kg. $V=\frac{m}{\rho}=10$ m$^3$. $H=\frac{V}{\pi r^2}=\frac{10}{0,25\pi}\approx12,73$ m. $v=\sqrt{2gH}=\sqrt{2\cdot9,8\cdot12,73}\approx15,8$ m/s.
+  \item \textbf{Orificio a 3 m:} $v=\sqrt{2gH}=\sqrt{2\cdot9,8\cdot3}\approx7,67$ m/s.
+  \item \textbf{Río con sección variable:} $A=10\cdot2=20$ m$^2$. $v=\frac{11}{20}=0,55$ m/s. Si se reduce 30\%: $A'=14$ m$^2$, $v'=\frac{11}{14}\approx0,786$ m/s. Aumento: $0,236$ m/s.
+  \item \textbf{Tubo de Pitot:} $v=\sqrt{2gH}=\sqrt{2\cdot9,8\cdot0,20}\approx1,98$ m/s.
+  \item \textbf{Bernoulli con altura:} $d_1=25$ mm, $p_1=345$ kPa, $v_1=3$ m/s. $d_2=50$ mm, $h_2=2$ m. Continuidad: $v_2=v_1\cdot\frac{A_1}{A_2}=3\cdot\frac{0,0125^2}{0,025^2}=0,75$ m/s. Bernoulli: $p_2=p_1+\frac{1}{2}\rho(v_1^2-v_2^2)-\rho gh_2=345000+4500-281,25-19600\approx329,6$ kPa.
+\end{enumerate}
+
+\newpage
+
+\section*{Versión B (Superior Derecho)}
+
+\begin{enumerate}
+  \item \textbf{Caudal con boquilla:} $Q=20$ L/s $=0,02$ m$^3$/s. Conducto $d=0,1$ m: $A\approx0,00785$ m$^2$, $v_1\approx2,55$ m/s. Boquilla $d=0,05$ m: $A'\approx0,00196$ m$^2$, $v_2\approx10,2$ m/s.
+  \item \textbf{Tanque cilíndrico vaciándose:} Datos insuficientes (falta el volumen del tanque).
+  \item \textbf{Orificio a 3 m:} $v=\sqrt{2\cdot9,8\cdot3}\approx7,67$ m/s.
+  \item \textbf{Tanque cuadrado:} $m=31000$ kg, $V=31$ m$^3$, $A=0,25$ m$^2$, $H=\frac{31}{0,25}=124$ m. $v=\sqrt{2\cdot9,8\cdot124}\approx49,3$ m/s.
+  \item \textbf{Biodigestor a 12 m:} $v=\sqrt{2\cdot9,8\cdot12}\approx15,34$ m/s.
+  \item \textbf{Recipiente cónico:} $v(t)=\sqrt{2g\cdot h(t)}=\sqrt{19,6\cdot h(t)}$ m/s, depende de la altura instantánea.
+  \item \textbf{Conducto en V:} $Q=1$ m$^3$/s. $v_{in}=\frac{1}{2}=0,5$ m/s. $v_{fin}=\frac{1}{0,5}=2$ m/s.
+\end{enumerate}
+
+\newpage
+
+\section*{Versión C (Inferior Izquierdo)}
+
+\begin{enumerate}
+  \item \textbf{Tubería en serie:} $Q=0,5$ m$^3$/s. $d_1=0,1$ m: $v_1\approx63,7$ m/s. $d_2=0,08$ m: $v_2\approx99,5$ m/s. $d_3=0,06$ m: $v_3\approx176,8$ m/s.
+  \item \textbf{Estanque con recirculación:} $r=5$ mm, $H=0,5$ m. $v=\sqrt{2\cdot9,8\cdot0,5}\approx3,13$ m/s. $S=\pi(0,005)^2\approx7,85\times10^{-5}$ m$^2$. $Q=S\cdot v\approx2,46\times10^{-4}$ m$^3$/s $\approx0,246$ L/s.
+  \item \textbf{Tanque cilíndrico llenándose:} Datos insuficientes (falta el volumen).
+  \item \textbf{Canal rectangular:} $A=3\cdot2=6$ m$^2$. $v=\frac{4}{6}\approx0,667$ m/s.
+  \item \textbf{Balde con sección reducida:} $Q=\frac{5}{60}\approx0,0833$ L/s. Por continuidad, al reducirse la sección a la mitad, la velocidad duplica: $v_2=2v_1$.
+  \item \textbf{Recipiente cónico:} Diámetro base 4 m, altura 6 m, $Q=0,2$ m$^3$/s. $A_{base}=\pi(2)^2\approx12,57$ m$^2$. $v=\frac{0,2}{12,57}\approx0,0159$ m/s.
+  \item \textbf{Depósito prisma rectangular:} $w=6$ m, $l=8$ m, $h=10$ m, orificio $d=1$ cm. $v=\sqrt{2\cdot9,8\cdot10}\approx14$ m/s. $A_{or}=\pi(0,005)^2\approx7,85\times10^{-5}$ m$^2$. $Q=S\cdot v\approx1,1\times10^{-3}$ m$^3$/s. Velocidad de descenso: $v_{desc}=\frac{Q}{A_{tanque}}=\frac{1,1\times10^{-3}}{48}\approx2,3\times10^{-5}$ m/s.
+\end{enumerate}
+
+\newpage
+
+\section*{Versión D (Inferior Derecho)}
+
+\begin{enumerate}
+  \item \textbf{Recipiente irregular:} $h=15$ m. $v=\sqrt{2\cdot9,8\cdot15}\approx17,15$ m/s.
+  \item \textbf{Tanque esférico:} $h=4$ m. $v(t)=\sqrt{2g\cdot h(t)}$, depende de la altura instantánea. La ecuación requiere integrar la geometría esférica.
+  \item \textbf{Altura para $v=9,8$ m/s:} $H=\frac{v^2}{2g}=\frac{9,8^2}{2\cdot9,8}=4,9$ m.
+  \item \textbf{Tanque prisma rectangular:} Base $4\times6=24$ m$^2$, altura 3 m, $V=72$ m$^3$. $Q=0,1$ m$^3$/s. Tiempo: $t=\frac{V}{Q}=\frac{72}{0,1}=720$ s $=12$ min.
+  \item \textbf{Conducto en V:} $A_{sup}=2$ m$^2$, $A_{inf}=0,5$ m$^2$, $Q=1$ m$^3$/s. $v_{in}=0,5$ m/s, $v_{fin}=2$ m/s.
+  \item \textbf{Tanque cilíndrico:} $d_{tanque}=1$ m, $d_{tubo}=0,2$ m, $t=5$ min. Datos insuficientes sin el volumen.
+  \item \textbf{Canal rectangular:} $A=3\cdot2=6$ m$^2$, $Q=4$ m$^3$/s. $v=\frac{4}{6}\approx0,667$ m/s.
+\end{enumerate}
+
+\end{document}
