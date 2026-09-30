@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0 -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Predeterminado para Máquina Rotativa/Cuestionario Máquina Rotativa</text>
+    </category>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 1 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 1:</b></p><p><br>begin{enumerate}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 2 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 2:</b></p><p>Un motor se mueve con velocidad $n=3000 RPM$, calcular su frecuencia $f$ en Hertz.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 3 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 3:</b></p><p>Calcular el período $T$ y la velocidad angular $<br>omega$ del problema anterior.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 4 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 4:</b></p><p>Un motor gira con movimiento circular uniforme, girando con $<br>omega=7<br>pi <br>dfrac{rad}{s}$. Calcular el ángulo que barre el radio de giro en $<br>Delta t=2s$.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 5 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 5:</b></p><p>Una bobina realiza un movimiento circular uniforme, da 3 vueltas en 1 minuto alrededor de su centro de giro. Calcular su rapidez angular (en rad/s).</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 6 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 6:</b></p><p>El motor de la imagen realiza un M.C.U. con
+una rapidez angular de $<br>omega=2<br>pi <br>dfrac{rad}{s}$ .Determine el
+tiempo que emplea para ir desde A hasta B. 
+    <br>begin{center}
+    <br>begin{tikzpicture}
+    <br>draw [dashed](0,0)circle (2);
+    <br>draw (0,0)--(-30:2) node [right]{$B$};
+    <br>draw (0,0)--(90:2) node [above]{$A$};
+    <br>draw (1,0.5) node {$<br>dfrac{2<br>pi}{3}$};
+    <br>end{tikzpicture}
+    <br>end{center}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 7 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 7:</b></p><p>Los cables A y B giran con MCU, con velocidad angulares de $<br>omega_A=3rad/s$ y $<br>omega_B=5rad/s$ respectivamente. Calcular el tiempo que tarde el cable B en alcanzar al cable A, tomando en cuenta el gráfico. 
+    <br>begin{center}
+    <br>begin{tikzpicture}
+    <br>draw [dashed](0,0)circle (2);
+    <br>draw (0,0)--(-90:2) node [below]{$B$};
+    <br>draw (0,0)--(90:2) node [above]{$A$};
+    <br>draw (1,0) node {$<br>pi$};
+    <br>end{tikzpicture}
+    <br>end{center}
+<br>info{Velocidad o rapidez tangencial}{
+
+<br>begin{equation}
+v_t=<br>omega <br>times r
+<br>end{equation}
+
+Siendo:
+
+$v_t$: Velocidad tangencial $[m/s]$.
+
+$<br>omega:$ Velocidad angular $[rad/s]$
+
+$r:$ Radio. [m]
+}
+
+
+    
+    <br>info{Aceleración centrípeta}{
+<br>begin{equation}
+a_c=<br>omega^2 <br>times r = <br>dfrac{v_t^2}{r}
+<br>end{equation}
+
+Siendo:
+
+$a_c$: Aceleración centrípeta $[m/s^2]$.
+
+$v_t$: Velocidad tangencial $[m/s]$.
+
+$<br>omega:$ Velocidad angular $[rad/s]$
+
+$r:$ Radio. [m]
+}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 8 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 8:</b></p><p>La rapidez tangencial de una bobina que gira con MCU es de $v_t=12 m/s$. Calcular su aceleración centrípeta, si su radio mide $r=120 cm$.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 9 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 9:</b></p><p>La frecuencia de una bobina que gira con M.C.U. es de $f=0,5Hz$. Hallar la rapidez tangencial en la periferia del bobinado, si tiene un diámetro de $d=40cm$.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 10 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 10:</b></p><p>Los puntos periféricos de un rotor jaula de ardilla con M.C.U se mueven a razón de $v_t=0,8 m/s$. Los puntos que están a 4cm de la periferia se
+mueven a razón de $v_t=0,6 m/s$. Hallar el radio rotor.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+  <question type="essay">
+    <name><text>Pregunta 11 - Máquina Rotativa</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Problema 11:</b></p><p>Un motor gira con MCU. Si los puntos
+periféricos tienen el triple de rapidez tangencial
+que aquellos puntos que se encuentran 5 cm
+más cerca del centro motor, calcular el radio
+del rotor.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <responseformat>editor</responseformat>
+    <responserequired>1</responserequired>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <graderinfo format="html"><text><![CDATA[]]></text></graderinfo>
+    <responsetemplate format="html"><text><![CDATA[]]></text></responsetemplate>
+  </question>
+</quiz>

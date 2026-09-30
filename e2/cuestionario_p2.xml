@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+<category><text>\$course\$/Cuestionarios/Maquina</text></category>
+</question>
+<question type="multichoice">
+<name><text>Ej 6</text></name>
+<questiontext format="html"><text><![CDATA[<p>Tiempo de encuentro cables A y B.</p>]]></text></questiontext>
+<answer fraction="100" format="html"><text><![CDATA[<p>pi/2 s</p>]]></text></answer>
+<answer fraction="0" format="html"><text><![CDATA[<p>pi s</p>]]></text></answer>
+</question>
+<question type="multichoice">
+<name><text>Ej 7</text></name>
+<questiontext format="html"><text><![CDATA[<p>Aceleracion centripeta con vt=12 y r=1.2.</p>]]></text></questiontext>
+<answer fraction="100" format="html"><text><![CDATA[<p>120 m/s2</p>]]></text></answer>
+<answer fraction="0" format="html"><text><![CDATA[<p>12 m/s2</p>]]></text></answer>
+</question>
+<question type="multichoice">
+<name><text>Ej 8</text></name>
+<questiontext format="html"><text><![CDATA[<p>Rapidez tangencial f=0.5 Hz y d=40cm.</p>]]></text></questiontext>
+<answer fraction="100" format="html"><text><![CDATA[<p>0.4*pi m/s</p>]]></text></answer>
+<answer fraction="0" format="html"><text><![CDATA[<p>0.2*pi m/s</p>]]></text></answer>
+</question>
+<question type="multichoice">
+<name><text>Ej 9</text></name>
+<questiontext format="html"><text><![CDATA[<p>Radio rotor jaula de ardilla.</p>]]></text></questiontext>
+<answer fraction="100" format="html"><text><![CDATA[<p>0.32 m</p>]]></text></answer>
+<answer fraction="0" format="html"><text><![CDATA[<p>0.16 m</p>]]></text></answer>
+</question>
+<question type="multichoice">
+<name><text>Ej 10</text></name>
+<questiontext format="html"><text><![CDATA[<p>Motor MCU y puntos perifericos.</p>]]></text></questiontext>
+<answer fraction="100" format="html"><text><![CDATA[<p>7.5 cm</p>]]></text></answer>
+<answer fraction="0" format="html"><text><![CDATA[<p>5 cm</p>]]></text></answer>
+</question>
+</quiz>

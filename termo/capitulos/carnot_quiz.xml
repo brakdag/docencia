@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- Question 1: Multiple Choice on Carnot Efficiency -->
+<question type="multichoice">
+  <name>
+    <text>Motor de Carnot - Calculo de Rendimiento Teorico</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Una maquina termica que opera segun el ciclo ideal de Carnot absorbe calor de un foco caliente a 600 K y cede calor a un foco frio a 400 K. ¿Cual es el rendimiento de este ciclo?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>El rendimiento de una maquina de Carnot se calcula como eta = 1 - T2/T1. Sustituyendo los valores en Kelvin: eta = 1 - 400/600 = 1 - 0.6667 = 0.3333 (o bien 33.33%).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100.00000" format="html">
+    <text><![CDATA[<p>33.33% (o 0.3333)</p>]]></text>
+    <feedback format="html">
+      <text><![CDATA[<p>¡Correcto! Aplicando la formula, se obtiene el rendimiento correcto.</p>]]></text>
+    </feedback>
+  </answer>
+  <answer fraction="0.00000" format="html">
+    <text><![CDATA[<p>66.67% (o 0.6667)</p>]]></text>
+    <feedback format="html">
+      <text><![CDATA[<p>Incorrecto. Has calculado la relacion del foco frio respecto al caliente sin restarla de 1.</p>]]></text>
+    </feedback>
+  </answer>
+  <answer fraction="0.00000" format="html">
+    <text><![CDATA[<p>50.00% (o 0.5000)</p>]]></text>
+    <feedback format="html">
+      <text><![CDATA[<p>Incorrecto. Revise la relacion de temperaturas absolutas.</p>]]></text>
+    </feedback>
+  </answer>
+  <answer fraction="0.00000" format="html">
+    <text><![CDATA[<p>20.00% (o 0.2000)</p>]]></text>
+    <feedback format="html">
+      <text><![CDATA[<p>Incorrecto. Calculo aritmetico erroneo.</p>]]></text>
+    </feedback>
+  </answer>
+</question>
+
+<!-- Question 2: Numerical Calculation on Work and Heat -->
+<question type="numerical">
+  <name>
+    <text>Motor de Carnot - Calor Absorbido a partir de Eficiencia y Trabajo</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Una maquina termica con una eficiencia de 22% produce un trabajo util de W = 1530 J. Determine la cantidad de calor absorbido Q1 del deposito termico caliente (en Julios).</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Sabemos que el rendimiento es eta = W / Q1. Despejando el calor absorbido Q1: Q1 = 1530 / 0.22 = 6954.55 J.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <answer fraction="100.00000" format="html">
+    <text>6954.55</text>
+    <tolerance>5.00000</tolerance>
+    <feedback format="html">
+      <text><![CDATA[<p>¡Correcto! Q1 = 6954.55 J.</p>]]></text>
+    </feedback>
+  </answer>
+</question>
+</quiz>
