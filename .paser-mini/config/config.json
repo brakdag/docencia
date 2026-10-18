@@ -1,9 +1,9 @@
 {
     "rendering_mode": "IRC",
     "provider": "GEMINI",
-    "model_name": "gemini-flash-lite-latest",
+    "model_name": "models/gemini-3.5-flash-lite",
     "default_temperature": 0.3,
-    "rpm_limit": 15,
-    "context_window_limit": 50000,
-    "execute_enabled": true
+    "rpm_limit": 7,
+    "context_window_limit": 30000,
+    "execute_enabled": false
 }

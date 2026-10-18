@@ -5,54 +5,71 @@
 \RequirePackage{fontspec}
 \RequirePackage{geometry}
 
-% Configuración de geometría para A4
+% Formato A4: marco a 10 mm de los bordes superior, inferior y exterior,
+% y a 25 mm del borde de archivado. Esto deja un ancho útil de 175 mm.
 \geometry{
-    a4paper,
-    inner=25mm,   % Margen para la carpeta
-    outer=10mm,   % Margen exterior
-    top=10mm,
-    bottom=20mm,
-    headheight=0pt,
-    footskip=0pt
+  a4paper,
+  inner=25mm,   % Margen para la carpeta
+  outer=10mm,   % Margen exterior
+  top=10mm,
+  bottom=40mm, % 10 mm de margen + 26 mm de rótulo + 4 mm de separación
+  headheight=0pt,
+  footskip=0pt
 }
 
 % Fuente técnica (asegúrate de tener el archivo .ttf o cámbiala por Arial)
 \newfontfamily\fontTecnica[Path=./]{osifont.ttf}
 
 \AddToShipoutPictureFG{
-    \begin{tikzpicture}[remember picture, overlay]
-      % Lógica para espejar márgenes (Impar: 25mm izq | Par: 25mm der)
-      \ifodd\value{page}
-        \def\mIzq{25mm}
-        \def\mDer{-10mm}
-      \else
-        \def\mIzq{10mm}
-        \def\mDer{-25mm}
-      \fi
+  \begin{tikzpicture}[remember picture, overlay]
+    % Lógica para espejar márgenes (Impar: 25mm izq | Par: 25mm der)
+    \ifodd\value{page}
+    \def\mIzq{25mm}
+    \def\mDer{-10mm}
+    \else
+    \def\mIzq{10mm}
+    \def\mDer{-25mm}
+    \fi
 
-      % Puntos de las esquinas del recuadro
-      \coordinate (NW) at ([shift={(\mIzq,-10mm)}]current page.north west);
-      \coordinate (SE) at ([shift={(\mDer,10mm)}]current page.south east);
-      
-      % Dibujo del recuadro principal (Marco de la hoja)
-      \draw[line width=0.6mm] (NW) rectangle (SE);
-      
-      % Rótulo (Posicionado relativo a la esquina inferior del recuadro)
-      \begin{scope}[shift={(SE)}]
-        % El rótulo mide 175mm de ancho y 10mm de alto
-        \draw[line width=0.6mm] (0,0) rectangle (-175mm, 10mm);
-        
-        % 1. Logo (escala 0.08)
-        \node[anchor=west] at (-174mm, 5mm) {\includegraphics[scale=0.08]{./img/4117.jpg}};
-        
-        % 2. Materia: Electrotecnia
-        \node[anchor=west] at (-155mm, 5mm) {\fontTecnica\small MECANICA DE LOS FLUIDOS};
-        
-        % 3. Alumno: Nombre y Apellido
-        \node[anchor=west] at (-100mm, 5mm) {\fontTecnica\small ALUMNO: \rule{55mm}{0.1mm}};
-        
-        % 4. Número de Hoja (Automático)
-        \node[anchor=east] at (-5mm, 5mm) {\fontTecnica\small \fbox{\thepage}};
-      \end{scope}
-    \end{tikzpicture}
+    % Puntos de las esquinas del recuadro (área útil 175 x 277 mm)
+    \coordinate (NW) at ([shift={(\mIzq,-10mm)}]current page.north west);
+    \coordinate (SE) at ([shift={(\mDer,10mm)}]current page.south east);
+
+    % Dibujo del recuadro principal (Marco de la hoja)
+    \draw[line width=0.6mm] (NW) rectangle (SE);
+
+    % Rótulo escolar de 175 x 26 mm: franjas de 7, 7 y 12 mm.
+    % La franja del alumno conserva altura para completar a mano.
+    \begin{scope}[shift={(SE)}, every node/.style={inner sep=0pt,
+      outer sep=0pt}]
+      \tikzset{
+        rotuloEtiqueta/.style={font=\fontTecnica\fontsize{6.5}{8}\selectfont},
+        rotuloDato/.style={font=\fontTecnica\fontsize{10}{12}\selectfont}
+      }
+      % Los laterales y la base ya pertenecen al marco: sólo se agrega la tapa.
+      \draw[line width=0.6mm] (-175mm,26mm) -- (0,26mm);
+      \draw[line width=0.3mm] (-175mm,19mm) -- (0,19mm);
+      \draw[line width=0.3mm] (-175mm,12mm) -- (0,12mm);
+      % División alineada: materia/alumno (125 mm) y datos auxiliares (50 mm).
+      \draw[line width=0.3mm] (-50mm,0) -- (-50mm,19mm);
+      % Curso (30 mm) y hoja (20 mm).
+      \draw[line width=0.3mm] (-20mm,0) -- (-20mm,12mm);
+
+      % Identificación completa, centrada en una sola línea.
+      \node[rotuloDato] at (-87.5mm,22.5mm)
+      {ESCUELA NRO 4239 «CERRO EL SOSNEADO» -- ESCUELA TÉCNICA AGROPECUARIA};
+      \node[rotuloDato] at (-112.5mm,15.5mm) {DIBUJO TÉCNICO};
+      \node[rotuloEtiqueta, anchor=west] at (-47.5mm,15.5mm) {FECHA};
+      \draw[line width=0.15mm] (-34mm,14mm) -- (-2.5mm,14mm);
+
+      % Etiquetas con el mismo retiro de 2.5 mm; valores separados del borde.
+      \node[rotuloEtiqueta, anchor=west] at (-172.5mm,9.2mm)
+      {ALUMNO: NOMBRE Y APELLIDO};
+      \draw[line width=0.15mm] (-172.5mm,3mm) -- (-52.5mm,3mm);
+      \node[rotuloEtiqueta, anchor=west] at (-47.5mm,9.2mm) {CURSO};
+      \node[rotuloEtiqueta, anchor=west] at (-17.5mm,9.2mm) {HOJA};
+      \node[rotuloDato] at (-35mm,4.5mm) {2do 1ra};
+      \node[rotuloDato] at (-10mm,4.5mm) {\thepage};
+    \end{scope}
+  \end{tikzpicture}
 }

@@ -1,46 +1,87 @@
 \documentclass[../main]{subfiles}
 \begin{document}
-\section{Exposición de Motores de C.A.}
+\section{Exposición y Documentación del Trabajo Integrador de
+Máquinas Eléctricas}
 
-\begin{center}
-  \img{images/11/motores.jpg}{Motores de C.A.}
-\end{center}
+\info{Enfoque Específico y Rigor Técnico}{El presente trabajo tiene
+  como único y exclusivo objeto de estudio la sección correspondiente a
+  las máquinas eléctricas dentro del desarrollo integral de los alumnos
+  de 6to año. No se evalúan aspectos ajenos al electromagnetismo,
+  automatismos genéricos o estructuras mecánicas secundarias; el rigor
+  técnico se centra estrictamente en el dominio de la conversión
+electromecánica de energía y sus leyes fundamentales.}
 
-\info{Motores de CA}{Un motor de corriente alterna es una máquina que usa electricidad para producir movimiento. A diferencia de la corriente continua (como la de las baterías), la corriente alterna cambia de dirección constantemente. El motor toma esta corriente alterna y la usa para girar un eje o realizar alguna otra tarea mecánica.
-
-Imagina un ventilador eléctrico que funciona con un enchufe de pared. Cuando conectas el ventilador, la electricidad fluye a través de él y hace que las aspas giren. Esto es posible gracias a un motor de corriente alterna que convierte la electricidad en movimiento giratorio.
-
-En resumen, un motor de corriente alterna es un dispositivo que utiliza electricidad que cambia de dirección para crear movimiento, como el que encuentras en ventiladores, lavadoras y muchas otras máquinas eléctricas que usamos a diario.
-}
-
-\actividad{Exposición de clase especial}
-
-\begin{table}[htbp]
-  \centering
-  \begin{tabular}{|c|c|}
-    \hline
-    \textbf{Grupo} & \textbf{Tema} \\
-    \hline\hline
-    1 & Motor Síncrono \\
-    \hline
-    2 & Motor Asíncrono rotor bobinado \\
-    \hline
-    3 & Motor Asincrónico de jaula de Ardilla \\
-    \hline
-    4 & Motor Universal \\
-    \hline
-    5 & Motor SynRm. \\
-    \hline
-    6 & Motor de Fase partida. \\
-    \hline
-  \end{tabular}
-\end{table}
-
-\subsection{Recomendaciones de la exposición:}
+\subsection{1. Guía de Identificación de Máquinas Eléctricas en el Proyecto}
+Para dar inicio al desarrollo, cada grupo debe realizar un riguroso
+relevamiento y justificación de las máquinas eléctricas presentes o
+necesarias en su diseño. A modo de guía orientativa, todo sistema
+técnico de 6to año involucra al menos una de las siguientes
+categorías tecnológicas:
 \begin{itemize}
-  \item No leer texto de la presentación, la presentación debe contener imágenes y se deben explicar las imágenes y puede contener fórmulas, gráficos y tablas, pero no debe tener texto en lo posible: sólo títulos.
-  \item Pedir el TV una clase antes, y tener el material descargado en un pendrive o grabado en una computadora. De forma que no sea un problema para la presentación el problema que pueda presentarse por no haber disponibilidad del TV o la falta de internet.
-  \item Aproximadamente cada alumno debe hablar \qty{5}{min}, la presentación no debe ser más extensa que eso por alumno.
-  \item En caso de necesitar posponer la fecha de la exposición avisar con tiempo al profesor, para organizar una nueva fecha.
+  \item Motores de Corriente Alterna (Asincrónicos y Síncronos):
+    Utilizados en tracción, bombeo, transporte o accionamientos
+    generales, abarcando motores de jaula de ardilla, rotor bobinado
+    y motores monofásicos de fase partida.
+  \item Motores de Corriente Continua y Accionamientos Especiales:
+    Servomotores, motores paso a paso (steppers), motores brushless
+    (sin escobillas) o motores universales aplicados en
+    posicionamiento de alta precisión y control dinámico.
+  \item Transformadores y Elementos Estáticos: Unidades destinadas a
+    la transformación de niveles de tensión, aislamiento galvánico,
+    adaptación de impedancias o conversión estática de energía.
+  \item Generadores y Sistemas de Recuperación: Máquinas rotativas
+    destinadas a la generación de energía eléctrica o sistemas de
+    frenado regenerativo e inercial.
+\end{itemize}
+
+\subsection{2. Estructura de la Documentación Técnica}
+La presentación formal de la documentación técnica (desterrando la
+denominación informal de informe) debe estructurarse rigurosamente
+bajo los siguientes apartados normativos:
+\begin{enumerate}
+  \item Carátula y Datos Institucionales: Identificación precisa del
+    equipo de trabajo, división, especialidad, ciclo lectivo y
+    denominación exacta del sistema electromecánico.
+  \item Identificación y Justificación Funcional: Descripción
+    detallada del rol que cumple cada máquina eléctrica en el
+    proyecto, justificando su elección frente a otras alternativas
+    tecnológicas en función de par, velocidad y rendimiento.
+  \item Memoria de Cálculo Electromecánico:
+    \begin{itemize}
+      \item Parámetros constructivos y eléctricos: tensiones
+        nominales, corrientes de servicio y arranque, frecuencias,
+        velocidad sincrónica y deslizamiento.
+      \item Análisis energético integral: cálculo de potencias,
+        factor de potencia y rendimiento global.
+      \item Dimensionamiento y selección normada de conductores,
+        protecciones termomagnéticas, diferenciales y dispositivos de
+        maniobra (contactores, relés térmicos).
+    \end{itemize}
+  \item Esquemas y Diagramas Eléctricos: Planos constructivos en CAD,
+    diagramas unifilares y circuitos de fuerza y comando completos,
+    normalizados y debidamente acotados.
+  \item Conclusiones y Normativa Aplicada: Evaluación crítica del
+    comportamiento operativo del sistema frente a las exigencias
+    reales y cumplimiento estricto de normativas vigentes (IRAM / IEC).
+\end{enumerate}
+
+\subsection{3. Pautas y Recomendaciones para la Exposición Oral}
+\begin{itemize}
+  \item Enfoque Exclusivo en Máquinas: La defensa oral no debe
+    relatar la historia del proyecto general, sino concentrarse de
+    forma quirúrgica en el sistema de máquinas eléctricas, sus
+    ecuaciones, su dimensionamiento y su comportamiento dinámico.
+  \item Soporte Visual Minimalista: Las diapositivas deben contener
+    exclusivamente esquemas eléctricos, diagramas vectoriales,
+    circuitos equivalentes y ecuaciones fundamentales. Está
+    terminantemente prohibido leer texto corrido.
+  \item Previsión Logística: Solicitar los recursos audiovisuales
+    (TV/Proyector) con la debida anticipación y llevar el material
+    respaldado en un pendrive o medio local para prevenir fallas de
+    conectividad.
+  \item Gestión Temporal y Dominio Técnico: Cada equipo dispondrá de
+    un tiempo estricto de 15 a 20 minutos. Todos los integrantes
+    deben demostrar idoneidad absoluta para responder
+    cuestionamientos técnicos sobre cualquier cálculo o selección realizada.
 \end{itemize}
 \end{document}
